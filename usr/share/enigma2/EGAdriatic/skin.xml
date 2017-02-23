@@ -5276,7 +5276,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="description" position="865,435" size="300,500" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
+		<widget name="description" position="865,435" size="320,500" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="80,138" size="718,375" selectionPixmap="EGAdriatic/icons/ls700x30.png" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="420,515" size="345,550" foregroundColor="#a1d1ff" transparent="1"/>
