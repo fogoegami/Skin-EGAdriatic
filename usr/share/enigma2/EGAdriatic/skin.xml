@@ -198,9 +198,7 @@
         <panel name="PIG"/>		
 		<widget source="menu" render="Listbox" position="80,138" size="718,440" font="Regular;25" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" >
 			<convert type="StringList" />
-		</widget>	
-		<widget source="key_red" render="Label" position="7,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="210,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />		
+		</widget>		
 	</screen> 			
 
 <!-- (005) ####### MAIN MENU menu en construccion futura ####### -->
