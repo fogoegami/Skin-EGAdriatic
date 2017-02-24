@@ -1793,11 +1793,25 @@
 		<widget name="config" position="20,165" size="910,240" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="introduction" position="0,0" size="0,0" font="Regular;23" />
 	</screen>	
-	<!-- (044) ####### Mensajes box ####### -->
-	<screen name="MessageBox" position="0,0" size="1280,720" title="Message" flags="wfNoBorder">
-		<panel name="GenericLayoutTemplate" />
-		<panel name="PIG" />
-		<panel name="ScrollBarTemplate" />		
+	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
+	<screen name="MessageBoxTemplate" position="0,0" size="1280,720" flags="wfNoBorder" >
+		<panel name="Title"/>
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
+		<ePixmap position="772,137" zPosition="2" size="27,405" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1" />
+		<!-- Widget Pig -->
+		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<!-- Nombre del Canal - Service Name -->
+		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- Barra Progresso -->
+		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>	
+                <!-- digital clock -->
+		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
 		<widget name="text" position="140,137" size="520,0" font="Regular;22" transparent="1"/>
 		<widget name="ErrorPixmap" pixmap="EGAdriatic/icons/input_error.png" position="69,137" size="53,53" alphatest="on" />
 		<widget name="QuestionPixmap" pixmap="EGAdriatic/icons/input_question.png" position="69,137" size="53,53" alphatest="on" />
@@ -1831,6 +1845,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 #newwidth = wsize[0]
 #self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
+	</screen>
+	<!-- ####### MessageBox ####### -->	
+	<screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder" >
+		 <panel name= "MessageBoxTemplate"/>
+	</screen>
+	<!-- ####### MessageBoxSimple ####### -->		
+	<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
+		 <panel name= "MessageBoxTemplate"/>
 	</screen>
 	<!-- (045) ####### Movieplayer infobar ####### -->
 	<screen name="MoviePlayer" position="0,480" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
