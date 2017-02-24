@@ -4501,10 +4501,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="bouquetlist" position="0,60" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="0,60" size="1280,120" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
 		<widget name="timeline_now" position="0,55" zPosition="3" size="9,130" pixmap="epg/timeline-now-infobar-epg.png" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_text.png" position="10,185" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_help.png" position="55,185" size="40,22" alphatest="blend" />
-		<ePixmap pixmap="icons/key_menu1.png" position="1165,185" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="1220,185" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_text.png" position="10,180" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_help.png" position="55,180" size="40,22" alphatest="blend" />
+		<ePixmap pixmap="icons/key_menu1.png" position="1165,180" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="1220,180" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="buttons/red.png" position="120,203" size="140,25" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="130,180" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/green.png" position="435,203" size="140,25" alphatest="blend" transparent="1" zPosition="1"/>
