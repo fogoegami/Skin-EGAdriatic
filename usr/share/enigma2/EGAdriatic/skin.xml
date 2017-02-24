@@ -3089,6 +3089,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (134) ####### CAidSelect ####### -->
 	<screen name="CAidSelect" 	position="center,center" size="710,240" title="select CAId's" >
 		<widget name="list" position="20,20" size="670,310" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1"  />
+		<widget source="introduction" render="Label" position="20,455" size="503,30" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<ePixmap position="70,180" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1" />
 		<ePixmap position="390,180" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1" />
 		<widget source="key_red" 	render="Label" 		position="70,180" zPosition="2"	size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1" />
@@ -3098,6 +3099,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="myProviderSelection" position="center,center" size="1160,560" title="Select provider to add..." >
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on" />
 		<widget name="list" position="20,20" size="1120,420" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget source="introduction" render="Label" position="20,455" size="503,30" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<ePixmap position="32,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1" />
 		<ePixmap position="314,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1" />
 		<ePixmap position="596,500" size="250,40" pixmap="EGAdriatic/buttons/yellow25.png" alphatest="on" zPosition="1" />
@@ -3111,6 +3113,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="myChannelSelection" position="center,center" size="1160,560" title="Select service to add..." >
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on" />
 		<widget name="list" position="20,20" size="1120,420" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget source="introduction" render="Label" position="20,455" size="503,30" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<ePixmap position="32,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1" />
 		<ePixmap position="314,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1" />
 		<ePixmap position="596,500" size="250,40" pixmap="EGAdriatic/buttons/yellow25.png" alphatest="on" zPosition="1" />
