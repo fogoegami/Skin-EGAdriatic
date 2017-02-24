@@ -2340,13 +2340,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
-	<!-- (085) ####### TIMER EDIT LIST ####### (15-02) -->
+	<!-- ####### TIMER EDIT LIST TEMPORIZADORES DE ALIMENTACION ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder" >
 		<panel name="PantallaGenerica4botones" />
-		<panel name="ScrollBarTemplate" />		
-        <panel name="PIG"/>		
+		<panel name="ScrollBarTemplate" />
+		<panel name="PIG" />
 		<ePixmap position="260,0" zPosition="1" size="570,69" pixmap="EGAdriatic/menu/tx_timer.png" />
-		<widget name="timerlist" position="69,137" size="720,427" zPosition="2" scrollbarMode="showAlways" selectionPixmap="EGAdriatic/icons/ls970x66.png" transparent="1"/>
+		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>
+		<widget name="timerlist" position="70,145" size="705,427" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;16" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1" />
 		<ePixmap position="950,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>
 	</screen>
 	<!-- ####### MediaPlayer ####### -->	
