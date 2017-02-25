@@ -415,9 +415,9 @@
 		<ePixmap position="57,625" zPosition="1" size="750,62" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
 
 		<!-- buttons text widgets -->
-		<widget position="0,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="200,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="390,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+		<widget position="400,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
     </screen>
 	<!-- ####### PANTALLA PARA 2 BOTONES ROJO Y VERDE + SOURCE ####### -->
