@@ -189,7 +189,7 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>	
-		<!-- (086) ####### Menu /Red/ /interfaz usuario/ /tv/ /ajustes A/V/ /Ajustes de EPG/ /Load/Save/Delete/ /interfaz comun/ /Temporizadores/ ####### -->
+	<!-- (086) ####### Menu /Red/ /interfaz usuario/ /tv/ /ajustes A/V/ /Ajustes de EPG/ /Load/Save/Delete/ /interfaz comun/ /Temporizadores/ ####### -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="EGAdriatic/menu/fr_main.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
 		<panel name="ScrollBarTemplate" />
