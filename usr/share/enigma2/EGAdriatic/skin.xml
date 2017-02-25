@@ -232,11 +232,13 @@
 		<panel name="Tecla_Menu"/>
 		<widget source="menu" render="Listbox" position="69,137" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls700x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
-			 {"template": [ MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 0),
-				MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)],
-				"fonts": [gFont("Regular",28)],
-				"itemHeight": 38
-		 }
+			 {"template": [ 
+			 MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 0),
+			 MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
+			 ],
+			 "fonts": [gFont("Regular",28)],
+			 "itemHeight": 38
+			 }
 			</convert>
 		</widget>		
 	</screen>	
@@ -485,11 +487,13 @@
 		<!-- menu list -->
 		<widget source="menu" render="Listbox" position="69,137" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls700x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
-			 {"template": [ MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 0),
-				MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)],
-				"fonts": [gFont("Regular",28)],
-				"itemHeight": 38
-		 }
+			 {"template": [ 
+			 MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 0),
+			 MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
+			 ],
+			 "fonts": [gFont("Regular",28)],
+			 "itemHeight": 38
+			 }
 			</convert>
 		</widget>
 
@@ -918,11 +922,13 @@
 		<ePixmap position="249,630" zPosition="2" size="400,40" pixmap="EGAdriatic/menu/logo-egami.png" alphatest="blend" transparent="1" />
 		<widget source="menu" render="Listbox" position="67,137" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls700x38.png" backgroundPixmap="EGAdriatic/icons/butselection.png" transparent="1">
 			<convert type="TemplatedMultiContent">
-			 {"template": [ MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 0),
-				MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)],
-				"fonts": [gFont("Regular",28)],
-				"itemHeight": 38
-		 }
+			 {"template": [ 
+			 MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 0),
+			 MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
+			 ],
+			 "fonts": [gFont("Regular",28)],
+			 "itemHeight": 38
+			 }
 			</convert>	
 		</widget>
 		<widget source="menu" render="Listbox" 	position="870,370" size="348,340" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="#4ccbde" transparent="1">
