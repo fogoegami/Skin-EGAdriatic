@@ -4744,8 +4744,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<widget name="config" position="80,138" size="690,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="status" position="80,500" size="560,50" foregroundColor="#4ccbde" font="Regular;20" backgroundColor="black"/>
-		<widget name="statusbar" position="80,550" size="560,50" foregroundColor="#4ccbde" font="Regular;20" backgroundColor="black"/>
+		<widget name="status" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="statusbar" position="845,485" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,669" size="74,36" alphatest="blend"/>		
 	</screen>
 
