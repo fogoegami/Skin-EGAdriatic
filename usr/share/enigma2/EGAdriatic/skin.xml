@@ -189,15 +189,23 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 	</screen>	
-	<!-- (086) ####### Menu /Red/ /interfaz usuario/ /tv/ /ajustes A/V/ /Ajustes de EPG/ /Load/Save/Delete/ /interfaz comun/ /Temporizadores/ ####### -->
+		<!-- (086) ####### Menu /Red/ /interfaz usuario/ /tv/ /ajustes A/V/ /Ajustes de EPG/ /Load/Save/Delete/ /interfaz comun/ /Temporizadores/ ####### -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="EGAdriatic/menu/fr_main.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
 		<panel name="ScrollBarTemplate" />
         <panel name="Title"/>
         <panel name="menu_sort"/>
         <panel name="PIG"/>		
-		<widget source="menu" render="Listbox" position="80,138" size="718,440" font="Regular;25" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" >
-			<convert type="StringList" />
+		<widget source="menu" render="Listbox" position="69,137" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls700x38.png" transparent="1" scrollbarMode="showAlways">
+			<convert type="TemplatedMultiContent">
+			 {"template": [ 
+			 MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 0),
+			 MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
+			 ],
+			 "fonts": [gFont("Regular",28)],
+			 "itemHeight": 38
+			 }
+			</convert>
 		</widget>		
 	</screen> 			
 
@@ -227,7 +235,7 @@
         <panel name="menu_sort"/>
         <panel name="PIG"/>	
 	</screen>
-<!-- (005) ####### MAIN MENU ####### -->
+    <!-- (005) ####### MAIN MENU ####### -->
 	<screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu"  flags="wfNoBorder"  backgroundColor="transparent">
 		<panel name="Tecla_Menu"/>
 		<widget source="menu" render="Listbox" position="69,137" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls700x38.png" transparent="1" scrollbarMode="showAlways">
