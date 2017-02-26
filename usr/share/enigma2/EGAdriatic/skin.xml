@@ -1663,7 +1663,7 @@
 	</screen>
 	<!-- (068) ####### Busqueda automatica ####### -->
 	<screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenerica2botones"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1674,7 +1674,7 @@
 	</screen>
 	<!-- (067) ####### Busqueda Manual ####### -->
 	<screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenerica2botones"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
