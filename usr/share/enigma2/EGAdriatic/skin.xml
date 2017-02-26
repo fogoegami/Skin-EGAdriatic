@@ -4594,7 +4594,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         </screen>	
 	        <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
 	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenerica2botones" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
