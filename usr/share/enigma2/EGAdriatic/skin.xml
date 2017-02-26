@@ -586,7 +586,7 @@
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#4ccbde" transparent="1" backgroundColor="#333333">
 			<convert type="EventName">Name</convert>
 		</widget>
-        <widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="385,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/>		
+        <widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="388,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/>		
 		<!-- epg descripcion -->
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,127" zPosition="2" font="Regular;18" halign="center" valgin="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
