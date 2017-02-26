@@ -886,10 +886,9 @@
 	
 	<!-- (041) ####### LANGUAGE SELECTION ####### (12-02) -->
 	<screen name="LanguageSelection" position="0,0" size="1280,720" title="Language selection" flags="wfNoBorder" >
-		<panel name="PantallaGenerica2botones" />
+		<panel name="PantallaGenerica4botones" />
 		<panel name="PigTemplate" />
 		<panel name="ServiceNameForPigTemplate" />
-		<panel name="sRG" />
                 <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
