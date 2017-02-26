@@ -2033,7 +2033,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="450,20" size="450,80" scrollbarMode="showOnDemand" transparent="1" />
 		<widget source="key_red" render="Label" position="65,25" zPosition="2" size="125,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="key_green" render="Label" position="270,25" zPosition="2" size="125,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />		
-		<ePixmap position="57,30" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,30" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1"/>
 		<widget source="introduction" render="Label" position="700,20" size="680,25" zPosition="10" font="Regular;22" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1" />
 	</screen>
 	<!-- (054) ####### CleanupWizardConfiguration ####### -->		
