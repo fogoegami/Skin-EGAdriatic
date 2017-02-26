@@ -3049,7 +3049,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- (130) ####### CiSelection Interfaz Comun ####### -->
 	<screen name="CiSelection" position="center,center" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="GenericLayoutTemplate" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
