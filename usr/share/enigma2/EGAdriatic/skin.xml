@@ -751,13 +751,13 @@
 		</widget>
 		<!--panel name="FullscreenTitlePanel" /-->
 		<ePixmap pixmap="buttons/key_8_epg.png" position="230,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="page" position="275,70" size="200,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="page" position="275,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_9_epg.png" position="445,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="primetime" position="490,70" size="250,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="primetime" position="490,70" size="250,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_prev_next.png" position="730,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="change_bouquet" position="770,70" size="200,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="change_bouquet" position="770,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_ch.png" position="920,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="jump" position="960,70" size="200,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="jump" position="960,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#4ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<widget name="timeline_text" position="90,125" size="1280,30" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
@@ -775,13 +775,13 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="1155,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="1220,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="170,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_red" position="120,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_green" position="400,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_green" position="395,625" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="655,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_yellow" position="685,595" size="120,145" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="875,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" />
 	</screen>
 		<!-- GRAPHICAL EPG-PIG -->
    <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
@@ -811,13 +811,13 @@
 		</widget>			
 		<!--panel name="FullscreenTitlePanel" /-->
 		<ePixmap pixmap="buttons/key_8_epg.png" position="230,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="page" position="275,70" size="200,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="page" position="275,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_9_epg.png" position="445,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="primetime" position="490,70" size="250,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="primetime" position="490,70" size="250,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_prev_next.png" position="730,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="change_bouquet" position="770,70" size="200,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="change_bouquet" position="770,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_ch.png" position="920,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="jump" position="960,70" size="200,25" font="Regular;15" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="jump" position="960,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#4ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<eLabel position="995,100" size="2,124" backgroundColor="#4ccbde" zPosition="3"/>
@@ -826,7 +826,7 @@
 		<eLabel position="995,98" size="193,2" backgroundColor="#4ccbde" zPosition="3"/>
 		<widget source="session.VideoPicture" render="Pig" position=" 996,102" size="191,122" zPosition="3" backgroundColor="#df0b1300"/>
 		<widget name="timeline_text" position="90,225" size="1280,20" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
-		<widget name="bouquetlist" position="0,95" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0"/>
+		<widget name="bouquetlist" position="90,260" size="1100,365" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="90,260" size="1100,365" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
 		<widget name="timeline_now" position="0,220" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
 		<widget name="timeline0" position="0,70" zPosition="2" size="1,610" pixmap="epg/timeline_large.png"/>
@@ -840,13 +840,13 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="1155,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="1220,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="170,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_red" position="120,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_green" position="400,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_green" position="395,625" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="655,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_yellow" position="685,595" size="120,145" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="875,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" />
 	</screen>
 		<!-- GraphicalInfoBarEPG -->
 	<screen name="GraphicalInfoBarEPG" position="0,500" size="1280,240" flags="wfNoBorder">
