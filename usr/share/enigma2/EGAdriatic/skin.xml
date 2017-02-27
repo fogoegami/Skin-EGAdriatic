@@ -298,7 +298,8 @@
 	</screen>	
 	<!--  Harddisk inicio-formatear -->
 	<screen name="HarddiskSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo" />
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<ePixmap position="57,625" zPosition="1" size="200,62" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
