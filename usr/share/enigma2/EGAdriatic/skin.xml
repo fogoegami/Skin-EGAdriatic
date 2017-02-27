@@ -433,16 +433,15 @@
 	<!-- ####### PANTALLA PARA 2 BOTONES ROJO Y VERDE + SOURCE ####### -->
 	<screen name="PantallaGenerica2botones">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
-
+	<panel name="sRG"/>
 		<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,62" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
 
 		<!-- buttons text widgets -->
-		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO  ####### -->
 	<screen name="PantallaGenericaBotonRojo">
+	<panel name="sR"/>
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<!-- boton rojo -->
 		<ePixmap position="57,625" zPosition="1" size="200,62" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
@@ -1881,6 +1880,7 @@
         <ePixmap pixmap="icons/key_ok.png" position="360,635" size="40,22" alphatest="blend"/>		
 		<eLabel text="Scan" position="225,630" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;27" halign="left"/>	
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- Busqueda de Cable OK -->
@@ -2383,8 +2383,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<!--ePixmap position="840,55" zPosition="1" size="100,50" pixmap="EGAdriatic/menu/ico_setvideo.png" alphatest="blend" transparent="1" /-->
 		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1" />
 		<widget name="Preview" position="839,112" size="382,218"  zPosition="1" alphatest="blend" transparent="1"/>	
-		<widget source="key_red" render="Label" position="9,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" transparent="1"/>	
-	        <widget source="introduction" render="Label" position="169,548" size="600,28" zPosition="10" font="Regular;24" halign="left" valign="center" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1"/>
+		<widget source="key_red" render="Label" position="9,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" transparent="1"/>
+        <ePixmap pixmap="icons/key_info2.png" position="370,450" size="74,36" zPosition="2" alphatest="blend"/>		
+	        <widget source="introduction" render="Label" position="169,500" size="600,28" zPosition="10" font="Regular;24" halign="left" valign="center" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1"/>
                 <!-- service progress bar -->
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
@@ -5184,11 +5185,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
                 <!-- ########################### PANTALLAS EGAMI ################################## -->
 	<!--  EGAMI PANEL -->
 	<screen name="EgamiMainPanel" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenerica2botones" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>			
-		<!--ePixmap pixmap="buttons/vkey_esc.png" position="1190,667" size="40,22" alphatest="blend"/-->
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="75,138" size="718,450" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="description" position="835,440" size="390,260" zPosition="10" font="Regular;20" halign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
@@ -5215,11 +5215,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI Smart Script OKK -->
  	<screen name="EGScript" position="0,0" size="1280,720" flags="wfNoBorder">
-	    <ePixmap position="57,625" zPosition="1" size="200,62" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
-		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<panel name="PantallaGenericaBotonRojo" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="sR"/>
         <panel name="PIG"/>
 		<ePixmap pixmap="icons/butselection2.png" position="72,140" size="50,42" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/butselection2.png" position="72,193" size="50,42" zPosition="2" alphatest="blend"/>
@@ -5294,7 +5292,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!--  EGAMI EGS NetBrowser OKK -->
 	<screen name="EGNetBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenerica2botones" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5466,7 +5464,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>
 	<!--  Download EGAMI Addons (EGAMI ONLINE ADDONS INSTALLATION) -->
 	<screen name="EG_PrzegladaczAddonow" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenerica2botones"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5475,7 +5473,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI Internet Addons SUBPANTALLA (EGAMI ONLINE ADDONS INSTALLATION) -->
 	<screen name="EG_InternetAddons" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenerica2botones"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5494,7 +5492,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI Manual Addons Install (install Tar.gz and IPK Addons) -->
 	<screen name="EG_Manual_installation" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaBotonRojo"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5503,7 +5501,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!--  EGAMI Remove Addons OKK -->
 	<screen name="EGAddonRemove" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaBotonRojo"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5636,7 +5634,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!--  EGAMI Backup Panel Step 2 OKK -->
 	<screen name="EGAMIBackupPanel_Step2" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenerica2botones"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5648,7 +5646,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!--  EGAMI Full Backup Panel OKK -->
 	<screen name="EGFullBackup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenerica2botones"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
