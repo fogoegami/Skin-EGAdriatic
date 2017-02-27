@@ -761,7 +761,7 @@
 		<widget name="number" position="0,193" size="100,25" foregroundColor="#4ccbde" transparent="1"/>
 		<widget name="lab1" position="0,70" size="1280,615" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<widget name="timeline_text" position="90,125" size="1280,30" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
-		<widget name="bouquetlist" position="0,95" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0"/>
+		<widget name="bouquetlist" position="90,160" size="1100,440" foregroundColorSelected="#00fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="90,160" size="1100,440" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
 		<widget name="timeline_now" position="0,120" zPosition="3" size="25,593" pixmap="epg/timeline-now.png" alphatest="blend"/>
 		<widget name="timeline0" position="0,70" zPosition="2" size="1,610" pixmap="epg/timeline_large.png"/>
@@ -781,7 +781,7 @@
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" position="685,595" size="120,145" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" />
+		<widget name="key_blue" position="870,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" />
 	</screen>
 		<!-- GRAPHICAL EPG-PIG -->
    <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
@@ -826,7 +826,7 @@
 		<eLabel position="995,98" size="193,2" backgroundColor="#4ccbde" zPosition="3"/>
 		<widget source="session.VideoPicture" render="Pig" position=" 996,102" size="191,122" zPosition="3" backgroundColor="#df0b1300"/>
 		<widget name="timeline_text" position="90,225" size="1280,20" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
-		<widget name="bouquetlist" position="90,260" size="1100,365" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="2" transparent="0"/>
+		<widget name="bouquetlist" position="90,260" size="1100,365" foregroundColorSelected="#00fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="90,260" size="1100,365" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
 		<widget name="timeline_now" position="0,220" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
 		<widget name="timeline0" position="0,70" zPosition="2" size="1,610" pixmap="epg/timeline_large.png"/>
@@ -846,7 +846,7 @@
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" position="685,595" size="120,145" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" />
+		<widget name="key_blue" position="870,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" />
 	</screen>
 		<!-- GraphicalInfoBarEPG -->
 	<screen name="GraphicalInfoBarEPG" position="0,500" size="1280,240" flags="wfNoBorder">
@@ -881,7 +881,7 @@
 		<widget name="number" position="0,126" size="100,25" zPosition="1" foregroundColor="#4ccbde" transparent="1"/>		
 		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 		<widget name="timeline_text" position="0,40" size="1280,20" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
-		<widget name="bouquetlist" position="0,60" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0"/>
+		<widget name="bouquetlist" position="0,60" size="1280,120" foregroundColorSelected="#00fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="0,60" size="1280,120" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
 		<widget name="timeline_now" position="0,55" zPosition="3" size="9,130" pixmap="epg/timeline-now-infobar-epg.png" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="10,180" size="40,22" alphatest="blend"/>		
