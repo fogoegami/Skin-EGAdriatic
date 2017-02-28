@@ -5110,11 +5110,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	    <!-- Chapter Label only for DVD -->
-	    <widget name="chapterLabel" position="377,645" size="500,19" zPosition="1" font="Regular;19" halign="left" backgroundColor="#00000000" transparent="1" />
+	    <widget name="chapterLabel" position="240,647" size="500,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729" transparent="1" />
 	    <!-- Audio Label only for DVD -->
-	    <widget name="audioLabel" position="892,645" size="105,19" zPosition="1" font="Regular;19" halign="right" backgroundColor="#00000000"  transparent="1" />
+	    <widget name="audioLabel" position="940,647" size="105,19" zPosition="1" font="Regular;19" halign="right" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />
 	    <!-- Subtitel Label only for DVD -->
-	    <widget name="subtitleLabel" position="817,645" size="70,19" zPosition="1" font="Regular;19" halign="left" backgroundColor="#00000000"  transparent="1" />		
+	    <widget name="subtitleLabel" position="875,647" size="70,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />		
 		<widget name="Cover" position="80,55" size="100,150" zPosition="1" alphatest="on" />
     </screen>
 	<!-- Transmission -->
