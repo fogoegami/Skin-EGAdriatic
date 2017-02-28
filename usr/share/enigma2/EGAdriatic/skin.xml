@@ -4661,7 +4661,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="PTSSeekBack" position="400,125" size="515,15" pixmap="p_bar_timeshift.png" alphatest="blend" zPosition="2"/>
 		<widget name="PTSSeekPointer" position="0,120" size="19,20" pixmap="position_pointer2.png" alphatest="blend" zPosition="4"/>
 		 <widget source="session.CurrentService" render="Progress" position="400,128" size="515,10" zPosition="3" pixmap="p_bar1_timeshift.png" transparent="1">
-			<convert type="ServicePosition">Position</convert>
+			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
 		<widget name="statusicon" position="347,102" size="20,20" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="blend"/>
 		<widget name="speed" position="377,104" size="80,15" font="xRegular;17" halign="left" foregroundColor="#00fafa" backgroundColor="1d1b1d" transparent="1" zPosition="5"/>
@@ -4884,20 +4884,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="global.CurrentTime" render="Label" position="30,10" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>			
-		<ePixmap pixmap="icons/key_menu1.png" position="1180,675" size="40,22" alphatest="blend"/>		
-		
-	<!-- Time Remaining -->
-		<widget source="session.CurrentService" render="Label" position="465,140" size="100,40" font="Regular;26" halign="center" zPosition="4" foregroundColor="#4ccbde" backgroundColor="black" transparent="1">
-		  <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="610,140" size="120,26" font="Regular;22" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1">
-		  <convert type="ServicePosition">Length</convert>
-		</widget>		
-		
-	<!-- Time -->
-		<widget source="session.CurrentService" render="Label" position="600,140" size="90,22" font="Regular;19" foregroundColor="#ffffff" backgroundColor="black" transparent="1" zPosition="4">
-		  <convert type="ServicePosition">Position,ShowHours</convert>
-		</widget>		
+		<ePixmap pixmap="icons/key_menu1.png" position="1180,675" size="40,22" alphatest="blend"/>			
 		
 	<!-- Gauge Position -->
 		<widget name="freeDiskSpace" position="115,340" size="300,50" font="Regular;22" foregroundColor="#4ccbde" transparent="1"/>		
@@ -4913,7 +4900,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="Service" render="Label" position="660,200" size="80,25" font="Regular;20" valign="center" foregroundColor="green" backgroundColor="#203e69" transparent="1" zPosition="4">
 		  <convert type="ServiceTime">Duration</convert>
 		  <convert type="ClockToText">AsLength</convert>
-		</widget>		
+		</widget>				
+		
+	<!-- Time Remaining -->
+		<widget source="session.CurrentService" render="Label" position="660,225" size="100,40" font="Regular;20" halign="center" zPosition="4" foregroundColor="#00fafa" backgroundColor="black" transparent="1">
+		  <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		
+	<!-- Time -->
+		<widget source="session.CurrentService" render="Label" position="660,250" size="90,22" font="Regular;20" foregroundColor="#00fafa" backgroundColor="black" transparent="1" zPosition="4">
+		  <convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>			
 		
 	<!-- Record Name -->
         <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
@@ -5102,11 +5099,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="PositionGauge" position="377,608" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="229,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="938,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="964,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
-			<convert type="ServicePosition">Remaining</convert>
+		<widget source="session.CurrentService" render="Label" position="229,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="950,555" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Length</convert>
