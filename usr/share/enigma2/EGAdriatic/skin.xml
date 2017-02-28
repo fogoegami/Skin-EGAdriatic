@@ -2545,11 +2545,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### MediaPlayer ####### -->	
 	<screen name="MediaPlayer" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
-		<widget source="global.CurrentTime" render="Label" position="1000,30" size="170,50" zPosition="2" font="LCD;38" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="870,50" size="170,50" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format:%H:%M :%S</convert>
 		</widget>			
-		<widget source="global.CurrentTime" render="Label" position="575,530" size="130,24" font="Regular;20" halign="right" backgroundColor="transpBlack" foregroundColor="#4ccbde" transparent="1" >
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		<widget source="global.CurrentTime" render="Label" position="20,50" size="560,40" font="LCD;38" halign="center" backgroundColor="transpBlack" foregroundColor="#4ccbde" transparent="1" >
+			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_mplayer.png"/>
 		<ePixmap position="600,158" zPosition="2" size="27,348" pixmap="EGAdriatic/icons/barra348.png" alphatest="blend" transparent="1"/>
@@ -4652,10 +4652,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="229,120" size="100,26" zPosition="3" font="Regular;22" halign="right" foregroundColor="#4ccbde" backgroundColor="#0f0f0f" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="229,120" size="100,26" zPosition="3" font="Regular;22" halign="right" foregroundColor="#00fafa" backgroundColor="#0f0f0f" transparent="1" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="900,120" size="120,27" zPosition="3" font="Regular;22" halign="right" foregroundColor="#4ccbde" backgroundColor="#0f0f0f" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="900,120" size="120,27" zPosition="3" font="Regular;22" halign="right" foregroundColor="#00fafa" backgroundColor="#0f0f0f" transparent="1" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<widget name="PTSSeekBack" position="400,125" size="515,15" pixmap="p_bar_timeshift.png" alphatest="blend" zPosition="2"/>
@@ -4664,14 +4664,24 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget name="statusicon" position="347,102" size="20,20" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="blend"/>
-		<widget name="speed" position="377,104" size="80,15" font="xRegular;17" halign="left" foregroundColor="#4ccbde" backgroundColor="1d1b1d" transparent="1" zPosition="5"/>
+		<widget name="speed" position="377,104" size="80,15" font="xRegular;17" halign="left" foregroundColor="#00fafa" backgroundColor="1d1b1d" transparent="1" zPosition="5"/>
 		<widget name="eventname" position="370,70" size="580,20" font="xRegular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="2"/>
+		<widget source="global.CurrentTime" render="Label" position="1050,75" size="150,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		</widget>
 		<widget source="global.CurrentTime" render="Label" position="993,120" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="white" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="1110,125" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>
+        <widget source="session.CurrentService" render="Label" zPosition="4" position="1064,160" size="61,24" halign="right" font="Regular;19" foregroundColor="#dcdcdc" transparent="1" backgroundColor="background">
+            <convert type="ServiceInfo">VideoWidth</convert>
+        </widget>
+        <eLabel text="x" zPosition="4" position="1132,160" size="15,24" halign="left" font="Regular;17" foregroundColor="#dcdcdc" transparent="1" backgroundColor="transpBlack" />
+    <widget source="session.CurrentService" render="Label" zPosition="4" position="1146,160" size="55,24" halign="left" font="Regular;19" foregroundColor="#dcdcdc" transparent="1" backgroundColor="background">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
 	</screen>
 	<!--  Sleep Timer Panel OKK -->
  	<screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4925,12 +4935,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  	<screen name="EMCSelection" position="fill" flags="wfNoBorder"> 
 		<panel name="EMC"/>
         <widget name="Cover" position="665,150" size="595,365" zPosition="1" alphatest="on"/>		
-		<widget name="list" position="60,145" size="560,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#4ccbde" WatchingColor="#ffffff" FinishedColor="red" RecordingColor="#9F1313" BackColorSel="bluette" foregroundColorSelected="#4ccbde" backgroundColor="black" scrollbarMode="showNever" transparent="1" zPosition="1"/>
+		<widget name="list" position="60,145" size="560,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#00fafa" WatchingColor="#FFFFFF" FinishedColor="red" RecordingColor="#9F1313" BackColorSel="#000000" foregroundColorSelected="#4ccbde" backgroundColor="black" scrollbarMode="showNever" transparent="1" zPosition="1"/>
 	</screen>
 		<!-- PVRState -->
     <screen name="PVRState" position="240,500" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
 		<widget name="statusicon" position="10,2" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
-		<widget name="speed" position="35,3" size="80,15" font="xRegular;17" halign="left" foregroundColor="#ffffff" backgroundColor="black" transparent="1" zPosition="4"/>
+		<widget name="speed" position="35,3" size="80,15" font="xRegular;17" halign="left" foregroundColor="#00fafa" backgroundColor="black" transparent="1" zPosition="4"/>
 	</screen>
 	<!-- EMC-MENU -->
 	<screen name="MovieMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5054,15 +5064,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
         <panel name="PVRState"/>
 		<ePixmap position="0,480" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
-		<widget source="global.CurrentTime" render="Label" position="993,600" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="white" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1070,550" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="995,595" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1110,604" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1095,600" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format::%S</convert>
-		</widget>			
-		<widget source="global.CurrentTime" render="Label" position="1064,550" size="130,24" font="Regular;20" halign="right" backgroundColor="transpBlack" foregroundColor="#dcdcdc" transparent="1" >
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
+		</widget>		
 		<widget source="session.CurrentService" render="Label" position="361,545" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
 		<convert type="ServiceName">Name</convert>
 		</widget>
@@ -5092,13 +5102,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="PositionGauge" position="377,608" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="229,601" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="229,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="964,601" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="964,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="950,550" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="950,555" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	    <!-- Chapter Label only for DVD -->
