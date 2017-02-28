@@ -4932,7 +4932,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  	<screen name="EMCSelection" position="fill" flags="wfNoBorder"> 
 		<panel name="EMC"/>
         <widget name="Cover" position="665,150" size="595,365" zPosition="1" alphatest="on"/>		
-		<widget name="list" position="60,145" size="560,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#00fafa" WatchingColor="#FFFFFF" FinishedColor="red" RecordingColor="#9F1313" BackColorSel="#000000" foregroundColorSelected="#4ccbde" backgroundColor="black" scrollbarMode="showNever" transparent="1" zPosition="1"/>
+		<widget name="list" position="60,145" size="560,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#00fafa" WatchingColor="#FFFFFF" FinishedColor="red" RecordingColor="#9F1313" BackColorSel="#0a4b32" foregroundColorSelected="#4ccbde" backgroundColor="black" scrollbarMode="showNever" transparent="1" zPosition="1"/>
 	</screen>
 		<!-- PVRState -->
     <screen name="PVRState" position="240,500" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
