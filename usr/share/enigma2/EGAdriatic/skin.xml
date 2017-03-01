@@ -546,6 +546,11 @@
 		<ePixmap position="0,0"  size="72,71" pixmap="EGAdriatic/mute.png"  alphatest="on" transparent="1" />
 	</screen>
 	
+    <!-- ####### imput Error ####### -->	
+	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="88,88" zPosition="100" backgroundColor="transparent">
+		<widget name="UnhandledKeyPixmap" pixmap="input_error.png" position="0,0" size="88,88" alphatest="off"/>
+	</screen>	
+	
 	<!-- (024) ####### ChannelContextMenu ####### -->
 	<screen name="ChannelContextMenu" position="center,center"  size="600,340"  title="Channellist menu">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="600,340" alphatest="on" />
