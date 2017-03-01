@@ -4830,7 +4830,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" position="60,145" size="560,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#00fafa" WatchingColor="#FFFFFF" FinishedColor="red" RecordingColor="#9F1313" BackColorSel="#0a4b32" foregroundColorSelected="#4ccbde" backgroundColor="black" scrollbarMode="showNever" transparent="1" zPosition="1"/>
 	</screen>
 		<!-- PVRState -->
-    <screen name="PVRState" position="240,500" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
+    <screen name="PVRState" position="290,521" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
 		<widget name="statusicon" position="10,2" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
 		<widget name="speed" position="35,3" size="80,15" font="xRegular;17" halign="left" foregroundColor="#00fafa" backgroundColor="black" transparent="1" zPosition="4"/>
 	</screen>
@@ -4954,167 +4954,166 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  	</screen>
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-		<ePixmap position="0,480" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
-		<widget source="global.CurrentTime" render="Label" position="1070,550" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
+		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="995,595" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="995,615" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1095,600" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1095,620" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>		
-		<widget source="session.CurrentService" render="Label" position="361,545" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
+		<widget source="session.CurrentService" render="Label" position="361,565" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
 		<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="icons/dolby_off.png" position="245,549" zPosition="0" size="74,26" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,549" size="74,26" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,569" size="74,26" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="icons/icon_norec_light.png" position="120,545" zPosition="0" size="22,22" alphatest="blend"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="120,545" size="22,22" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="icons/icon_norec_light.png" position="120,565" zPosition="0" size="22,22" alphatest="blend"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="120,565" size="22,22" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="icons/hd_off.png" position="615,575" size="50,26" zPosition="1" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd_on.png" position="615,575" size="50,26" zPosition="2" alphatest="blend">		
+		<ePixmap pixmap="icons/hd_off.png" position="615,595" size="50,26" zPosition="1" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd_on.png" position="615,595" size="50,26" zPosition="2" alphatest="blend">		
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1078,648" size="55,22" halign="right"  backgroundColor="transpBlack" transparent="1">
+		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1078,668" size="55,22" halign="right"  backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>		
-		<eLabel text="x" font="Regular;18" position="1134,648" size="15,22" halign="center"  backgroundColor="transpBlack" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1150,648" size="55,22" halign="left"  backgroundColor="transpBlack" transparent="1">
+		<eLabel text="x" font="Regular;18" position="1134,668" size="15,22" halign="center"  backgroundColor="transpBlack" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1150,668" size="55,22" halign="left"  backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>		
-		<widget source="session.CurrentService" render="PositionGauge" position="377,608" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
+		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="938,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="938,621" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="229,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="229,621" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="950,555" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="950,575" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>		
     </screen>
 	<!-- ####### DVD PLAYER Reproductor ####### -->
 	<screen name="DVDPlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-		<ePixmap position="0,480" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
-		<widget source="global.CurrentTime" render="Label" position="1070,550" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
+		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="995,595" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="995,615" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1095,600" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1095,620" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>		
-		<widget source="session.CurrentService" render="Label" position="361,545" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
+		<widget source="session.CurrentService" render="Label" position="361,565" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
 		<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="icons/dolby_off.png" position="245,549" zPosition="0" size="74,26" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,549" size="74,26" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,569" size="74,26" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="icons/icon_norec_light.png" position="120,545" zPosition="0" size="22,22" alphatest="blend"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="120,545" size="22,22" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="icons/icon_norec_light.png" position="120,565" zPosition="0" size="22,22" alphatest="blend"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="120,565" size="22,22" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="icons/hd_off.png" position="615,575" size="50,26" zPosition="1" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd_on.png" position="615,575" size="50,26" zPosition="2" alphatest="blend">		
+		<ePixmap pixmap="icons/hd_off.png" position="615,595" size="50,26" zPosition="1" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd_on.png" position="615,595" size="50,26" zPosition="2" alphatest="blend">		
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1078,648" size="55,22" halign="right"  backgroundColor="transpBlack" transparent="1">
+		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1078,668" size="55,22" halign="right"  backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>		
-		<eLabel text="x" font="Regular;18" position="1134,648" size="15,22" halign="center"  backgroundColor="transpBlack" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1150,648" size="55,22" halign="left"  backgroundColor="transpBlack" transparent="1">
+		<eLabel text="x" font="Regular;18" position="1134,668" size="15,22" halign="center"  backgroundColor="transpBlack" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1150,668" size="55,22" halign="left"  backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>		
-		<widget source="session.CurrentService" render="PositionGauge" position="377,608" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
+		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="938,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="938,621" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="229,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="229,621" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="950,555" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="950,575" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	    <!-- Chapter Label only for DVD -->
-	    <widget name="chapterLabel" position="240,647" size="500,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729" transparent="1" />
+	    <widget name="chapterLabel" position="240,667" size="500,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729" transparent="1" />
 	    <!-- Audio Label only for DVD -->
-	    <widget name="audioLabel" position="940,647" size="105,19" zPosition="1" font="Regular;19" halign="right" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />
+	    <widget name="audioLabel" position="940,667" size="105,19" zPosition="1" font="Regular;19" halign="right" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />
 	    <!-- Subtitel Label only for DVD -->
-	    <widget name="subtitleLabel" position="875,647" size="70,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />		
+	    <widget name="subtitleLabel" position="875,667" size="70,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />		
     </screen>	
         <!-- ####### EMC PLAYER Reproductor ####### -->	
 	<screen name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
-        <panel name="PVRState"/>
-		<ePixmap position="0,480" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
-		<widget source="global.CurrentTime" render="Label" position="1070,550" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
+		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="995,595" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="995,615" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1095,600" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="1095,620" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
 			<convert type="ClockToText">Format::%S</convert>
 		</widget>		
-		<widget source="session.CurrentService" render="Label" position="361,545" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
+		<widget source="session.CurrentService" render="Label" position="361,565" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
 		<convert type="ServiceName">Name</convert>
 		</widget>
-		<ePixmap pixmap="icons/dolby_off.png" position="245,549" zPosition="0" size="74,26" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,549" size="74,26" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,569" size="74,26" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="icons/icon_norec_light.png" position="120,545" zPosition="0" size="22,22" alphatest="blend"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="120,545" size="22,22" zPosition="2" alphatest="blend">
+		<ePixmap pixmap="icons/icon_norec_light.png" position="120,565" zPosition="0" size="22,22" alphatest="blend"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="120,565" size="22,22" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="icons/hd_off.png" position="615,575" size="50,26" zPosition="1" alphatest="blend"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd_on.png" position="615,575" size="50,26" zPosition="2" alphatest="blend">		
+		<ePixmap pixmap="icons/hd_off.png" position="615,595" size="50,26" zPosition="1" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd_on.png" position="615,595" size="50,26" zPosition="2" alphatest="blend">		
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1078,648" size="55,22" halign="right"  backgroundColor="transpBlack" transparent="1">
+		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1078,668" size="55,22" halign="right"  backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>		
-		<eLabel text="x" font="Regular;18" position="1134,648" size="15,22" halign="center"  backgroundColor="transpBlack" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1150,648" size="55,22" halign="left"  backgroundColor="transpBlack" transparent="1">
+		<eLabel text="x" font="Regular;18" position="1134,668" size="15,22" halign="center"  backgroundColor="transpBlack" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" font="Regular;18" position="1150,668" size="55,22" halign="left"  backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>		
-		<widget source="session.CurrentService" render="PositionGauge" position="377,608" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
+		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3" >
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="938,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="938,621" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="229,601" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="229,621" foregroundColor="#00fafa" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="950,555" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
+		<widget source="session.CurrentService" render="Label" position="950,575" foregroundColor="#00baff" size="120,24" font="Regular;20" halign="center"  backgroundColor="transpBlack" transparent="1" >
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	    <!-- Chapter Label only for DVD -->
-	    <widget name="chapterLabel" position="240,647" size="500,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729" transparent="1" />
+	    <widget name="chapterLabel" position="240,667" size="500,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729" transparent="1" />
 	    <!-- Audio Label only for DVD -->
-	    <widget name="audioLabel" position="940,647" size="105,19" zPosition="1" font="Regular;19" halign="right" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />
+	    <widget name="audioLabel" position="940,667" size="105,19" zPosition="1" font="Regular;19" halign="right" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />
 	    <!-- Subtitel Label only for DVD -->
-	    <widget name="subtitleLabel" position="875,647" size="70,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />		
-		<widget name="Cover" position="80,55" size="100,150" zPosition="1" alphatest="on" />
+	    <widget name="subtitleLabel" position="875,667" size="70,19" zPosition="1" font="Regular;19" halign="left" foregroundColor="#00baff" backgroundColor="#292729"  transparent="1" />		
+		<widget name="Cover" position="80,75" size="100,150" zPosition="1" alphatest="on" />
     </screen>
 	<!-- Transmission -->
 	<screen name="Transmission" position="0,0" size="1280,720" title="Transmission" flags="wfNoBorder">
