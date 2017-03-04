@@ -137,6 +137,12 @@
 	    <ePixmap pixmap="buttons/yellow.png" position="415,667" size="140,40" alphatest="blend"/>
 	    <ePixmap pixmap="buttons/blue.png" position="660,667" size="140,40" alphatest="blend"/>
 	</screen>
+
+	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
+	<screen name="ScrollBarTemplate">
+		<!-- scrollbar background -->
+		<ePixmap position="775,118" zPosition="3" size="27,520" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1" />
+	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
 		<widget source="Title" render="Label" zPosition="1" position="70,45" foregroundColor="#4ccbde" backgroundColor="black" size="720,32" font="Regular;28" halign="center" valign="center"/>
@@ -171,7 +177,7 @@
 	<screen name="PantallaListaCanales">
 		<!-- background -->
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels2.png" />
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
@@ -187,56 +193,91 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
-
-	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
-	<screen name="ScrollBarTemplate">
-		<!-- scrollbar background -->
-		<ePixmap position="775,118" zPosition="3" size="27,520" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1" />
-	</screen>
-	<!-- ####### PANTALLA PARA 4 BOTONES ROJO Y VERDE + SOURCE ####### -->
-	<screen name="PantallaGenerica4botones">
+	<!-- ####### PANTALLA PARA 4 BOTONES ROJO VERDE AMARILLO AZUL + SOURCE NAME ####### -->
+	<screen name="PantallaGenericaRGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<!-- 4 botones -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
     </screen>
-	<!-- ####### PANTALLA PARA 3 BOTONES ROJO VERDE Y AMARILLO + SOURCE ####### -->
-	<screen name="PantallaGenerica3botones">
+	<!-- ####### PANTALLA PARA 3 BOTONES ROJO VERDE Y AMARILLO + SOURCE NAME ####### -->
+	<screen name="PantallaGenericaRGY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<!-- 3 botones -->
-		<ePixmap position="57,625" zPosition="1" size="550,45" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGY.png" alphatest="blend" transparent="1" />
 		<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
     </screen>	
-	<!-- ####### PANTALLA PARA 2 BOTONES ROJO Y VERDE + SOURCE ####### -->
-	<screen name="PantallaGenerica2botones">
+	<!-- ####### PANTALLA PARA 2 BOTONES ROJO Y VERDE + SOURCE NAME ####### -->
+	<screen name="PantallaGenericaRG">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<!-- 2 botones -->
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1" />
 		<!-- buttons text widgets -->
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + SOURCE ####### -->
-	<screen name="PantallaGenericaBotonRojo">
+	<screen name="PantallaGenericaBotonR">
 	     <panel name="sR"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<!-- boton rojo -->
-		<ePixmap position="57,625" zPosition="1" size="200,45" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
     </screen>
-	<!-- ####### PANTALLA PARA 1 BOTON ROJO + SOURCE ####### -->
-	<screen name="PantallaGenericaBotonRojoSalir">
+	<!-- ####### PANTALLA PARA 1 BOTON ROJO + LABEL EXIT ####### -->
+	<screen name="PantallaGenericaBotonRexit">
 	     <panel name="Template-exit"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<!-- boton rojo -->
-		<ePixmap position="57,625" zPosition="1" size="200,45" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
+    </screen>
+	<!-- ####### PANTALLAS ESPECIFICAS CON BOTONES ESPECIFICOS ####### -->
+	
+	<screen name="PantallaGenericaRGB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGB.png" alphatest="blend" transparent="1" />
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaRYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRYB.png" alphatest="blend" transparent="1" />
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaGY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarGY.png" alphatest="blend" transparent="1" />
+		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaRB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRB.png" alphatest="blend" transparent="1" />		
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaRY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRY.png" alphatest="blend" transparent="1" />		
+		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+    </screen>
+	<screen name="PantallaGenericaYB">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarYB.png" alphatest="blend" transparent="1" />		
+		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
     </screen>	
+	
 	<!-- SOURCES COLORES SEGUN PLUGINS Y PANTALLAS -->
 	<screen name="sR">	
 		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
@@ -258,8 +299,10 @@
 		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
 		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
     </screen>
-	<screen name="sYB">
-		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+	<screen name="sRGYB">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
     </screen>
 	<screen name="sRGY">
@@ -267,17 +310,32 @@
 		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
     </screen>	
+	<screen name="sRYB">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>	
 	<screen name="sRGB">
 		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
     </screen>
-	<screen name="sRGYB">
-		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
-		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+	<screen name="sRB">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sRY">
+		<widget source="key_red" render="Label" position="5,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
     </screen>		
+	<screen name="sGY">
+		<widget source="key_green" render="Label" position="205,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>
+	<screen name="sYB">
+		<widget source="key_yellow" render="Label" position="405,625" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget source="key_blue" render="Label" position="605,625" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+    </screen>	
 	<screen name="Template-Cancelar-ok">
 		<widget name="canceltext" position="5,625" zPosition="1" size="250,36" backgroundColor="transpBlack" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<widget name="oktext" position="205,625" size="250,36" zPosition="1" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>		
@@ -287,28 +345,15 @@
     </screen>		
 	<!-- ####### GENERIC SCREEN WITH 4 BUTTONS AND PIG TEMPLATE ####### -->
 	<screen name="ScreenPigTemplate">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="PigTemplate" />
 	</screen>	
 	<!--  ####### Template PantallaPieTV #######  -->
-	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="Title"/>	
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
-        <ePixmap position="772,137" zPosition="2" size="27,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1" />
-		<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>	
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>	
+	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>		
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>	
 	</screen>	
 
 	<!-- ####### MENU SCREEN TEMPLATE ####### -->
@@ -334,18 +379,11 @@
 		<!-- team logo -->
 		<!--ePixmap position="410,661" zPosition="2" size="400,40" pixmap="EGAdriatic/menu/egami.png" alphatest="blend" transparent="1" /-->
 	</screen>
-	
-    <!--  ####### Template para MENU PRINCIPAL ####### -->	
-	<screen name="Tecla_Menu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="EGAdriatic/menu/fr_main.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
-		<panel name="ScrollBarTemplate" />
-        <panel name="Title"/>
-        <panel name="menu_sort"/>
-        <panel name="PIG"/>	
-	</screen>
+
     <!--  ####### MAIN MENU ####### -->
-	<screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu"  flags="wfNoBorder"  backgroundColor="transparent">
-		<panel name="Tecla_Menu"/>
+	<screen name="menu_mainmenu" position="0,0" size="1280,720" flags="wfNoBorder"  backgroundColor="transparent">
+		<panel name="PantallaPieTV"/>
+        <panel name="menu_sort"/>
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			 {"template": [ 
@@ -361,7 +399,7 @@
 	<!-- (070) ####### SETUP ( AutoResolution-Personalizzare-Fuso Orario-Tastiera-Display ####### (12-02) -->
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="PantallaPieTV"/>
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1" />
 		<widget name="config" position="62,155" size="725,425" scrollbarMode="showAlways" transparent="1" />
 		<widget source="key_red" render="Label" position="7,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="key_green" render="Label" position="210,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />		
@@ -373,11 +411,8 @@
 	</screen>	
 	<!-- (086) ####### Menu /Red/ /interfaz usuario/ /tv/ /ajustes A/V/ /Ajustes de EPG/ /Load/Save/Delete/ /interfaz comun/ /Temporizadores/ ####### -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="EGAdriatic/menu/fr_main.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
-		<panel name="ScrollBarTemplate" />
-        <panel name="Title"/>
         <panel name="menu_sort"/>
-        <panel name="PIG"/>		
+        <panel name="PantallaPieTV"/>		
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			 {"template": [ 
@@ -402,7 +437,8 @@
 	
 	<!-- (007) ####### MENU SCAN - RICERCA CANALI ####### (12-02) -->
 	<screen name="menu_scan" position="0,0" size="1280,720" title="Main menu Channel Scan" backgroundColor="transparent" flags="wfNoBorder">
-		<panel name="ScreenMenuTemplate" />
+		<panel name="ScreenMenuTemplate"/>
+		<panel name="menu_sort"/>
 		<panel name="PIG"/>		
 		<ePixmap position="140,10" zPosition="-1" size="455,69" pixmap="EGAdriatic/menu/tx_config.png" />
 		<ePixmap position="934,416" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1" />
@@ -439,7 +475,7 @@
 	<!--  Harddisk inicio-formatear -->
 	<screen name="HarddiskSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
-		<ePixmap position="57,625" zPosition="1" size="200,45" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="200,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -481,8 +517,8 @@
     </screen>
 	<!-- (004 Volume Digital -->
         <screen name="Volume" position="1100,130" zPosition="1" size="120,120" title="Volume"  backgroundColor="transparent" flags="wfNoBorder">
-                <ePixmap pixmap="EGAdriatic/skin_default/icons/volumeoff.png" position="0,0" size="120,120" alphatest="blend" zPosition="2" transparent="1" />
-                <widget render="VolumeText" source="global.CurrentTime" font="LCD;46" position="10,35" size="100,50" backgroundColor="#31b3cb" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
+            <ePixmap pixmap="EGAdriatic/skin_default/icons/volumeoff.png" position="0,0" size="120,120" alphatest="blend" zPosition="2" transparent="1" />
+            <widget render="VolumeText" source="global.CurrentTime" font="LCD;46" position="10,35" size="100,50" backgroundColor="#31b3cb" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
         </screen>
 	<!-- (004) ####### Volume ####### -->
 	<!--screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
@@ -499,10 +535,11 @@
 		<widget name="UnhandledKeyPixmap" pixmap="input_error.png" position="0,0" size="40,40" alphatest="off"/>
 	</screen>	
 	
-	<!-- (024) ####### ChannelContextMenu ####### -->
-	<screen name="ChannelContextMenu" position="center,center"  size="600,340"  title="Channellist menu">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="600,340" alphatest="on" />
-		<widget name="menu" position="20,20" size="560,260" scrollbarMode="showOnDemand" transparent="1" />
+	<!-- ChannelList Menu OK -->
+	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaPieTV"/>
+	    <widget name="menu" position="80,138" size="718,465"  scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
+	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	</screen>
 	
 	<!-- (025) ####### Channel selection - TV #######  -->
@@ -560,35 +597,12 @@
             <convert type="EventName">ExtendedDescription</convert>
         </widget>	
     </screen>
+
 	
-	<!-- ChannelList Menu OK -->
-	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
-		<panel name="Title"/>
-        <ePixmap position="772,137" zPosition="2" size="27,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1" />
-		<widget name="menu" position="80,138" size="718,465"  scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
-		<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>	
-		<widget source="key_red" render="Label" position="7,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="210,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>		
-	</screen>	
 	
 	<!-- (033) ####### EVENT VIEW boton info desde MoviePlayer->EMC####### -->
 	<screen name="EventViewSimple" position="0,0"	size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
                 <!-- pig -->
@@ -613,7 +627,7 @@
 	
 	<!-- (033) ####### EVENT VIEW entre otros desde InfobarEPG->unico####### -->
 	<screen name="EventView" position="0,0"	size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
                 <!-- pig -->
@@ -664,7 +678,7 @@
         <panel name="Title" />
 		<panel name="ScrollBarTemplate"/>		
 		<!-- image for colored buttons -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<!-- events list -->
 		<widget name="list" position="70,138" size="725,400" scrollbarMode="showOnDemand" transparent="1" />
 
@@ -687,7 +701,7 @@
         <panel name="Title" />
 		<panel name="ScrollBarTemplate"/>		
 		<!-- image for colored buttons -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<!-- events list -->
 		<widget name="list" position="70,138" size="725,400" scrollbarMode="showOnDemand" transparent="1" />
 
@@ -920,7 +934,7 @@
         </screen>	
 	        <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
 	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -932,7 +946,7 @@
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
 	<screen name="EPGSelectionMulti" position="0,0"	size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>
-		<ePixmap position="57,655" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,655" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<!-- background -->
 		<ePixmap pixmap="EGAdriatic/menu/fr_main_help.png" position="0,0" zPosition="-1" size="1280,720" alphatest="on" transparent="1" /> 
 		
@@ -1025,7 +1039,7 @@
 	
 	<!-- (041) ####### LANGUAGE SELECTION ####### (12-02) -->
 	<screen name="LanguageSelection" position="0,0" size="1280,720" title="Language selection" flags="wfNoBorder" >
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="PigTemplate" />
 		<panel name="ServiceNameForPigTemplate" />
                 <!-- pig -->
@@ -1037,7 +1051,7 @@
 		</widget>
 		
 		<!-- decorative elements -->
-		<ePixmap position="0,0" zPosition="1" size="371,69" pixmap="EGAdriatic/menu/tx_language.png"  />
+		<ePixmap position="140,10" zPosition="1" size="371,69" pixmap="EGAdriatic/menu/tx_language.png"  />
 		<ePixmap position="860,414" zPosition="1" size="300,220" pixmap="EGAdriatic/menu/ico_flags.png" alphatest="blend" transparent="1" />
 		<ePixmap position="762,135" zPosition="4" size="27,400" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1" />
 
@@ -1115,7 +1129,7 @@
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png" />
 		<ePixmap position="0,0" zPosition="1" size="576,69" pixmap="EGAdriatic/menu/tx_estension.png" />
 		<ePixmap position="775,116" zPosition="2" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1" />
-		<ePixmap position="57,625" zPosition="1" size="750,36" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,36" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<!--ePixmap position="930,417" zPosition="2" size="770,425" pixmap="EGAdriatic/menu/ico_estension.png" alphatest="blend" transparent="1" /-->
 		<widget source="list" render="Listbox" position="69,137" size="728,405" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x43.png" transparent="1">
 		<convert type="TemplatedMultiContent">
@@ -1221,12 +1235,12 @@
 		</widget>
 		<widget source="info" render="Label" position="285,420" size="560,50" font="Regular;24" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />
 	</screen>
-	<!-- (020) ####### DEVICE SETUP ####### (27-10) -->
+	<!-- (020) ####### DEVICE SETUP (configuracion de red) CONEXION WLAN Y RED LOCAL ####### (27-10) -->
 	<screen name="NetworkAdapterSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG" />
-        <panel name="sRGYB" />		
-        <panel name="PantallaGenerica4botones" />
+        <panel name="sRGB" />		
+        <panel name="PantallaGenericaRGB"/>
 		<panel name="ScrollBarTemplate"/>		
 		<widget source="list" render="Listbox" position="80,140" size="715,375" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent"> <!-- iface, name, description, interfacepng, defaultpng, activepng, divpng -->
@@ -1245,11 +1259,11 @@
         <ePixmap position="925,434" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	
-	<!-- (015) ####### DOS PANTALLAS CONEXION WLAN  Y CONEXION DE RED LOCAL ####### ( -->
+	<!-- (015) ####### CONFIGURACION DE RED->OK ####### ( -->
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" title="Network Configuration..." flags="wfNoBorder" >
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"  />
 		<ePixmap position="140,10" zPosition="-1" size="478,69" pixmap="EGAdriatic/menu/tx_netsetup.png" />
-		<ePixmap position="57,625" zPosition="1" size="150,40" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="150,40" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
 		<panel name="PigTemplate" />	
 		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
         <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
@@ -1276,8 +1290,8 @@
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG" />
-        <panel name="sRGB" />		
-        <panel name="PantallaGenerica4botones" />
+        <panel name="PantallaGenericaRGB" />		
+        <panel name="sRGB" />
 		<panel name="ScrollBarTemplate"/>	
 		<widget source="Adaptertext" render="Label" position="80,140" size="270,25" font="Regular;22" zPosition="2" foregroundColor="#00fafa" backgroundColor="black" transparent="1"/>
 		<widget source="Adapter" render="Label" position="150,142" size="400,25" font="Regular;20" zPosition="2" backgroundColor="black" transparent="1"/>
@@ -1304,7 +1318,7 @@
 	    <panel name="Title"/>
 		<panel name="PIG" />
         <panel name="sRGYB" />		
-        <panel name="PantallaGenerica4botones" />	
+        <panel name="PantallaGenericaRGYB" />	
 		<widget name="config" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1" />
 		<widget source="introduction" render="Label" halign="center" valign="center" position="875,400" foregroundColor="#4ccbde" size="300,200" zPosition="1" font="Regular;20" transparent="1" />
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
@@ -1314,7 +1328,7 @@
 	    <panel name="Title"/>
 		<panel name="PIG" />
         <panel name="sRGY" />		
-        <panel name="PantallaGenerica3botones" />
+        <panel name="PantallaGenericaRGY" />
 		<panel name="ScrollBarTemplate"/>		
 		<widget name="AdapterInfo_OK" position="290,172" size="38,31" zPosition="2" pixmap="buttons/key_green.png" alphatest="blend"/>
 		<widget name="Adaptertext" position="80,170" size="610,25" zPosition="1" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1"/>
@@ -1343,7 +1357,7 @@
 		<widget name="DNSInfo_Text" position="580,370" size="318,50" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,white,green" backgroundColor="black"/>
 		<widget name="InfoText" position="580,420" size="585,300" zPosition="2" font="Regular;20" transparent="1" valign="center" halign="center" foregroundColor="#73c6ff" backgroundColor="black"/>
 		<widget name="InfoTextBorder" position="570,440" size="585,300" zPosition="2"/>
-		<widget name="EditSettingsButton" pixmaps="buttons/blue.png" position="660,657" size="140,6" zPosition="1"/>
+		<widget name="EditSettingsButton" pixmaps="buttons/bluetest.png" position="660,653" size="140,10" zPosition="1"/>
 		<widget name="EditSettings_Text" position="655,605" size="150,50" valign="center" halign="center" zPosition="2" font="Regular;22" transparent="1" foregroundColor="white" backgroundColor="black"/>
 	</screen>
 	<!-- (109) ####### Network Wizard ####### -->
@@ -1364,7 +1378,7 @@
 	</screen>	
     <!-- Network MacAdress Setup -->
 	<screen name="NetworkMacSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />	
+		<panel name="PantallaGenericaRG" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1375,7 +1389,7 @@
 	</screen>	
 	<!--  Configuracion de Montajes OK -->
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo" />	
+		<panel name="PantallaGenericaBotonR" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1385,7 +1399,7 @@
 	</screen>
 	<!-- (125) ####### (Administrador de Montajes) ####### -->
 	<screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo" />	
+		<panel name="PantallaGenericaBotonR" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1406,7 +1420,7 @@
 	</screen>	
 	<!-- (124) ####### Editor de Montajes OK ####### -->
 	<screen name="AutoMountEdit" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />	
+		<panel name="PantallaGenericaRG" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1421,11 +1435,11 @@
 	</screen>
 	<!-- (126) ####### Administracion de puntos de montaje->visor de montajes ####### -->
 	<screen name="AutoMountView" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica3botones" />	
+		<panel name="PantallaGenericaRY" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="sRGY"/>
+		<panel name="sRY"/>
 		<widget source="legend1" render="Label" position="80,110"  zPosition="1" size="130,60" foregroundColor="#4ccbde" font="Regular;20" halign="center" valign="center"  transparent="1"/>
 		<widget source="legend2" render="Label" position="175,122" zPosition="1" size="400,60" foregroundColor="#4ccbde" font="Regular;20" halign="center" valign="center"  transparent="1"/>
 		<widget source="legend3" render="Label" position="630,110" zPosition="1" size="120,60" foregroundColor="#4ccbde" font="Regular;20" halign="center" valign="center"  transparent="1"/>
@@ -1449,11 +1463,11 @@
 	</screen>
 	<!-- (128) ####### Administrador de Usuarios ####### -->          
 	<screen name="UserManager" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica3botones" />	
+		<panel name="PantallaGenericaRY" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="sRGY"/>
+		<panel name="sRY"/>
 		<widget source="config" render="Listbox" position="80,160" size="715,350" scrollbarMode="showOnDemand" transparent="1">
 		<convert type="TemplatedMultiContent">
 			{"template": [
@@ -1468,9 +1482,9 @@
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#4ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
-	<!--  ####### NETWORK BROWSER Navegador del entorno de Red #######  -->
+	<!--  ####### NETWORK BROWSER Navegador por el entorno de Red #######  -->
 	<screen name="NetworkBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1493,33 +1507,30 @@
 		<widget source="infotext" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#4ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
-	<!--(123) ####### ScanIP ######## -->
-	<screen name="ScanIP" position="center,center" size="1160,560" title="Scan IP" >
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on" />
-        <!--ePixmap position="935,307" zPosition="1" size="200,300" pixmap="EGAdriatic/menu/ico_nfs.png" backgroundColor="transparent" alphatest="blend" transparent="1"/-->
-		<ePixmap position="103,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1" />
-		<ePixmap position="456,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1" />
-		<ePixmap position="808,500" size="250,40" pixmap="EGAdriatic/buttons/yellow25.png" alphatest="on" zPosition="1" />
-		<widget source="key_red" render="Label" position="103,500" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-		<widget source="key_green" render="Label" position="456,500" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" backgroundColor="#a18120" transparent="1" />
-		<widget source="key_yellow" render="Label" position="808,500" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" transparent="1"/>
-		<widget name="config" position="20,20" size="1120,25" scrollbarMode="showOnDemand" transparent="1" />
-	</screen>	
-	<!-- ********** Configuracion FTP Samba y CIFS ********** -->
-	<screen name="NetworkSamba" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+	<!--(123) ####### NAvegar por el entorno de red -> Experto ######## -->
+	<screen name="ScanIP" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGY" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="lab1" position="80,150" size="250,30" font="Regular;20" valign="center" backgroundColor="black" transparent="1"/>
+		<panel name="sRGY"/>
+		<widget name="config" position="80,150" size="650,420" scrollbarMode="showOnDemand" transparent="1" />
+	</screen>	
+	<!-- ********** Configuracion FTP Samba y CIFS ********** -->
+	<screen name="NetworkSamba" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaGY" />	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="lab1" position="80,150" size="250,30" font="Regular;20" foregroundColor="#4ccbde" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="labactive" position="240,150" size="250,30" font="Regular;20" valign="center" backgroundColor="black" transparent="1"/>
-		<widget name="lab2" position="80,220" size="250,30" font="Regular;20" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="lab2" position="80,220" size="250,30" font="Regular;20" foregroundColor="#4ccbde" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="labstop" position="240,220" size="250,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="240,220" size="250,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
 	<!-- Network Inadyn Setup OK -->
 	<screen name="NetworkInadyn" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1545,7 +1556,7 @@
 		
 	<!-- NetWork Inadyn Setup OK -->
 	<screen name="InadynSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1558,7 +1569,7 @@
 		
 	<!-- NetWork Inadyn Log OK -->
 	<screen name="NetworkInadynLog" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1567,7 +1578,7 @@
 	</screen>
 	<!-- NetWork MiniDLNA OK -->
 	<screen name="NetworkMiniDLNA" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1600,7 +1611,7 @@
 		
 	<!-- NetWork MiniDLNA OK -->
 	<screen name="MiniDLNASetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1612,20 +1623,20 @@
 	</screen>
 	<!-- NetWork NFS Setup -->
 	<screen name="NetworkNfs" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGY" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="lab1" position="80,140"  size="250,40" font="Regular;22" valign="center" transparent="0" zPosition="2" />
+		<widget name="lab1" position="80,140"  size="250,40" font="Regular;22" foregroundColor="#4ccbde" valign="center" transparent="0" zPosition="2" />
 		<widget name="labactive" position="200,140" size="530,40" font="Regular;22" halign="center" valign="center" transparent="0" backgroundColor="black" zPosition="2" />
-		<widget name="lab2" position="80,200"  size="250,40" font="Regular;22" valign="center" transparent="0" zPosition="2" />
+		<widget name="lab2" position="80,200"  size="250,40" font="Regular;22" foregroundColor="#4ccbde" valign="center" transparent="0" zPosition="2" />
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2" />
 	</screen>	
 		
 	<!-- NetWork OpenVPN Setup OK -->
 	<screen name="NetworkOpenvpn" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1634,11 +1645,23 @@
 		<widget name="lab2" position="80,210" size="200,30" font="Regular;22" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="labstop" position="240,210" size="120,30" font="Regular;22" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="240,210" size="120,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="1"/>
-	</screen>				
+	</screen>
+	<!-- Network Service Setup Configuracion TELNET-->
+	<screen name="NetworkServiceSetup" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaGY" />	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<widget name="lab1" position="80,140" size="150,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="labactive" position="240,140" size="250,30" font="Regular;24" foregroundColor="#ffffff" backgroundColor="black" transparent="1"/>
+		<widget name="lab2" position="80,240" size="180,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="labstop" position="250,240" size="120,30" font="Regular;24" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
+		<widget name="labrun" position="250,240" size="120,30" font="Regular;24" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
+	</screen>		
 		
 	<!-- NetWork uShare OK -->
 	<screen name="NetworkuShare" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1673,30 +1696,15 @@
 	</screen>
 	<!-- NetWork uShare Selection OK -->
 	<screen name="uShareSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="checkList" position="80,140" size="715,400" backgroundColor="black" transparent="1"/>
 	</screen>
-	<!-- Network Service Setup Configuracion TELNET-->
-	<screen name="NetworkServiceSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="PIG"/>
-		<widget name="lab1" position="80,140" size="150,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labactive" position="240,140" size="250,30" font="Regular;24" foregroundColor="#ffffff" backgroundColor="black" transparent="1"/>
-		<widget name="lab2" position="80,240" size="180,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labstop" position="250,240" size="120,30" font="Regular;24" valign="center" halign="center" backgroundColor="red" zPosition="1"/>
-		<widget name="labrun" position="250,240" size="120,30" font="Regular;24" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
-	</screen>	
 	<!--  (022) ####### 97 Audio y subtitulos teclas Mando a distancia ( Select audio track ####### -->
 	<screen name="AudioSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="EGAdriatic/menu/fr_main.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
-		<panel name="ScrollBarTemplate" />
-        <panel name="Title"/>
-		<panel name="PIG"/>
+        <panel name="PantallaPieTV"/>
 		<widget name="config" position="120,150" size="655,375" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls660x28.png" transparent="1"/>
 		<widget source="key_red" render="Pixmap" pixmap="EGAdriatic/buttons/key_red.png" position="80,152" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
@@ -1767,8 +1775,9 @@
 	<screen name="ChoiceBox" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG" />		
-		<panel name="ScreenMenuTemplate" />		
-		<widget name="list" position="80,138" size="718,300" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls615x26.png" transparent="1" />
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
+		<panel name="ScrollBarTemplate"/>		
+		<widget name="list" position="80,138" size="718,300" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1" />
 		<widget name="text" position="80,440" size="560,335" font="Regular;20" transparent="1" />
 	    <ePixmap position="830,380" zPosition="2" size="50,50" pixmap="menu/ram.png" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#4ccbde" backgroundColor="black" zPosition="1">
@@ -1899,11 +1908,11 @@
 
 	<!-- (042) ####### TUNER SELECTION CHOOSE TUNER####### (12-02) -->
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="sRGYB"/>		
+        <panel name="sRGB"/>		
 		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="EGAdriatic/icons/ls620x90.png" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -1918,7 +1927,7 @@
 	</screen>
 	<!-- (043) ####### NimSetup Reception Settings ####### -->
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -1930,7 +1939,7 @@
 	</screen>
 	<!-- (068) ####### Busqueda automatica ####### -->
 	<screen name="ScanSimple" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1941,7 +1950,7 @@
 	</screen>
 	<!-- (067) ####### Busqueda Manual ####### -->
 	<screen name="ScanSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1952,7 +1961,7 @@
 	</screen>	
 	<!-- (069) ####### Servicio escaneo canales barra progreso ####### -->
 	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -1980,7 +1989,7 @@
 	</screen>
 	<!-- Busqueda de Cable -->
 	<screen name="CableScanScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojoSalir"/>	
+		<panel name="PantallaGenericaBotonRexit"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
         <panel name="Title"/>		
@@ -1992,7 +2001,7 @@
 	</screen>
 	<!-- Busqueda de Cable OK -->
 	<screen name="CableScanStatus" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -2003,7 +2012,7 @@
 	<screen name="PositionerSetup" 	position="0,0" size="1280,720" title="Positioner setup..." flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
 		<ePixmap position="0,0" zPosition="-1" size="372,70" pixmap="EGAdriatic/menu/tx_positioner.png"  />
-		<ePixmap position="57,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<ePixmap position="934,416" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1" />
 		<ePixmap position="839,112" zPosition="1" size="382,218" pixmap="EGAdriatic/prev.png" />
 		<widget name="list" position="89,136" 	size="660,175" backgroundColor="black" transparent="1"/>
@@ -2069,28 +2078,12 @@
 	</screen>	
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
 	<screen name="MessageBoxTemplate" position="0,0" size="1280,720" flags="wfNoBorder" >
-		<panel name="Title"/>
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
-		<ePixmap position="772,137" zPosition="2" size="27,405" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1" />
-		<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>	
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
+        <panel name="PantallaPieTV"/>
 		<widget name="text" position="140,137" size="520,0" font="Regular;22" transparent="1"/>
 		<widget name="ErrorPixmap" pixmap="EGAdriatic/icons/input_error.png" position="69,137" size="53,53" alphatest="on" />
 		<widget name="QuestionPixmap" pixmap="EGAdriatic/icons/input_question.png" position="69,137" size="53,53" alphatest="on" />
 		<widget name="InfoPixmap" pixmap="EGAdriatic/icons/input_info.png" position="69,137" size="53,53" alphatest="on" />
-		<widget name="list" position="100,100" size="480,375" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1" />
+		<widget name="list" position="110,100" size="480,375" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -2137,7 +2130,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="LocationBox" position="0,0" size="1280,720" title="Location Media" backgroundColor="transparent" flags="wfNoBorder" >
 		<ePixmap pixmap="EGAdriatic/menu/fr_main_channels.png" position="0,0" zPosition="-3" size="1280,720" /> 
 		<ePixmap position="773,136" zPosition="2" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1" />
-		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<ePixmap position="0,0" zPosition="-1" size="356,69" pixmap="EGAdriatic/menu/tx_record.png" />
 		<ePixmap position="920,425" zPosition="2" size="200,200"  pixmap="EGAdriatic/menu/ico_recordings.png" alphatest="blend" transparent="1" />
 		<widget name="text" position="68,154" size="730,27" font="Regular;23" foregroundColor="#4ccbde" transparent="1" />
@@ -2197,7 +2190,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (052) ####### VideoEnhancementSetup ####### -->
 	<screen name="VideoEnhancementSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2211,7 +2204,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="450,20" size="450,80" scrollbarMode="showOnDemand" transparent="1" />
 		<widget source="key_red" render="Label" position="65,25" zPosition="2" size="125,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
 		<widget source="key_green" render="Label" position="270,25" zPosition="2" size="125,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />		
-		<ePixmap position="57,30" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,30" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1" />
 		<widget source="introduction" render="Label" position="865,20" size="380,160" zPosition="10" font="Regular;22" halign="center" valign="top" foregroundColor="#00fafa" backgroundColor="#333333" transparent="1" />
 	</screen>
 	<!-- (054) ####### CleanupWizardConfiguration ####### -->		
@@ -2226,7 +2219,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (055) ####### Parental Control Change Pin ####### -->
 	<screen name="ParentalControlChangePin" position="center,center" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -2235,7 +2228,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (056) ####### Parental Control Editor ####### -->
 	<screen name="ParentalControlEditor" position="center,center" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2244,7 +2237,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (057) ####### Parental Control Setup ####### -->
 	<screen name="ParentalControlSetup" position="center,center" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -2255,7 +2248,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="PluginBrowser" position="center,center" size="1280,720"  title="Plugin browser" backgroundColor="transparent" flags="wfNoBorder" >
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"  />
 		<ePixmap position="0,0" zPosition="-1" size="399,69" pixmap="EGAdriatic/menu/tx_plugins.png"  />
-		<ePixmap position="56,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+		<ePixmap position="56,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1" />
 		<ePixmap position="774,137" zPosition="2" size="27,400" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1" />
 		<ePixmap position="860,414" zPosition="2" size="370,204"  pixmap="EGAdriatic/menu/ico_plugins.png" alphatest="blend" transparent="1" />
 		<widget name="list" position="73,137" size="725,400" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x50.png" transparent="1"/>
@@ -2280,7 +2273,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="ScrollBarTemplate" />	
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"  />
 		<ePixmap position="140,10" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_information.png"  />
-		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1" />
 		<widget name="infolist" position="60,180" size="785,400" selectionDisabled="1" transparent="1" />
 		<widget source="session.CurrentService" render="Label" foregroundColor="#00fafa" position="60,550" size="585,20" font="Regular;20" transparent="1" zPosition="1">
@@ -2397,24 +2390,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="RtpText" position="100,650" size="1080,30" font="Regular;24" halign="right" noWrap="1" backgroundColor="transpBlack" />
 	</screen>
 	<!-- (071) ####### SKIN SELECTOR ####### (15-02) -->
-	<screen name="SkinSelector" position="0,0" size="1280,720" title="Choose your Skin" flags="wfNoBorder" >
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
-		<ePixmap position="57,625" zPosition="1" size="151,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
-		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="EGAdriatic/menu/tx_skin.png"  />
-		<!--ePixmap position="840,55" zPosition="1" size="100,50" pixmap="EGAdriatic/menu/ico_setvideo.png" alphatest="blend" transparent="1" /-->
+	<screen name="SkinSelector" position="0,0" size="1280,720" flags="wfNoBorder" >
+        <panel name="PantallaPieTV"/>		
+		<ePixmap position="57,625" zPosition="1" size="151,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1" />
 		<widget name="Preview" position="839,112" size="382,218"  zPosition="1" alphatest="blend" transparent="1"/>	
 		<widget source="key_red" render="Label" position="9,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" foregroundColor="white" transparent="1"/>
+		<ePixmap pixmap="icons/key_info.png" position="300,640" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="icons/key_info2.png" position="370,450" size="74,36" zPosition="2" alphatest="blend"/>		
-	        <widget source="introduction" render="Label" position="169,500" size="600,28" zPosition="10" font="Regular;24" halign="left" valign="center" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1"/>
-                <!-- service progress bar -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>	
+	    <widget source="introduction" render="Label" position="169,500" size="600,28" zPosition="10" font="Regular;24" halign="left" valign="center" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1"/>	
 	</screen>
 	<!-- (072) ####### Simple Channel Selection ####### -->
 	<screen name="SimpleChannelSelection" position="center,center" size="1130,520" title="Channel Selection" >
@@ -2447,23 +2431,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="arrowdown2" pixmap="EGAdriatic/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
 		<widget name="arrowup" 	pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 		<widget name="arrowup2" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-	</screen>
-	<!-- (075) ####### Sleep Timer Edit ####### -->
-	<screen name="SleepTimerEdit" position="340,240"  size="600,260"  title="Sleep Timer">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="600,260" alphatest="on" />
-		<widget name="current_status" position="40,40" size="460,40" valign="center" font="Regular;22"  />
-		<widget name="red" pixmap="EGAdriatic/buttons/button_red.png" position="10,88" size="15,16" alphatest="on" />
-		<widget name="green" pixmap="EGAdriatic/buttons/button_green.png" position="10,128" size="15,16" alphatest="on" />
-		<widget name="yellow" pixmap="EGAdriatic/buttons/button_yellow.png" position="10,168" size="15,16" alphatest="on" />
-		<widget name="blue" pixmap="EGAdriatic/buttons/button_blue.png" position="10,208" size="15,16" alphatest="on" />
-		<widget name="red_text" position="40,80" size="460,32" valign="center" font="Regular;24" />
-		<widget name="green_text" position="40,120" size="460,32" valign="center" font="Regular;24" />
-		<widget name="yellow_text" position="40,160" size="460,32" valign="center" font="Regular;24" />
-		<widget name="blue_text" position="40,200" size="460,32" valign="center" font="Regular;24" />
-		<widget name="pretext" position="40,10" size="300,32" font="Regular;24" />
-		<widget name="input" position="342,10" size="40,32" font="Regular;24" />
-		<widget name="aftertext" position="380,10" size="160,32" font="Regular;24" />
-		<ePixmap pixmap="EGAdriatic/sleeptimer.png" position="485,50" size="90,125" alphatest="on" />
 	</screen>
 	<!-- (076) ####### Subservices Quickzap #######[ -->
 	<screen name="SubservicesQuickzap" position="380,600" size="560,100"	title="Subservices" backgroundColor="#11404040" flags="wfNoBorder">
@@ -2539,7 +2506,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (084) #######  PANTALLA AÑADIR TEMPORIZADOR DE EVENTOS EN EPG Y AÑADIR UN TEMPORIZADOR NUEVO ####### -->
 	<screen name="TimerEntry" position="0,0" size="1280,720" title="Timer entry" backgroundColor="black" flags="wfNoBorder" >
-		<panel name="PantallaGenerica2botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate" />
         <panel name="PIG"/>		
 		<ePixmap position="260,0" zPosition="1" size="570,69" pixmap="EGAdriatic/menu/tx_timer.png" />
@@ -2554,7 +2521,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder" >
-		<panel name="PantallaGenerica3botones" />
+		<panel name="PantallaGenericaRGY" />
 		<panel name="ScrollBarTemplate" />
 		<panel name="PIG" />
 		<ePixmap position="260,0" zPosition="1" size="570,69" pixmap="EGAdriatic/menu/tx_timer.png" />
@@ -2650,7 +2617,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png" />
 		<ePixmap position="0,0" zPosition="1" size="538,69" pixmap="EGAdriatic/menu/tx_dvdfilebr.png" />
 		<ePixmap position="765,125" zPosition="2" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1" />
-		<ePixmap position="57,625" zPosition="1" size="392,42" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="392,42" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<ePixmap position="839,112" zPosition="1" size="382,218" pixmap="EGAdriatic/prev.png" />
 		<ePixmap position="920,425" zPosition="1" size="205,185" pixmap="EGAdriatic/menu/ico_films.png" alphatest="blend" transparent="1" />
 		<widget name="filelist" position="64,134" size="725,410" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x26.png" transparent="1" />
@@ -2816,28 +2783,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="710,460" alphatest="on" />
 		<widget name="filelist" position="20,20" size="670,425" scrollbarMode="showOnDemand" transparent="1" />
 	</screen>
-	<!-- (104) ####### PICTURE PLAYER ####### (15-02) -->
-	<screen name="picshow" position="0,0" size="1280,720" title="PicturePlayer" flags="wfNoBorder" >
-		<ePixmap pixmap="EGAdriatic/menu/fr_main_channels.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
-		<ePixmap position="771,131" zPosition="3" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1" />
+<widget name="filelist" position="76,133" size="720,415" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls615x26.png" backgroundColor="black" transparent="1" />	
+	<!-- (104) ####### PICTURE PLAYER REPRODUCTOR DE FOTOS ####### (15-02) -->
+	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenericaRG"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
 		<ePixmap position="933,416" zPosition="1" size="256,256" pixmap="EGAdriatic/menu/ico_picplayer.png" alphatest="blend" transparent="1" />
-		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
-		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="EGAdriatic/menu/tx_picplayer.png"  />
-		<widget name="filelist" position="76,133" size="720,415" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls615x26.png" backgroundColor="black" transparent="1" />
-                <!-- service progress bar -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
+		<widget name="filelist" position="76,145" size="720,415" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls615x26.png" backgroundColor="black" transparent="1" />
 		<widget source="label" render="Label" position="828,349" size="400,160" font="Regular;22" halign="center" transparent="1"/>
 		<widget name="thn" position="839,112" size="382,218" alphatest="on"/>
-		<widget source="key_red" render="Label" position="5,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_green" render="Label" position="205,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="405,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="#a18120" transparent="1"/>
-		<widget source="key_blue" render="Label" position="605,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
 	</screen>
 	<!-- (105) ####### Pic_Exif (Picture) ####### (31-10) -->
 	<screen name="Pic_Exif" position="center,center" size="710,340" title="Info">
@@ -3123,55 +3080,36 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (138) ####### RecordPathsSettings ####### -->
 	<screen name="RecordPathsSettings" position="center,center" size="1280,720"  title="Recording paths" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="PigTemplate" />
 		<panel name="ScrollBarTemplate" />
-                <ePixmap  position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"  />
+        <ePixmap  position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"  />
 		<panel name="ScreenPigTemplate" />
-                <ePixmap position="57,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+        <ePixmap position="57,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
                 <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
 		<!-- service progress bar -->
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
-		</widget>
-		
-		<widget name="config" position="69,137" size="700,125"  transparent="1"/>
-		
+		</widget>		
+		<widget name="config" position="69,137" size="700,125"  transparent="1"/>		
 		<widget source="key_red" render="Label" position="9,625" zPosition="2"	size="250,36" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
 		<widget source="key_green" render="Label" position="208,625" zPosition="2" size="250,36" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
                 <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
 	</screen>
-	<!-- (139) ####### VIDEOSETUP A/V SETTINGS (15-02) ####### -->
-	<screen name="VideoSetup" position="0,0" size="1280,720" title="VideoSetup" flags="wfNoBorder" >
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
-		<ePixmap position="57,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
-		<panel name="Title"/>
-		<!--ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="EGAdriatic/menu/tx_setvideo.png"  /-->
-		<!--ePixmap position="840,55" zPosition="1" size="100,50" pixmap="EGAdriatic/menu/ico_setvideo.png" alphatest="blend" transparent="1" /-->
-                <ePixmap position="769,137" zPosition="2" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1" />
-		<widget name="config" position="60,137" size="725,418" scrollbarMode="showAlways" transparent="1" />
-		<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>	
-		<widget source="key_red" render="Label" position="9,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-		<widget source="key_green" render="Label" position="208,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
-	</screen>
+	<!-- (139) ####### VIDEOSETUP A/V SETTINGS (15-02) ####### -->	
+	<screen name="VideoSetup" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenericaRG"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
+		<widget name="config" position="60,145" size="715,418" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+	</screen>	
 	<!-- (148) ####### MYTUBE PLAYER ####### (15-02) -->
 	<screen name="MyTubePlayer" position="0,500" size="1280,720" title="MyTube Player" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="-3,-14" zPosition="-1" size="1280,219" pixmap="EGAdriatic/moviebar.png"/>
@@ -3366,7 +3304,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!--####### InputDeviceSelection (Dispositivos de Entrada) #######-->
 	<screen name="InputDeviceSelection" position="center,center" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate" />
 	    <panel name="Title" />
 	    <panel name="PIG" />
@@ -3388,7 +3326,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (157) ####### Seleccionar Dispositivo OK ####### -->	
 	<screen name="InputDeviceSetup" position="center,center" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate" />
 	    <panel name="Title" />
 	    <panel name="PIG" />
@@ -3500,7 +3438,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (161) ####### WEB BROWSER ####### (12-02) -->
 	<screen name="BrowserLauncher" position="0,0" size="1280,720" title="Web Browser" flags="wfNoBorder">
 		<ePixmap position="0,0" size="1280,720" zPosition="-1" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
-		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<ePixmap position="0,535" zPosition="0" size="817,107" pixmap="EGAdriatic/menu/noline.png" alphatest="blend" transparent="1" />
 		<ePixmap position="280,230" zPosition="0" size="350,320" pixmap="EGAdriatic/menu/rc_wb_desc.png" alphatest="blend" transparent="1" />
 		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="EGAdriatic/menu/tx_web.png"  />
@@ -4076,7 +4014,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   	<!-- CrossEPG Configuration -->
 
 	<screen name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Configuration" flags="wfNoBorder" >
-		<panel name="PantallaGenerica2botones"/>
+		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate" />		
         <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"  />
@@ -4087,7 +4025,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Menu -->
 	<screen name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG Menu" flags="wfNoBorder" >
-		<panel name="PantallaGenerica2botones"/>
+		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate" />		
         <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on" />
@@ -4107,7 +4045,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Providers -->
 	<screen name="CrossEPG_Providers" position="0,0" size="1280,720" title="CrossEPG Provider XMLTV-OpenTV-XEPGDB-MHW2-M7-RAI" backgroundColor="transparent" flags="wfNoBorder" >
-		<panel name="PantallaGenerica2botones"/>
+		<panel name="PantallaGenericaRG"/>
 		<panel name="Title"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate" />		
@@ -4127,7 +4065,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Order List -->
 	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Order Download List" backgroundColor="transparent" flags="wfNoBorder" >
- 		<panel name="PantallaGenerica2botones"/>
+ 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate" />		
         <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"  />		
@@ -4146,7 +4084,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Information -->
 	<screen name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG - DB Info" backgroundColor="transparent" flags="wfNoBorder" >
- 		<panel name="PantallaGenericaBotonRojoSalir"/>
+ 		<panel name="PantallaGenericaBotonRexit"/>
         <panel name="PIG"/>
         <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"  />		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on" />
@@ -4169,7 +4107,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- About -->
 	<screen name="CrossEPG_About" position="0,0" size="1280,720" title="CrossEPG About" backgroundColor="transparent" flags="wfNoBorder" >
-		<panel name="PantallaGenericaBotonRojoSalir"/>
+		<panel name="PantallaGenericaBotonRexit"/>
         <panel name="PIG"/>
         <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on" />		
         <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"  />
@@ -4177,7 +4115,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Temporizadores Cron  -->
 	<screen name="CronTimers" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -4207,7 +4145,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Info About OK -->
 	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo" />
+		<panel name="PantallaGenericaBotonR" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -4218,7 +4156,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		
 	<!-- Info Devices OK -->
 	<screen name="SystemDevicesInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojoSalir" />
+		<panel name="PantallaGenericaBotonRexit" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -4234,7 +4172,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		
 	<!-- Info System Memory Info OK -->
 	<screen name="SystemMemoryInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojoSalir" />
+		<panel name="PantallaGenericaBotonRexit" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -4246,7 +4184,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		
 	<!-- Info Network Info OK -->
 	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojoSalir"/>
+		<panel name="PantallaGenericaBotonRexit"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -4260,7 +4198,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- ********** HDMI-CEC Setup ********** -->
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -4296,7 +4234,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   	</screen>
 	<!-- Event View Context Menu OK -->
 	<screen name="EventViewContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -4315,25 +4253,26 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="sRGY"/>
 		<widget name="config" position="center,center" size="1210,680" scrollbarMode="showOnDemand" enableWrapAround="1" zPosition="1" foregroundColor="white" backgroundColor="#007175" transparent="1"/>
 		<widget source="status" render="Label" position="center,center" size="660,80" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" halign="center" valign="center" zPosition="10"/>
-        <ePixmap position="57,625" zPosition="1" size="590,38" pixmap="EGAdriatic/menu/colorbar.png" alphatest="blend" transparent="1" />
+        <ePixmap position="57,625" zPosition="1" size="590,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 	</screen>
 	<!-- ********** TranscodingSetup ********** -->
 	<screen name="TranscodingSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
+        <panel name="sRG"/>		
 		<widget name="config" zPosition="2" position="60,140" size="715,400" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="description" position="845,435" size="380,160" font="Regular;22" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="HelpTextHeader1" position="60,275" size="730,50" font="Regular;22" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="HelpText1" position="60,300" size="730,150" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="HelpTextHeader2" position="60,465" size="730,50" font="Regular;22" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="HelpText2" position="60,495" size="730,50" font="Regular;22" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="HelpTextHeader1" position="60,275" size="730,50" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="HelpText1" position="60,300" size="715,150" font="Regular;17" halign="left" foregroundColor="#a1d1ff" backgroundColor="black" transparent="1"/>
+		<widget name="HelpTextHeader2" position="60,465" size="730,50" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="HelpText2" position="60,495" size="715,50" font="Regular;17" halign="left" foregroundColor="#a1d1ff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!-- OpenWebIf -->
 	<screen name="OpenWebifConfig" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -4392,7 +4331,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  Sleep Timer Panel OKK -->
  	<screen name="SleepTimerEdit" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -4404,7 +4343,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
                 <!-- ########################### PANTALLAS PLUGINS ################################## -->
 	<!-- EPG Import Configuration -->
 	<screen name="EPGImportConfig" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -4417,7 +4356,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- EPG Import Sources -->
 	<screen name="EPGImportSources" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -4426,7 +4365,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- EPG Import Log -->
 	<screen name="EPGImportLog" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -4436,7 +4375,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- ********** AutoTimer ********** -->
 	<!-- AutoTimer OK -->
 	<screen name="AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sRGYB"/>		
@@ -4445,7 +4384,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
      <!-- AutoTimerServiceEditor OK -->
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sRGYB"/>		
@@ -4454,7 +4393,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Auto Timer OK -->
 	<screen name="AutoTimerOverview" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sRGYB"/>		
@@ -4465,7 +4404,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- dont saw this screen, may be later -->
 	<screen name="AutoTimerOverviewSummary" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sRGYB"/>		
@@ -4480,7 +4419,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- AutoTimer Help OK -->
 	<screen name="AutoTimerHelp" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sRYB"/>		
@@ -4489,10 +4428,34 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget render="Label" source="title" position="120,130" size="585,60" zPosition="5" halign="left" font="Regular;22" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="detailtext" font="Regular;17" position="70,180" size="650,415" halign="left" backgroundColor="black" transparent="1"/>	
 	</screen>
+
+	<!-- AutoTimer Preview OK -->
+	<screen name="AutoTimerPreview" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGY" />
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<panel name="sRGY"/>
+		<eLabel text="Exit" position="305,632" size="190,24" zPosition="1" font="Regular;20" halign="left" alphatest="on" transparent="1" valign="top"/>
+		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
+		<widget source="timerlist" render="Listbox" position="80,140" size="690,400" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
+		    <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos=( 10,5),size=(595,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+					MultiContentEntryText(pos=( 10,32),size=(595,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+					MultiContentEntryText(pos=( 10,57),size=(310,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+					MultiContentEntryText(pos=(330,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+					],
+					"fonts": [gFont("Regular",22),gFont("Regular",20)],
+					"itemHeight": 85
+				}
+		    </convert>
+		</widget>
+	</screen>	
 	
 	<!-- AutoTimer Import OK -->
 	<screen name="AutoTimerImporter" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sRG"/>		
@@ -4500,9 +4463,48 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 		<widget name="list" position="80,140" size="690,400" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 	</screen>
+
+	<!-- AutoTimer MENU->configuracion -->
+	<screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG" />
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="sRG"/>		
+        <panel name="PIG"/>
+		<widget name="config" position="80,138" size="715,415" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget source="help" render="Label" position="845,435" size="380,160" transparent="1" font="Regular;20" valign="bottom" halign="center" foregroundColor="#4ccbde" backgroundColor="black"/>
+	</screen>	
+
+	<!-- AutoTimer Editor OK -->
+	<screen name="AutoTimerEditor" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB" />
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="sRGYB"/>		
+        <panel name="PIG"/>
+		<widget name="config" position="80,140" size="715,425" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"  backgroundColor="black"/>
+		<widget source="help" render="Label" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="black"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+	</screen>
+
+	<!-- AutoTimer Filter Editor OK -->
+	<screen name="AutoTimerFilterEditor" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB" />
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="sRGYB"/>		
+        <panel name="PIG"/>
+		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
+		<widget name="config" position="80,140" size="690,400" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
+		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>		
+	</screen>
 	<!-- AutoTimer Crear Nuevo tiempo usando Wizard OK -->
 	<screen name="AutoTimerWizard" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo" />
+		<panel name="PantallaGenericaBotonR" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sR"/>		
@@ -4518,68 +4520,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-	</screen>
-
-	<!-- AutoTimer MENU->configuracion -->
-	<screen name="AutoTimerSettings" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="sRG"/>		
-        <panel name="PIG"/>
-		<widget name="config" position="80,138" size="715,415" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="help" render="Label" position="845,435" size="380,160" transparent="1" font="Regular;20" valign="bottom" halign="center" foregroundColor="#4ccbde" backgroundColor="black"/>
-	</screen>
-
-	<!-- AutoTimer Preview OK -->
-	<screen name="AutoTimerPreview" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica3botones" />
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>		
-        <panel name="PIG"/>
-		<panel name="sRGY"/>
-		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
-		<widget source="timerlist" render="Listbox" position="80,140" size="690,400" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
-		    <convert type="TemplatedMultiContent">
-				{"template": [
-					MultiContentEntryText(pos=( 10,5),size=(595,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=( 10,32),size=(595,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=( 10,57),size=(310,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=(330,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
-					],
-					"fonts": [gFont("Regular",22),gFont("Regular",20)],
-					"itemHeight": 85
-				}
-		    </convert>
-		</widget>
-	</screen>
-
-	<!-- AutoTimer Editor OK -->
-	<screen name="AutoTimerEditor" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="sRGYB"/>		
-        <panel name="PIG"/>
-		<widget name="config" position="80,140" size="715,425" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand"  backgroundColor="black"/>
-		<widget source="help" render="Label" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="black"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
-	</screen>
-
-	<!-- AutoTimer Filter Editor OK -->
-	<screen name="AutoTimerFilterEditor" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="sRGYB"/>		
-        <panel name="PIG"/>
-		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
-		<widget name="config" position="80,140" size="690,400" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>		
 	</screen>	
 	<!-- Template para Plugin EMC -->
 	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4638,7 +4578,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (048) ####### Movie Selection Lista de Peliculas (MoviePlayer Standard)  ####### -->	
 	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
@@ -4720,7 +4660,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!-- PLugin MENU->opciones de la Lista de reproduccion -->	
 	<screen name="EMCPlaylist" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
 		<panel name="PIG"/>
         <panel name="Title"/>			
@@ -4733,7 +4673,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>		
 		<!-- EMC-MENU->Configuracion de lista de Reproduccion -->	
  	<screen name="EMCPlaylistSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
@@ -4747,7 +4687,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  	</screen>	
 	    <!-- EMC-Configuracion -->
 	<screen name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="sRGYB"/>		
@@ -4758,7 +4698,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Scan IMDB -->
 	<screen name="EMCImdbScan" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
 		<panel name="PIG"/>
@@ -4784,7 +4724,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- EMC- CONFIGURACION DE BUSCAR CARATULA -->	
 	<screen name="imdbSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
-		<ePixmap pixmap="menu/colorbar_pl.png" position="60,620" size="349,45" alphatest="blend"/>
+		<ePixmap pixmap="menu/colorbarRG.png" position="60,620" size="349,45" alphatest="blend"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
@@ -4793,7 +4733,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EMC- MENU->DESCARGAR INFORMACION DE LA PELICULA (TMDB)-->
   	<screen name="DownloadMovieInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
@@ -4818,7 +4758,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (TMDB)-> MENU-->
  	<screen name="MovieInfoSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
 		<panel name="PIG"/>		
         <panel name="Title"/>
@@ -4990,7 +4930,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>
 	<!-- Transmission -->
 	<screen name="Transmission" position="0,0" size="1280,720" title="Transmission" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -5005,7 +4945,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Softcam Setup OK -->
 	<screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -5014,19 +4954,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
     <!-- ********** FrontPanelUpgrade ********** -->
 	<screen name="FirmwareUpgrade" position="0,0" size="1280,720" title="FirmwareUpgrade" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
-        <panel name="PIG"/>	
-		<widget name="oldversion_label" position="100,200" size="290,25" font="Regular;20" backgroundColor="black" foregroundColor="#ffffff"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+        <panel name="sRG"/>		
+		<widget name="oldversion_label" position="100,200" size="290,25" foregroundColor="#4ccbde" font="Regular;20" backgroundColor="black" />
 		<widget name="oldversion" position="400,200" size="100,25" font="Regular;20" backgroundColor="black" foregroundColor="#0056c856"/>
-		<widget name="newversion_label" position="100,230" size="290,25" font="Regular;20" backgroundColor="black" foregroundColor="#ffffff"/>
+		<widget name="newversion_label" position="100,230" size="290,25" foregroundColor="#4ccbde" font="Regular;20" backgroundColor="black"/>
 		<widget name="newversion" position="400,230" size="100,25" font="Regular;20" backgroundColor="black" foregroundColor="#00ff4a3c"/>
-		<widget source="status" render="Label" position="835,440" size="390,25" foregroundColor="#4ccbde" font="Regular;20" zPosition="5" valign="top"/>
-		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget source="status" render="Label" position="835,440" size="390,25" foregroundColor="#4ccbde" font="Regular;20" backgroundColor="black" transparent="1" valign="center"/>
 	</screen>
 	<!-- ********** IMDB ********** -->
 	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5043,7 +4985,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!-- Foreca -->
 	<screen name="ForecaPreview" position="0,0" size="1280,720">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5063,18 +5005,50 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="1080,465" size="40,22" pixmap="icons/key_help.png" transparent="1" alphatest="blend"/>
 	</screen>
 	<!-- YouTube TV  MENU PRINCIPAL -->
-    <screen name="YoutubeTVWindow" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />
-		<panel name="ScrollBarTemplate"/>
+    <screen name="YoutubeTVWindow" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
+        <panel name="PantallaPieTV"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
-        <panel name="sG"/>		
-        <ePixmap position="930,414" zPosition="1" size="370,204" pixmap="EGAdriatic/menu/ico_youtube.png" alphatest="blend" transparent="1"/>		
-    </screen>	
+        <panel name="Template-exit"/>
+        <panel name="sG"/>	
+        <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
+    </screen>
+	<!--  JobView VER PROGRESO DE INSTALACION BAJANDO DE INTERNET OK -->
+	<screen name="JobView" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="Title"/>
+		<panel name="PIG"/>		
+		<widget source="job_name" render="Label" position="80,140" size="585,35" font="Regular;28" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
+		<widget source="job_task" render="Label" position="80,190" size="585,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
+		<widget source="job_progress" render="Progress" position="80,230" size="585,36" borderWidth="2" backgroundColor="#1b5962"/>
+		<widget source="job_progress" render="Label" position="42,232" size="580,32" font="Regular;28" halign="center" foregroundColor="#00baff" backgroundColor="#1b5962" zPosition="2" transparent="1">
+		    <convert type="ProgressToText"/>
+		</widget>
+		<widget source="job_status" render="Label" position="80,280" size="585,26" font="Regular;23" backgroundColor="#000000" transparent="1"/>
+		<widget name="config" position="80,320" size="585,24" scrollbarMode="showOnDemand" backgroundColor="#000000" transparent="1"/>
+		<widget source="cancelable" render="Pixmap" pixmap="buttons/red.png" position="65,655" size="140,40" alphatest="blend">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="90,657" size="220,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="Pixmap" pixmap="buttons/green.png" position="290,650" size="140,40" alphatest="blend">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="FixedLabel" text="OK" position="340,657" size="220,28" font="Regular;24" halign="left" backgroundColor="black" zPosition="1" transparent="1">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="Pixmap" pixmap="buttons/blue.png" position="560,660" size="140,40" alphatest="blend">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="590,657" size="360,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>	
                 <!-- ########################### PANTALLAS EGAMI ################################## -->
 	<!--  EGAMI PANEL -->
 	<screen name="EgamiMainPanel" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>			
@@ -5084,7 +5058,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!--  Complementos EGAMI -->
 	<screen name="EGGreenPanel" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5106,7 +5080,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI Smart Script OKK -->
  	<screen name="EGScript" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo" />
+		<panel name="PantallaGenericaBotonR" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5123,7 +5097,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EGAMI QuickButtonSetup  -->
 	<screen name="ButtonSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -5134,7 +5108,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EGAMI Configuar Botones -->
 	<screen name="ButtonSetupSelect" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />
+		<panel name="PantallaGenericaRG" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5145,10 +5119,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EGAMI Devices  -->
 	<screen name="EGDeviceManager" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />
+		<panel name="PantallaGenericaRGYB" />
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
+        <panel name="PIG"/>		
 		<ePixmap position="935,414" zPosition="1" size="370,204" pixmap="EGAdriatic/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
 		<widget source="list" render="Listbox" position="80,138" size="718,375" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
 		    <convert type="TemplatedMultiContent">
@@ -5167,14 +5141,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!--  EGAMI Choose Mount OKK -->
 	<screen name="EGDeviceManager_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
-        <ePixmap pixmap="EGAdriatic/menu/fr_main.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />	
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="PIG"/>
+        <panel name="Setup"/>
 	</screen>
 	<!-- Egami USB Disk Format  -->
 	<screen name="EGAMI_UsbFormat" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRG" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5183,7 +5154,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!--  EGAMI EGS NetBrowser OKK -->
 	<screen name="EGNetBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones" />	
+		<panel name="PantallaGenericaRG" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5194,7 +5165,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!--  EGAMI News  -->
 	<screen name="EGAMIMainNews" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5217,7 +5188,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 		<!--  EGAMI News info CON OK -->
 	<screen name="EGAMIUpdateInfo" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5237,42 +5208,40 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI Multiboot Primera Pantalla sin Plugin Instalado -->
 	<screen name="EGAMIBootInstallation" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="sRGYB"/>
 		<widget name="label1" position="200,50" size="515,30" zPosition="1" font="Regular;25" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="label2" position="80,140" size="515,290" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
+		<widget name="label2" position="80,140" size="515,290" zPosition="1" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="config" position="80,350" size="718,375" backgroundColor="black" transparent="1"/>
 	</screen>		
 
 	<!--  EGAMI Boot despues de Instalacion del Plugin -->
 	<screen name="EGAMIBootImageChoose" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGYB" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="sRGYB"/>
-		<widget name="label1" position="80,140" size="515,30" zPosition="1" halign="center" font="Regular;25" backgroundColor="#9f1313" transparent="1"/>
-		<widget name="label2" position="110,180" size="315,290" zPosition="1" halign="center" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
-		<widget name="label6" position="260,180" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#9f1313" foregroundColor="#4ccbde" transparent="1"/>
+		<widget name="label1" position="80,140" size="515,30" zPosition="1" halign="center" font="Regular;25" backgroundColor="#000000" transparent="1"/>
+		<widget name="label2" position="110,180" size="315,290" zPosition="1" halign="center" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label6" position="260,180" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#000000" foregroundColor="#4ccbde" transparent="1"/>
 		<widget name="device_icon" position="100,320" size="80,80" alphatest="on"/>
 		<widget name="config" position="80,210" size="718,375" transparent="1"/>
-		<widget name="label3" position="80,435" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
-		<widget name="label4" position="80,460" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
-		<widget name="label5" position="80,485" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
-		<widget name="label7" position="355,435" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#9f1313" foregroundColor="#4ccbde" transparent="1"/>
-		<widget name="label8" position="355,460" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#9f1313" foregroundColor="#4ccbde" transparent="1"/>
-		<widget name="label9" position="355,485" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#9f1313" foregroundColor="#4ccbde" transparent="1"/>
-		<widget name="label10" position="80,510" size="440,30" zPosition="1" font="Regular;20" backgroundColor="#9f1313" transparent="1"/>
-		<widget name="label11" position="355,510" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#9f1313" foregroundColor="#4ccbde" transparent="1"/>
+		<widget name="label3" position="80,435" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label4" position="80,460" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label5" position="80,485" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label7" position="355,435" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label8" position="355,460" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label9" position="355,485" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label10" position="80,510" size="440,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
+		<widget name="label11" position="355,510" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#000000" transparent="1"/>
 		<widget name="free_space_progressbar" position="200,442" size="300,13" borderWidth="1" zPosition="3"/>
 	</screen>
 	
 	<!--  EGAMI Selecion imagen por internet -->
 	<screen name="EGAMIChooseOnLineImage" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaSinBarraColor2Pantallas" />	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5291,32 +5260,27 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    </convert>
 		</widget>
 	</screen>
-	<!--  EGAMI Elegir de la lista version de imagen a descargar -->
+	<!--  EGAMI Elegir de la lista de imagen elegida que version de imagen a descargar -->
 	<screen name="DownloadOnLineImage" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRG" />	
 		<panel name="ScreenMenuTemplate"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="sRG"/>
 		<widget name="imageList" position="80,138" size="718,375" font="Regular;20" transparent="1" zPosition="1"/>
 	</screen>			
 	<!--  EGAMI Image Installation OKK -->
 	<screen name="EGAMIBootImageInstall" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGY"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<panel name="sRG"/>
 		<widget name="config" position="60,140" size="718,375" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
 	</screen>
 	<!--  EGAMI EmuManager OKK -->
 	<screen name="EmuManager" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5350,7 +5314,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Download Addons OK -->	
    	<screen name="EGAddonMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5358,7 +5322,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>
 	<!--  Download EGAMI Addons (EGAMI ONLINE ADDONS INSTALLATION) -->
 	<screen name="EG_PrzegladaczAddonow" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5367,7 +5331,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI Internet Addons SUBPANTALLA (EGAMI ONLINE ADDONS INSTALLATION) -->
 	<screen name="EG_InternetAddons" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5386,7 +5350,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI Manual Addons Install (install Tar.gz and IPK Addons) -->
 	<screen name="EG_Manual_installation" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo"/>	
+		<panel name="PantallaGenericaBotonR"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5395,7 +5359,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!--  EGAMI Remove Addons OKK -->
 	<screen name="EGAddonRemove" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaBotonRojo"/>	
+		<panel name="PantallaGenericaBotonR"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5403,7 +5367,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!--  EGAMI ExtraMenu OKK -->
 	<screen name="EGExtrasMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5476,7 +5440,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 		<!--  EGAMI SwapManager -->
 	<screen name="EGAMISwap" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones" />	
+		<panel name="PantallaGenericaRGY"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5484,16 +5448,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- EgamiBootLogo OKK -->
 	<screen name="EgamiBootLogoSelector" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-	    <widget name="config" position="80,140" itemHeight="30" scrollbarMode="showOnDemand" size="690,210" zPosition="1" transparent="1"/>
-	    <widget name="Preview" position="80,350" size="512,275" alphatest="blend" transparent="1" zPosition="3"/>
+	    <widget name="config" position="80,140" itemHeight="30" scrollbarMode="showOnDemand" size="690,110" zPosition="1" transparent="1"/>
+	    <widget name="Preview" position="80,260" size="512,275" alphatest="blend" transparent="1" zPosition="3"/>
  	</screen>
 	<!-- ClearMemorySetup -->	
 	<screen name="SetupMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5503,7 +5467,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>	
 	<!-- ClearMemory Boton amarillo info -->
 	<screen name="ClearMemInfoScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5515,7 +5479,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>
         <!--  EGAMI Backup Panel OKK -->
 	<screen name="EGAMIBackupPanel" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica3botones"/>	
+		<panel name="PantallaGenericaRGY"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5528,7 +5492,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!--  EGAMI Backup Panel Step 2 OKK -->
 	<screen name="EGAMIBackupPanel_Step2" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5540,7 +5504,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!--  EGAMI Full Backup Panel OKK -->
 	<screen name="EGFullBackup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica2botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5552,7 +5516,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	
 	<!--  EGAMI Restore Panel Step 1 OKK -->
 	<screen name="EGAMIRestorePanel_Step1" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
@@ -5599,12 +5563,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		
 	<!--  EGAMI File Commander MENU OK -->
 	<screen name="FileCommanderConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica4botones"/>	
+		<panel name="PantallaGenericaRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="config" position="80,138" size="690,400" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="help" position="845,435" size="380,160" zPosition="2" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
 	
     <!--  File Comander Select Files OKK -->
