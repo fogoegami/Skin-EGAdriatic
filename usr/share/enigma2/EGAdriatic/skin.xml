@@ -4976,12 +4976,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="965,405" size="380,180" pixmap="menu/imdb.png" zPosition="1"/>
 		<widget name="menu" position="80,150" size="715,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 	    <widget name="ratinglabel" position="310,105" size="250,25" font="Regular;18" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="poster" position="350,125" size="96,160" alphatest="on" zPosition="2"/>
+		<widget name="poster" position="930,395" size="182,190" alphatest="on" zPosition="2"/>
 		<widget name="castlabel" position="80,300" size="715,110" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="extralabel" position="80,300" size="715,110" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="detailslabel" position="80,425" size="715,110" font="Regular;20" foregroundColor="#4ccbde" transparent="1"/>
-		<widget name="starsbg" position="300,280" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
-		<widget name="stars" position="300,280" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" alphatest="on" transparent="1"/>
+		<widget name="starsbg" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="0" transparent="1" alphatest="on"/>
+		<widget name="stars" position="920,590" size="250,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="1" alphatest="on" transparent="1"/>
 	</screen>
 		<!-- Foreca -->
 	<screen name="ForecaPreview" position="0,0" size="1280,720">
@@ -4989,7 +4989,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="MainList" position="80,180" size="715,350" zPosition="3" backgroundColor="#000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="MainList" position="45,180" size="750,350" zPosition="3" backgroundColor="#000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<widget source="Titel" render="Label" position="175,120" zPosition="3" size="978,60" font="Regular;22" valign="center" halign="left" transparent="1" foregroundColor="#4ccbde"/>
 		<widget source="Titel2" render="Label" position="250,120" zPosition="2" size="900,60" font="Regular;26" valign="center" halign="center" transparent="1" foregroundColor="#6da6ff"/>
 		<widget source="key_red" render="Label" position="100,625" zPosition="2" size="102,40" font="Regular;22" valign="center" halign="left" transparent="1" />
