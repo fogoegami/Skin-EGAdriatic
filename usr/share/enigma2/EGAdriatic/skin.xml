@@ -394,11 +394,6 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarYB.png" alphatest="blend" transparent="1" />
     </screen>	
-	<!-- ####### GENERIC SCREEN WITH 4 BUTTONS AND PIG TEMPLATE NO USADO####### -->
-	<screen name="ScreenPigTemplate">
-		<panel name="PantallaGenericaRGYB" />
-		<panel name="PigTemplate" />
-	</screen>	
 	<!--  ####### Template PantallaPieTV #######  -->
 	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="Title"/>
@@ -572,12 +567,12 @@
 	</screen-->
 	
 	<!-- (005) ####### Mute ####### -->
-	<screen name="Mute" position="71,30" zPosition="10" size="72,71" title="Mute"  backgroundColor="background" flags="wfNoBorder">
+	<screen name="Mute" position="71,30" zPosition="10" size="72,71" title="Mute"  backgroundColor="Transparent" flags="wfNoBorder">
 		<ePixmap position="0,0"  size="72,71" pixmap="EGAdriatic/mute.png"  alphatest="on" transparent="1" />
 	</screen>
-    <!-- ####### imput Error ####### -->	
+    <!-- ####### ERROR ENTRADA KEY  ####### -->	
 	<screen name="UnhandledKey" flags="wfNoBorder" position="1162,20" size="40,40" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="input_error.png" position="0,0" size="40,40" alphatest="off"/>
+		<widget name="UnhandledKeyPixmap" pixmap="unhandled-key.png" position="0,0" size="40,40" alphatest="off"/>
 	</screen>	
 	
 	<!-- ChannelList Menu OK -->
@@ -590,11 +585,12 @@
 	<!-- (025) ####### Channel selection - TV #######  -->
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
 		<panel name="PantallaListaCanales" />
-		<panel name="PigTemplate" />
 		<panel name="ScrollBarTemplate" />
 		<ePixmap position="0,0" zPosition="1" size="670,83" pixmap="EGAdriatic/menu/tx_listchannel.png" alphatest="blend" transparent="1" />
 		<ePixmap position="82,125" zPosition="5" size="716,438" pixmap="EGAdriatic/menu/filtro.png" alphatest="blend" transparent="1" />
-        <widget source="session.VideoPicture" render="Pig" position=" 838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>		
+        <widget source="session.VideoPicture" render="Pig" position=" 838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+        <ePixmap pixmap="icons/key_menu1.png" position="8,680" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
+        <ePixmap pixmap="icons/key_info.png" position="53,680" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 		<!-- Servicio Orbital -->
 		<widget source="ServiceEvent" render="Label" position="147,110" size="100,24" font="Regular;20" zPosition="1" foregroundColor="#00baff" backgroundColor="black" transparent="1">
 		    <convert type="ServiceOrbitalPosition"/>
@@ -1967,17 +1963,17 @@
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="EGAdriatic/icons/scan-s.png" position="990,190" size="64,64" transparent="1" alphatest="blend">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="EGAdriatic/icons/scan-s.png" position="660,170" zPosition="2" size="64,64" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="EGAdriatic/icons/scan-c.png" position="990,190" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="EGAdriatic/icons/scan-t.png" position="660,170" zPosition="2" size="64,64" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="FrontendInfo" render="Pixmap" pixmap="EGAdriatic/icons/scan-t.png" position="990,190" size="64,64" transparent="1" alphatest="on">
+		<widget source="FrontendInfo" render="Pixmap" pixmap="EGAdriatic/icons/scan-c.png" position="660,170" zPosition="2" size="64,64" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
@@ -2007,7 +2003,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="scan_state" position="80,235" zPosition="2" size="520,30" foregroundColor="#4ccbde" font="Regular;24"/>
+		<widget name="scan_state" position="80,235" zPosition="2" size="520,30" font="Regular;24"/>
 		<widget name="scan_progress" position="80,325" size="690,15" pixmap="progress_big.png" borderWidth="2" borderColor="#4ccbde"/>
 	</screen>
 	<!-- (129) ####### PSITIONER SETUP ####### (15-02) -->  
@@ -3755,9 +3751,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>
 	<!-- Tiempo-->
 	<screen name="msnPanel">
-	 <widget source="session.MSNWeather" render="Label" position="435,20" size="390,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
+	 <widget source="session.MSNWeather" render="Label" position="355,15" size="390,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
 	 <convert type="MSNWeather">winddisplay</convert>
 	 </widget>
+	 <widget source="session.MSNWeather" render="Label" position="420,30" size="100,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
+	 <convert type="MSNWeather">observationtime</convert>
+	 </widget>
+	 <eLabel text="%" position="380,30" size="35,24" foregroundColor="#a1d1ff" zPosition="1" font="Regular;16" halign="left" alphatest="blend" transparent="1" valign="top"/>
+	 <widget source="session.MSNWeather" render="Label" position="355,30" size="390,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
+	 <convert type="MSNWeather">humidity</convert>
+	 </widget>	 
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="675,20" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
 			<convert type="MSNWeather">weekday,day3</convert>
 		</widget>
@@ -3815,11 +3818,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<!--widget backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="190,545" size="200,82" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
 			<convert type="MSNWeather">city</convert>
 		</widget-->
-	</screen> 
+	</screen>	
 	<!-- (002) ####### SECOND INFOBAR ####### -->
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent" devtag="002">
 	<panel name="SecondInfobarPanelEvents"/>
-	<panel name="msnPanel"/>
+	<panel name="msnPanel"/>	
 	<eLabel position="53,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
 	<eLabel position="639,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
 	<eLabel position="55,97" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
@@ -4303,6 +4306,38 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="description" position="845,455" size="380,160" font="Regular;24" foregroundColor="#4ccbde" halign="center" backgroundColor="black" valign="center"/>
 		<ePixmap pixmap="sleeptimer.png" position="970,385" size="105,125" zPosition="2" alphatest="blend"/>
  	</screen>
+	<!--  JobView VER PROGRESO DE INSTALACION BAJANDO DE INTERNET OK -->
+	<screen name="JobView" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="Title"/>
+		<panel name="PIG"/>		
+		<widget source="job_name" render="Label" position="80,140" size="585,35" font="Regular;28" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
+		<widget source="job_task" render="Label" position="80,190" size="585,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
+		<widget source="job_progress" render="Progress" position="80,230" size="585,36" borderWidth="2" backgroundColor="#1b5962"/>
+		<widget source="job_progress" render="Label" position="42,232" size="580,32" font="Regular;28" halign="center" foregroundColor="#00baff" backgroundColor="#1b5962" zPosition="2" transparent="1">
+		    <convert type="ProgressToText"/>
+		</widget>
+		<widget source="job_status" render="Label" position="80,280" size="585,26" font="Regular;23" backgroundColor="#000000" transparent="1"/>
+		<widget name="config" position="80,320" size="585,24" scrollbarMode="showOnDemand" backgroundColor="#000000" transparent="1"/>
+		<widget source="cancelable" render="Pixmap" pixmap="buttons/red.png" position="65,655" size="140,40" alphatest="blend">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="90,657" size="220,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="Pixmap" pixmap="buttons/green.png" position="290,650" size="140,40" alphatest="blend">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="FixedLabel" text="OK" position="340,657" size="220,28" font="Regular;24" halign="left" backgroundColor="black" zPosition="1" transparent="1">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="Pixmap" pixmap="buttons/blue.png" position="560,660" size="140,40" alphatest="blend">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="590,657" size="360,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
+		    <convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>	
                 <!-- ########################### PANTALLAS PLUGINS ################################## -->
 	<!-- EPG Import Configuration -->
 	<screen name="EPGImportConfig" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4958,9 +4993,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_green" render="Label" position="285,625" zPosition="2" size="110,40" font="Regular;22" valign="center" halign="left" transparent="1" />
 		<widget source="key_yellow" render="Label" position="485,625" zPosition="2" size="110,40" font="Regular;22" valign="center" halign="left" transparent="1" />
 		<widget source="key_blue" render="Label" position="700,625" zPosition="2" size="110,40" font="Regular;22" valign="center" halign="left" transparent="1" />
-		<widget source="key_ok" render="Label" position="915,407" zPosition="2" size="70,40" foregroundColor="#6da6ff" font="Regular;22" valign="center" halign="left" transparent="1" />
-		<widget source="key_menu" render="Label" position="915,457" zPosition="2" size="85,40" foregroundColor="#6da6ff" font="Regular;22" valign="center" halign="left" transparent="1" />
-		<widget source="key_info" render="Label" position="1125,407" zPosition="2" size="85,40" foregroundColor="#6da6ff" font="Regular;22" valign="center" halign="left" transparent="1" />
+		<widget source="key_ok" render="Label" position="915,407" zPosition="2" size="70,40" foregroundColor="#4ccbde" font="Regular;22" valign="center" halign="left" transparent="1" />
+		<widget source="key_menu" render="Label" position="915,457" zPosition="2" size="85,40" foregroundColor="#4ccbde" font="Regular;22" valign="center" halign="left" transparent="1" />
+		<widget source="key_info" render="Label" position="1125,407" zPosition="2" size="85,40" foregroundColor="#4ccbde" font="Regular;22" valign="center" halign="left" transparent="1" />
 		<ePixmap position="870,415" size="45,22" pixmap="icons/key_ok.png" transparent="1" alphatest="blend"/>
 		<ePixmap position="870,465" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>
 		<ePixmap position="1080,415" size="40,22" pixmap="icons/key_info.png" transparent="1" alphatest="blend"/>
@@ -4977,39 +5012,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="sG"/>	
         <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
-    </screen>
-	<!--  JobView VER PROGRESO DE INSTALACION BAJANDO DE INTERNET OK -->
-	<screen name="JobView" position="0,0" zPosition="1" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<panel name="Title"/>
-		<panel name="PIG"/>		
-		<widget source="job_name" render="Label" position="80,140" size="585,35" font="Regular;28" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
-		<widget source="job_task" render="Label" position="80,190" size="585,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
-		<widget source="job_progress" render="Progress" position="80,230" size="585,36" borderWidth="2" backgroundColor="#1b5962"/>
-		<widget source="job_progress" render="Label" position="42,232" size="580,32" font="Regular;28" halign="center" foregroundColor="#00baff" backgroundColor="#1b5962" zPosition="2" transparent="1">
-		    <convert type="ProgressToText"/>
-		</widget>
-		<widget source="job_status" render="Label" position="80,280" size="585,26" font="Regular;23" backgroundColor="#000000" transparent="1"/>
-		<widget name="config" position="80,320" size="585,24" scrollbarMode="showOnDemand" backgroundColor="#000000" transparent="1"/>
-		<widget source="cancelable" render="Pixmap" pixmap="buttons/red.png" position="65,655" size="140,40" alphatest="blend">
-		    <convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="90,657" size="220,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
-		    <convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="Pixmap" pixmap="buttons/green.png" position="290,650" size="140,40" alphatest="blend">
-		    <convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="340,657" size="220,28" font="Regular;24" halign="left" backgroundColor="black" zPosition="1" transparent="1">
-		    <convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="buttons/blue.png" position="560,660" size="140,40" alphatest="blend">
-		    <convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="590,657" size="360,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
-		    <convert type="ConditionalShowHide"/>
-		</widget>
-	</screen>	
+    </screen>	
                 <!-- ########################### PANTALLAS EGAMI ################################## -->
 	<!--  EGAMI PANEL -->
 	<screen name="EgamiMainPanel" position="0,0" size="1280,720" flags="wfNoBorder">
