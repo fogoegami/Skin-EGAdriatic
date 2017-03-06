@@ -624,7 +624,7 @@
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#4ccbde" transparent="1" backgroundColor="#333333">
 			<convert type="EventName">Name</convert>
 		</widget>
-        <widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="388,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/>		
+        <widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/>		
 		<!-- epg descripcion -->
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,127" zPosition="2" font="Regular;18" halign="center" valgin="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
@@ -693,7 +693,7 @@
 		<!-- event info -->
 		<widget name="channel" position="85,122" size="380,28" font="Regular;28" halign="left"  zPosition="3" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1" />
 		<!--widget name="FullDescription" 	position="75,153" size="720,399" font="Regular;26"  backgroundColor="transpBlack" transparent="1" /-->
-		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="75,153" size="720,405" font="Regular;26" foregroundColor="#ffffff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="75,153" size="710,405" font="Regular;26" foregroundColor="#ffffff" backgroundColor="black" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 		<widget name="datetime" position="839,351" size="380,28" font="Regular;24" halign="left"  zPosition="3" foregroundColor="white" backgroundColor="#333333" transparent="1" />
@@ -735,8 +735,11 @@
 		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="670,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="715,675" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend" />		
-		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,386" size="380,247" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#333333" transparent="1">
+		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend" />
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#4ccbde" transparent="1" backgroundColor="#333333">
+			<convert type="EventName">Name</convert>
+		</widget>		
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#333333" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
@@ -749,7 +752,7 @@
 		<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" />
 		<!-- events list -->
-		<widget name="list" position="70,138" size="725,400" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" position="70,138" size="713,400" scrollbarMode="showOnDemand" transparent="1" />
 
 		<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
@@ -758,8 +761,11 @@
 		<widget position="650,565" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="670,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="715,675" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend" />		
-		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,386" size="380,247" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#333333" transparent="1">
+		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend" />
+		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#4ccbde" transparent="1" backgroundColor="#333333">
+			<convert type="EventName">Name</convert>
+		</widget>		
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,420" size="380,210" font="Regular;18" valign="center" halign="center" foregroundColor="grey" backgroundColor="#333333" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>	
@@ -1251,7 +1257,7 @@
 		<panel name="PIG" />
         <panel name="sRGB" />
 		<panel name="ScrollBarTemplate"/>		
-		<widget source="list" render="Listbox" position="80,140" size="715,375" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="80,140" size="690,375" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent"> <!-- iface, name, description, interfacepng, defaultpng, activepng, divpng -->
 				{"template": [
 				MultiContentEntryText(pos = (85, 6), size = (410, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
@@ -3749,18 +3755,95 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		  <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
     </screen>
+	
+	<!-- WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu-->	
+    <screen name="MSNWeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRGYB" />
+        <panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="sRGYB"/>			
+        <widget render="Label" source="city" position="80,140" size="400,50" font="Regular;20" halign="left"/>
+        <widget render="Label" source="degreetype" position="485,140" size="130,50" font="Regular;20" halign="left"/>
+        <widget name="entrylist" position="75,160" size="615,300" scrollbarMode="showOnDemand"/>
+    </screen>
+    <screen name="MSNWeatherPluginEntryConfigScreen" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRGYB" />
+        <panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="sRGYB"/>		
+        <widget name="config" position="80,140" size="520,300" scrollbarMode="showOnDemand" />
+    </screen>
+    <screen name="MSNWeatherPluginSearch" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="sRG"/>		
+        <widget name="entrylist" position="80,140" size="550,200" scrollbarMode="showOnDemand"/>
+    </screen>
+	
+	<!-- WHEATHER PLUGIN MOSTRAR EL TIEMPO -->		
+    <screen name="MSNWeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
+        <panel name="PantallaGenericaSinBarraColor2Pantallas" />
+        <panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend"/>
+		<eLabel text="Setup" position="105,640" size="190,24" zPosition="1" font="Regular;20" backgroundColor="black" halign="left" transparent="1" valign="center"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>	
+        <widget render="Label" source="caption" position="220,60" zPosition="1" size="400,128" halign="center" valign="center" foregroundColor="#4ccbde" font="Regular;24" transparent="1"/>
+        <widget render="Label" source="observationtime" position="875,450" zPosition="1" size="310,20" foregroundColor="#00baff" font="Regular;16" transparent="1" halign="center" />
+        <widget render="Label" source="observationpoint" position="815,500" zPosition="1" size="430,140" foregroundColor="#00baff" font="Regular;16" transparent="1" halign="center" />
+        <!--widget name="currenticon" position="140,195" zPosition="1" size="55,45" transparent="1" alphatest="blend"/-->
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="140,195" size="45,45" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/EGAdriatic/msn/msn1/,png</convert>
+		</widget>		
+        <widget render="Label" source="currentTemp" position="210,195" zPosition="1" size="100,23" foregroundColor="#00fafa" font="Regular;22" transparent="1"/>
+        <widget render="Label" source="feelsliketemp" position="210,225" zPosition="1" size="155,40" foregroundColor="#00fafa" font="Regular;16" transparent="1"/>
+        <widget render="Label" source="condition" position="360,195" zPosition="1" size="300,20" foregroundColor="#00fafa" font="Regular;18" transparent="1"/>
+        <widget render="Label" source="humidity" position="360,225" zPosition="1" size="300,20" foregroundColor="#00fafa" font="Regular;18" valign="bottom" transparent="1"/>		
+        <widget render="Label" source="wind_condition" position="210,270" zPosition="1" size="300,20" foregroundColor="#00fafa" font="Regular;18" transparent="1"/>
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/msn/wind.png" position="140,260" size="60,60" alphatest="blend"/>
+        <widget render="Label" source="weekday2" position="115,350" zPosition="1" size="105,40" foregroundColor="#a1d1ff" halign="center" valign="center" font="Regular;18" transparent="1"/>
+        <!--widget name="weekday2_icon" position="140,325" zPosition="1" size="55,45" alphatest="blend"/-->
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="140,405" size="45,45" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/EGAdriatic/msn/msn1/,png</convert>
+		</widget>
+        <widget render="Label" source="weekday2_temp" position="115,450" zPosition="1" size="105,60" foregroundColor="#00fafa" halign="center" valign="bottom" font="Regular;16" transparent="1"/>
+        <widget render="Label" source="weekday3" position="235,350" zPosition="1" size="105,40" foregroundColor="#a1d1ff" halign="center" valign="center" font="Regular;18" transparent="1"/>
+        <!--widget name="weekday3_icon" position="260,325" zPosition="1" size="55,45" alphatest="blend"/-->
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="260,405" size="45,45" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/EGAdriatic/msn/msn1/,png</convert>
+    	</widget>				
+        <widget render="Label" source="weekday3_temp" position="235,450" zPosition="1" size="105,60" foregroundColor="#00fafa" halign="center" valign="bottom" font="Regular;16" transparent="1"/>
+        <widget render="Label" source="weekday4" position="355,350" zPosition="1" size="105,40" foregroundColor="#a1d1ff" halign="center" valign="center" font="Regular;18" transparent="1"/>
+        <!--widget name="weekday4_icon" position="380,325" zPosition="1" size="55,45" alphatest="blend"/-->
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="380,405" size="45,45" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/EGAdriatic/msn/msn1/,png</convert>
+		</widget>				
+        <widget render="Label" source="weekday4_temp" position="355,450" zPosition="1" size="105,60" foregroundColor="#00fafa" halign="center" valign="bottom" font="Regular;16" transparent="1"/>
+        <widget render="Label" source="weekday5" position="475,350" zPosition="1" size="105,40" foregroundColor="#a1d1ff" halign="center" valign="center" font="Regular;18" transparent="1"/>
+        <!--widget name="weekday5_icon" position="500,325" zPosition="1" size="55,45" alphatest="blend"/-->
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="500,405" size="45,45" source="session.MSNWeather" transparent="1" zPosition="5">
+			<convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/EGAdriatic/msn/msn1/,png</convert>
+		</widget>				
+        <widget render="Label" source="weekday5_temp" position="475,450" zPosition="1" size="105,60" foregroundColor="#00fafa" halign="center" valign="bottom" font="Regular;16" transparent="1"/>
+        <widget render="Label" source="statustext" position="0,0" zPosition="1" size="664,340" font="Regular;20" halign="center" valign="center" transparent="1"/>
+    </screen>	
 	<!-- Tiempo-->
 	<screen name="msnPanel">
-	 <widget source="session.MSNWeather" render="Label" position="355,15" size="390,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
-	 <convert type="MSNWeather">winddisplay</convert>
-	 </widget>
-	 <widget source="session.MSNWeather" render="Label" position="420,30" size="100,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
-	 <convert type="MSNWeather">observationtime</convert>
-	 </widget>
-	 <eLabel text="%" position="380,30" size="35,24" foregroundColor="#a1d1ff" zPosition="1" font="Regular;16" halign="left" alphatest="blend" transparent="1" valign="top"/>
-	 <widget source="session.MSNWeather" render="Label" position="355,30" size="390,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
-	 <convert type="MSNWeather">humidity</convert>
-	 </widget>	 
+	    <widget source="session.MSNWeather" render="Label" position="395,15" size="390,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
+	        <convert type="MSNWeather">winddisplay</convert>
+	    </widget> 
+	    <widget source="session.MSNWeather" render="Label" position="460,30" size="100,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
+	        <convert type="MSNWeather">observationtime</convert>
+	    </widget>
+	    <eLabel text="%" position="425,30" size="35,24" foregroundColor="#a1d1ff" zPosition="1" font="Regular;16" halign="left" alphatest="blend" transparent="1" valign="top"/>
+	    <widget source="session.MSNWeather" render="Label" position="395,30" size="390,40" font="Regular;16" halign="left" foregroundColor="#a1d1ff" backgroundColor="background" transparent="1" zPosition="2">
+	        <convert type="MSNWeather">humidity</convert>
+	    </widget>	 
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="675,20" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
 			<convert type="MSNWeather">weekday,day3</convert>
 		</widget>
@@ -3797,22 +3880,25 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="1168,8" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
 			<convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/EGAdriatic/msn/,png</convert>
 		</widget>		
-		<widget noWrap="1" backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="150,20" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+		<widget noWrap="1" backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="190,20" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
 			<convert type="MSNWeather">weekday,day2</convert>
 		</widget>
-		<widget alphatest="blend" render="MSNWeatherPixmap" position="120,8" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="160,8" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
 			<convert type="MSNWeather">weathericon,current,/usr/share/enigma2/EGAdriatic/msn/,png</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular;26" foregroundColor="#a1d1ff" render="Label" position="55,15" size="75,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+		<widget noWrap="1" backgroundColor="background" font="Regular;26" foregroundColor="#a1d1ff" render="Label" position="95,15" size="75,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
 			<convert type="MSNWeather">temperature_current</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="305,13" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#a1d1ff">
+		<widget noWrap="1" backgroundColor="background" font="Regular;26" foregroundColor="#a1d1ff" render="Label" position="80,15" size="75,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+			<convert type="MSNWeather">feelslike</convert>
+		</widget>		
+		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="345,13" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#a1d1ff">
 			<convert type="MSNWeather">temperature_high,day2</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="305,30" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#4ccbde">
+		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="345,30" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#4ccbde">
 			<convert type="MSNWeather">temperature_low,day2</convert>
 		</widget>
-		<widget alphatest="blend" render="MSNWeatherPixmap" position="255,8" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
+		<widget alphatest="blend" render="MSNWeatherPixmap" position="295,8" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
 			<convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/EGAdriatic/msn/,png</convert>
 		</widget>		
 		<!--widget backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="190,545" size="200,82" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
@@ -3821,51 +3907,31 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
 	<!-- (002) ####### SECOND INFOBAR ####### -->
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent" devtag="002">
-	<panel name="SecondInfobarPanelEvents"/>
-	<panel name="msnPanel"/>	
-	<eLabel position="53,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
-	<eLabel position="639,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
-	<eLabel position="55,97" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
-	<eLabel position="55,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>
-	<eLabel position="55,506" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
-	<eLabel position="635,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>
-	<eLabel position="641,97" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
-	<eLabel position="641,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>
-	<eLabel position="641,506" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
-	<eLabel position="1222,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>	
+	    <panel name="SecondInfobarPanelEvents"/>
+	    <panel name="msnPanel"/>	
+	    <eLabel position="53,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
+	    <eLabel position="639,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
+	    <eLabel position="55,97" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
+	    <eLabel position="55,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>
+	    <eLabel position="55,506" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
+	    <eLabel position="635,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>
+	    <eLabel position="641,97" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
+	    <eLabel position="641,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>
+	    <eLabel position="641,506" size="581,1" backgroundColor="#00fafa" zPosition="1"/>
+	    <eLabel position="1222,97" size="1,410" backgroundColor="#00fafa" zPosition="1"/>	
 		<panel name="InfoBar" />
-		<ePixmap position="-1,0" zPosition="0" size="1280,95" pixmap="EGAdriatic/extrabar.png" transparent="1" />					
-		<!-- emu info -->
-		<widget halign="left" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#4ccbde" transparent="1" position="681,82" render="Label" size="386,22" font="Regular;17" source="session.CurrentService" zPosition="4">
-			<convert type="EmuCamInfo">IDInfo</convert>
-		</widget>
-		<widget halign="left" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#4ccbde" transparent="1" position="78,50" render="Label" size="208,26" font="Regular;17" source="session.CurrentService" zPosition="4">
-			<convert type="EmuCamInfo">Protocol</convert>
-		</widget>
-		<widget halign="left" backgroundColor="#333333" shadowColor="transparentblack" foregroundColor="#dcdcdc" transparent="1" position="920,50" render="Label" size="200,26" font="Regular;17" source="session.CurrentService" zPosition="4">
-			<convert type="EmuCamInfo">Hops</convert>
-		</widget>
-		<widget halign="left" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#4ccbde" transparent="1" position="454,50" render="Label" size="512,26" font="Regular;17" source="session.CurrentService" zPosition="4">
-			<convert type="EmuCamInfo">Address</convert>
-		</widget>
-		<widget halign="left"  backgroundColor="#333333" shadowColor="transparentblack" foregroundColor="#dcdcdc" transparent="1" position="1020,50" render="Label" size="200,26" font="Regular;17" source="session.CurrentService" zPosition="4">
-			<convert type="EmuCamInfo">Time</convert>
-		</widget>
-		<widget halign="center" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#56c856" transparent="1" position="328,50" render="Label" size="112,26" font="Regular;17" source="session.CurrentService" zPosition="4">
-			<convert type="EmuCamInfo">EMU</convert>
-		</widget>
+		<ePixmap position="-1,0" zPosition="0" size="1280,95" pixmap="EGAdriatic/extrabar.png" transparent="1" />
 	
  		<!-- other icons -->
 		<widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/icon_sub.png" position="726,532" zPosition="4" size="49,28" alphatest="on">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-
 		
 	<eLabel 
 		text="sid" 
-		position="710,656" 
-		size="30,50"  
+		position="372,520" 
+		size="30,15"  
 		font="Regular;14" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3877,7 +3943,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="740,656" 
+		position="405,520" 
 		size="50,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3891,8 +3957,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<eLabel 
 		text="pmt" 
-		position="790,656" 
-		size="30,50"  
+		position="375,533" 
+		size="30,15"  
 		font="Regular;14" 
 		halign="center" 
 		backgroundColor="#11404040" 
@@ -3903,7 +3969,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	  <widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="820,656" 
+		position="405,533" 
 		size="50,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3917,7 +3983,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<eLabel 
 		text="audio" 
-		position="870,656" 
+		position="837,520" 
 		size="40,50"  
 		font="Regular;14" 
 		halign="center" 
@@ -3929,7 +3995,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="910,656" 
+		position="877,520" 
 		size="50,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3943,7 +4009,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<eLabel 
 		text="video" 
-		position="960,656" 
+		position="837,532" 
 		size="40,50"  
 		font="Regular;14" 
 		halign="center" 
@@ -3955,7 +4021,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="1000,656" 
+		position="877,532" 
 		size="50,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3966,9 +4032,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	      <convert type="ServiceInfo">VideoPid</convert>
 	  </widget>
-		
-		<ePixmap position="293,53" zPosition="4" size="30,20" pixmap="EGAdriatic/icons/s_cam.png" alphatest="on" />
-		<ePixmap position="76,83" zPosition="4" size="20,20" pixmap="EGAdriatic/icons/tuner.png" alphatest="on" />
 		
 	</screen>
 
@@ -4311,10 +4374,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>		
-		<widget source="job_name" render="Label" position="80,140" size="585,35" font="Regular;28" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
+		<widget source="job_name" render="Label" position="80,140" size="690,35" font="Regular;28" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
 		<widget source="job_task" render="Label" position="80,190" size="585,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
 		<widget source="job_progress" render="Progress" position="80,230" size="585,36" borderWidth="2" backgroundColor="#1b5962"/>
-		<widget source="job_progress" render="Label" position="42,232" size="580,32" font="Regular;28" halign="center" foregroundColor="#00baff" backgroundColor="#1b5962" zPosition="2" transparent="1">
+		<widget source="job_progress" render="Label" position="42,232" size="580,32" font="xRegular;28" halign="center" foregroundColor="#00baff" zPosition="2" transparent="1">
 		    <convert type="ProgressToText"/>
 		</widget>
 		<widget source="job_status" render="Label" position="80,280" size="585,26" font="Regular;23" backgroundColor="#000000" transparent="1"/>
@@ -5093,7 +5156,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>		
 		<ePixmap position="935,414" zPosition="1" size="370,204" pixmap="EGAdriatic/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>
-		<widget source="list" render="Listbox" position="80,138" size="718,375" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="80,138" size="690,375" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
 		    <convert type="TemplatedMultiContent">
 				{"template": [
 				 MultiContentEntryText(pos = (90, 0), size = (600, 30), font=0, color=0x4ccbde, text = 0),
@@ -5127,7 +5190,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget source="list" render="Listbox" position="80,138" size="718,375" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
+		<widget source="list" render="Listbox" position="80,138" size="690,375" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
 			<convert type="StringList"/>
 		</widget>
        <ePixmap position="925,414" zPosition="1" size="256,256" pixmap="menu/ico_wlan.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>		
@@ -5140,7 +5203,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="sRGYB"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="header" position="825,490" size="415,130" halign="center" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="Transparent" transparent="1"/>
+		<widget name="header" position="840,490" size="380,200" halign="center" font="Regular;22" foregroundColor="#4ccbde" backgroundColor="Transparent" transparent="1"/>
 		<widget name="status" position="80,138" size="550,45" font="Regular;18" transparent="1"/>
 		<widget source="menu" render="Listbox" position="80,138" size="718,440" scrollbarMode="showOnDemand" transparent="1">
 		    <convert type="TemplatedMultiContent" transparent="1">
@@ -5164,7 +5227,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="sRGY"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="update" position="80,140" size="718,375" font="Regular;20" halign="left" backgroundColor="#101010" transparent="1"/>
-		<widget name="header" position="825,490" size="415,130" font="Regular;22" halign="center" foregroundColor="#4ccbde" backgroundColor="Transparent" transparent="1"/>
+		<widget name="header" position="840,490" size="380,200" font="Regular;18" halign="center" foregroundColor="#4ccbde" backgroundColor="Transparent" transparent="1"/>
 	</screen>
 		
 	<!--  EGAMI News Updates OKK -->
@@ -5197,7 +5260,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="label2" position="110,180" size="315,290" zPosition="1" halign="center" font="Regular;20" backgroundColor="#000000" transparent="1"/>
 		<widget name="label6" position="260,180" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#000000" foregroundColor="#4ccbde" transparent="1"/>
 		<widget name="device_icon" position="100,320" size="80,80" alphatest="on"/>
-		<widget name="config" position="80,210" size="718,375" transparent="1"/>
+		<widget name="config" position="80,210" size="690,375" transparent="1"/>
 		<widget name="label3" position="80,435" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
 		<widget name="label4" position="80,460" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
 		<widget name="label5" position="80,485" size="270,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
