@@ -578,7 +578,7 @@
 	<!-- ChannelList Menu OK -->
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-	    <widget name="menu" position="80,138" size="718,465"  scrollbarMode="showOnDemand" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
+	    <widget name="menu" position="80,138" size="718,465" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	</screen>
 	
@@ -3160,7 +3160,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<eLabel text="Virtual Keyboard" position="596,620" size="250,40" zPosition="2" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" />
 		<eLabel text=" " position="873,632" size="250,30" zPosition="2" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" />
 
-		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> 
 		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
@@ -3238,7 +3238,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="detailtext" position="370,225" size="730,280" zPosition="10" font="Regular;22" foregroundColor="white" backgroundColor="darkgrey" transparent="1" />
 		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1" />
         	<widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" />
-		<widget name="thumbnail" position="0,0" size="100,135" alphatest="on"/> # fake entry for dynamic thumbnail resizing, currently there is no other way doing this.
+		<widget name="thumbnail" position="0,0" size="100,135" alphatest="on"/> 
 	</screen>
 	<!-- (154) ####### MyTubeSettingsScreen ####### -->
 	<screen name="MyTubeSettingsScreen" position="center,center" size="1160,560" title="MyTubeSettingsScreen"  >
@@ -3451,7 +3451,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <!-- Data - Date -->
-    <widget source="global.CurrentTime" render="Label" position="1082,672" size="124,26" zPosition="2" font="Regular;19" halign="left" backgroundColor="background" foregroundColor="#dcdcdc" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1100,672" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="background" foregroundColor="#a1d1ff" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <!-- Nombre del Canal - Service Name -->
@@ -3471,14 +3471,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="RemainingToText">NoSeconds</convert>
     </widget>
     <!-- Prossimo Evento - Event Next -->
-    <widget source="session.Event_Next" render="Label" position="232,646" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="grey" backgroundColor="#333333" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="232,640" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-	<widget font="Regular;24" halign="left" noWrap="1" position="317,646" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Next" foregroundColor="grey" backgroundColor="#333333" transparent="1" zPosition="2">
+	<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Next" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1" zPosition="2">
 		<convert type="EventName">Name</convert>
 	</widget>	
-    <widget source="session.Event_Next" render="Label" position="957,646" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="grey" backgroundColor="#333333" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">NoSeconds</convert>
     </widget>
@@ -3492,42 +3492,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="ServiceName">Reference</convert>
     </widget>
     <!-- Sezione DVB - DVB Section -->
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S" position="1064,562" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">0,0</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1064,562" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#77d8e6" backgroundColor="#333333" transparent="0">"session.CurrentService"
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">1,1</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T" position="1064,562" zPosition="3" size="81,24" font="Regular;20" halign="left" foregroundColor="#30d6e6" backgroundColor="#333333" transparent="1">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">2,2</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
+
     <!-- Sezione Numero di TUNER - Numero di TUNER A B C D -->
-    <eLabel text="TUNER" zPosition="4" position="1130,561" size="60,20" halign="left" font="LCD;20" foregroundColor="foreground" transparent="1" backgroundColor="#11404040" />
-		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1190,563" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
-  			<convert type="FrontendInfo">NUMBER</convert>
-  			<convert type="ValueRange">0,0</convert>
-  			<convert type="ConditionalShowHide" />
-  		</widget>
-  		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1190,563" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
-  			<convert type="FrontendInfo">NUMBER</convert>
-  			<convert type="ValueRange">1,1</convert>
-  			<convert type="ConditionalShowHide" />
-  		</widget>
-  		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1190,563" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
-  			<convert type="FrontendInfo">NUMBER</convert>
-  			<convert type="ValueRange">2,2</convert>
-  			<convert type="ConditionalShowHide" />
-  		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1190,563" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">3,3</convert>
-			<convert type="ConditionalShowHide" />
+		<widget source="session.FrontendInfo" render="Label" position="1100,565" size="80,21" foregroundColor="#a1d1ff" font="LCD;19" halign="center" noWrap="1" zPosition="2" transparent="1">
+		    <convert type="FrontendInfo">STRING</convert>
 		</widget>
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
     <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2" />
@@ -3549,16 +3517,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget> 	
 	-->
     <!-- Nome Provider - Provider Name -->
-    <widget source="session.CurrentService" render="Label" position="69,557" size="159,22" zPosition="2" font="Regular;16" backgroundColor="#11404040" halign="center" foregroundColor="#dcdcdc" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="69,557" size="159,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#a1d1ff" transparent="1">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <!-- Risoluzione Video - Video Resolution -->
     <!--eLabel text="Rs" zPosition="3" position="46,660" size="45,20" halign="center" font="Regular;18" foregroundColor="#808080" transparent="1" backgroundColor="transpBlack" -->
-    <widget source="session.CurrentService" render="Label" zPosition="4" position="70,676" size="61,24" halign="right" font="Regular;19" foregroundColor="#dcdcdc" transparent="1" backgroundColor="background">
+    <widget source="session.CurrentService" render="Label" zPosition="4" position="70,676" size="61,24" halign="right" font="LCD;19" foregroundColor="#a1d1ff" transparent="1" backgroundColor="background">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
-    <eLabel text="x" zPosition="4" position="138,676" size="15,24" halign="left" font="Regular;17" foregroundColor="#dcdcdc" transparent="1" backgroundColor="transpBlack" />
-    <widget source="session.CurrentService" render="Label" zPosition="4" position="152,676" size="55,24" halign="left" font="Regular;19" foregroundColor="#dcdcdc" transparent="1" backgroundColor="background">
+    <eLabel text="x" zPosition="4" position="138,676" size="15,24" halign="left" font="Regular;17" foregroundColor="#a1d1ff" transparent="1" backgroundColor="transpBlack" />
+    <widget source="session.CurrentService" render="Label" zPosition="4" position="152,676" size="55,24" halign="left" font="LCD;19" foregroundColor="#a1d1ff" transparent="1" backgroundColor="background">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <!-- FrameRate Video 
@@ -4072,7 +4040,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 
 	<!-- Providers -->
-	<screen name="CrossEPG_Providers" position="0,0" size="1280,720" title="CrossEPG Provider XMLTV-OpenTV-XEPGDB-MHW2-M7-RAI" backgroundColor="transparent" flags="wfNoBorder" >
+	<screen name="CrossEPG_Providers" position="0,0" size="1280,720" flags="wfNoBorder" >
 		<panel name="PantallaGenericaRG"/>
 		<panel name="Title"/>
         <panel name="PIG"/>
