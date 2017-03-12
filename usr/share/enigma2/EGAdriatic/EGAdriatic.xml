@@ -326,12 +326,12 @@
 	    <eLabel position="2,244" size="361,1" backgroundColor="#00fafa" zPosition="2"/>		
 		<widget name="FullDescription" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1" />		
 		<widget name="epg_description" position="85,122" size="0,0" font="Regular;22" halign="left"  zPosition="3" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1" />
-		<widget name="channel" position="10,3" size="360,20" font="Regular;15" halign="left"  zPosition="3" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1" />				
+		<widget name="channel" position="10,3" size="360,20" font="Regular;15" halign="left"  zPosition="3" foregroundColor="#00fafa" backgroundColor="#333333" transparent="1" />				
 		<widget source="Title" render="Label" position="10,25" size="360,25" font="Regular;15" transparent="1" foregroundColor="#4ccbde" backgroundColor="black" zPosition="1"/>
-		<widget name="datetime" position="10,43" size="250,26" font="xRegular;18" foregroundColor="#6da6ff" backgroundColor="black" transparent="1" noWrap="1" valign="top" halign="left"/>
-		<widget name="duration" position="265,43" size="150,26" font="xRegular;18" foregroundColor="#6da6ff" backgroundColor="black" transparent="1" noWrap="1" valign="top" halign="left"/>
+		<widget name="datetime" position="10,43" size="250,26" font="xRegular;17" foregroundColor="#6da6ff" backgroundColor="black" transparent="1" noWrap="1" valign="top" halign="left"/>
+		<widget name="duration" position="265,43" size="150,26" font="xRegular;17" foregroundColor="#6da6ff" backgroundColor="black" transparent="1" noWrap="1" valign="top" halign="left"/>
 		<!--widget name="FullDescription" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,50" size="1260,140" font="Regular;22" foregroundColor="#ffffff" backgroundColor="black" transparent="1"/-->
-		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,62" size="350,180" font="Regular;18" foregroundColor="#ffffff" backgroundColor="black" transparent="1">
+		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="10,62" size="350,180" font="Regular;18" foregroundColor="#a1d1ff" backgroundColor="black" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	</screen>	
