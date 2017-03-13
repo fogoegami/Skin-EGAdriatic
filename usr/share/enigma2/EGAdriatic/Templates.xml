@@ -125,14 +125,14 @@
          <widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<!-- boton rojo -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
     </screen>
 	<!-- ####### PANTALLA PARA 1 BOTON ROJO + LABEL EXIT ####### -->
 	<screen name="PantallaGenericaRexit">
 	     <panel name="Template-exit"/>
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas" />
 		<!-- boton rojo -->
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
     </screen>
 	<!-- ####### PANTALLAS ESPECIFICAS CON BOTONES ESPECIFICOS ####### -->
 	
@@ -276,7 +276,7 @@
     </screen>
 	<screen name="PantallaGenerica_sR">
 		 <panel name="PantallaGenericaSinBarraColor2Pantallas" />
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
+		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1" />
     </screen>
 	
 	<screen name="PantallaGenerica_sRGB">
