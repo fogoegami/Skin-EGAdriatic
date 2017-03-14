@@ -5129,8 +5129,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="snB"/>
 		<widget name="linea" position="80,110" size="690,30" zPosition="1" backgroundColor="#000000" transparent="1"/>
-		<widget name="label1" position="110,140" size="680,60" foregroundColor="#4ccbde" font="Regular;20" zPosition="1" backgroundColor="#000000" transparent="1"/>
-		<widget name="label2" position="110,200" size="315,290" foregroundColor="#4ccbde" font="Regular;20" zPosition="1" backgroundColor="#000000" transparent="1"/>
+		<widget name="label1" position="80,140" size="680,60" foregroundColor="#4ccbde" font="Regular;20" zPosition="1" backgroundColor="#000000" transparent="1"/>
+		<widget name="label2" position="80,200" size="315,290" foregroundColor="#4ccbde" font="Regular;20" zPosition="1" backgroundColor="#000000" transparent="1"/>
 		<widget name="label6" position="430,200" size="270,30" font="Regular;20" zPosition="1" backgroundColor="#000000" transparent="1"/>
 		<widget name="config" position="80,230" size="690,375" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1"/>
 		<widget name="device_icon" position="100,340" size="80,80" alphatest="on"/>		
