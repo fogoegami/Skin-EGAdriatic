@@ -4957,7 +4957,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="75,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x55-a.png" transparent="1"/>
+		<widget name="list" position="75,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls690x50-a.png" transparent="1"/>
 		<widget name="description" position="835,440" size="390,260" zPosition="10" font="Regular;20" halign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
 		<!--  Complementos EGAMI -->
@@ -4967,7 +4967,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<ePixmap position="860,414" zPosition="2" size="370,204" pixmap="EGAdriatic/menu/ico_plugins.png" alphatest="blend" transparent="1" />		
-		<widget source="list" render="Listbox" position="80,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x55-a.png" transparent="1">
+		<widget source="list" render="Listbox" position="80,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls690x50-a.png" transparent="1">
 		    <convert type="TemplatedMultiContent">
 			      {"template": [
 			      MultiContentEntryText(pos = (125, 0), size = (650, 24), font=0, text = 0),
@@ -5076,7 +5076,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="header" position="840,490" size="380,200" halign="center" font="Regular;22" foregroundColor="#4ccbde" backgroundColor="transparent" transparent="1"/>
 		<widget name="status" position="80,138" size="550,45" font="Regular;18" transparent="1"/>
-		<widget source="menu" render="Listbox" position="80,138" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x55-a.png" transparent="1">
+		<widget source="menu" render="Listbox" position="80,138" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls690x50-a.png" transparent="1">
 		    <convert type="TemplatedMultiContent" transparent="1">
 				{"template": [
 					MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (50, 50), png = 2), # index 4 is the status pixmap
