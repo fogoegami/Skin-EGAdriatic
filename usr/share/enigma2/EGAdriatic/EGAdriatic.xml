@@ -3125,7 +3125,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <!-- ePixmap position="235,613" zPosition="2" size="885,6" pixmap="EGAdriatic/po_bar.png" alphatest="on" -->
+	<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="69,557" size="159,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#a1d1ff" transparent="1">
+		<convert type="ServiceInfo">HasHBBTV</convert>
+		<convert type="ConditionalShowHide"/>
+	</widget>
     <!-- Posizione Picon - Picon Position -->
     <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="on">
       <convert type="ServiceName">Reference</convert>
