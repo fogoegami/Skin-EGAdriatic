@@ -39,6 +39,7 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
 		<!-- menu list -->
+		<!--widget source="menu_path_compressed" render="Label" position="80,5" size="540,40" font="Regular;15" transparent="1" foregroundColor="#00fafa" backgroundColor="#000000" zPosition="2"/-->
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			 {"template": [ 
@@ -53,13 +54,13 @@
 		<widget source="menu" render="Listbox" zPosition="2" position="835,445" size="390,30" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (0,2), size = (400,60),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP, text = 2, color = 0x0000fafa),	# index 0 is the MenuText,
+				MultiContentEntryText(pos = (0,2), size = (400,30),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP, text = 2, color = 0x0000fafa),	# index 0 is the MenuText,
 				],
 				"fonts": [gFont("Regular",21)],
 				"itemHeight": 30
 				}
 			</convert>
-		</widget>	
+		</widget>		
 	</screen>		
 	<!-- (070) ####### SETUP ( AutoResolution-Personalizzare-Fuso Orario-Tastiera-Display ####### (12-02) -->
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4130,7 +4131,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="status" position="845,380" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="statusbar" position="845,430" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="74,36" alphatest="blend"/>
-        <ePixmap pixmap="menu/logo_egami_menu.png" position="945,480" size="180,180" zPosition="2" alphatest="blend"/>		
+        <ePixmap pixmap="menu/logo_egami_menu.png" position="945,485" size="180,180" zPosition="2" alphatest="blend"/>		
 	</screen>
 
 	<!-- EPG Import Sources -->
