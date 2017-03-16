@@ -63,10 +63,10 @@
 	</colors>
 	<!-- Fonts -->
 	<fonts>
-	    <font filename="Verdana_R.ttf" name="Regular" scale="95"/>
-        <font filename="digital-Bold.ttf" name="LCD2" scale="100" />
-		<font filename="digital-watch.ttf" name="LCD" scale="100" />
-		<font filename="nmsbd2.ttf" name="oledRegular" scale="90"/>
+	    <font filename="/usr/share/enigma2/EGAdriatic/fonts/Verdana_R.ttf" name="Regular" scale="95"/>
+        <font filename="/usr/share/enigma2/EGAdriatic/fonts/digital-Bold.ttf" name="LCD2" scale="100" />
+		<font filename="/usr/share/enigma2/EGAdriatic/fonts/digital-watch.ttf" name="LCD" scale="100" />
+		<font filename="/usr/share/enigma2/EGAdriatic/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>
 		<font filename="tuxtxt.ttf" name="Console" scale="100" />
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="90" replacement="1"/>
 		<font filename="nmsbd.ttf" name="Display" scale="100"/>
