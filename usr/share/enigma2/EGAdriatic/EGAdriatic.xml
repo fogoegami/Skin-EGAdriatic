@@ -3086,7 +3086,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-	<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Next" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1" zPosition="2">
+	<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1" zPosition="2">
 		<convert type="EventName">Name</convert>
 	</widget>	
     <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
@@ -3331,7 +3331,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <convert type="EventTime">StartTime</convert>
         <convert type="ClockToText">Default</convert>
     </widget>
-	<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Next" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1" zPosition="2">
+	<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1" zPosition="2">
 		<convert type="EventName">Name</convert>
 	</widget>	
     <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
@@ -4988,8 +4988,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="key_green" render="Label" position="200,605" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 	    <widget name="description" position="845,435" size="380,160" halign="center" valign="center" font="Regular;24" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="80,138" size="718,375" selectionPixmap="EGAdriatic/icons/ls700x30.png" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="choosen" position="420,550" size="325,550" foregroundColor="#00baff" transparent="1"/>
+		<widget name="list" position="80,190" size="718,375" selectionPixmap="EGAdriatic/icons/ls700x30.png" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="choosen" position="420,130" size="325,50" foregroundColor="#00baff" transparent="1"/>
 	</screen>
 	<!-- EGAMI Configuar Botones -->
 	<screen name="ButtonSetupSelect" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4999,8 +4999,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="description" position="865,435" size="320,500" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="80,138" size="718,375" selectionPixmap="EGAdriatic/icons/ls700x30.png" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="choosen" position="420,515" size="345,550" foregroundColor="#00baff" transparent="1"/>
+		<widget name="list" position="80,190" size="718,375" selectionPixmap="EGAdriatic/icons/ls700x30.png" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="choosen" position="420,130" size="345,50" foregroundColor="#00baff" transparent="1"/>
 	</screen>
 	<!-- EGAMI Devices  -->
 	<screen name="EGDeviceManager" position="0,0" size="1280,720" flags="wfNoBorder">
