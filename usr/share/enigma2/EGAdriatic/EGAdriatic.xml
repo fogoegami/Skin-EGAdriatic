@@ -2310,7 +2310,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 		</widget>
 		<eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="#df0b1300"/>
-		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>		
+		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>
+        <widget source="SeekState" render="Label" position="479,124" zPosition="1" size="696,377"/>		
 		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -2318,7 +2319,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#808888" pointer="EGAdriatic/position_arrow.png:3,5" foregroundColor="black"/>
-		<ePixmap pixmap="EGAdriatic/mp_buttons.png" position="100,582" size="260,34" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="EGAdriatic/mp_buttons.png" position="145,582" size="260,34" zPosition="1" alphatest="on"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (100) ####### TitleCutter ####### -->
@@ -2338,6 +2339,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="#df0b1300"/>
 		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>
+        <widget source="SeekState" render="Label" position="479,124" zPosition="1" size="696,377"/>		
 		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -4433,49 +4435,51 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="state" position="10,2" size="0,0" font="xRegular;17" halign="left" foregroundColor="#00fafa" backgroundColor="black" transparent="1" zPosition="0"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="2"/>
 	</screen>
-	<!-- EMC-MENU -->
+	<!-- EMC-MENU->opciones de la Lista de reproduccion -->
 	<screen name="MovieMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
 		<widget source="menu" render="Listbox" position="80,138" size="715,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
 	</screen>
-		<!-- PLugin MENU->opciones de la Lista de reproduccion -->	
+		<!-- PLugin MENU->Mostrar lista de reproduccion Actual -->	
 	<screen name="EMCPlaylist" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>		
 		<panel name="ScrollBarTemplate"/>
 		<panel name="PIG"/>
         <panel name="Title"/>			
-		<widget name="playlist" position="80,138" size="715,400" scrollbarMode="showOnDemand" posColor="#FFFFFF" posColorSel="#FFFFFF" nameColor="#FFFFFF" nameColorSel="#FFFFFF"/>
+		<widget name="playlist" position="80,138" size="715,400" backgroundColor="#000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<widget name="cancel" position="90,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
-		<widget name="ok" position="280,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
-		<widget name="" position="470,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="save" position="280,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="delete" position="470,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="deleteall" position="680,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<ePixmap position="935,400" size="200,200" pixmap="menu/ico_mediacenter.png" alphatest="blend"/>
 	</screen>		
 		<!-- EMC-MENU->Configuracion de lista de Reproduccion -->	
  	<screen name="EMCPlaylistSetup" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
         <widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
 		<widget name="cancel" position="90,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="save" position="280,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
  	</screen>	
 	    <!-- EMC-Configuracion -->
 	<screen name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="sRGYB"/>		
+		<widget source="red" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
+		<widget source="green" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
+		<widget source="blue" position="660,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend"/>		
         <panel name="PIG"/>	
 	    <widget name="config" position="80,138" size="715,400" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
@@ -4529,11 +4533,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="movielist"  position="80,170" size="690,400" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="resulttext" position="845,400" size="300,320" halign="center" valign="center" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="icons/key_exit.png" position="60,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="185,640" size="40,22" alphatest="blend"/>
+		<widget name="setup" position="240,615" size="300,80" font="Regular;20" halign="left" valign="center" transparent="1"/>		
 		<ePixmap pixmap="icons/key_info.png" position="420,640" size="40,22" alphatest="blend"/>
 		<widget name="movieinfo" position="475,615" size="300,80" font="Regular;20" halign="left" valign="center" transparent="1"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="185,640" size="40,22" alphatest="blend"/>
-		<widget name="setup" position="240,615" size="300,80" font="Regular;20" halign="left" valign="center" transparent="1"/>
-		<ePixmap pixmap="icons/key_exit.png" position="60,640" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_ok.png" position="645,640" size="40,22" alphatest="blend"/>		
+		<widget name="save" position="700,615" size="300,80" font="Regular;20" halign="left" valign="center" transparent="1"/>		
 	</screen>
 	<!-- (TMDB)-> MENU-->
  	<screen name="MovieInfoSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5380,7 +5386,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="config" position="80,140" size="690,210" font="Regular;22" itemHeight="45" zPosition="1" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand"/>
-        <widget name="memory" position="80,420" zPosition="2" size="690,40" valign="center" halign="left" font="Regular;22" transparent="1" />
+        <widget name="memory" position="80,415" zPosition="2" size="690,40" valign="center" halign="left" foregroundColor="#00fafa" font="Regular;22" transparent="1" />
         <widget name="slide" position="80,450" zPosition="2" borderWidth="1" size="560,20" pixmap="EGAdriatic/progress_big.png" borderColor="#cccccc"/>
 		<panel name="Logo_Egami"/>  
     </screen>	
