@@ -55,17 +55,31 @@
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->
 	<screen name="PIG">
-		<!-- PIG -->		
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
+		<!-- PIG -->
+		<!-- Barra Progresso -->	
+		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<eLabel position="838,310" size="382,20" backgroundColor="#20101010" zPosition="3"/>
+		<!-- Nombre del Canal - Service Name -->		
+		<widget source="session.CurrentService" render="Label" position="838,305" size="382,25" zPosition="4" foregroundColor="#00fafa" font="Regular;19" valign="center" halign="center" transparent="1">
+		    <convert type="ServiceName">Name</convert>
+		</widget>		
 		<!-- Barra Progresso -->
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-        <!-- digital clock -->
+		<!-- Evento Corrente - Event Now -->
+		<widget source="session.Event_Now" render="Label" position="830,350" size="70,30" zPosition="2" halign="left"  font="Regular;20" foregroundColor="#00fafa" backgroundColor="background" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	    <widget font="Regular;20" halign="left" position="893,350" size="275,32" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" source="session.Event_Now" foregroundColor="#00baff" backgroundColor="#000000" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>			
+		<widget source="session.Event_Now" render="Label" position="1155,350" foregroundColor="#a1d1ff" size="70,30" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>			
+                <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
@@ -302,6 +316,10 @@
 	<screen name="PantallaGenerica_sYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarYB.png" alphatest="blend" transparent="1"/>
+    </screen>
+	<screen name="PantallaGenerica_sY">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarY.png" alphatest="blend" transparent="1"/>
     </screen>	
 	<!--  ####### Template PantallaPieTV #######  -->
 	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -309,5 +327,9 @@
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>		
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>	
-	</screen>	
+	</screen>
+	<!--  ####### LOGO EGAMI #######  -->
+    <screen name="Logo_Egami">	
+		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+	</screen>		
 </skin>

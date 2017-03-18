@@ -36,8 +36,8 @@
         <panel name="PIG"/>
         <panel name="ScrollBarTemplate"/>
 		<panel name="menu_sort"/>
+		<panel name="Logo_Egami"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
 		<!-- menu list -->
 		<!--widget source="menu_path_compressed" render="Label" position="80,5" size="540,40" font="Regular;15" transparent="1" foregroundColor="#00fafa" backgroundColor="#000000" zPosition="2"/-->
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
@@ -330,7 +330,7 @@
 		<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<!-- events list -->
-		<widget name="list" position="70,138" size="713,400" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="70,138" size="716,400" scrollbarMode="showOnDemand" transparent="1"/>
         <widget name="number" position="270,100" size="450,30" transparent="1"/>
 		<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
@@ -582,7 +582,7 @@
 		<widget name="cancel" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
 		<widget name="ok" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="80,138" font="Regular;22" size="600,500" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>		
+		<panel name="Logo_Egami"/>  		
 	</screen>	
 	
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
@@ -689,6 +689,7 @@
 	
 	<!-- (009) ####### SOFTWARE MANAGER - GESTIONE SOFTWARE ####### (12-02) -->
 	<screen name="UpdatePluginMenu" position="center,center" size="1280,720" title="Softwaremanager..." flags="wfNoBorder">
+	    <panel name="PIG"/>
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
 		<ePixmap position="0,0" zPosition="-1" size="576,69" pixmap="EGAdriatic/menu/tx_estension.png"/>
 		<ePixmap position="769,134" zPosition="2" size="27,400" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
@@ -713,29 +714,7 @@
 				"itemHeight": 320
 				}
 			</convert>
-		</widget>
-		<!-- Widget Pig -->
-		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<!-- Evento Corrente - Event Now -->
-		<widget source="session.Event_Now" render="Label" position="837,385" size="70,30" zPosition="2" halign="left"  font="Regular;22" foregroundColor="#808080" backgroundColor="background" transparent="1">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="900,385" size="320,32" zPosition="2" halign="center" font="Regular;22"  foregroundColor="#808080" backgroundColor="background" transparent="1" noWrap="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>		
+		</widget>	
 	</screen>
 	<!-- (010) ####### PLUGIN MANAGER - GESTIONE ESTENSIONI (12-02) ####### -->
 	<screen name="PluginManager" position="center,center" size="1280,720" title="Extensions management" flags="wfNoBorder">
@@ -921,7 +900,7 @@
 		<widget name="InfoTextBorder" position="570,440" size="585,300" zPosition="2"/>
 		<widget name="EditSettingsButton" pixmaps="menu/colorbarB.png" position="660,635" size="140,30" zPosition="1"/>
 		<widget name="EditSettings_Text" position="655,610" size="150,50" valign="center" halign="center" zPosition="2" font="Regular;22" transparent="1"  backgroundColor="black"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!-- (109) ####### Network Wizard ####### -->
 	<screen name="NetworkWizard" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1086,7 +1065,7 @@
         <panel name="PIG"/>
 		<panel name="sRGY"/>
 		<widget name="config" position="80,150" size="650,420" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>	
 	<!-- ********** Configuracion FTP Samba y CIFS ********** -->
 	<screen name="NetworkSamba" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1101,7 +1080,7 @@
 		<widget name="lab2" position="80,220" size="250,30" font="Regular;20" foregroundColor="#4ccbde" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="labstop" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="365,200" size="200,40" font="Regular;22" halign="center" valign="center" backgroundColor="green" zPosition="2"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!-- Network Inadyn Setup OK -->
 	<screen name="NetworkInadyn" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1140,7 +1119,7 @@
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>		
 		
 	<!-- NetWork Inadyn Log OK -->
@@ -1152,7 +1131,7 @@
 		<widget name="infotext" position="80,140" size="735,493" font="Console;14" backgroundColor="black" transparent="1"/>
 		<eLabel position="40,582" size="725,5" backgroundColor="black" zPosition="10"/>
 		<ePixmap pixmap="icons/key_exit.png" position="8,640" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!-- NetWork MiniDLNA OK -->
 	<screen name="NetworkMiniDLNA" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1185,7 +1164,7 @@
 		<widget name="tivo" position="80,560" size="250,30" font="Regular;22" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="tivoinactive" position="320,561" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
 		<widget name="tivoactive" position="320,561" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>		
 	
 	<!-- NetWork NFS Setup -->
@@ -1266,7 +1245,7 @@
 		<widget name="telnet" position="80,600" size="250,30" font="Regular;22" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="telnetinactive" position="320,601" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
 		<widget name="telnetactive" position="320,601" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!-- NetWork uShare Selection OK -->
 	<screen name="uShareSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1275,7 +1254,7 @@
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="checkList" position="80,140" size="715,400" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!--  (022) ####### 97 Audio y subtitulos teclas Mando a distancia ( Select audio track ####### -->
 	<screen name="AudioSelection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1517,7 +1496,7 @@
 				}
 			</convert>
 		</widget>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!-- (043) ####### NimSetup Reception Settings ####### -->
 	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2316,7 +2295,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="freeDiskSpace" position="295,425" size="540,20" font="Regular;19" valign="center" halign="center"/>
 	</screen>
 	<!-- (099) ####### Cut List Editor ####### -->
-	<screen name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder">
+	<screen name="CutListEditor" position="0,0" size="1280,720" backgroundColor="#1b5962" title="Cutlist editor" flags="wfNoBorder">
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black"/>
 		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" render="Listbox">
@@ -2331,7 +2310,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 		</widget>
 		<eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="#df0b1300"/>
-		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>
+		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>		
 		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -2366,7 +2345,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#808888" pointer="EGAdriatic/position_arrow.png:3,5" foregroundColor="black"/>
-		<ePixmap pixmap="EGAdriatic/mp_buttons.png" position="100,582" size="260,34" zPosition="1" alphatest="on"/>
+		<ePixmap pixmap="EGAdriatic/mp_buttons.png" position="130,582" size="260,34" zPosition="1" alphatest="on"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (102) ####### DVD Chapter Zap ####### -->
@@ -2587,7 +2566,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_exit.png" position="10,682" size="40,22" zPosition="1" alphatest="blend"/>		
 		<widget name="text" position="80,137" size="715,32" font="Regular;24" transparent="1" foregroundColor="#4ccbde" backgroundColor="transpBlack"/>  
 		<widget name="entries" position="80,177" size="715,400" zPosition="0" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	 <!-- (131) ####### CIselectMainMenu ####### -->
 	<screen name="CIselectMainMenu" position="center,center" size="710,240" title="CI Assignment">
@@ -3953,7 +3932,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" alphatest="blend"/>
-  		<widget source="menu" render="Listbox" position="80,138" size="690,440" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1">
+  		<widget source="menu" render="Listbox" position="80,140" size="715,440" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1">
   		    <convert type="TemplatedMultiContent">
                 {"template": [
 						MultiContentEntryText(pos = (95, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
@@ -4117,7 +4096,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="590,657" size="360,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>		
+		<panel name="Logo_Egami"/>  		
 	</screen>	
                 <!-- ########################### PANTALLAS PLUGINS ################################## -->
 	<!-- EPG Import Configuration -->
@@ -4458,8 +4437,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="MovieMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
-        <panel name="sRGYB"/>		
+        <panel name="Title"/>		
         <panel name="PIG"/>
 		<widget source="menu" render="Listbox" position="80,138" size="715,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList"/>
@@ -4505,7 +4483,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- Scan IMDB -->
 	<screen name="EMCImdbScan" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
+		<panel name="PantallaGenerica_sY"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
 		<panel name="PIG"/>
@@ -4517,16 +4495,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="m_info" position="200,500" size="400,390" font="Regular;20" halign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="done_msg" position="400,550" size="400,460" font="Regular;20" halign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<!-- Cover picture -->
-		<widget name="no_poster" position="1110,400" size="290,180" zPosition="1" alphatest="on" transparent="1"/>
-		<widget name="poster"    position="870,400" size="300,210" zPosition="1" alphatest="on"/>
+		<widget name="no_poster" position="1110,400" size="290,180" zPosition="1"/>
+		<widget name="poster"    position="870,400" size="300,210" zPosition="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="640,680" size="40,22" alphatest="blend"/>
 		<widget name="Setup" position="690,650" size="300,80" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_ok.png" position="640,640" size="40,22" alphatest="blend"/>
 		<widget name="Single search" position="660,600" size="150,80" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<!-- Buttons  -->
 		<widget name="ButtonRedText" position="100,600" size="210,95" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="ButtonRed" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
+		<widget name="ButtonGreen" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>		
 		<widget name="ButtonGreenText" position="290,600" size="210,95" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="Manage Cover" position="460,600" size="210,95" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="genre" position="0,580" size="150,22" foregroundColor="#4ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="exist" position="400,110" size="150,22" foregroundColor="#4ccbde" font="Regular;20" valign="top" transparent="1"/>
+	    <widget name="download" position="240,110" size="150,22" foregroundColor="#4ccbde" font="Regular;20" valign="top" transparent="1"/>
 	</screen>
 	<!-- EMC- CONFIGURACION DE BUSCAR CARATULA -->	
 	<screen name="imdbSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4696,7 +4679,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/butselection2.png" position="60,370" size="50,50" zPosition="2" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" zPosition="1" alphatest="blend"/>
 		<widget name="menu" position="110,145" size="685,400" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>		
+		<panel name="Logo_Egami"/>  		
 	</screen>
 	<!-- Softcam Setup OK -->
 	<screen name="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4706,7 +4689,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>	
 		<widget name="config" position="80,140" size="585,200" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="info" position="80,340" size="585,325" foregroundColor="#00fafa" font="Regular;20" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>		
+		<panel name="Logo_Egami"/>  		
 	</screen>
     <!-- ********** FrontPanelUpgrade ********** -->
 	<screen name="FirmwareUpgrade" position="0,0" size="1280,720" title="FirmwareUpgrade" flags="wfNoBorder">
@@ -4763,7 +4746,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<screen name="ForecaPreviewCache" position="40,20" size="48,48" flags="wfNoBorder" backgroundColor="#000000">
 		<widget name="spinner" position="0,0" zPosition="4" size="48,48" alphatest="blend"/>
-	</screen>	
+	</screen>
+	<!-- YouTube TV Setup Complementos -->	
+    <screen name="YoutubeTVSettings" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
+        <panel name="PantallaPieTV"/>
+        <panel name="Title"/>
+        <panel name="sRG"/>
+        <widget name="config" position="80,170" zPosition="3" size="690,60" scrollbarMode="showOnDemand"/>		
+        <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
+    </screen>	
 	<!-- YouTube TV  MENU PRINCIPAL -->
     <screen name="YoutubeTVWindow" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
@@ -4775,7 +4767,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="infomation" position="80,470" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,50"/>		
         <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
-    </screen>
+    </screen>	
 	<!-- WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu-->	
     <screen name="MSNWeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRGYB"/>
@@ -5027,7 +5019,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!--  EGAMI Choose Mount OKK -->
 	<screen name="EGDeviceManager_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="Setup"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!-- Egami USB Disk Format  -->
 	<screen name="EGAMI_UsbFormat" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5131,7 +5123,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="label10" position="80,530" size="440,30" zPosition="1" font="Regular;20" backgroundColor="#000000" transparent="1"/>
 		<widget name="label11" position="355,530" size="270,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="#000000" transparent="1"/>
 		<widget name="free_space_progressbar" position="200,460" size="300,13" borderWidth="1" zPosition="3"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	
 	<!--  EGAMI Selecion imagen por internet -->
@@ -5225,7 +5217,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	    <widget name="status" position="220,110" size="520,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	    <widget name="menu" position="80,160" size="718,400" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!--  EGAMI Internet Addons SUBPANTALLA (EGAMI ONLINE ADDONS INSTALLATION) -->
 	<screen name="EG_InternetAddons" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5266,7 +5258,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="status" position="200,140" size="515,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="listaaddonow" position="80,200" size="690,375" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>	
 	<!--  EGAMI Remove Addons OKK -->
 	<screen name="EGAddonRemove" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5276,7 +5268,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="remove" position="80,200" size="515,375" transparent="1"/>
 		<widget name="status" position="200,140" size="515,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 		<!--  EGAMI ExtraMenu OKK -->
 	<screen name="EGExtrasMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5369,7 +5361,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="lab1" position="80,140" font="Regular;24" zPosition="2" backgroundColor="black" transparent="1" size="690,400"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
 	</screen>
 	<!-- EgamiBootLogo OKK -->
 	<screen name="EgamiBootLogoSelector" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5379,7 +5371,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	    <widget name="config" position="80,140" itemHeight="30" scrollbarMode="showOnDemand" size="690,110" zPosition="1" transparent="1"/>
 	    <widget name="Preview" position="80,260" size="512,275" alphatest="blend" transparent="1" zPosition="3"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
  	</screen>
 	<!-- ClearMemorySetup -->	
 	<screen name="SetupMenu" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5388,9 +5380,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="config" position="80,140" size="690,210" font="Regular;22" itemHeight="45" zPosition="1" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand"/>
-        <widget name="memory" position="80,200" zPosition="2" size="690,40" valign="center" halign="left" font="Regular;22" transparent="1" />
-        <widget name="slide" position="80,250" zPosition="2" borderWidth="1" size="560,20" pixmap="EGAdriatic/progress_big.png" borderColor="#cccccc"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+        <widget name="memory" position="80,420" zPosition="2" size="690,40" valign="center" halign="left" font="Regular;22" transparent="1" />
+        <widget name="slide" position="80,450" zPosition="2" borderWidth="1" size="560,20" pixmap="EGAdriatic/progress_big.png" borderColor="#cccccc"/>
+		<panel name="Logo_Egami"/>  
     </screen>	
 	<!-- ClearMemory Boton amarillo info -->
 	<screen name="ClearMemInfoScreen" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5400,7 +5392,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <widget name="memtext" font="Regular;18" position="80,140" zPosition="2" valign="center" halign="left" size="230,400" backgroundColor="black" transparent="1"/>
         <widget name="memvalue" font="Regular;18" position="512,140" zPosition="2" valign="center" halign="right" size="140,400" backgroundColor="black" transparent="1"/>
-		<ePixmap pixmap="menu/logo_egami_menu.png" position="945,460" size="180,180" zPosition="2" alphatest="blend"/>
+		<panel name="Logo_Egami"/>  
     </screen>	
 	<screen name="ClearMemAutoScreen" position="0,0" size="1280,720" flags="wfNoBorder">
         <widget name="message_label" font="Regular;22" position="0,0" zPosition="2" valign="center" halign="center" size="498,30" backgroundColor="black" transparent="1"/>
