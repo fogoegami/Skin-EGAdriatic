@@ -2095,12 +2095,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### TEMPORIZADORES + TEMPORIZADORES DE ALIMENTACION ####### -->
 	<screen name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor" backgroundColor="black" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGY"/>
+		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
-		<ePixmap pixmap="icons/key_info.png" position="670,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="icons/key_exit.png" position="735,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="icons/key_exit.png" position="8,680" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
 		<widget name="timerlist" position="70,145" size="705,350" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;16" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>
 		<widget name="description" position="845,310" size="0,0" zPosition="-1" font="Regular;1" halign="center" transparent="1" valign="center" foregroundColor="#a1d1ff" backgroundColor="black"/>
