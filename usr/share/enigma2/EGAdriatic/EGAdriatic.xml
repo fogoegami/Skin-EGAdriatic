@@ -1786,8 +1786,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="introduction" render="Label" position="865,20" size="380,160" zPosition="10" font="Regular;22" halign="center" valign="top" foregroundColor="#00fafa" backgroundColor="#333333" transparent="1"/>
 	</screen>
 	<!-- (083) ####### Video Finetune ####### -->
-	<screen name="VideoFinetune" position="fill" backgroundColor="transpBlack" >
-		<widget source="Canvas" render="Canvas" position="280,70" size="720,576"/>	
+	<screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="transpBlack" >
+		<widget source="Canvas" render="Canvas" position="0,0" size="1280,720"/>	
 	</screen>	
 	<!-- (054) ####### CleanupWizardConfiguration ####### -->		
 	<screen name="CleanupWizardConfiguration" position="center,center" size="710,340" title="CleanupWizard settings">
