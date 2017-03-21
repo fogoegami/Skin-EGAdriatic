@@ -4530,7 +4530,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="Manage Cover" position="460,600" size="210,95" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 	</screen>
 	
-	<!-- SUBPANTALLA Busqueda Simple OK -->
+	<!-- SUBPANTALLA Busqueda Simple OK ->EMC Selector de Caratula -->
 	<screen name="getCover" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4542,7 +4542,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="m_info" position="230,105" size="400,25" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>		
 		<!-- Info: Amount of searched Covers -->
 		<widget name="info" position="200,135" size="480,25" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget name="poster" position="955,390" size="150,240" zPosition="1"/>				
+		<widget name="poster" position="955,390" size="150,240" zPosition="1"/>
+		<ePixmap pixmap="icons/key_ok.png" position="220,640" size="40,22" alphatest="blend"/>		
+		<eLabel text="Save" position="275,640" size="190,24" zPosition="1" font="Regular;20" backgroundColor="black" halign="left" transparent="1" valign="center"/>		
 	</screen>	
 	<!-- EMC- CONFIGURACION DE BUSCAR CARATULA -->	
 	<screen name="imdbSetup" position="0,0" size="1280,720" flags="wfNoBorder">
