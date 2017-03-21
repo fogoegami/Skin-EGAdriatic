@@ -1732,7 +1732,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="number" position="57,72" size="80,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1"  backgroundColor="black"/>
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
-	<screen name="NumericalTextInputHelpDialog" position="590,430" title="Help" size="604,124" zPosition="10" flags="wfNoBorder">
+	<screen name="NumericalTextInputHelpDialog" position="680,580" title="Help" size="604,124" zPosition="10" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="604,124" pixmap="EGAdriatic/604_124.png"/>
 		<widget name="key1" position="2,2" 	size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="key2" position="202,2" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
@@ -4305,8 +4305,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>			
-		<ePixmap pixmap="icons/key_menu1.png" position="1180,675" size="40,22" alphatest="blend"/>			
-		
 	<!-- WIDGETS SOURCE EMC -->	
 		<widget name="runtimeAT" position="50,150" size="550,350" zPosition="3" transparent="1"/>
 		<widget name="genreAT" position="660,150" size="550,250" zPosition="3" transparent="1"/>
@@ -4358,6 +4356,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key_yellow" position="685,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,5" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_blue" position="955,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="1180,675" size="40,22" alphatest="blend"/>			
+		<ePixmap position="1225,675" size="40,22" pixmap="icons/key_info.png" alphatest="blend"/>
 	</screen>
 	<!-- (048) ####### Movie Selection Lista de Peliculas (MoviePlayer Standard)  ####### -->	
 	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
@@ -4428,7 +4428,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="EMC"/>
         <widget name="Cover" position="665,150" size="595,365" zPosition="1" alphatest="on"/>		
 		<widget name="list" position="60,145" size="560,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#FFFFFF" UnwatchedColor="#00fafa" WatchingColor="#FFFFFF" FinishedColor="red" RecordingColor="#9F1313" BackColorSel="#0a4b32" foregroundColorSelected="#4ccbde" backgroundColor="black" scrollbarMode="showNever" transparent="1" zPosition="1"/>
-	</screen>
+	</screen>	
 		<!-- PVRState -->
     <screen name="PVRState" position="290,521" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
 		<widget name="statusicon" position="10,2" zPosition="3" size="50,55" alphatest="blend" transparent="0" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png"/>
@@ -4505,11 +4505,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
 		<panel name="PIG"/>
 		<!-- Movie Listbox -->	
-		<widget name="menulist" position="60,150" size="725,395" font="Regular;18" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
+		<widget name="menulist" position="60,155" size="725,395" font="Regular;14" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
 		<!-- Info: Amount of searched Covers -->
 
 		<!-- aktual movie name -->
-		<widget name="m_info" position="100,110" size="500,40" font="Regular;20" halign="center" foregroundColor="#00fafa" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget name="m_info" position="100,110" size="500,45" font="Regular;20" halign="center" foregroundColor="#00fafa" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget name="exist" position="635,108" size="150,22" foregroundColor="#6da6ff" font="Regular;20" valign="top" transparent="1"/>
 	    <widget name="download" position="635,128" size="150,22" foregroundColor="#6da6ff" font="Regular;20" valign="top" transparent="1"/>
 		<widget name="info" position="60,545" size="480,80" font="Regular;20" halign="left" foregroundColor="#6da6ff" backgroundColor="black" transparent="1" zPosition="1"/>		
@@ -4537,7 +4537,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
 		<panel name="PIG"/>
 		<!-- Movie Listbox -->	
-		<widget name="menulist" position="80,160" size="725,365" font="Regular;18" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
+		<widget name="menulist" position="80,160" size="700,365" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
 		<!-- aktual movie name -->
 		<widget name="m_info" position="230,105" size="400,25" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>		
 		<!-- Info: Amount of searched Covers -->
@@ -4558,8 +4558,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-		<widget name="movie_name" position="80,128" size="540,50"  font="Regular;20" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="0"/>
-		<widget name="movielist"  position="80,170" size="690,400" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
+		<widget name="movie_name" position="80,128" size="700,50"  font="Regular;20" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="0"/>
+		<widget name="movielist"  position="80,180" size="715,400" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="resulttext" position="845,400" size="300,320" halign="center" valign="center" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="icons/key_exit.png" position="60,640" size="40,22" alphatest="blend"/>
@@ -4578,15 +4578,23 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <widget name="config" position="80,138" size="690,540" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
  	</screen>
-    <!-- (TMDB)-> configurar descargas de informacion de peliculas infoinfo -->
+    <!-- (TMDB)-> configurar descargas de informacion de peliculas infoinfo vista previa de la informacion de la pelicula -->
 	<screen name="MovieInfoPreview" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
 		<panel name="PIG"/>
         <panel name="Title"/>
-		<widget name="movie_name" position="80,138" size="690,120" zPosition="0" font="Regular;22" valign="center" transparent="1" backgroundColor="black"/>
+		<panel name="Logo_Egami"/>		
+		<widget name="movie_name" position="80,138" size="690,120" zPosition="0" foregroundColor="#4ccbde" font="Regular;22" valign="center" transparent="1" backgroundColor="black"/>
 		<widget name="previewtext" position="80,245" size="690,300" font="Regular;20"/>
 		<ePixmap pixmap="icons/key_exit.png" position="60,640" size="40,22" alphatest="blend"/>
+	</screen>
+	<!-- ####### EMC MENU->Renombrar pelicula(s) seleccionada(s) ####### -->
+	<screen name="MovieRetitle" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaPieTV"/>		
+		<widget name="config" position="80,150" font="Regular;17" size="715,420" scrollbarMode="showAlways" transparent="1"/>
+		<widget name="HelpWindow" position="80,580" pixmap="604_124.png" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" position="80,580" pixmap="604_124.png" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
 	</screen>	
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
