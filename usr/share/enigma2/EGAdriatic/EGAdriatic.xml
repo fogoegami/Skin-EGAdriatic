@@ -1571,9 +1571,10 @@
 		<panel name="PantallaGenericaRexit"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
-        <panel name="Title"/>		
-        <ePixmap pixmap="icons/key_ok.png" position="360,635" size="40,22" alphatest="blend"/>		
-		<eLabel text="Scan" position="225,630" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;27" halign="left"/>	
+        <panel name="Title"/>
+        <!--ePixmap pixmap="icons/key_ok.png" position="360,635" size="40,22" alphatest="blend"/-->		
+		<eLabel text="Scan" position="225,630" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;27" halign="left"/>
+        <eLabel text="OK" position="365,635" size="190,24" zPosition="1" font="Regular;27" backgroundColor="black" halign="left" transparent="1" valign="center"/>				
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
@@ -4474,7 +4475,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="cancel" position="90,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="save" position="280,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
  	</screen>
-		<!-- EMC-MENU->Opciones lista de  -->
+		<!-- EMC-MENU->Opciones lista de Reproduccion  -->
  	<screen name="EMCFileBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,635" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1"/>		
@@ -4593,10 +4594,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### EMC MENU->Renombrar pelicula(s) seleccionada(s) ####### -->
 	<screen name="MovieRetitle" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaPieTV"/>		
+		<panel name="PantallaGenerica_sRG"/>
+		<panel name="ScrollBarTemplate"/>
+		<panel name="PIG"/>
+        <panel name="Title"/>		
 		<widget name="config" position="80,150" font="Regular;17" size="715,420" scrollbarMode="showAlways" transparent="1"/>
 		<widget name="HelpWindow" position="80,580" pixmap="604_124.png" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
-		<widget name="HelpWindow" position="80,580" pixmap="604_124.png" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="Path" position="80,580" pixmap="604_124.png" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
+		<eLabel text="Exit" position="110,632" size="190,24" zPosition="1" font="Regular;20" backgroundColor="black" halign="left" transparent="1" valign="center"/>
+		<eLabel text="Save" position="295,632" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top"/>		
 	</screen>	
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
