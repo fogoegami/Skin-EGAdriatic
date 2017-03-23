@@ -3884,9 +3884,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="TunerHeader" render="Label" position="100,140" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="nims" render="Label" position="100,170" size="585,150" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
 		<widget source="HDDHeader" render="Label" position="100,270" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget source="hdd" render="Label" position="100,300" size="585,300" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top"/>
-		<widget source="MountsHeader" render="Label" position="100,360" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget source="mounts" render="Label" position="100,390" size="585,450" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
+		<widget source="hdd" render="Label" position="100,300" size="690,300" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top"/>
+		<widget source="MountsHeader" render="Label" position="100,375" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="mounts" render="Label" position="100,405" size="585,450" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
 		<ePixmap position="950,390" size="300,300" pixmap="menu/ico_hdd.png" alphatest="blend"/>
 	</screen>		
 		
