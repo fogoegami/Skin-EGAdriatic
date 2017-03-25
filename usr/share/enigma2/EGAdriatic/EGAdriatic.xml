@@ -3177,7 +3177,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="280,679" 
+		position="265,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3192,7 +3192,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="335,679" 
+		position="325,679" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3207,7 +3207,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="391,679" 
+		position="381,679" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3222,7 +3222,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="413,679" 
+		position="403,679" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3237,7 +3237,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="470,679" 
+		position="460,679" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3252,7 +3252,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="506,679" 
+		position="496,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3266,7 +3266,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  		<convert type="PliExtraInfo">CryptoSpecial</convert>
  	</widget>
-	<widget source="session.CurrentService" render="Label" position="755,669" size="400,60" font="Regular;15" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="750,669" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		<convert type="CryptoInfo">VerboseInfo</convert>
 	</widget>	  
     <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
@@ -3430,7 +3430,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="280,679" 
+		position="265,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3445,7 +3445,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="335,679" 
+		position="325,679" 
 		size="60,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3460,7 +3460,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="391,679" 
+		position="381,679" 
 		size="18,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3475,7 +3475,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="413,679" 
+		position="403,679" 
 		size="65,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3490,7 +3490,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="470,679" 
+		position="460,679" 
 		size="37,15" 
 		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
@@ -3505,7 +3505,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget 
 		source="session.CurrentService" 
 		render="Label" 
-		position="506,679" 
+		position="496,679" 
 		size="60,50" 
 		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
@@ -3519,7 +3519,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  			<convert type="PliExtraInfo">CryptoSpecial</convert>
  		</widget>
-		<widget source="session.CurrentService" render="Label" position="755,669" size="400,60" font="Regular;15" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Label" position="750,669" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	</widget>	  
     <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>	
