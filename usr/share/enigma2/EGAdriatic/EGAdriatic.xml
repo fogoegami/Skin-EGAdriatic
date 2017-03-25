@@ -1300,7 +1300,7 @@
 		<widget name="key_left" position="80,480" size="560,20" transparent="1"/>
 	</screen>
 		<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton rojo-->
-		<screen name="QuickSubtitlesConfigMenu" position="350,20" size="600,320" title="Subtitle settings" backgroundColor="#14101010" flags="wfNoBorder">
+		<screen name="QuickSubtitlesConfigMenu" position="0,10" size="600,320" title="Subtitle settings" backgroundColor="#14101010" flags="wfNoBorder">
 		<widget name="config" position="20,5" size="570,250" font="xRegular;16" foregroundColor="#4ccbde" zPosition="1" transparent="1"/>
 		<widget name="videofps" position="20,255" size="570,20" backgroundColor="#14101010" transparent="1" zPosition="1" font="xRegular;14" valign="center" halign="left" foregroundColor="bluette"/>
 	</screen>	
@@ -3072,8 +3072,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<convert type="EventName">Name</convert>
 	</widget>	
     <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">NoSeconds</convert>
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">NoSeconds</convert>
     </widget>
     <!-- Tempo Trascorso - Progress Bar -->
     <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
@@ -3317,8 +3317,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<convert type="EventName">Name</convert>
 	</widget>	
     <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
-        <convert type="EventTime">Duration</convert>
-        <convert type="ClockToText">NoSeconds</convert>
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">NoSeconds</convert>
     </widget>
     <!-- Tempo Trascorso - Progress Bar -->
     <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
