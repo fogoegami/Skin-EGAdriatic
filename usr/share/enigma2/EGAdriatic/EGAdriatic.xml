@@ -3263,10 +3263,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	      <convert type="PliExtraInfo">TransponderModulation</convert>
 	 </widget>
-	<widget source="session.CurrentService" render="Label" position="465,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  		<convert type="PliExtraInfo">CryptoSpecial</convert>
  	</widget>
-	<widget source="session.CurrentService" render="Label" position="740,669" size="400,60" font="Regular;15" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+	<widget source="session.CurrentService" render="Label" position="755,669" size="400,60" font="Regular;15" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		<convert type="CryptoInfo">VerboseInfo</convert>
 	</widget>	  
     <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
@@ -3516,10 +3516,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		transparent="1">   
  	      <convert type="PliExtraInfo">TransponderModulation</convert>
 	 </widget>
-		<widget source="session.CurrentService" render="Label" position="465,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
  			<convert type="PliExtraInfo">CryptoSpecial</convert>
  		</widget>
-		<widget source="session.CurrentService" render="Label" position="740,669" size="400,60" font="Regular;15" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+		<widget source="session.CurrentService" render="Label" position="755,669" size="400,60" font="Regular;15" valign="top" halign="left" foregroundColor="#4ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
 	</widget>	  
     <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>	
