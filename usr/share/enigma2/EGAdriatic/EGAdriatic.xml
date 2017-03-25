@@ -4953,7 +4953,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget noWrap="1" backgroundColor="background" font="Regular;26" foregroundColor="#a1d1ff" render="Label" position="95,15" size="75,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
 			<convert type="MSNWeather">temperature_current</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular;26" foregroundColor="#a1d1ff" render="Label" position="80,15" size="75,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+		<widget noWrap="1" backgroundColor="background" font="Regular;26" foregroundColor="#a1d1ff" render="Label" position="80,15" size="0,0" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
 			<convert type="MSNWeather">feelslike</convert>
 		</widget>		
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="345,13" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#a1d1ff">
