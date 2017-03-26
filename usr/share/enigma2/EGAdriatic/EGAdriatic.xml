@@ -1591,7 +1591,7 @@
 	<!-- (129) ####### PSITIONER SETUP ####### (15-02) -->  
 	<screen name="PositionerSetup" 	position="0,0" size="1280,720" title="Positioner setup..." flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
-		<ePixmap position="0,0" zPosition="-1" size="372,70" pixmap="EGAdriatic/menu/tx_positioner.png" />
+		<ePixmap position="0,0" zPosition="-1" size="372,70" pixmap="EGAdriatic/menu/tx_positioner.png"/>
 		<ePixmap position="57,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="934,416" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="839,112" zPosition="1" size="382,218" pixmap="EGAdriatic/prev.png"/>
@@ -1829,8 +1829,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (058) ####### PLUGIN BROWSER ####### (15-02) -->
 	<screen name="PluginBrowser" position="center,center" size="1280,720"  title="Plugin browser" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png" />
-		<ePixmap position="0,0" zPosition="-1" size="399,69" pixmap="EGAdriatic/menu/tx_plugins.png" />
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
+		<ePixmap position="0,0" zPosition="-1" size="399,69" pixmap="EGAdriatic/menu/tx_plugins.png"/>
 		<ePixmap position="56,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="774,137" zPosition="2" size="27,400" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="860,414" zPosition="2" size="370,204"  pixmap="EGAdriatic/menu/ico_plugins.png" alphatest="blend" transparent="1"/>
@@ -1854,8 +1854,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (059) ####### SERVICE INFO - INFORMATIONS ####### (15-02) -->
 	<screen name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo" backgroundColor="transparent" flags="wfNoBorder">
 	    <panel name="ScrollBarTemplate"/>	
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png" />
-		<ePixmap position="140,10" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_information.png" />
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
+		<ePixmap position="140,10" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_information.png"/>
 		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
 		<widget name="infolist" position="60,180" size="785,400" selectionDisabled="1" transparent="1"/>
@@ -2456,8 +2456,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (112) ####### UpdatePlugin ####### -->
 	<screen name="UpdatePlugin" position="center,center" size="700,200" title="Software update">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="700,200" alphatest="on"/>
-		<widget name="activityslider" position="0,0" size="700,5" />
-		<widget name="slider" foregroundColor="#1b5962" position="0,180" size="700,30" />
+		<widget name="activityslider" position="0,0" size="700,5"/>
+		<widget name="slider" foregroundColor="#1b5962" position="0,180" size="700,30"/>
 		<widget source="package" render="Label" position="10,30" size="680,20" font="Regular;18" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
 		<widget source="status" render="Label" position="10,100" size="680,100" font="Regular;20" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
 	</screen>
@@ -2574,7 +2574,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	 <!-- (131) ####### CIselectMainMenu ####### -->
 	<screen name="CIselectMainMenu" position="center,center" size="710,240" title="CI Assignment">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="710,240" alphatest="on"/>
-		<widget name="CiList" position="20,20" size="670,310"  scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="CiList" position="20,20" size="670,310"  scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="70,180" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on"  zPosition="1"/>
 		<ePixmap position="390,180" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
 		<widget source="key_red" render="Label" position="70,180" zPosition="2"	size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
@@ -2585,9 +2585,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
 		<widget source="CAidList_desc" render="Label" position="20,20" size="1120,30" font="Regular;24"  backgroundColor="#25062748" transparent="1"/>
 		<widget source="CAidList" render="Label" position="20,60" size="1120,75" font="Regular;22"  backgroundColor="#25062748" transparent="1"/>
-		<widget source="ServiceList_desc" render="Label" position="20,100" size="1120,30" font="Regular;22" backgroundColor="#25062748" transparent="1" />
-		<widget name="ServiceList" position="20,140" size="1120,250" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
-		<widget source="ServiceList_info" render="Label" position="20,180" size="1120,250" zPosition="2" font="Regular;22" backgroundColor="#25062748" transparent="1" />
+		<widget source="ServiceList_desc" render="Label" position="20,100" size="1120,30" font="Regular;22" backgroundColor="#25062748" transparent="1"/>
+		<widget name="ServiceList" position="20,140" size="1120,250" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget source="ServiceList_info" render="Label" position="20,180" size="1120,250" zPosition="2" font="Regular;22" backgroundColor="#25062748" transparent="1"/>
 		<ePixmap pixmap="EGAdriatic/buttons/red25.png" position="32,500" size="250,40" alphatest="on"  zPosition="1"/>
 		<ePixmap pixmap="EGAdriatic/buttons/green25.png" position="314,500" size="250,40" alphatest="on"  zPosition="1"/>
 		<ePixmap pixmap="EGAdriatic/buttons/yellow25.png" position="596,500" size="250,40" alphatest="on"  zPosition="1"/>
@@ -2611,7 +2611,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (134) ####### CAidSelect ####### -->
 	<screen name="CAidSelect" 	position="center,center" size="710,240" title="select CAId's">
-		<widget name="list" position="20,20" size="670,310" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1" />
+		<widget name="list" position="20,20" size="670,310" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="20,455" size="503,30" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<ePixmap position="70,180" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
 		<ePixmap position="390,180" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
@@ -2717,7 +2717,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="MyTubePlayerMainScreen" position="0,0" size="1280,720" title="MyTubePlayerMainScreen..." 	flags="wfNoBorder" backgroundColor="transpBlack">
 		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="EGAdriatic/menu/fr_youtube.png"/>
 		<ePixmap position="750,146" zPosition="2" size="27,404" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="0,0" zPosition="1" size="492,69" pixmap="EGAdriatic/menu/tx_mytube.png" />
+		<ePixmap position="0,0" zPosition="1" size="492,69" pixmap="EGAdriatic/menu/tx_mytube.png"/>
 		<widget name="config" position="92,118" size="685,29" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls1120x28.png" transparent="1"/>
 		<widget source="feedlist" render="Listbox" position="64,146" size="712,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls720x100.png" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -3000,7 +3000,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="0,535" zPosition="0" size="817,107" pixmap="EGAdriatic/menu/noline.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="280,230" zPosition="0" size="350,320" pixmap="EGAdriatic/menu/rc_wb_desc.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="EGAdriatic/menu/tx_web.png" />
+		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="EGAdriatic/menu/tx_web.png"/>
 		<!-- Widget Pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 		<!-- Nombre del Canal - Service Name -->
@@ -3709,7 +3709,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png" />
+        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"/>
 		<widget name="config" position="65,150" size="715,250" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="#333333" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
@@ -3723,7 +3723,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
         <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on"/>
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png" />
+        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"/>
 		<widget source="list" render="Listbox" position="66,137" size="730,440" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#333333" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -3763,7 +3763,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  		<panel name="PantallaGenericaRGY"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png" />		
+        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on"/>
 		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#333333" transparent="1">
 			<convert type="TemplatedMultiContent">
@@ -3782,7 +3782,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG - DB Info" backgroundColor="transparent" flags="wfNoBorder">
  		<panel name="PantallaGenerica_sR"/>
         <panel name="PIG"/>
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png" />		
+        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"/>		
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on"/>
 		<widget name="version"            position="94,120" size="720,28" font="Regular;26" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1"/>
 		<ePixmap position="70,150" zPosition="2" size="720,4" pixmap="EGAdriatic/menu/line.png"/>
@@ -3811,7 +3811,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
         <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on"/>		
-        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png" />
+        <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"/>
 		<widget name="about" position="83,127" size="700,350" font="Regular;16" backgroundColor="#333333" transparent="1"/>
 		<widget name="rytec_pix" position="83,490" size="70,70" backgroundColor="#333333" transparent="1"/>
 		<widget name="rytec_text" position="83,565" size="70,70" backgroundColor="black" transparent="1"/>		
@@ -4457,7 +4457,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PIG"/>
         <panel name="Title"/>
         <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="74,36" zPosition="2" alphatest="blend"/>		
-		<widget name="playlist" zPosition="3" position="70,150" size="700,450" posFont="Regular;20" nameFont="Regular;20" itemHeight="30" posWidth="50" nameWidth="650" scrollbarMode="showOnDemand" posColor="#ffffff" posColorSel="#ffffff" nameColor="#ffffff" nameColorSel="#00fafa" backgroundColorSelected="black" foregroundColorSelected="#ffffff" backgroundColor="black" foregroundColor="#ffffff" transparent="1" /> 
+		<widget name="playlist" zPosition="3" position="70,150" size="700,450" posFont="Regular;20" nameFont="Regular;20" itemHeight="30" posWidth="50" nameWidth="650" scrollbarMode="showOnDemand" posColor="#ffffff" posColorSel="#ffffff" nameColor="#ffffff" nameColorSel="#00fafa" backgroundColorSelected="black" foregroundColorSelected="#ffffff" backgroundColor="black" foregroundColor="#ffffff" transparent="1"/> 
 		<widget name="cancel" position="90,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="save" position="280,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="delete" position="470,625" size="250,36" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
@@ -4972,6 +4972,104 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
+	</screen>
+	<!--  EGAMI INTERNET RADIO -->
+	<screen name="InternetRadioScreen" position="fill" title="Internet Radio" size="1280,720" flags="wfNoBorder"> 
+		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>		
+        <panel name="Logo_Egami"/>
+	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="video" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget name="headertext" position="845,430" size="380,50" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>		
+        <widget name="progress_0" position="845,410" size="380,50" transparent="1" zPosition="10" />		
+        <widget name="progress_1" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="progress_2" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_3" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_4" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_5" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_6" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_7" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_8" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_9" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_10" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_11" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_12" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_13" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_14" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="progress_15" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_0" position="845,410" size="380,50" transparent="1" zPosition="10"/>		
+        <widget name="top_1" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="top_2" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
+        <widget name="top_3" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_4" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_5" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_6" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_7" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_8" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_9" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_10" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_11" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_12" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_13" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_14" position="845,410" size="380,50" transparent="1" zPosition="10"/>
+        <widget name="top_15" position="845,410" size="380,50" transparent="1" zPosition="10"/>		
+		 <!-- List Channel --> 
+		<widget name="list" position="70,140" size="715,450" font="Regular;18" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/> 
+		<widget name="station" position="1270,45" size="590,80" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="1"/>  
+		<widget name="title" position="1290,280" size="550,120" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="1"/>  
+		<widget name="statustext" position="1260,410" size="610,110" font="Regular;18" backgroundColor="black" halign="center" valign="center" transparent="1" foregroundColor="#00baff" zPosition="2"/> 
+		<widget name="console" position="1260,410" size="610,110" font="Regular;18" backgroundColor="black" halign="center" valign="center" transparent="1" foregroundColor="#808080" zPosition="2"/>   
+		<widget name="cover" position="1261,520" size="608,420" alphatest="blend" backgroundColor="black" zPosition="2"/> 
+	</screen>	
+	<screen name="InternetRadioFullScreen" position="fill" title="Internet Radio Cover" size="1280,720" flags="wfNoBorder"> 
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+    <!-- List Channel --> 
+		<widget name="title" position="80,120" size="610,220" font="Regular;20" transparent="1" backgroundColor="black" foregroundColor="#4ccbde" halign="center" zPosition="1"/>
+	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+	    <ePixmap pixmap="icons/key_exit.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>
+	    <ePixmap pixmap="icons/key_menu1.png" position="53,639" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="station" position="715,435" size="610,120" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="1"/>		
+		<widget name="cover" position="80,160" size="715,420" alphatest="blend" backgroundColor="black" zPosition="2"/>		
+        <widget name="progress_0" position="845,390" size="380,90" transparent="1" zPosition="10"/>		
+        <widget name="progress_1" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="progress_2" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_3" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_4" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_5" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_6" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_7" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_8" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_9" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_10" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_11" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_12" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_13" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_14" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="progress_15" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_0" position="845,390" size="380,90" transparent="1" zPosition="10"/>		
+        <widget name="top_1" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="top_2" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+        <widget name="top_3" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_4" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_5" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_6" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_7" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_8" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_9" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_10" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_11" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_12" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_13" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_14" position="845,390" size="380,90" transparent="1" zPosition="10"/>
+        <widget name="top_15" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
 	</screen>	
                 <!-- ########################### PANTALLAS EGAMI ################################## -->
 	<!--  EGAMI PANEL -->
@@ -5432,7 +5530,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="config" position="80,140" size="690,210" font="Regular;22" itemHeight="45" zPosition="1" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand"/>
-        <widget name="memory" position="80,415" zPosition="2" size="690,40" valign="center" halign="left" foregroundColor="#00fafa" font="Regular;22" transparent="1" />
+        <widget name="memory" position="80,415" zPosition="2" size="690,40" valign="center" halign="left" foregroundColor="#00fafa" font="Regular;22" transparent="1"/>
         <widget name="slide" position="80,450" zPosition="2" borderWidth="1" size="560,20" pixmap="EGAdriatic/progress_big.png" borderColor="#cccccc"/>
 		<panel name="Logo_Egami"/>  
     </screen>	
