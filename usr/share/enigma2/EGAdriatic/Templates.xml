@@ -46,7 +46,7 @@
 	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
 	<screen name="ScrollBarTemplate">
 		<!-- scrollbar background -->
-		<ePixmap position="775,118" zPosition="3" size="27,520" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="775,120" zPosition="3" size="27,520" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
