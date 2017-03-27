@@ -4976,15 +4976,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!--  EGAMI INTERNET RADIO -->
 	<screen name="InternetRadioScreen" position="fill" title="Internet Radio" size="1280,720" flags="wfNoBorder"> 
 		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="ScrollBarTemplate"/>		
 		<panel name="sRGYB"/>		
-		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
         <panel name="Logo_Egami"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="8,640" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="video" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<widget name="headertext" position="845,430" size="380,50" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>		
+		<widget name="headertext" position="845,430" size="380,50" zPosition="10" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>		
         <widget name="progress_0" position="845,410" size="380,50" transparent="1" zPosition="10" />		
         <widget name="progress_1" position="845,410" size="380,50" transparent="1" zPosition="10"/>
         <widget name="progress_2" position="845,410" size="380,50" transparent="1" zPosition="10"/>	
@@ -5017,26 +5017,26 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="top_13" position="845,410" size="380,50" transparent="1" zPosition="10"/>
         <widget name="top_14" position="845,410" size="380,50" transparent="1" zPosition="10"/>
         <widget name="top_15" position="845,410" size="380,50" transparent="1" zPosition="10"/>		
-		 <!-- List Channel --> 
-		<widget name="list" position="70,140" size="715,450" font="Regular;18" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/> 
-		<widget name="station" position="1270,45" size="590,80" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="1"/>  
-		<widget name="title" position="1290,280" size="550,120" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="1"/>  
-		<widget name="statustext" position="1260,410" size="610,110" font="Regular;18" backgroundColor="black" halign="center" valign="center" transparent="1" foregroundColor="#00baff" zPosition="2"/> 
-		<widget name="console" position="1260,410" size="610,110" font="Regular;18" backgroundColor="black" halign="center" valign="center" transparent="1" foregroundColor="#808080" zPosition="2"/>   
-		<widget name="cover" position="1261,520" size="608,420" alphatest="blend" backgroundColor="black" zPosition="2"/> 
+		 <!-- List Channel -->   
+		<widget name="list" position="70,140" size="720,450" font="Regular;18" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/> 
+		<widget name="station" position="715,480" size="610,120" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="1"/>  
+		<widget name="title" position="100,83" size="680,40" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="1"/>  
+		<widget name="statustext" position="100,105" size="680,40" font="Regular;16" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="2"/> 
+		<widget name="console" position="120,100" size="380,120" font="Regular;16" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="2"/>   
+		<widget name="cover" position="838,112" size="382,218" zPosition="3" alphatest="blend" backgroundColor="black"/> 
 	</screen>	
 	<screen name="InternetRadioFullScreen" position="fill" title="Internet Radio Cover" size="1280,720" flags="wfNoBorder"> 
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
-		<panel name="ScrollBarTemplate"/>
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>		
         <panel name="Title"/>
         <panel name="PIG"/>
         <panel name="Logo_Egami"/>		
     <!-- List Channel --> 
-		<widget name="title" position="80,120" size="610,220" font="Regular;20" transparent="1" backgroundColor="black" foregroundColor="#4ccbde" halign="center" zPosition="1"/>
+		<widget name="title" position="80,120" size="610,220" font="Regular;20" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	    <ePixmap pixmap="icons/key_exit.png" position="8,640" size="40,22" zPosition="2" alphatest="blend"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="53,639" size="74,36" zPosition="2" alphatest="blend"/>		
-		<widget name="station" position="715,435" size="610,120" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="1"/>		
+		<widget name="station" position="715,445" size="610,120" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="1"/>		
 		<widget name="cover" position="80,160" size="715,420" alphatest="blend" backgroundColor="black" zPosition="2"/>		
         <widget name="progress_0" position="845,390" size="380,90" transparent="1" zPosition="10"/>		
         <widget name="progress_1" position="845,390" size="380,90" transparent="1" zPosition="10"/>
