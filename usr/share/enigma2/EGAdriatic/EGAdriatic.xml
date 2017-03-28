@@ -652,13 +652,13 @@
 		<widget name="rc" position="950,105" size="112,500" pixmaps="rc.png,rcold.png" zPosition="10" alphatest="blend"/>
 		
 		<!-- long key widget -->
-		<widget name="long_key" position="680,300" zPosition="2" size="250,25" foregroundColor="#4ccbde" font="Regular;22" halign="center" backgroundColor="black" transparent="1"/>
+		<widget name="long_key" position="715,300" zPosition="2" size="250,25" foregroundColor="#4ccbde" font="Regular;18" halign="center" backgroundColor="black" transparent="1"/>
 		
 		<!-- options lists -->
-		<widget name="list" position="90,130" zPosition="1" size="560,457" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls530x30.png" transparent="1"/>
+		<widget name="list" position="80,130" zPosition="1" size="645,457" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls615x26.png" transparent="1"/>
 		
 		<!-- scrollbar background -->
-		<ePixmap position="630,124" zPosition="2" size="27,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="705,124" zPosition="2" size="33,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>
 		
 		<!-- arrows -->
 		<widget name="arrowdown" position="-100,-100" size="37,70" pixmap="arrowdown.png" zPosition="11" alphatest="blend"/>
@@ -1571,10 +1571,12 @@
 		<panel name="PantallaGenericaRexit"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
-        <panel name="Title"/>
+        <panel name="Title"/>		
+        <eLabel text="Scan" zPosition="1" position="280,45" foregroundColor="#4ccbde" backgroundColor="black" size="250,32" font="Regular;28"/>
+		<eLabel text="Cable" zPosition="1" position="445,45" foregroundColor="#4ccbde" backgroundColor="black" size="250,32" font="Regular;28"/>
         <!--ePixmap pixmap="icons/key_ok.png" position="360,635" size="40,22" alphatest="blend"/-->		
-		<eLabel text="Scan" position="225,630" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;27" halign="left"/>
-        <eLabel text="OK" position="365,635" size="190,24" zPosition="1" font="Regular;27" backgroundColor="black" halign="left" transparent="1" valign="center"/>				
+		<eLabel text="Scan" position="235,630" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <eLabel text="OK" position="360,632" size="190,24" zPosition="1" font="Regular;19" backgroundColor="black" halign="left" transparent="1" valign="center"/>				
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
@@ -1745,7 +1747,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key8" position="202,80" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="key9" position="402,82" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="help1" position="30,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key0" position="230,104" size="150,30" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key0" position="202,104" size="200,30" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="help2" position="432,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>		
 	</screen>
 	<!-- (051) ####### CrashlogAutoSubmitConfiguration ####### -->
