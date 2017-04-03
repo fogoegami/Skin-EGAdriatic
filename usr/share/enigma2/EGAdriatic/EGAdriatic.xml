@@ -1339,13 +1339,13 @@
 		<widget name="text" position="80,440" size="560,335" font="Regular;20" transparent="1"/>
 	    <ePixmap position="835,390" zPosition="2" size="40,35" pixmap="icons/ram.png" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="780,10" size="500,62" halign="center" valign="center" font="Regular;18" transparent="1" foregroundColor="#00fafa" backgroundColor="black" zPosition="1">
-			<convert type="EGBoxInfo">Uptime</convert>
+			<convert type="BoxInfo">Uptime</convert>
 		</widget>		
 		<widget source="session.Event_Now" render="Progress" position="885,400" size="340,8" foregroundColor="#4ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">MemTotal</convert>
+			<convert type="pliLayoutInfo">MemTotal</convert>
 		</widget>
         <widget source="session.CurrentService" render="Label" position="880,408" size="450,26" halign="left" valign="center" font="Regular;16" transparent="1"  backgroundColor="background" zPosition="6">
-			<convert type="EGLayoutInfo">MemTotal</convert>
+			<convert type="pliLayoutInfo">MemTotal</convert>
 		</widget>
         <ePixmap position="835,440" zPosition="2" size="40,40" pixmap="icons/cpu.png" alphatest="blend"/>
 		<widget source="session.Event_Now" render="Progress" position="885,455" size="340,8" foregroundColor="#4ccbde" transparent="1" borderWidth="1" zPosition="6">
@@ -1356,24 +1356,24 @@
 		</widget>
         <ePixmap position="835,495" zPosition="2" size="40,40" pixmap="icons/flash.png" alphatest="blend"/>
 		<widget source="session.Event_Now" render="Progress" position="885,510" size="340,8" foregroundColor="#4ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">FleshInfo</convert>
+			<convert type="pliLayoutInfo">FleshInfo</convert>
 		</widget>
         <widget source="session.CurrentService" render="Label" position="890,518" size="450,26" halign="left" valign="center" font="Regular;16" transparent="1"  backgroundColor="background" zPosition="6">
-			<convert type="EGLayoutInfo">Flesh</convert>
+			<convert type="pliLayoutInfo">Flesh</convert>
 		</widget>
         <ePixmap position="835,545" zPosition="2" size="40,40" pixmap="icons/ico_hdd1.png" alphatest="blend"/>
 		<widget source="session.Event_Now" render="Progress" position="885,560" size="340,8" foregroundColor="#4ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">HddInfo</convert>
+			<convert type="pliLayoutInfo">HddInfo</convert>
 		</widget>
         <widget source="session.CurrentService" render="Label" position="890,565" size="450,26" halign="left" valign="center" font="Regular;13" transparent="1"  backgroundColor="background" zPosition="6">
-			<convert type="EGLayoutInfo">HddInfo</convert>
+			<convert type="pliLayoutInfo">HddInfo</convert>
 		</widget>
         <ePixmap position="835,590" zPosition="2" size="40,40" pixmap="icons/ico_usb.png" alphatest="blend"/>
 		<widget source="session.Event_Now" render="Progress" position="885,605" size="340,8" foregroundColor="#4ccbde" transparent="1" borderWidth="1" zPosition="6">
-			<convert type="EGLayoutInfo">UsbInfo</convert>
+			<convert type="pliLayoutInfo">UsbInfo</convert>
 		</widget>
         <widget source="session.CurrentService" render="Label" position="890,610" size="450,26" halign="left" valign="center" font="Regular;13" transparent="1"  backgroundColor="background" zPosition="6">
-		    <convert type="EGLayoutInfo">UsbInfo</convert>
+		    <convert type="pliLayoutInfo">UsbInfo</convert>
 		</widget>			
 	</screen>
 	<!-- (027) ####### Console  ####### -->
