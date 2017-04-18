@@ -4140,8 +4140,36 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>	
 		<widget name="list" position="80,138" size="718,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
         <panel name="Logo_Egami"/>		
-	</screen>				
-				
+	</screen>
+	<!-- IGNORAR SERVICIOS DE LA LISTA -->	
+	<screen name="filtersServicesSetup" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>	
+		<widget source="list" render="Listbox" position="80,138" size="715,330" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (80, 5), size = (420, 23), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+						MultiContentEntryText(pos = (120, 25), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
+						MultiContentEntryText(pos = (170, 47), size = (400, 17), font = 2, flags = RT_HALIGN_LEFT, text = 2),
+					],
+				 "fonts": [gFont("Regular", 21), gFont("Regular", 19), gFont("Regular", 16)],
+				 "itemHeight": 65
+				}
+			</convert>
+		</widget>
+        <panel name="Logo_Egami"/>		
+	</screen>
+	<!-- LISTA DE SERVICIOS LISTA DE CANALES -->	
+	<screen name="filtersServicesSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>	
+		<widget name="list" position="80,138" size="718,420" scrollbarMode="showOnDemand"/>
+        <panel name="Logo_Egami"/>		
+	</screen>	
     <!-- ********** AutoTimer ********** -->
 	<!-- AutoTimer OK -->
 	<screen name="AutoTimer" position="0,0" size="1280,720" flags="wfNoBorder">
