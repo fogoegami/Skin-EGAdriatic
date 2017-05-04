@@ -1607,72 +1607,76 @@
 		<widget name="scan_progress" position="80,325" size="690,15" pixmap="progress_big.png" borderWidth="2" borderColor="#4ccbde"/>
 	</screen>
 	<!-- (129) ####### PSITIONER SETUP ####### (15-02) -->  
-	<screen name="PositionerSetup" 	position="0,0" size="1280,720" title="Positioner setup..." flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main.png"/>
-		<ePixmap position="0,0" zPosition="-1" size="372,70" pixmap="EGAdriatic/menu/tx_positioner.png"/>
-		<ePixmap position="57,625" zPosition="1" size="350,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="934,416" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="839,112" zPosition="1" size="382,218" pixmap="EGAdriatic/prev.png"/>
+	<screen name="PositionerSetup" position="0,0" size="1280,720" title="Positioner setup" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
 		<widget name="list" position="89,136" 	size="660,175" backgroundColor="black" transparent="1"/>
 		<widget name="snr_db" position="170,330" 	size="200,24" 	halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1"/>
-		<eLabel text="SNR:"   position="80,360" 	size="80,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="snr_bar" position="170,360" 	size="200,20" 	borderWidth="1" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="snr_percentage" 	position="380,360" 	size="80,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<eLabel text="BER:" 	position="80,390" 	size="80,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="ber_bar" 	position="170,390" 	size="200,20" 	borderWidth="1" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="ber_value" position="380,390" 	size="80,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<eLabel text="Lock:" 	position="80,420" 	size="80,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="lock_state" 	position="170,420" 	size="200,24"	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<eLabel text="Frequency:" 	position="490,360" 	size="150,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="frequency_value" 	position="640,360" size="100,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<eLabel text="Symbolrate:" 	position="490,390" 	size="150,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="symbolrate_value" position="640,390" size="100,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<eLabel text="FEC:" 		position="490,420" 	size="150,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-		<widget name="fec_value" 	position="640,420" size="100,24" 	font="Regular;21" 	backgroundColor="darkgrey" transparent="1"/>
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget> 
+		<eLabel text="SNR:"   position="80,360" 	size="80,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<widget name="snr_bar" position="170,360" 	size="200,20" 	borderWidth="1" 	backgroundColor="black" transparent="1"/>
+		<widget name="snr_percentage" 	position="380,360" 	size="80,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<eLabel text="BER:" 	position="80,390" 	size="80,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<widget name="ber_bar" 	position="170,390" 	size="200,20" 	borderWidth="1" 	backgroundColor="black" transparent="1"/>
+		<widget name="ber_value" position="380,390" 	size="80,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<eLabel text="Lock:" 	position="80,420" 	size="80,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<widget name="lock_state" 	position="170,420" 	size="200,24"	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<eLabel text="Frequency:" 	position="490,360" 	size="150,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<widget name="frequency_value" 	position="640,360" size="100,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<eLabel text="Symbolrate:" 	position="490,390" 	size="150,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<widget name="symbolrate_value" position="640,390" size="100,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<eLabel text="FEC:" 		position="490,420" 	size="150,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<widget name="fec_value" 	position="640,420" size="100,24" 	font="Regular;21" 	backgroundColor="black" transparent="1"/>
+		<eLabel text="Polarisation:" position="275,460" size="125,22" font="Regular;19" foregroundColor="#00fafa" backgroundColor="black" transparent="1"/>		
+		<widget name="polarisation" position="400,460" size="125,22" font="Regular;21" foregroundColor="#00fafa" backgroundColor="black" transparent="1"/>
+		<widget name="status_bar" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="black"/>
 	</screen>	
 	<!-- (065) ####### Satfinder ####### (15-02) -->
-	<screen name="Satfinder" position="center,center" size="950,460"  title="Satfinder">
-	        <ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="950,460" alphatest="on"/>
-		<ePixmap pixmap="EGAdriatic/icons/dish.png" 	position="150,8" zPosition="0" size="140,146" transparent="1" alphatest="on"/>
-		<widget source="Frontend" render="Label" position="405,10" zPosition="2" size="280,20" font="Regular;19" halign="center" valign="center" transparent="1">
+	<screen name="Satfinder" position="0,0" size="1280,720" title="Satfinder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>	
+		<ePixmap pixmap="EGAdriatic/icons/dish.png" position="150,115" zPosition="0" size="140,146" transparent="1" alphatest="on"/>
+		<widget source="Frontend" render="Label" position="405,117" zPosition="2" size="280,20" font="Regular;19" halign="center" valign="center" transparent="1">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
-		<eLabel name="snr" text="SNR:" position="315,35" size="60,22" font="Regular;21" halign="right" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="405,35" size="280,20" pixmap="EGAdriatic/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#cccccc">
+		<eLabel name="snr" text="SNR:" position="315,145" size="60,22" font="Regular;21" halign="right" transparent="1"/>
+		<widget source="Frontend" render="Progress" position="405,145" size="280,20" pixmap="EGAdriatic/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#cccccc">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="705,35" size="60,22" font="Regular;21">
+		<widget source="Frontend" render="Label" position="705,145" size="60,22" font="Regular;21">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel name="agc" text="AGC:" position="315,60" size="60,22" font="Regular;21" halign="right" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="405,60" size="280,20" pixmap="EGAdriatic/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#cccccc">
+		<eLabel name="agc" text="AGC:" position="315,170" size="60,22" font="Regular;21" halign="right" transparent="1"/>
+		<widget source="Frontend" render="Progress" position="405,170" size="280,20" pixmap="EGAdriatic/bar_snr_finder.png" borderWidth="2" transparent="1" borderColor="#cccccc">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="705,60" size="60,22" font="Regular;21">
+		<widget source="Frontend" render="Label" position="705,170" size="60,22" font="Regular;21">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
-		<eLabel name="ber" text="BER:" 	position="315,85" size="60,22" font="Regular;21" halign="right" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="405,85" size="280,20" pixmap="EGAdriatic/bar_ber_finder.png" borderWidth="2" transparent="1" borderColor="#cccccc">
+		<eLabel name="ber" text="BER:" 	position="315,195" size="60,22" font="Regular;21" halign="right" transparent="1"/>
+		<widget source="Frontend" render="Progress" position="405,195" size="280,20" pixmap="EGAdriatic/bar_ber_finder.png" borderWidth="2" transparent="1" borderColor="#cccccc">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="705,85" size="60,22" font="Regular;21">
+		<widget source="Frontend" render="Label" position="705,195" size="60,22" font="Regular;21">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<eLabel name="lock" text="Lock:" position="315,115" size="80,25" font="Regular;21" halign="right" transparent="1"/>
-		<widget source="Frontend" render="Pixmap" pixmap="EGAdriatic/icons/lock_on.png" position="405,110" zPosition="1" size="38,31" transparent="1" alphatest="on">
+		<eLabel name="lock" text="Lock:" position="300,225" size="80,25" font="Regular;21" halign="right" transparent="1"/>
+		<widget source="Frontend" render="Pixmap" pixmap="EGAdriatic/icons/lock_on.png" position="405,220" zPosition="1" size="38,31" transparent="1" alphatest="on">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="Frontend" render="Pixmap" pixmap="EGAdriatic/icons/lock_off.png" position="415,110" zPosition="1" size="38,31" alphatest="on">
+		<widget source="Frontend" render="Pixmap" pixmap="EGAdriatic/icons/lock_off.png" position="415,220" zPosition="1" size="38,31" alphatest="on">
 			<convert type="FrontendInfo">LOCK</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget name="config" position="20,165" size="910,240" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="introduction" position="0,0" size="0,0" font="Regular;23"/>
+		<widget name="config" position="80,275" size="695,400" scrollbarMode="showOnDemand" transparent="1"/>
+	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget name="header" position="780,435" size="500,25" foregroundColor="#4ccbde" halign="center" font="Regular;18" transparent="1"/>		
+		<widget name="introduction" position="870,470" size="320,20" font="Regular;18" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="black"/>
 	</screen>	
 	<!-- ####### MessageBox Template para ambos Mensajes sistema ####### -->	
 	<screen name="MessageBoxTemplate" position="0,0" size="1280,720" flags="wfNoBorder">
