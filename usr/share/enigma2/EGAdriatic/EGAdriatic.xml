@@ -571,7 +571,7 @@
 		<widget name="key_blue" position="855,160" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
         </screen>	
 	        <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
-	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder" title="TimeDateInput">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1"/>
 		<widget name="canceltext" position="5,625" zPosition="1" size="250,36" backgroundColor="transpBlack" font="Regular;20" halign="center" valign="center" transparent="1"/>
@@ -636,7 +636,7 @@
 	</screen>
 	
 	<!-- (040) ####### MENU HELP ####### (12-02) -->
-	<screen name="HelpMenu" position="0,0" size="1280,720" title=" Help Menu" flags="wfNoBorder">
+	<screen name="HelpMenu" position="0,0" size="1280,720" title="Help Menu" flags="wfNoBorder">
 		<!-- background -->
 		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="EGAdriatic/menu/fr_main_help.png"/>
 	    <widget source="global.CurrentTime" render="Label" position="940,50" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
@@ -4422,7 +4422,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<!-- Lista  -->
 		<widget name="waitingtext" position="97,140" size="650,380" zPosition="4" font="Regular;22" halign="right" valign="center" transparent="1"/>
-		<widget name="list" zPosition="1" position="60,146" size="725,399" scrollbarMode="showOnDemand"   transparent="1"/>
+		<widget name="list" zPosition="1" position="60,146" size="725,399" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="135,560" zPosition="4" size="40,30" pixmap="EGAdriatic/icons/key_info2.png" transparent="1" alphatest="blend"/>
 		<widget name="freeDiskSpace" position="180,565" halign="center" valign="center" zPosition="4" size="200,25" font="Regular;22" foregroundColor="#4ccbde" transparent="1"/>
        <widget name="TrashcanSize" position="400,515" size="300,120" font="Regular;20" foregroundColor="#00fafa" backgroundColor="black" valign="center" halign="left" zPosition="2" transparent="1"/>				
