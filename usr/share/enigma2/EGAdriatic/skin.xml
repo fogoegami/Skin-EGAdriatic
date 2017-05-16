@@ -59,7 +59,7 @@
 		<color name="hyellow" value="#fffebb"/>
         <color name="hblue" value="#63a4ff"/>		
 		<color name="bluette" value="#538eff"/>
-                <color name="MediumTurquoise" value="#48d1cc"/>
+        <color name="MediumTurquoise" value="#48d1cc"/>
 	</colors>
 	<!-- Fonts -->
 	<fonts>
