@@ -2765,7 +2765,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="750,146" zPosition="2" size="27,404" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="0,0" zPosition="1" size="492,69" pixmap="EGAdriatic/menu/tx_mytube.png"/>
 		<widget name="config" position="92,118" size="685,29" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls1120x28.png" transparent="1"/>
-		<widget source="feedlist" render="Listbox" position="64,146" size="712,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls720x100.png" transparent="1">
+		<widget source="feedlist" render="Listbox" position="64,146" size="712,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls705x110.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 			{"templates":
 				{"default": (100,[
@@ -3985,15 +3985,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="Logo_Egami"/>		
 		<ePixmap pixmap="icons/key_ok.png" position="10,680" size="40,22" alphatest="blend"/>
-  		<widget source="menu" render="Listbox" position="80,140" size="715,440" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1">
+  		<widget source="menu" render="Listbox" position="80,140" size="715,440" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls705x110.png" backgroundColor="black" transparent="1" zPosition="-1">
   		    <convert type="TemplatedMultiContent">
                 {"template": [
-						MultiContentEntryText(pos = (95, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (115, 0), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff, color_sel = 0x0000baff),
-						MultiContentEntryText(pos = (630, 5), size = (60, 21), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x004ccbde, color_sel = 0x004ccbde),						
-						MultiContentEntryText(pos = (115, 20), size = (560, 22), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
-						MultiContentEntryText(pos = (420, 2), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x000ffffff, color_sel = 0x00ffffff),
-						MultiContentEntryText(pos = (115, 40), size = (593, 67), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00a1d1ff),
+						MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (100, 0), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff),
+						MultiContentEntryText(pos = (335, 3), size = (60, 21), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x006da6ff),						
+						MultiContentEntryText(pos = (100, 20), size = (560, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
+						MultiContentEntryText(pos = (405, 2), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x000ffffff, color_sel = 0x006da6ff),
+						MultiContentEntryText(pos = (100, 40), size = (593, 67), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00a1d1ff),
 						MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(83, 50), png=6, flags = BT_SCALE)
 					],
 				 "fonts": [gFont("Regular", 22), gFont("Regular", 14), gFont("xRegular", 18), gFont("Regular", 15)],
