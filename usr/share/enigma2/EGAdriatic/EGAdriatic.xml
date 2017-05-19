@@ -1491,7 +1491,7 @@
 	</screen>
 	
         <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish #######-->
-	<screen name="Dish" position="80,138" size="200,300" backgroundColor="#1b5962" flags="wfNoBorder">
+	<screen name="Dish" position="80,138" size="200,260" backgroundColor="#1b5962" flags="wfNoBorder">
 		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,20" size="146,146" alphatest="on"/>
 		<widget name="turnTime" position="0,0" size="120,22" zPosition="1" font="Regular;20" halign="right" foregroundColor="#00fafa" borderWidth="1" borderColor="black" transparent="1"/>
 		<widget name="From" position="10,160" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="black" transparent="1"/>
