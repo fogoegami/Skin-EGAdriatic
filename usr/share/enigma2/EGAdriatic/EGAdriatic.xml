@@ -1495,11 +1495,11 @@
 		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,20" size="146,146" alphatest="on"/>
 		<widget name="turnTime" position="0,0" size="120,22" zPosition="1" font="Regular;20" halign="right" foregroundColor="#00fafa" borderWidth="1" borderColor="black" transparent="1"/>
 		<widget name="From" position="10,160" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="black" transparent="1"/>
-		<widget name="posFrom" position="72,160" size="70,20" zPosition="1" font="Regular;20" halign="left" borderWidth="1" borderColor="black" transparent="1"/>
+		<widget name="posFrom" position="72,160" size="90,20" zPosition="1" font="Regular;20" halign="left" borderWidth="1" borderColor="black" transparent="1"/>
 		<widget name="Goto" position="10,182" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="black" transparent="1"/>
-		<widget name="posGoto" position="72,182" size="70,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="#006da6ff" borderWidth="1" borderColor="black" transparent="1"/>
+		<widget name="posGoto" position="72,182" size="90,20" zPosition="1" font="Regular;20" halign="left" foregroundColor="#006da6ff" borderWidth="1" borderColor="black" transparent="1"/>
 		<widget name="Tuner" position="3,204" size="60,20" zPosition="2" font="Regular;18" halign="left" borderWidth="1" borderColor="black" transparent="1"/>
-		<widget name="tunerName" position="72,204" size="70,20" zPosition="2" font="Regular;18" halign="left" foregroundColor="yellow" borderWidth="1" borderColor="black" transparent="1"/>
+		<widget name="tunerName" position="72,204" size="90,20" zPosition="2" font="Regular;18" halign="left" foregroundColor="yellow" borderWidth="1" borderColor="black" transparent="1"/>
 		<widget name="turnSpeed" position="72,224" size="120,20" zPosition="2" font="Regular;18" halign="left" borderWidth="1" borderColor="black" transparent="1"/>
 		<widget source="session.FrontendStatus" render="Progress" position="25,244" size="130,8" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#cccccc">
 			<convert type="FrontendInfo">SNR</convert>
