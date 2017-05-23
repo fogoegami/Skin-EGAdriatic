@@ -3146,7 +3146,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <convert type="ConditionalShowHide"/>
     </widget>	
     <!-- Posizione Picon - Picon Position -->
-    <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="on">
+    <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
 	
@@ -3388,7 +3388,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </widget>
     <!-- ePixmap position="235,613" zPosition="2" size="885,6" pixmap="EGAdriatic/po_bar.png" alphatest="on" -->
     <!-- Posizione Picon - Picon Position -->
-    <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="on">
+    <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="blend">
         <convert type="ServiceName">Reference</convert>
     </widget>
 	
