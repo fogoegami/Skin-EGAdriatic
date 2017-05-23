@@ -3082,17 +3082,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <screen name="InfoBar" flags="wfNoBorder" position="0,-5" size="1280,720" title="InfoBar" backgroundColor="transparent">
     <ePixmap position="-1,510" zPosition="1" size="1292,253" pixmap="EGAdriatic/infobar_light.png" transparent="1"/>
 
-		<widget name="key_red" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	<widget name="key_red" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
-		<widget name="key_green" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	<widget name="key_green" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
-		<widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	<widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
-		<widget name="key_blue" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	<widget name="key_blue" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 	<!--  Streaming -->	
 	<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="350,527" size="18,18" zPosition="2" alphatest="on">
-			<convert type="ClientsStreaming"/>
-			<convert type="ConditionalShowHide">Blink</convert>
+		<convert type="ClientsStreaming"/>
+		<convert type="ConditionalShowHide">Blink</convert>
 	</widget>
     <!-- Orologio Digitale - Digital Clock -->
     <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#dcdcdc" backgroundColor="#333333" transparent="1">
@@ -3178,7 +3178,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18"  transparent="1" backgroundColor="transpBlack" -->
-	<widget source="session.CurrentService" render="Label" position="705,557" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2">
+    <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#00fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
+	<widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2">
 		<convert type="EGCpuUsage">$0</convert>
 	</widget>
     <widget source="session.FrontendStatus" render="Progress" position="822,568" size="133,8" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
@@ -3416,7 +3417,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18"  transparent="1" backgroundColor="transpBlack" -->
-	<widget source="session.CurrentService" render="Label" position="705,557" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2">
+    <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#00fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
+	<widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2">
 		<convert type="EGCpuUsage">$0</convert>
 	</widget>
     <widget source="session.FrontendStatus" render="Progress" position="822,568" size="133,8" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
