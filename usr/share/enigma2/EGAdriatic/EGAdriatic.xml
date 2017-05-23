@@ -1491,17 +1491,17 @@
 	</screen>
 	
         <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish #######-->
-	<screen name="Dish" position="930,98" size="200,245" backgroundColor="#1b5962" flags="wfNoBorder">
-		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,15" size="146,146" alphatest="blend"/>
-		<widget name="turnTime" position="0,0" size="120,22" zPosition="1" font="xRegular;17" halign="right" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget name="From" position="10,150" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget name="posFrom" position="72,150" size="90,20" zPosition="1" font="Regular;19" halign="left" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget name="Goto" position="10,172" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget name="posGoto" position="72,172" size="90,20" zPosition="1" font="Regular;19" halign="left" foregroundColor="yellow" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget name="Tuner" position="3,194" size="60,20" zPosition="2" font="Regular;18" halign="left" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget name="tunerName" position="72,194" size="90,20" zPosition="2" font="Regular;19" halign="left" foregroundColor="#a1d1ff" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget name="turnSpeed" position="72,213" size="120,20" zPosition="2" font="Regular;18" halign="left" borderWidth="1" borderColor="#00fafa" transparent="1"/>
-		<widget source="session.FrontendStatus" render="Progress" position="25,234" size="130,8" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#00fafa">
+	<screen name="Dish" position="855,120" size="350,180" backgroundColor="#1b5962" flags="wfNoBorder">
+		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,25" size="146,146" alphatest="blend"/>
+		<widget name="turnTime" position="170,20" size="120,22" zPosition="1" font="Regular;20" halign="right" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget name="From" position="165,80" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget name="posFrom" position="227,80" size="90,20" zPosition="1" font="Regular;19" halign="left" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget name="Goto" position="165,102" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget name="posGoto" position="227,102" size="90,20" zPosition="1" font="Regular;19" halign="left" foregroundColor="yellow" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget name="Tuner" position="158,124" size="60,20" zPosition="2" font="Regular;18" halign="left" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget name="tunerName" position="227,124" size="90,20" zPosition="2" font="Regular;19" halign="left" foregroundColor="#a1d1ff" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget name="turnSpeed" position="227,143" size="120,20" zPosition="2" font="Regular;18" halign="left" borderWidth="1" borderColor="#00fafa" transparent="1"/>
+		<widget source="session.FrontendStatus" render="Progress" position="170,165" size="130,8" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#00fafa">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>		
 	</screen>	
