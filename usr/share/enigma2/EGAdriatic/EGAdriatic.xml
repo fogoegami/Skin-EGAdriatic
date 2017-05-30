@@ -4136,7 +4136,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>		
 		<panel name="Title"/>
-		<panel name="PIG"/>		
+		<panel name="PIG"/>
+		<panel name="Logo_Egami"/>		
 		<widget source="job_name" render="Label" position="80,140" size="715,35" font="Regular;24" foregroundColor="#00fafa" backgroundColor="#000000" transparent="1"/>
 		<widget source="job_task" render="Label" position="80,190" size="585,30" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="#000000" transparent="1"/>
 		<widget source="job_progress" render="Progress" position="80,230" size="585,36" borderWidth="2" backgroundColor="#1b5962"/>
@@ -4145,25 +4146,24 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget source="job_status" render="Label" position="80,280" size="585,26" font="Regular;23" backgroundColor="#000000" transparent="1"/>
 		<widget name="config" position="80,320" size="585,24" scrollbarMode="showOnDemand" backgroundColor="#000000" transparent="1"/>
-		<widget source="cancelable" render="Pixmap" pixmap="buttons/red.png" position="65,655" size="140,40" alphatest="blend">
+		<widget source="cancelable" render="Pixmap" pixmap="menu/colorbarR.png" position="65,655" size="140,40" alphatest="blend">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="cancelable" render="FixedLabel" text="Cancel" position="90,657" size="220,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="finished" render="Pixmap" pixmap="buttons/green.png" position="290,650" size="140,40" alphatest="blend">
+		<widget source="finished" render="Pixmap" pixmap="menu/colorbarG.png" position="290,650" size="140,40" alphatest="blend">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="finished" render="FixedLabel" text="OK" position="340,657" size="220,28" font="Regular;24" halign="left" backgroundColor="black" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="buttons/blue.png" position="560,660" size="140,40" alphatest="blend">
+		<widget source="backgroundable" render="Pixmap" pixmap="menu/colorbarB.png" position="560,660" size="140,40" alphatest="blend">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="590,657" size="360,28" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="565,625" size="250,55" font="Regular;24" halign="left" backgroundColor="#000000" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
-		</widget>
-		<panel name="Logo_Egami"/>  		
+		</widget>  		
 	</screen>	
                 <!-- ########################### PANTALLAS PLUGINS ################################## -->
 	<!-- EPG Import Configuration -->
