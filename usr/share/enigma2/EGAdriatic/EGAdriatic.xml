@@ -5161,6 +5161,73 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="top_13" position="845,390" size="380,90" transparent="1" zPosition="10"/>
         <widget name="top_14" position="845,390" size="380,90" transparent="1" zPosition="10"/>
         <widget name="top_15" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
+	</screen>
+<!-- ## AutoBouquetsMaker ->OK configurar + Proveedores ## -->
+	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <widget name="config" position="80,140" zPosition="5" size="713,427" scrollbarMode="showOnDemand"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="pleasewait" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+	</screen>
+<!-- ## AutoBouquetsMaker Ocultar Secciones## -->	
+	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget source="list" render="Listbox" position="80,138" size="715,400" selectionPixmap="EGAdriatic/icons/ls700x38.png" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaBlend(pos = (15, 5), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (50, 5), size = (200, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (270, 5), size = (225, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 20)],
+					"itemHeight": 38
+				}
+			</convert>
+		</widget>
+	</screen>
+<!-- ## AutoBouquetsMaker Mostrar Log ## -->
+	<screen name="AutoBouquetsMaker_Log" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="list" position="80,140" size="715,400" font="Regular;18"/>
+	</screen>
+<!-- ## AutoBouquetsMaker Acerca de ## -->	
+	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaR"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<widget name="about" position="80,140" size="715,400" font="Regular;19"/>
+		<widget name="oealogo" position="940,450" size="177,130" alphatest="blend"/>
+	</screen>	
+<!-- ## AutoBouquetsMaker MENU ## -->	
+	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget source="list" render="Listbox" position="67,140" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls700x38.png" backgroundPixmap="EGAdriatic/icons/butselection1.png" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (50, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+				],
+				"fonts": [gFont("Regular", 26)],
+				"itemHeight": 38
+				}
+			</convert>	
+		</widget>
 	</screen>	
                 <!-- ########################### PANTALLAS EGAMI ################################## -->
 	<!--  EGAMI PANEL -->
