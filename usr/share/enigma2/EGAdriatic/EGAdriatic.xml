@@ -535,7 +535,7 @@
 		<widget name="jump" position="1000,2" size="200,25" font="xRegular;15" zPosition="1" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="number" position="0,126" size="100,25" zPosition="1" foregroundColor="#4ccbde" transparent="1"/>		
 		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
-		<widget name="timeline_text" position="0,40" size="1280,20" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
+		<widget name="timeline_text" position="0,35" size="1280,25" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
 		<widget name="bouquetlist" position="0,60" size="1280,120" foregroundColorSelected="#00fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="0,60" size="1280,120" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="0"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
