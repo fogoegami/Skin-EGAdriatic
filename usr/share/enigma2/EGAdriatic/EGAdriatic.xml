@@ -185,7 +185,7 @@
 			<convert type="EventName">Name</convert>
 		</widget>
         <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,505" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,500" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,				
 			startpoint=0,
@@ -197,7 +197,7 @@
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
     			<convert type="EGAdriaticNextEvents">Event1,onlyStart</convert>
     		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,518" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,514" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,				
 			startpoint=0,
@@ -209,7 +209,7 @@
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
     			<convert type="EGAdriaticNextEvents">Event2,onlyStart</convert>
     		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,531" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,528" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,				
 			startpoint=0,
@@ -221,7 +221,7 @@
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
     			<convert type="EGAdriaticNextEvents">Event3,onlyStart</convert>
     		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,544" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,542" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,				
 			startpoint=0,
@@ -233,7 +233,7 @@
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
     			<convert type="EGAdriaticNextEvents">Event4,onlyStart</convert>
     		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,557" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,556" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,				
 			startpoint=0,
@@ -257,7 +257,7 @@
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
     			<convert type="EGAdriaticNextEvents">Event6,onlyStart</convert>
     		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,583" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,584" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,				
 			startpoint=0,
@@ -269,7 +269,7 @@
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
     			<convert type="EGAdriaticNextEvents">Event7,onlyStart</convert>
     		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,596" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,598" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,	
 			startpoint=0,
@@ -281,7 +281,7 @@
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
     			<convert type="EGAdriaticNextEvents">Event8,onlyStart</convert>
     		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,609" size="387,200" font="Regular;16" 
+    		<widget source="ServiceEvent" render="DRRunningText" position="840,612" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=2,				
 			startpoint=0,
