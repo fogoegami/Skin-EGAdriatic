@@ -187,11 +187,11 @@
         <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
     		<widget source="ServiceEvent" render="DRRunningText" position="840,500" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=2000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=12,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -199,11 +199,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,514" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=6000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=14,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -211,11 +211,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,528" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=10000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=20,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -223,11 +223,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,542" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=14000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=22,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -235,11 +235,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,556" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=18000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=24,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -247,11 +247,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,570" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=22000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=26,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -259,11 +259,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,584" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=26000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=28,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -271,11 +271,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,598" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,	
+			repeat=3,	
 			startpoint=0,
-			startdelay=4000,
+			startdelay=30000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=30,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
@@ -283,11 +283,11 @@
     		</widget>
     		<widget source="ServiceEvent" render="DRRunningText" position="840,612" size="387,200" font="Regular;16" 
     			options="movetype=running,
-			repeat=2,				
+			repeat=3,				
 			startpoint=0,
-			startdelay=4000,
+			startdelay=34000,
 			oneshot=2000,step=1,
-			steptime=36,
+			steptime=32,
 			always=0,
 			noWrap" 
 			foregroundColor="#00baff" backgroundColor="background" transparent="1" zPosition="2">
