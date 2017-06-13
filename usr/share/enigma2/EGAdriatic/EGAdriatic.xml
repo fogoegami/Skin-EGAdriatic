@@ -2055,36 +2055,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
 	</screen>
-	<!-- (059) ####### SERVICE INFO - INFORMATIONS ####### (15-02) -->
-	<screen name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo" backgroundColor="transparent" flags="wfNoBorder">
-	    <panel name="ScrollBarTemplate"/>	
-		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
-		<ePixmap position="140,10" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_information.png"/>
-		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
-		<widget name="infolist" position="60,180" size="785,400" selectionDisabled="1" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" foregroundColor="#00fafa" position="60,550" size="585,20" font="Regular;20" transparent="1" zPosition="1">
-		    <convert type="ServiceInfo">HasHBBTV</convert>
-		</widget>
-		<!-- Widget Pig -->
-		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<!-- Barra Progresso -->
-	    <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-	    </widget>	
-		<widget name="red" position="6,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="green" position="206,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-		<widget name="yellow" position="406,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#a18120" transparent="1"/>
-		<widget name="blue" position="650,570" zPosition="2" size="180,110" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-                <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget> 
-	</screen>
 	<!-- (060) ####### PLUGINS DOWNLOAD ####### -->
 	<screen name="PluginDownloadBrowser" position="center,center" size="800,460" title="Downloadable plugins">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="800,460"/>
@@ -4061,7 +4031,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key" position="50,580" size="503,25" font="Regular;16" halign="center" transparent="1" valign="center" foregroundColor="#00fafa" backgroundColor="black"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 	</screen>
-	<!-- Info About OK -->
+	<!-- Informacioin About OK -->
 	<screen name="AboutOE" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -4071,7 +4041,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
 		<widget name="AboutScrollLabel" position="80,133" size="718,540" font="Regular;21" backgroundColor="black" transparent="1"/>
 		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_information.png" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="8,640" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
+	<!--  About OK->Info->OK -->
+	<screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGY"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+	    <widget name="text" position="80,138" size="715,435" font="Regular;24" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>		
+		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_information.png" alphatest="blend"/>
+	</screen>	
+	 
 	<!-- Translations OK (translation information)-->	
 	<screen name="TranslationInfo" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenericaR"/>
@@ -4124,6 +4105,46 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="Statustext" render="Label" position="80,520" size="120,25" font="Regular;22" halign="left" backgroundColor="black" transparent="1"/>
 		<widget name="statuspic" position="170,520" size="30,25" pixmaps="EGAdriatic/buttons/key_green.png,EGAdriatic/buttons/button_green_off1.png" alphatest="on" transparent="1"/>
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
+	</screen>
+	<!-- (059) ####### SERVICE INFO - INFORMATIONS ####### (15-02) -->
+	<screen name="ServiceInfo" position="0,0" size="1280,720" title="Serviceinfo" backgroundColor="transparent" flags="wfNoBorder">
+	    <panel name="ScrollBarTemplate"/>	
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
+		<ePixmap position="140,10" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_information.png"/>
+		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="934,416" zPosition="2" size="200,200"  pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
+		<widget name="infolist" position="60,180" size="785,400" selectionDisabled="1" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" foregroundColor="#00fafa" position="60,550" size="585,20" font="Regular;20" transparent="1" zPosition="1">
+		    <convert type="ServiceInfo">HasHBBTV</convert>
+		</widget>
+		<!-- Widget Pig -->
+		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<!-- Nombre del Canal - Service Name -->
+		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<!-- Barra Progresso -->
+	    <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+			<convert type="EventTime">Progress</convert>
+	    </widget>	
+		<widget name="red" position="6,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="green" position="206,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="yellow" position="406,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#a18120" transparent="1"/>
+		<widget name="blue" position="650,570" zPosition="2" size="180,110" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+                <!-- digital clock -->
+		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget> 
+	</screen>
+	<!-- StreamingClientsInfo OK -->
+	<screen name="StreamingClientsInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRB"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+	    <widget name="lab1" position="360,108" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+	    <widget name="ScrollLabel" position="80,150" size="715,510" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>		
+		<ePixmap position="933,416" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_information.png" alphatest="blend"/>
 	</screen>	
 	<!-- ********** HDMI-CEC Setup ********** -->
 	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" flags="wfNoBorder">
