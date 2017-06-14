@@ -141,6 +141,16 @@
 	    <widget name="menu" position="80,138" size="718,465" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	</screen>
+<!-- ## Configurar Ruta picons lista Canales->Menu->use custom picons in service list active->ruta picon OK ->## -->
+	<screen name="DirectoryBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRG"/>
+		<panel name="sRG"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<panel name="Logo_Egami"/>		
+        <widget name="filelist" position="80,145" zPosition="1" size="715,415" scrollbarMode="showOnDemand"/>		
+	</screen>	
 	
 	<!-- (025) ####### Channel selection - TV #######  -->
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
