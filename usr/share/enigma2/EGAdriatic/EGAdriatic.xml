@@ -1529,7 +1529,7 @@
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="0,0"  size="1280,720">
 		<panel name="Title"/>
-		<widget name="text" position="120,100" size="960,610" font="Console;14" transparent="1"/>
+		<widget name="text" position="110,100" size="960,610" font="Console;14" transparent="1"/>
 		<ePixmap pixmap="icons/clock.png" position="1185,60" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1020,35" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
