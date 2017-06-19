@@ -102,7 +102,7 @@
 		<widget name="initialize" position="5,625" size="0,0" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="1"/>
         <panel name="Logo_Egami"/>		
 	</screen>	
-        <!-- restart icons -->
+    <!-- restart icons -->
         <screen name="QuitMainloopScreen" position="fill" backgroundColor="#00637a" flags="wfNoBorder">
         <ePixmap pixmap="EGAdriatic/prev.png" position="0,0" size="1280,720" alphatest="blend"/>
         <widget name="text" position="280,600" size="720,75" foregroundColor="#ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
@@ -141,7 +141,7 @@
 	    <widget name="menu" position="80,138" size="718,465" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	</screen>
-<!-- ## Configurar Ruta picons lista Canales->Menu->use custom picons in service list active->ruta picon OK ->## -->
+    <!-- ## Configurar Ruta picons lista Canales->Menu->use custom picons in service list active->ruta picon OK ->## -->
 	<screen name="DirectoryBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
 		<panel name="sRG"/>		
@@ -178,7 +178,7 @@
 		<widget source="ServiceEvent" render="Label" position="895,454" zPosition="1" size="67,27" font="Regular;18" halign="left" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>			
-                <!-- Barra Progresso -->
+    <!-- Barra Progresso -->
 		</widget>
         <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,439" zPosition="5" backgroundColor="darkgrey" transparent="1">
             <convert type="EventTime">Progress</convert>
@@ -194,7 +194,7 @@
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="833,54" size="393,25" zPosition="2" halign="center" font="Regular;19" foregroundColor="#4ccbde" transparent="1" backgroundColor="#333333">
 			<convert type="EventName">Name</convert>
 		</widget>
-        <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
+    <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#00baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
     		<widget source="ServiceEvent" render="DRRunningText" position="840,500" size="387,200" font="Regular;16" 
     			options="movetype=running,
 			repeat=3,				
@@ -320,7 +320,7 @@
 		<ePixmap position="660,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend" transparent="1"/>			
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-                <!-- pig -->
+    <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- decorative elements -->
 		<ePixmap position="839,408" zPosition="3" size="400,189" pixmap="EGAdriatic/tvp.png" alphatest="blend" transparent="1"/>
@@ -328,7 +328,7 @@
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>	
@@ -348,7 +348,7 @@
 	
 	<!-- (033) ####### EVENT VIEW entre otros desde InfobarEPG->unico####### -->
 	<screen name="EventView" position="0,0"	size="1280,720" flags="wfNoBorder">
-	<!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->	
+	    <!--ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1" /-->	
 		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>	
 		<widget name="key_red" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget name="key_green" position="205,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
@@ -360,7 +360,7 @@
 		<widget name="blue" position="660,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>	
-                <!-- pig -->
+    <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
 	<!-- service progress bar -->
@@ -371,7 +371,7 @@
 	<!-- decorative elements -->
 		<ePixmap position="839,408" zPosition="3" size="400,189" pixmap="EGAdriatic/tvp.png" alphatest="blend" transparent="1"/>
 
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>	
@@ -463,7 +463,7 @@
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
-<!-- ## EPGRefreshSetup ->OK ## -->
+    <!-- ## EPGRefreshSetup ->OK ## -->
 	<screen name="EPGRefreshConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="sRGYB"/>
@@ -475,7 +475,7 @@
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="help" render="Label" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
-<!-- ## EPGRefreshSetup ->Azul Editar Canales ## -->
+    <!-- ## EPGRefreshSetup ->Azul Editar Canales ## -->
 	<screen name="EPGRefreshServiceEditor" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="sRGYB"/>
@@ -486,7 +486,7 @@
         <widget name="config" position="80,145" zPosition="5" size="695,427" scrollbarMode="showOnDemand"/>	
 	</screen>	
 	<!-- GRAPHICAL EPG -->
-   <screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
+    <screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<ePixmap pixmap="icons/clock.png" position="1185,25" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1020,5" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
@@ -547,7 +547,7 @@
 		<widget name="key_blue" position="870,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 	</screen>
 	<!-- GRAPHICAL EPG-PIG -->
-   <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
+    <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_main_help.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<ePixmap pixmap="icons/clock.png" position="1185,25" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1020,5" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
@@ -674,7 +674,7 @@
 		<ePixmap pixmap="buttons/blue.png" position="960,203" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_blue" position="910,180" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 	</screen>
-	        <!-- QuickEPG -->
+	    <!-- QuickEPG -->
 		<screen name="QuickEPG" position="0,e-200" size="1280,200" title="InfoBar" transparent="0" flags="wfNoBorder">
 		<ePixmap pixmap="icons/key_help.png" position="1210,160" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="1120,160" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
@@ -720,7 +720,7 @@
 		<ePixmap pixmap="buttons/blue.png" position="890,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_blue" position="855,160" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
         </screen>	
-	        <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
+	    <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
 	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder" title="TimeDateInput">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="Logo_Egami"/>		
@@ -743,10 +743,10 @@
 		<ePixmap pixmap="EGAdriatic/menu/fr_main_help.png" position="0,0" zPosition="-1" size="1280,720" alphatest="on" transparent="1"/> 
 		
 	<!-- decorative elements -->
-	<!--ePixmap position="0,0" zPosition="1" size="670,83" pixmap="EGAdriatic/menu/tx_listchannel.png" alphatest="blend" transparent="1" /-->
+	    <!--ePixmap position="0,0" zPosition="1" size="670,83" pixmap="EGAdriatic/menu/tx_listchannel.png" alphatest="blend" transparent="1" /-->
 		<ePixmap position="1182,161" zPosition="2" size="27,400" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
 
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,40" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
@@ -872,7 +872,7 @@
 		<ePixmap position="0,0" zPosition="1" size="576,69" pixmap="EGAdriatic/menu/tx_estension.png"/>
 		<ePixmap position="775,116" zPosition="2" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="57,625" zPosition="1" size="750,36" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
-	<!--ePixmap position="930,417" zPosition="2" size="770,425" pixmap="EGAdriatic/menu/ico_estension.png" alphatest="blend" transparent="1" /-->
+	    <!--ePixmap position="930,417" zPosition="2" size="770,425" pixmap="EGAdriatic/menu/ico_estension.png" alphatest="blend" transparent="1" /-->
 		<widget source="list" render="Listbox" position="69,137" size="728,405" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x43.png" transparent="1">
 		<convert type="TemplatedMultiContent">
 			{"templates":
@@ -908,7 +908,7 @@
 		<widget source="key_green" render="Label" position="207,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget source="key_yellow" render="Label" position="407,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="#a18120" transparent="1"/>
 		<widget source="key_blue" render="Label" position="607,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget> 
@@ -1472,7 +1472,7 @@
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>	
@@ -1644,7 +1644,7 @@
 		<widget name="arrowup2" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on"/>
 	</screen>
 	
-        <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish #######-->
+    <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish #######-->
 	<screen name="Dish" position="855,120" size="350,180" backgroundColor="#1b5962" flags="wfNoBorder">
 		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,25" size="146,146" alphatest="blend"/>
 		<widget name="turnTime" position="170,20" size="120,22" zPosition="1" font="Regular;20" halign="right" borderWidth="1" borderColor="#00fafa" transparent="1"/>
@@ -1767,7 +1767,7 @@
         <panel name="Title"/>		
         <eLabel text="Scan" zPosition="1" position="280,45" foregroundColor="#4ccbde" backgroundColor="black" size="250,32" font="Regular;28"/>
 		<eLabel text="Cable" zPosition="1" position="445,45" foregroundColor="#4ccbde" backgroundColor="black" size="250,32" font="Regular;28"/>
-        <!--ePixmap pixmap="icons/key_ok.png" position="360,635" size="40,22" alphatest="blend"/-->		
+    <!--ePixmap pixmap="icons/key_ok.png" position="360,635" size="40,22" alphatest="blend"/-->		
 		<eLabel text="Scan" position="235,630" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
         <eLabel text="OK" position="360,632" size="190,24" zPosition="1" font="Regular;19" backgroundColor="black" halign="left" transparent="1" valign="center"/>				
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" transparent="1"/>
@@ -2058,7 +2058,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="EventTime">Progress</convert>
 		</widget>	
 		<widget name="green" position="244,612" zPosition="2" size="170,45" font="Regular;18" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
@@ -2288,7 +2288,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="timerlist" position="70,145" size="705,350" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;15" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>
 		<widget name="description" position="845,310" size="0,0" zPosition="-1" font="Regular;1" halign="center" transparent="1" valign="center" foregroundColor="#a1d1ff" backgroundColor="black"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>
-		 <!--ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/-->
+		<!--ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/-->
 	</screen>	
 	<!-- (088) ####### CDInfo ####### -->
 	<screen name="CDInfo" position="center,center" size="1130,560" title="CDInfo">
@@ -2381,7 +2381,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="filelist" position="64,134" size="725,410" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x26.png" transparent="1"/>
 		<widget source="key_red" render="Label" position="7,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget source="key_green" render="Label" position="205,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
@@ -2542,8 +2542,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="FileBrowser" position="center,center" size="710,460" title="DVD File Browser">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="710,460" alphatest="on"/>
 		<widget name="filelist" position="20,20" size="670,425" scrollbarMode="showOnDemand" transparent="1"/>
-	</screen>
-<widget name="filelist" position="76,133" size="720,415" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls615x26.png" backgroundColor="black" transparent="1"/>	
+	</screen>	
 	<!-- (104) ####### PICTURE PLAYER REPRODUCTOR DE FOTOS ####### (15-02) -->
 	<screen name="picshow" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRG"/>
@@ -2924,7 +2923,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<ePixmap position="838,638" size="60,40" alphatest="blend" zPosition="3" pixmap="EGAdriatic/buttons/button_green_off.png"/>
 		<widget name="ButtonBlue" position="838,638" size="60,40" alphatest="blend" zPosition="4" pixmap="EGAdriatic/buttons/button_blue.png"/>
-                <!-- service progress bar -->
+    <!-- service progress bar -->
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -2942,7 +2941,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
@@ -3197,7 +3196,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="info" position="650,415" size="740,400" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget source="key_red" render="Label" position="15,625" size="220,35" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget source="key_green" render="Label" position="215,625" size="220,35" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
@@ -3887,7 +3886,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 
 
-        <!-- ############ CROSSEPG ############ -->
+    <!-- ############ CROSSEPG ############ -->
 
 
   	<!-- CrossEPG Configuration -->
@@ -4023,7 +4022,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-        <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>		
@@ -4139,7 +4138,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="green" position="206,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="yellow" position="406,617" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#a18120" transparent="1"/>
 		<widget name="blue" position="650,570" zPosition="2" size="180,110" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
-                <!-- digital clock -->
+    <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget> 
@@ -4340,7 +4339,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="ConditionalShowHide"/>
 		</widget>  		
 	</screen>	
-                <!-- ########################### PANTALLAS PLUGINS ################################## -->
+    <!-- ########################### PANTALLAS PLUGINS ################################## -->
 	<!-- EPG Import Configuration -->
 	<screen name="EPGImportConfig" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
@@ -4926,7 +4925,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget position="405,625" size="0,0" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="0,0" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
     </screen>	
-        <!-- ####### EMC PLAYER y DVD PLAYER Reproductor ####### -->	
+    <!-- ####### EMC PLAYER y DVD PLAYER Reproductor ####### -->	
 	<screen name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
 		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
@@ -5338,7 +5337,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="top_14" position="845,390" size="380,90" transparent="1" zPosition="10"/>
         <widget name="top_15" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
 	</screen>
-<!-- ## AutoBouquetsMaker ->OK configurar + Proveedores ## -->
+    <!-- ## AutoBouquetsMaker ->OK configurar + Proveedores ## -->
 	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<ePixmap position="775,120" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>
@@ -5349,7 +5348,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="pleasewait" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
-<!-- ## AutoBouquetsMaker Ocultar Secciones## -->	
+    <!-- ## AutoBouquetsMaker Ocultar Secciones## -->	
 	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5369,7 +5368,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 		</widget>
 	</screen>
-<!-- ## AutoBouquetsMaker Mostrar Log ## -->
+    <!-- ## AutoBouquetsMaker Mostrar Log ## -->
 	<screen name="AutoBouquetsMaker_Log" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5378,7 +5377,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Logo_Egami"/>		
 		<widget name="list" position="80,140" size="715,400" font="Regular;18"/>
 	</screen>
-<!-- ## AutoBouquetsMaker Acerca de ## -->	
+    <!-- ## AutoBouquetsMaker Acerca de ## -->	
 	<screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaR"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5387,7 +5386,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="about" position="80,140" size="715,400" font="Regular;19"/>
 		<widget name="oealogo" position="940,450" size="177,130" alphatest="blend"/>
 	</screen>	
-<!-- ## AutoBouquetsMaker MENU ## -->	
+    <!-- ## AutoBouquetsMaker MENU ## -->	
 	<screen name="AutoBouquetsMaker_Menu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
 		<panel name="ScrollBarTemplate"/>
@@ -5405,7 +5404,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>	
 		</widget>
 	</screen>
-<!-- ## RemoteChannelStreamConverter ## -->	
+    <!-- ## RemoteChannelStreamConverter ## -->	
 	<screen name="StreamingChannelFromServerScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
 		<panel name="sRGYB"/>		
@@ -5425,7 +5424,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="config" position="80,145" zPosition="1" size="695,427" scrollbarMode="showOnDemand"/>
 	</screen>	
-                <!-- ########################### PANTALLAS EGAMI ################################## -->			
+    <!-- ########################### PANTALLAS EGAMI ################################## -->			
 	<!--  EGAMI PANEL -->
 	<screen name="EgamiMainPanel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
@@ -5901,7 +5900,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="ClearMemAutoScreen" position="0,0" size="1280,720" flags="wfNoBorder">
         <widget name="message_label" font="Regular;22" position="0,0" zPosition="2" valign="center" halign="center" size="498,30" backgroundColor="black" transparent="1"/>
     </screen>
-        <!--  EGAMI Backup Panel OKK -->
+    <!--  EGAMI Backup Panel OKK -->
 	<screen name="EGAMIBackupPanel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGY"/>	
 		<panel name="ScrollBarTemplate"/>
