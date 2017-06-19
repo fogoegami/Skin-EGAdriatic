@@ -78,7 +78,7 @@
 		<sub name="Subtitle_Regular" font="Regular;36" foregroundColor="#DCDCDC" shadowColor="#40101010" shadowOffset="3,3" />
 		<sub name="Subtitle_Bold" font="Replacement;36" foregroundColor="#DCDCDC" shadowColor="#40101010" shadowOffset="3,3" />
 		<sub name="Subtitle_Italic" font="Regular;36" foregroundColor="#DCAAAA" shadowColor="#40101010" shadowOffset="3,3" />
-		<!-- omitting foregroundColor attribute will enable auto-assignment of color -->
+	<!-- omitting foregroundColor attribute will enable auto-assignment of color -->
 	</subtitles>
 	<windowstyle type="skinned" id="0">
 		<title offset="42,27" font="Regular;24"/>
@@ -94,7 +94,7 @@
 		<color name="ListboxMarkedAndSelectedForeground" color="#008080"/>
 		<color name="WindowTitleForeground" color="#ffffff"/>
 		<color name="WindowTitleBackground" color="#2058bcff"/>
-		<!-- Main screen border png's -->
+	<!-- Main screen border png's -->
 		<borderset name="bsWindow">
 			<pixmap pos="bpTopLeft" 	filename="EGAdriatic/bs_tl.png"/>
 			<pixmap pos="bpTop" 		filename="EGAdriatic/bs_t.png"/>
