@@ -5483,7 +5483,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="key_green" render="Label" position="200,605" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 	    <widget name="description" position="845,435" size="380,160" halign="center" valign="center" font="Regular;24" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="80,190" size="718,375" selectionPixmap="EGAdriatic/icons/ls700x30.png" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="80,190" size="718,390" selectionPixmap="EGAdriatic/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="420,130" size="325,50" foregroundColor="#00baff" transparent="1"/>
 	</screen>
 	<!-- EGAMI Configuar Botones -->
@@ -5494,7 +5494,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="description" position="865,435" size="320,500" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="list" position="80,190" size="718,375" selectionPixmap="EGAdriatic/icons/ls700x30.png" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="80,190" size="718,390" selectionPixmap="EGAdriatic/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="choosen" position="420,130" size="345,50" foregroundColor="#00baff" transparent="1"/>
 	</screen>
 	<!-- EGAMI Devices  -->
@@ -5814,7 +5814,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Logo_Egami"/>		
 	</screen>
 	<!--  system informations -->
-	<screen name="EGEnigma2ConfigInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="EGEnigma2ConfigInfo" position="0,0" size="1280,720" title="EGEnigma2ConfigInfo" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
