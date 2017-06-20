@@ -452,7 +452,7 @@
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="255,565" size="150,136" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
-		<widget position="650,565" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="670,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="715,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend"/>
@@ -4703,14 +4703,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="state" position="10,2" size="0,0" font="xRegular;17" halign="left" foregroundColor="#00fafa" backgroundColor="black" transparent="1" zPosition="0"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="2"/>
 	</screen>
-	<!-- EMC-MENU->opciones de la Lista de reproduccion -->
+	<!-- EMC-MENU->Menu seleccion de Pelicula y opciones de la Lista de reproduccion -->
 	<screen name="MovieMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="Logo_Egami"/>		
-		<widget source="menu" render="Listbox" position="80,138" size="715,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
+		<widget source="menu" render="Listbox" position="80,138" size="718,400" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
 	</screen>
@@ -4761,7 +4761,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>	
-	    <widget name="config" position="80,138" size="715,400" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/>
+	    <widget name="config" position="55,142" size="742,425" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	    <widget source="help" render="Label" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
