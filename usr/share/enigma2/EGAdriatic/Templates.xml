@@ -50,7 +50,7 @@
 	</screen>	
 	<!-- ### TEMPLATE TITULOS -->
 	<screen name="Title">
-		<widget source="Title" render="Label" zPosition="1" position="70,40" foregroundColor="#4ccbde" backgroundColor="black" size="720,32" font="Regular;28" halign="center" valign="center"/>
+		<widget source="Title" render="Label" zPosition="1" position="70,40" foregroundColor="#4ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>
 		<ePixmap pixmap="EGAdriatic/menu/border_title.png" zPosition="0" position="60,5" size="671,80" alphatest="blend"/>
 	</screen>	
 	<!-- ### TEMPLATE PIG + Nombre Evento + Progreso + Reloj LCD 2 Pantallas Izquierda-->

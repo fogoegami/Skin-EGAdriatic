@@ -2492,7 +2492,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="#df0b1300"/>
 		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>
-        <widget source="SeekState" render="Label" position="479,124" zPosition="1" size="696,377"/>		
+        <widget name="SeekState" position="450,555" backgroundColor="#1b5962" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>		
 		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -4770,7 +4770,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
 		<panel name="PIG"/>
 	<!-- Movie Listbox -->	
-		<widget name="menulist" position="60,155" size="725,395" font="Regular;14" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
+		<widget name="menulist" position="60,155" size="736,395" font="Regular;14" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on"/>
 	<!-- Info: Amount of searched Covers -->
 
 	<!-- aktual movie name -->
@@ -4862,11 +4862,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="PIG"/>
         <panel name="Title"/>		
-		<widget name="config" position="80,150" font="Regular;17" size="715,420" scrollbarMode="showAlways" transparent="1"/>
-		<widget name="HelpWindow" position="80,580" pixmap="604_124.png" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
-		<widget name="Path" position="80,580" pixmap="604_124.png" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="config" position="55,150" font="Regular;16" size="742,420" scrollbarMode="showAlways" transparent="1"/>
+		<widget name="HelpWindow" position="80,580" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="Path" position="80,580" size="0,0" transparent="1" zPosition="1"/>
 		<eLabel text="Exit" position="110,632" size="190,24" zPosition="1" font="Regular;20" backgroundColor="black" halign="left" transparent="1" valign="center"/>
-		<eLabel text="Save" position="295,632" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top"/>		
+		<eLabel text="Save" position="295,632" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top"/>
+		<widget name="VKeyIcon" position="640,677" zPosition="2" size="0,0" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>	
 	</screen>	
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
@@ -5240,7 +5243,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!--  EGAMI INTERNET RADIO -->
 	<screen name="InternetRadioScreen" position="fill" title="Internet Radio" size="1280,720" flags="wfNoBorder"> 
 		<panel name="PantallaGenerica_sRGYB"/>
-		<panel name="ScrollBarTemplate"/>		
+		<ePixmap position="780,130" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>		
 		<panel name="sRGYB"/>		
         <panel name="Title"/>
         <panel name="PIG"/>		
@@ -5282,11 +5285,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="top_14" position="845,410" size="380,50" transparent="1" zPosition="10"/>
         <widget name="top_15" position="845,410" size="380,50" transparent="1" zPosition="10"/>		
 		 <!-- List Channel -->   
-		<widget name="list" position="70,140" size="720,450" font="Regular;18" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/> 
+		<widget name="list" position="70,140" size="728,459" font="Regular;18" itemHeight="20" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" zPosition="1"/> 
 		<widget name="station" position="715,480" size="610,120" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="1"/>  
 		<widget name="title" position="100,83" size="680,40" font="Regular;18" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="1"/>  
 		<widget name="statustext" position="100,105" size="680,40" font="Regular;16" transparent="1" backgroundColor="black" foregroundColor="#00baff" halign="center" zPosition="2"/> 
-		<widget name="console" position="120,100" size="380,120" font="Regular;16" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="2"/>   
+		<widget name="console" position="120,99" size="480,120" font="Regular;16" transparent="1" backgroundColor="black" foregroundColor="#00fafa" halign="center" zPosition="2"/>   
 		<widget name="cover" position="838,112" size="382,218" zPosition="3" alphatest="blend" backgroundColor="black"/> 
 	</screen>	
 	<screen name="InternetRadioFullScreen" position="fill" title="Internet Radio Cover" size="1280,720" flags="wfNoBorder"> 
@@ -5335,6 +5338,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="top_14" position="845,390" size="380,90" transparent="1" zPosition="10"/>
         <widget name="top_15" position="845,390" size="380,90" transparent="1" zPosition="10"/>	
 	</screen>
+    <!-- ## InternetRadioSetup Pantalla MENU->config ## -->
+	<screen name="InternetRadioSetup" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRG"/>
+		<panel name="sRG"/>
+        <panel name="Title"/>
+		<eLabel text="InternetRadioSetup" position="70,40" zPosition="5" foregroundColor="#4ccbde" backgroundColor="black" size="720,32" font="Regular;28" halign="center" valign="center"/>			
+		<panel name="ScrollBarTemplate"/>			
+        <panel name="PIG"/>
+        <widget name="config" position="60,150" zPosition="5" size="725,427" scrollbarMode="showOnDemand"/>		
+	</screen>	
+	
     <!-- ## AutoBouquetsMaker ->OK configurar + Proveedores ## -->
 	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
@@ -5409,7 +5423,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-		<widget name="list" position="80,140" zPosition="1" size="713,420" scrollbarMode="showOnDemand"/>
+		<widget name="list" position="80,140" zPosition="1" size="720,420" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget source="statusbar" render="Label" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
@@ -5420,7 +5434,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-		<widget name="config" position="80,145" zPosition="1" size="695,427" scrollbarMode="showOnDemand"/>
+		<widget name="config" position="60,145" zPosition="1" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>	
     <!-- ########################### PANTALLAS EGAMI ################################## -->			
 	<!--  EGAMI PANEL -->
