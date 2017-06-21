@@ -446,7 +446,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="70,138" size="716,400" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="70,138" size="721,400" scrollbarMode="showOnDemand" transparent="1"/>
         <widget name="number" position="270,100" size="450,30" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
@@ -1663,11 +1663,12 @@
 
 	<!-- (042) ####### TUNER SELECTION CHOOSE TUNER####### (12-02) -->
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGB"/>	
+		<panel name="PantallaGenerica_sRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="sRGB"/>		
+        <panel name="sRGB"/>
+        <widget name="key_yellow" position="405,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>		
 		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="EGAdriatic/icons/ls620x90.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2031,11 +2032,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (057) ####### Parental Control Setup ####### -->
 	<screen name="ParentalControlSetup" position="center,center" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenerica_sRGYB"/>	
+		<panel name="PantallaGenerica_sRG"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-        <panel name="sRGYB"/>			
+        <panel name="sRG"/>			
 		<widget name="config" position="69,137" size="700,400" transparent="1"/>
 	</screen>
 	<!-- (058) ####### PLUGIN BROWSER ####### (15-02) -->
@@ -3061,7 +3062,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</convert>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="#black" transparent="1"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (157) ####### Seleccionar Dispositivo OK ####### -->	
 	<screen name="InputDeviceSetup" position="center,center" size="1280,720" flags="wfNoBorder">
@@ -3072,7 +3073,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="sRG"/>		
 		<widget name="config" position="80,138" size="710,400" scrollbarMode="showAlways"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="#black" transparent="1"/>
+		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (158) ####### TempFanControl ####### -->	
 	<screen name="TempFanControl" position="center,center" size="950,280" title="Fan Control">
@@ -4534,7 +4535,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>		
 	</screen>
 	<!-- AutoTimer Crear Nuevo tiempo usando Wizard OK -->
-	<screen name="AutoTimerWizard" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="AutoTimerWizard" position="0,0" size="1280,720" title="AutoTimerWizard" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend" transparent="1"/>		
 		<panel name="ScrollBarTemplate"/>
@@ -5237,6 +5238,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!--  ACCESO a SERVICEAPP OK -->	
 	<screen name="ServiceAppDetectPlayers" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+        <widget name="text" position="80,150" size="380,330" font="Regular;20" transparent="1"/>		
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
@@ -5902,7 +5904,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     </screen>	
 	<!-- ClearMemory Boton amarillo info -->
 	<screen name="ClearMemInfoScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="PantallaGenericaRGB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
