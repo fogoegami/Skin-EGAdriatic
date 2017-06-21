@@ -89,7 +89,7 @@
 		<ePixmap position="935,414" zPosition="1" size="370,204" pixmap="EGAdriatic/menu/ico_hdd.png" backgroundColor="transparent" alphatest="blend" transparent="1"/>		
 	</screen>	
 	<!--  Harddisk inicio-formatear + comprobar del sistema de archivos comprobar -->
-	<screen name="HarddiskSetup" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="HarddiskSetup" position="0,0" size="1280,720" title="Harddisk" flags="wfNoBorder">
 		<panel name="PantallaGenericaR"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
@@ -966,6 +966,7 @@
 	<!-- (015) ####### CONFIGURACION DE RED->OK ####### ( -->
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">	
 		<panel name="PantallaGenerica_sR"/>
+		<panel name="ScrollBarTemplate"/>		
 		<panel name="PIG"/>
 	    <panel name="Title"/>
 	    <panel name="sR"/>		
