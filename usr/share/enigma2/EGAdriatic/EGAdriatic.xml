@@ -1760,16 +1760,14 @@
 		<widget name="servicelist" position="80,210" size="560,300" selectionDisabled="1" transparent="1"/>
 	</screen>
 	<!-- Busqueda de Cable -->
-	<screen name="CableScanScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="CableScanScreen" position="0,0" size="1280,720" title="CableScan" flags="wfNoBorder">
 		<panel name="PantallaGenericaRexit"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
         <panel name="Title"/>		
-        <eLabel text="Scan" zPosition="1" position="280,45" foregroundColor="#4ccbde" backgroundColor="black" size="250,32" font="Regular;28"/>
-		<eLabel text="Cable" zPosition="1" position="445,45" foregroundColor="#4ccbde" backgroundColor="black" size="250,32" font="Regular;28"/>
-    <!--ePixmap pixmap="icons/key_ok.png" position="360,635" size="40,22" alphatest="blend"/-->		
-		<eLabel text="Scan" position="235,630" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-        <eLabel text="OK" position="360,632" size="190,24" zPosition="1" font="Regular;19" backgroundColor="black" halign="left" transparent="1" valign="center"/>				
+        <ePixmap pixmap="icons/key_ok.png" position="235,635" size="40,22" alphatest="blend"/>		
+		<eLabel text="Scan" position="290,635" size="250,36" foregroundColor="#ffffff" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <!--eLabel text="OK" position="360,632" size="190,24" zPosition="1" font="Regular;19" backgroundColor="black" halign="left" transparent="1" valign="center"/-->				
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
