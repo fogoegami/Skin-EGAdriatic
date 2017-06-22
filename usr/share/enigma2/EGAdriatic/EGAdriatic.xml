@@ -446,7 +446,7 @@
 	<!-- image for colored buttons -->
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- events list -->
-		<widget name="list" position="70,138" size="721,400" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="70,138" size="721,400" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
         <widget name="number" position="270,100" size="450,30" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
@@ -2235,7 +2235,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
-		<widget name="loglist" position="62,155" size="725,425" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="loglist" position="62,155" size="735,425" font="Regular;16" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="logentry" position="845,430" size="380,185" foregroundColor="#00fafa" font="Regular;20" transparent="1"/>		
 	</screen>	
@@ -5570,8 +5570,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="sRGYB"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="header" position="840,490" size="380,200" halign="center" font="Regular;22" foregroundColor="#4ccbde" backgroundColor="transparent" transparent="1"/>
-		<widget name="status" position="80,138" size="550,45" font="Regular;18" transparent="1"/>
-		<widget source="menu" render="Listbox" position="80,138" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x50-a.png" transparent="1">
+		<widget name="status" position="70,138" size="550,45" font="Regular;18" transparent="1"/>
+		<widget source="menu" render="Listbox" position="70,138" size="730,440" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x50-a1.png" transparent="1">
 		    <convert type="TemplatedMultiContent" transparent="1">
 				{"template": [
 					MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (50, 50), png = 2), # index 4 is the status pixmap
