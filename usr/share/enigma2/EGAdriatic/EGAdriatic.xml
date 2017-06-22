@@ -317,7 +317,7 @@
 	<screen name="EventViewSimple" position="0,0"	size="1280,720" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
 		<widget name="key_blue" position="605,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<ePixmap position="660,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend" transparent="1"/>			
+		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend" transparent="1"/>			
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
     <!-- pig -->
@@ -357,7 +357,7 @@
 		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
 		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarY.png" alphatest="blend"/>
-		<widget name="blue" position="660,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend"/>
+		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>	
     <!-- pig -->
@@ -1049,7 +1049,7 @@
 		<widget name="DNSInfo_Text" position="580,370" size="318,50" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#73c6ff,#ffffff,#009a00" backgroundColor="black"/>
 		<widget name="InfoText" position="580,420" size="585,300" zPosition="2" font="Regular;20" transparent="1" valign="center" halign="center" foregroundColor="#73c6ff" backgroundColor="black"/>
 		<widget name="InfoTextBorder" position="570,440" size="585,300" zPosition="2"/>
-		<widget name="EditSettingsButton" pixmaps="menu/colorbarB.png" position="660,635" size="140,30" zPosition="1"/>
+		<widget name="EditSettingsButton" pixmaps="menu/colorbarB.png" position="660,634" size="140,30" zPosition="1"/>
 		<widget name="EditSettings_Text" position="655,610" size="150,50" valign="center" halign="center" zPosition="2" font="Regular;22" transparent="1"  backgroundColor="black"/>
 		<panel name="Logo_Egami"/>  
 	</screen>
@@ -1935,7 +1935,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
 		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="yellow" position="460,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarY.png" alphatest="blend"/>
-		<widget name="blue" position="660,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend"/>
+		<widget name="blue" position="660,634" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend"/>
         <panel name="Logo_Egami"/>		
 	</screen> 
 	<!-- (049) ####### NumberZap ####### (15-02) -->
@@ -4634,7 +4634,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 	<!-- Lista  -->
 		<widget name="waitingtext" position="97,140" size="650,380" zPosition="4" font="Regular;22" halign="right" valign="center" transparent="1"/>
-		<widget name="list" zPosition="1" position="60,146" size="725,399" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" zPosition="1" position="60,146" size="738,399" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="135,560" zPosition="4" size="40,30" pixmap="EGAdriatic/icons/key_info2.png" transparent="1" alphatest="blend"/>
 		<widget name="freeDiskSpace" position="180,565" halign="center" valign="center" zPosition="4" size="200,25" font="Regular;22" foregroundColor="#4ccbde" transparent="1"/>
        <widget name="TrashcanSize" position="400,515" size="300,120" font="Regular;20" foregroundColor="#00fafa" backgroundColor="black" valign="center" halign="left" zPosition="2" transparent="1"/>				
@@ -4673,8 +4673,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_mplayer.png"/>
 		<ePixmap position="600,158" zPosition="2" size="27,348" pixmap="EGAdriatic/icons/barra348.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="1205,158" zPosition="2" size="27,348" pixmap="EGAdriatic/icons/barra348.png" alphatest="blend" transparent="1"/>
-		<widget name="filelist" position="50,150" size="550,350" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="playlist" position="660,150" size="550,250" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="filelist" position="68,160" size="550,345" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="playlist" position="660,160" size="550,250" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="currenttext" position="465,120" size="0,0"/>
 		<widget name="titletext" position="465,120" size="0,0"/>
 		<widget name="coverArt" position="660,400" size="102,102" pixmap="no_coverArt.png" transparent="1" alphatest="blend"/>
@@ -5027,15 +5027,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>		
 	<!-- ********** IMDB ********** -->
 	<screen name="IMDB" position="0,0" size="1280,720" flags="wfNoBorder">
-		<panel name="PantallaGenericaRGYB"/>
+		<panel name="PantallaGenericaRGY"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
+		<ePixmap position="660,634" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarB.png" alphatest="blend" transparent="1"/>		
+		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
 	    <widget name="ratinglabel" position="80,135" size="250,25" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>		
 		<widget name="titellabel" position="350,105" size="330,45" foregroundColor="#4ccbde" valign="center" transparent="1" font="Regular;20"/>		
 		<widget name="statusbar" position="255,50" size="585,26" zPosition="2" font="Regular;22" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap position="965,405" size="380,180" pixmap="menu/imdb.png" zPosition="1"/>
-		<widget name="menu" position="80,150" size="705,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="menu" position="80,150" size="718,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<widget name="poster" position="930,395" size="182,190" alphatest="on" zPosition="2"/>
 		<widget name="castlabel" position="80,180" size="715,270" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="extralabel" position="80,180" size="715,270" font="Regular;20" backgroundColor="black" transparent="1"/>
