@@ -495,7 +495,7 @@
 		<widget source="global.CurrentTime" render="Label" position="645,18" size="350,25" halign="right" font="LCD;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<widget source="Title" render="Label" position="35,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#4ccbde" backgroundColor="black" zPosition="1"/>
+		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#4ccbde" backgroundColor="black" zPosition="1"/>
 		<widget source="Event" render="Label" position="450,95" size="100,28" font="Regular;20" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
@@ -556,7 +556,7 @@
 		<widget source="global.CurrentTime" render="Label" position="645,18" size="350,25" halign="right" font="LCD;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
-		<widget source="Title" render="Label" position="35,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#4ccbde" backgroundColor="black" zPosition="1"/>
+		<widget source="Title" render="Label" position="40,15" size="400,43" font="Regular;32" transparent="1" foregroundColor="#4ccbde" backgroundColor="black" zPosition="1"/>
 		<widget source="Event" render="Label" position="90,130" size="350,20" font="Regular;18" foregroundColor="#00baff" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
@@ -734,12 +734,12 @@
 		<widget name="ok" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="80,138" font="Regular;22" size="600,500" transparent="1"/>  		
 	</screen>
-	<!-- (####### Editar ELIMINAR temporizador en EPG ####### (12-02) -->	
-	<screen name="RecordTimerQuestion" position="center,center" size="380,90" backgroundColor="#1b5962" zPosition="5" flags="wfNoBorder">
-		<widget name="windowtitle" position="120,0" foregroundColor="#00bab329" backgroundColor="#1b5962" size="360,15" font="xRegular;14"/>
+	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
+	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#1b5962" zPosition="5" flags="wfNoBorder">
+		<widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#1b5962" size="200,25" font="Regular;20"/>
 		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
-		<widget name="list" position="10,15" size="360,75" font="Regular;18" backgroundColor="#1b5962" borderWidth="1"/>
-        <ePixmap pixmap="icons/key_ok.png" position="10,66" size="40,22" alphatest="blend"/>			
+		<widget name="list" position="0,3" size="210,50" backgroundColor="#1b5962" scrollbarMode="showOnDemand" borderWidth="1"/>
+        <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="EGAdriatic/icons/barra20-55.png" alphatest="blend"/>		
 	</screen>	
 	
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
@@ -5843,7 +5843,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="menu" position="80,140" size="718,400" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="menu" position="60,140" size="738,400" zPosition="1" font="Regular;18" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
         <panel name="Logo_Egami"/>		
 	</screen>
 	
