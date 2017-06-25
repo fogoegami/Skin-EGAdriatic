@@ -483,7 +483,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
 		<panel name="Logo_Egami"/>		
-        <widget name="config" position="80,145" zPosition="5" size="695,427" scrollbarMode="showOnDemand"/>	
+        <widget name="config" position="80,145" zPosition="1" size="718,427" scrollbarMode="showOnDemand"/>	
 	</screen>	
 	<!-- GRAPHICAL EPG -->
     <screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
@@ -4439,7 +4439,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="sRGYB"/>		
         <panel name="PIG"/>		
-		<widget name="entries" position="80,138" size="695,450" itemHeight="30" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget name="entries" position="65,138" size="717,450" itemHeight="30" enableWrapAround="1" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>
 	</screen>
