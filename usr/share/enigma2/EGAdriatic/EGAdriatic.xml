@@ -5366,10 +5366,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- ## AutoBouquetsMaker ->OK configurar + Proveedores ## -->
 	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
+		<panel name="ScrollBarTemplate"/>
 		<ePixmap position="775,120" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <widget name="config" position="80,140" zPosition="5" size="713,427" scrollbarMode="showOnDemand"/>
+        <widget name="config" position="80,140" zPosition="5" size="700,427"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="pleasewait" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
