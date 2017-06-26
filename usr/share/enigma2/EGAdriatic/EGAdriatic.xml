@@ -2238,7 +2238,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="apply" position="210,240" size="250,35"/>
 	</screen>
 	<!-- (080) ####### TEMPORIZADORES LISTA DE EVENTOS PARA GRABAR BOTON->INFO ####### -->
-	<screen name="TimerLog" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder">
+	<screen name="TimerLog" position="0,0" size="1280,720">
 		<panel name="PantallaGenericaRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
