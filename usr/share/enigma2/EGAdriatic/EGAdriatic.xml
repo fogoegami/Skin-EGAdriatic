@@ -5375,6 +5375,26 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="description" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="pleasewait" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
+    <!-- ## AutoBouquetsMaker Orden Proveedores## -->	
+	<screen name="AutoBouquetsMaker_Ordering" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<panel name="ScrollBarTemplate"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="EGAdriatic/icons/ls700x38.png" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (50, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 38
+				}
+			</convert>
+		</widget>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget name="pleasewait" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+	</screen>	
     <!-- ## AutoBouquetsMaker Ocultar Secciones## -->	
 	<screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
@@ -5382,7 +5402,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="Logo_Egami"/>		
-		<widget source="list" render="Listbox" position="80,138" size="715,400" selectionPixmap="EGAdriatic/icons/ls700x38.png" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="EGAdriatic/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaBlend(pos = (15, 5), size = (32, 32), png = 0),
