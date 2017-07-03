@@ -1536,7 +1536,7 @@
 		</widget>			
 	</screen>
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
-	<screen name="Console" position="0,0"  size="1280,720">
+	<screen name="Console" position="0,0" size="1280,720">
 		<panel name="Title"/>
 		<widget name="text" position="110,100" size="960,610" font="Console;14" transparent="1"/>
 		<ePixmap pixmap="icons/clock.png" position="1185,60" zPosition="1" size="20,20" alphatest="blend"/>
@@ -1573,6 +1573,45 @@
 		<eLabel position="807,330" size="386,2" backgroundColor="#00fafa" zPosition="3"/>
 		<eLabel position="807,108" size="384,2" backgroundColor="#00fafa" zPosition="3"/>
         <ePixmap pixmap="menu/logo_egami_menu.png" position="945,390" size="180,180" zPosition="2" alphatest="blend"/>		
+	</screen>
+	<!--  EGAMI Execute -->
+	<screen name="EGExecute" position="0,0" size="1280,720">
+		<panel name="Title"/>
+		<widget name="linelist" position="110,100" size="670,610" font="Console;14" transparent="1"/>
+		<ePixmap pixmap="icons/clock.png" position="1185,60" zPosition="1" size="20,20" alphatest="blend"/>
+		<widget source="global.CurrentTime" render="Label" position="1020,35" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<widget source="global.CurrentTime" render="Label" position="645,48" size="350,25" halign="right" font="LCD;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1">
+		    <convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="808,305" size="382,25" zPosition="4" foregroundColor="#00fafa" font="Regular;19" valign="center" halign="center" transparent="1">
+		    <convert type="ServiceName">Name</convert>
+		</widget>		
+	<!-- Evento Corrente - Event Now -->
+		<widget source="session.Event_Now" render="Label" position="800,340" size="70,30" zPosition="2" halign="left"  font="Regular;20" foregroundColor="#00fafa" backgroundColor="background" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+	    <widget font="Regular;20" halign="left" position="863,340" size="275,32" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" source="session.Event_Now" foregroundColor="#00baff" backgroundColor="#000000" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>			
+		<widget source="session.Event_Now" render="Label" position="1125,340" foregroundColor="#a1d1ff" size="70,30" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+        <eLabel size="395,1" position="800,362" backgroundColor="darkgrey" zPosition="3"/>		
+		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="395,2" position="800,362" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>		
+		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_help.png"/>
+		<widget source="session.VideoPicture" render="Pig" position=" 808,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+        <eLabel position="808,310" size="382,20" backgroundColor="#20101010" zPosition="3"/>		
+	    <eLabel position="807,110" size="2,220" backgroundColor="#00fafa" zPosition="3"/>
+		<eLabel position="1191,108" size="2,222" backgroundColor="#00fafa" zPosition="3"/>
+		<eLabel position="807,330" size="386,2" backgroundColor="#00fafa" zPosition="3"/>
+		<eLabel position="807,108" size="384,2" backgroundColor="#00fafa" zPosition="3"/>
+        <ePixmap pixmap="menu/logo_egami_menu.png" position="945,390" size="180,180" zPosition="2" alphatest="blend"/>			
 	</screen>	
 	<!-- (028) ####### clock Display ####### -->
 	<screen name="clockDisplay" position="420,230"  size="340,300" title="Clock">
@@ -5125,8 +5164,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <panel name="sRG"/>		
         <widget name="entrylist" position="80,140" size="550,200" scrollbarMode="showOnDemand"/>
-    </screen>
-	
+    </screen>	
 	<!-- WHEATHER PLUGIN MOSTRAR EL TIEMPO -->		
     <screen name="MSNWeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
         <panel name="PantallaGenericaSinBarraColor2Pantallas"/>
@@ -5362,7 +5400,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
         <widget name="config" position="60,150" zPosition="5" size="725,427" scrollbarMode="showOnDemand"/>		
 	</screen>	
-	
     <!-- ## AutoBouquetsMaker ->OK configurar + Proveedores ## -->
 	<screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
@@ -5451,6 +5488,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>	
 		</widget>
 	</screen>
+	
     <!-- ## RemoteChannelStreamConverter ## -->	
 	<screen name="StreamingChannelFromServerScreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>
@@ -5471,7 +5509,148 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="config" position="60,145" zPosition="1" size="725,427" scrollbarMode="showOnDemand"/>
 	</screen>	
-    <!-- ########################### PANTALLAS EGAMI ################################## -->			
+	<!-- ********** OScam Info ********** -->
+	<screen name="OscamInfoMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<widget name="mainmenu" position="60,145" size="725,427" transparent="1"/>
+	</screen>
+	<screen name="OscamInfoConfigScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRG"/>
+		<panel name="sRG"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>
+		<widget name="config" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget source="status" render="Label" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+	</screen>
+	<!-- ********** CCcam Info ********** -->
+	<screen name="CCcamInfoMain" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<widget name="menu" position="60,145" size="725,427" transparent="1"/>
+	</screen>
+	<screen name="CCcamInfoInfoScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="text" position="80,145" size="725,427" font="Regular;18" transparent="1"/>
+	</screen>
+	<screen name="CCcamInfoSubMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<widget name="list" position="80,145" size="718,427" scrollbarMode="showOnDemand" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="info" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+	</screen>
+	<screen name="CCcamInfoServerMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+		<widget name="list" position="80,145" size="718,427" scrollbarMode="showOnDemand" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="info" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>		
+	</screen>
+	<screen name="CCcamShareViewMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="uphops" position="80,145" size="695,45" font="Regular;18" transparent="1"/>
+		<widget name="providers" position="80,200" size="695,45" font="Regular;18" transparent="1"/>
+		<widget name="list" position="80,255" size="695,45" transparent="1"/>
+		<widget name="reshare" position="80,310" size="695,45" font="Regular;18" transparent="1"/>
+		<widget name="cards" position="80,365" size="695,45" font="Regular;18" transparent="1"/>
+		<widget name="title" position="80,420" size="695,45" font="Regular;18" transparent="1"/>		
+	</screen>
+	<screen name="CCcamInfoShareInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="list" position="60,145" size="738,425" scrollbarMode="showOnDemand" transparent="1"/>
+	</screen>
+	<screen name="CCcamInfoRemoteBoxMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="list" position="60,145" size="740,427" transparent="1"/>
+	</screen>
+	<screen name="CCcamInfoConfigSwitcher" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGYB"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>
+		<widget name="list" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
+	</screen>	
+	<screen name="CCcamInfoConfigMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>
+		<widget name="config" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
+	</screen>	
+	
+    <!-- ########################### PANTALLAS EGAMI ################################## -->	
+	<!--  EGAMI EGSoftCamInfo -->
+	<screen name="EGSoftCamInfo" position="0,0" size="1280,720" title="EGSoftCamInfo" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+        <widget name="menu" position="80,140" zPosition="1" size="720,420" scrollbarMode="showOnDemand"/>
+	</screen>
+	<!--  EGCCcamConfigEdit -->
+	<screen name="EGCCcamConfigEdit" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGYB"/>
+		<panel name="sRGYB"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>
+        <widget name="menu" position="70,140" zPosition="1" size="728,420" font="Regular;17" scrollbarMode="showOnDemand"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget source="statusbar" render="Label" position="845,395" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+	</screen>
+	<!--  EGAMI CCCam Edit -->
+	<screen name="EGCCcamEditAddLine" position="0,0" size="1280,720" title="EGCCcamEditAddLineflags" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>	
+		<widget name="config" position="60,145" size="725,427" scrollbarMode="showOnDemand"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="HelpText" position="845,425" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+	</screen>	
+	<!--  EGAMI EmuInfo Script -->
+	<screen name="EGEmuInfoScript" position="0,0" size="1280,720" title="EGEmuInfoScript" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>
+        <widget name="list" position="80,140" zPosition="1" size="720,420" scrollbarMode="showOnDemand"/>
+        <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="statuslab" position="845,395" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+	</screen>	
 	<!--  EGAMI PANEL -->
 	<screen name="EgamiMainPanel" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
@@ -5741,12 +5920,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="menu/ico_emulator.png" position="850,400" size="370,204" zPosition="2" alphatest="blend"/>
 	</screen>
 	<!--  EGAMI EmuManager FHD -->
-	<screen name="EGEmuManagerStarting" position="center,150" size="700,260" title="EGAMI StartCam" backgroundColor="background" foregroundColor="#a1d1ff">
+	<screen name="EGEmuManagerStarting" position="center,150" size="700,260" title="EGAMI StartCam">
 	        <widget name="text" position="10,10" size="680,100" halign="center" valign="center" font="Regular;22" foregroundColor="#4ccbde" backgroundColor="transparent" transparent="1" zPosition="1"/>
 	        <widget name="starting" position="center,110" size="128,128" zPosition="1" pixmaps="/usr/share/enigma2/oDreamy-FHD/egami/sc1.png,/usr/share/enigma2/oDreamy-FHD/egami/sc2.png,/usr/share/enigma2/oDreamy-FHD/egami/sc3.png,/usr/share/enigma2/oDreamy-FHD/egami/sc4.png,/usr/share/enigma2/oDreamy-FHD/egami/sc5.png,/usr/share/enigma2/oDreamy-FHD/egami/sc6.png,/usr/share/enigma2/oDreamy-FHD/egami/sc7.png,/usr/share/enigma2/oDreamy-FHD/egami/sc8.png,/usr/share/enigma2/oDreamy-FHD/egami/sc9.png,/usr/share/enigma2/oDreamy-FHD/egami/sc10.png,/usr/share/enigma2/oDreamy-FHD/egami/sc11.png" alphatest="blend"/>
 	</screen>
 	<!--  EGAMI Animation OKK -->
-	<screen name="EGConnectionAnimation" position="390,100" size="484,220" title="EGAMI" backgroundColor="background">
+	<screen name="EGConnectionAnimation" position="390,100" size="484,220" title="EGAMI">
 		<widget name="connect" position="0,0" size="484,250" zPosition="-1" pixmaps="/usr/share/enigma2/oDreamy-FHD/egami/connection_1.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_2.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_3.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_4.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_5.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_6.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_7.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_8.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_9.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_10.png,/usr/share/enigma2/oDreamy-FHD/egami/connection_11.png" alphatest="blend"/>
 		<widget name="lab1" position="10,180" halign="center" size="460,60" zPosition="1" font="Regular;20" valign="top" transparent="1"/>
 	</screen>
