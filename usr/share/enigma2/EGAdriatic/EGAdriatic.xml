@@ -734,13 +734,6 @@
 		<widget name="ok" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="80,138" font="Regular;22" size="600,500" transparent="1"/>  		
 	</screen>
-	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
-	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#1b5962" zPosition="5" flags="wfNoBorder">
-		<widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#1b5962" size="200,25" font="Regular;20"/>
-		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
-		<widget name="list" position="0,3" size="210,50" backgroundColor="#1b5962" scrollbarMode="showOnDemand" borderWidth="1"/>
-        <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="EGAdriatic/icons/barra20-55.png" alphatest="blend"/>		
-	</screen>	
 	
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
 	<screen name="EPGSelectionMulti" position="0,0"	size="1280,720" flags="wfNoBorder">
@@ -790,6 +783,13 @@
 		<ePixmap pixmap="icons/key_info.png" position="965,670" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="icons/key_help.png" position="1010,670" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="icons/key_text.png" position="1055,670" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
+	</screen>	
+	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
+	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#1b5962" zPosition="5" flags="wfNoBorder">
+		<widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#1b5962" size="200,25" font="Regular;20"/>
+		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
+		<widget name="list" position="0,3" size="210,50" backgroundColor="#1b5962" scrollbarMode="showOnDemand" borderWidth="1"/>
+        <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="EGAdriatic/icons/barra20-55.png" alphatest="blend"/>		
 	</screen>
 	
 	<!-- (040) ####### MENU HELP ####### (12-02) -->
@@ -1575,43 +1575,13 @@
         <ePixmap pixmap="menu/logo_egami_menu.png" position="945,390" size="180,180" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!--  EGAMI Execute -->
-	<screen name="EGExecute" position="0,0" size="1280,720">
-		<panel name="Title"/>
-		<widget name="linelist" position="110,100" size="670,610" font="Console;14" transparent="1"/>
-		<ePixmap pixmap="icons/clock.png" position="1185,60" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1020,35" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
-		<widget source="global.CurrentTime" render="Label" position="645,48" size="350,25" halign="right" font="LCD;24" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1">
-		    <convert type="ClockToText">Date</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="808,305" size="382,25" zPosition="4" foregroundColor="#00fafa" font="Regular;19" valign="center" halign="center" transparent="1">
-		    <convert type="ServiceName">Name</convert>
-		</widget>		
-	<!-- Evento Corrente - Event Now -->
-		<widget source="session.Event_Now" render="Label" position="800,340" size="70,30" zPosition="2" halign="left"  font="Regular;20" foregroundColor="#00fafa" backgroundColor="background" transparent="1">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	    <widget font="Regular;20" halign="left" position="863,340" size="275,32" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" source="session.Event_Now" foregroundColor="#00baff" backgroundColor="#000000" transparent="1" zPosition="2">
-		    <convert type="EventName">Name</convert>
-	    </widget>			
-		<widget source="session.Event_Now" render="Label" position="1125,340" foregroundColor="#a1d1ff" size="70,30" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-        <eLabel size="395,1" position="800,362" backgroundColor="darkgrey" zPosition="3"/>		
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="395,2" position="800,362" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>		
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_help.png"/>
-		<widget source="session.VideoPicture" render="Pig" position=" 808,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-        <eLabel position="808,310" size="382,20" backgroundColor="#20101010" zPosition="3"/>		
-	    <eLabel position="807,110" size="2,220" backgroundColor="#00fafa" zPosition="3"/>
-		<eLabel position="1191,108" size="2,222" backgroundColor="#00fafa" zPosition="3"/>
-		<eLabel position="807,330" size="386,2" backgroundColor="#00fafa" zPosition="3"/>
-		<eLabel position="807,108" size="384,2" backgroundColor="#00fafa" zPosition="3"/>
-        <ePixmap pixmap="menu/logo_egami_menu.png" position="945,390" size="180,180" zPosition="2" alphatest="blend"/>			
+	<screen name="EGExecute" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>	
+		<widget name="linelist" position="80,140" size="718,425" font="Console;18" scrollbarMode="showOnDemand" transparent="1"/>		
 	</screen>	
 	<!-- (028) ####### clock Display ####### -->
 	<screen name="clockDisplay" position="420,230"  size="340,300" title="Clock">
@@ -5616,7 +5586,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="Logo_Egami"/>		
-        <widget name="menu" position="80,140" zPosition="1" size="720,420" scrollbarMode="showOnDemand"/>
+        <widget name="menu" position="80,140" zPosition="1" size="695,420" scrollbarMode="showOnDemand"/>
 	</screen>
 	<!--  EGCCcamConfigEdit -->
 	<screen name="EGCCcamConfigEdit" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5647,7 +5617,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <panel name="PIG"/>
         <panel name="Logo_Egami"/>
-        <widget name="list" position="80,140" zPosition="1" size="720,420" scrollbarMode="showOnDemand"/>
+        <widget name="list" position="80,140" zPosition="1" size="695,420" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="statuslab" position="845,395" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 	</screen>	
