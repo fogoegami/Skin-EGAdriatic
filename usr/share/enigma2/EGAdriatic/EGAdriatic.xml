@@ -538,13 +538,13 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="1155,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="1220,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="120,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_red" position="170,625" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_green" position="395,625" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="685,595" size="120,145" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_yellow" position="685,625" size="120,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="870,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 	</screen>
 	<!-- GRAPHICAL EPG-PIG -->
     <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
@@ -607,13 +607,13 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="1155,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="1220,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="120,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_red" position="170,625" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_green" position="395,625" size="200,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/yellow.png" position="675,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="685,595" size="120,145" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_yellow" position="685,625" size="120,85" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="870,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
+		<widget name="key_blue" position="880,565" size="250,205" halign="center" valign="center" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 	</screen>
 	<!-- GraphicalInfoBarEPG -->
 	<screen name="GraphicalInfoBarEPG" position="0,500" size="1280,240" flags="wfNoBorder">
@@ -771,10 +771,10 @@
 		<widget source="global.CurrentTime" render="Label" position="500,40" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
-		<widget source="key_red" render="Label" position="0,660" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_green" render="Label" position="200,660" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>		
-		<widget source="key_yellow" render="Label" position="400,660" size="250,36" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_blue" render="Label" position="630,660" size="250,36" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget source="key_red" render="Label" position="60,625" size="150,85" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="265,625" size="130,85" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="470,625" size="120,85" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="630,620" size="200,85" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
 		<widget name="key_red" position="0,660" size="0,0" backgroundColor="transpBlack" zPosition="1" transparent="1" halign="center" valign="center"/>
 		<widget name="key_green" position="200,660" size="0,0" backgroundColor="transpBlack" zPosition="1" transparent="1" halign="center" valign="center"/>		
 		<widget name="key_yellow" position="400,660" size="0,0" backgroundColor="#a18120" zPosition="1" transparent="1" halign="center" valign="center"/>
