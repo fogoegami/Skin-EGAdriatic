@@ -771,7 +771,7 @@
 		<widget source="global.CurrentTime" render="Label" position="500,40" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
-		<widget source="key_red" render="Label" position="60,625" size="150,85" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_red" render="Label" position="60,628" size="150,85" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_green" render="Label" position="265,625" size="130,85" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 		<widget source="key_yellow" render="Label" position="470,625" size="120,85" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_blue" render="Label" position="630,620" size="200,85" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
