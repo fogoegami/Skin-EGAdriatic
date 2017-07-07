@@ -831,7 +831,7 @@
         <panel name="ScrollBarTemplate"/>
 		<ePixmap position="860,414" zPosition="1" size="300,220" pixmap="EGAdriatic/menu/ico_flags.png" alphatest="blend" transparent="1"/>	
 	<!-- languages list -->
-		<widget source="languages" render="Listbox" position="77,135" size="718,440" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x50.png" transparent="1">
+		<widget source="languages" render="Listbox" position="77,135" size="710,400" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls680x50.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (150, 10), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
