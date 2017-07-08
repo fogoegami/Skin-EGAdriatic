@@ -4155,7 +4155,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>	
     <!-- ########################### PANTALLAS PLUGINS ################################## -->
 	
-	<!-- ## YouTube ## -->
 	<!-- YouTube TV Setup Complementos -->	
     <screen name="YoutubeTVSettings" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
@@ -4176,15 +4175,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget name="infomation" position="80,470" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,50"/>		
         <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
 		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
-    </screen>	
+    </screen>
+	<!-- ## YouTube ## -->	
 	<screen name="YouTubeMain" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="ScrollBarTemplate"/>
+		<widget source="Title" render="Label" zPosition="2" position="15,40" foregroundColor="#4ccbde" backgroundColor="black" size="820,32" font="Regular;28" halign="center" valign="center"/>
+		<ePixmap pixmap="EGAdriatic/menu/border_title.png" zPosition="1" position="60,5" size="671,80" alphatest="blend"/>		
 		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
 		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
 		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>		
 		<widget source="key_red" render="Label" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget source="key_green" render="Label" position="205,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
-		<panel name="ScrollBarTemplate"/>
-        <panel name="Title"/>
+		<widget source="key_green" render="Label" position="205,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
     <!-- pig -->
 		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
@@ -4195,13 +4196,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
-		<ePixmap pixmap="icons/key_menu1.png" position="645,640" size="74,36" alphatest="blend"/>
-		<ePixmap position="690,640" size="40,22" pixmap="icons/key_info.png" alphatest="blend"/>
         <ePixmap position="80,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>		
-		<widget name="menu" position="480,640" size="74,36" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>		
-		<widget name="info" position="530,640" size="74,36" pixmap="icons/key_info.png" transparent="1" alphatest="blend"/>		
+		<widget name="menu" position="480,640" size="74,36" zPosition="10" pixmap="icons/key_menu1.png" transparent="1" alphatest="on"/>		
+		<widget name="info" position="530,640" size="74,36" zPosition="10" pixmap="icons/key_info.png" transparent="1" alphatest="on"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="text" position="845,380" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget source="list" render="Listbox" position="85,160" size="713,370" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
