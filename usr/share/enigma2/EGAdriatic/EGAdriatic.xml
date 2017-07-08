@@ -149,7 +149,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
 		<panel name="Logo_Egami"/>		
-        <widget name="filelist" position="80,145" zPosition="1" size="715,415" scrollbarMode="showOnDemand"/>		
+        <widget name="filelist" position="80,145" zPosition="1" size="718,415" scrollbarMode="showOnDemand"/>		
 	</screen>	
 	
 	<!-- (025) ####### Channel selection - TV #######  -->
@@ -4255,6 +4255,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 		</widget>
 	</screen>
+ 	<screen name="YouTubeDirBrowser" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>
+		<widget name="filelist" position="80,150" itemHeight="30" size="718,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
+		<eLabel text="Exit" position="105,635" font="Regular;20" zPosition="1" size="140,35" transparent="1"/>
+		<eLabel text="Save" position="295,635" size="190,24" zPosition="1" font="Regular;20" backgroundColor="black" halign="left" transparent="1" valign="center"/>		
+ 	</screen>	
 	<screen name="YouTubeInfo" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sR"/>
         <panel name="sR"/>		
@@ -4264,10 +4275,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget name="pic" position="125,195" size="600,337" transparent="1" alphatest="blend" zPosition="3"/>
 		<widget name="description" position="845,435" size="380,180" zPosition="10" font="Regular;16" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="views" position="100,530" size="200,25" font="Regular;16" zPosition="3"/>
-		<widget name="duration" position="100,570" size="200,25" font="Regular;16" zPosition="3"/>
-		<widget name="likes" position="315,530" size="200,25" font="Regular;16" zPosition="3"/>
-		<widget name="dislikes" position="315,570" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="views" position="125,535" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="duration" position="125,575" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="likes" position="325,535" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="dislikes" position="325,575" size="200,25" font="Regular;16" zPosition="3"/>
 		<widget name="title" position="110,120" size="600,40" foregroundColor="#00fafa" zPosition="10" halign="center" font="Regular;16"/>
 		<widget name="published" position="110,160" size="600,35" foregroundColor="#00fafa" zPosition="10" halign="center" font="Regular;16"/>
 	</screen>
@@ -4871,7 +4882,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Logo_Egami"/>
         <ePixmap pixmap="icons/key_ok.png" position="235,640" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="open" position="290,605" size="210,95" zPosition="1" font="Regular;20" halign="left" valign="center" backgroundColor="black" transparent="1"/>
-		<widget name="filelist" position="80,150" itemHeight="30" size="715,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
+		<widget name="filelist" position="80,150" itemHeight="30" size="718,420" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
 		<widget name="cancel" position="60,630" font="Regular;20" zPosition="1" size="140,35" transparent="1"/>
 	<!--widget name="EditSettingsButton" pixmaps="menu/colorbarB.png" position="660,635" size="140,30" zPosition="1"/-->
  	</screen>	
