@@ -1964,17 +1964,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="680,580" title="Help" size="604,124" zPosition="10" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-1" size="604,124" pixmap="EGAdriatic/604_124.png"/>
-		<widget name="key1" position="2,2" 	size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key2" position="202,2" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key3" position="402,2" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key4" position="2,42" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key5" position="202,42" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key6" position="402,42" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key7" position="2,82" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key8" position="202,80" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key9" position="402,82" size="200,40" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key1" position="2,2" 	size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key2" position="202,2" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key3" position="402,2" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key4" position="2,42" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key5" position="202,42" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key6" position="402,42" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key7" position="2,82" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key8" position="202,80" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key9" position="402,82" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="help1" position="30,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key0" position="202,104" size="200,30" font="Console;21" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key0" position="200,104" size="205,30" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="help2" position="432,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>		
 	</screen>
 	<!-- (051) ####### CrashlogAutoSubmitConfiguration ####### -->
@@ -2871,195 +2871,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="footnote" position="80,600" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="left" transparent="1" valign="top"/>
 		 <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,180" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" transparent="1"/>				
-	</screen>	
-	<!-- (148) ####### MYTUBE PLAYER ####### (15-02) -->
-	<screen name="MyTubePlayer" position="0,500" size="1280,720" title="MyTube Player" backgroundColor="transparent2" flags="wfNoBorder">
-		<ePixmap position="-3,-14" zPosition="-1" size="1280,219" pixmap="EGAdriatic/moviebar.png"/>
-	<!-- DateTime -->
-		<widget source="global.CurrentTime" render="Label" position="219,159" size="150,26" font="Regular;24" halign="left" backgroundColor="transpBlack"  transparent="1">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="995,103" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right"  backgroundColor="#333333" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1098,107" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#77d8e6" backgroundColor="#333333" transparent="1">
-			<convert type="ClockToText">Format::%S</convert>
-		</widget>			
-		<widget source="session.CurrentService" render="Label" position="356,54" size="588,28" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/ico_dolby_on.png" position="247,55" size="64,26" zPosition="2" alphatest="blend">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/ico_rec_on.png" position="1112,57" size="44,26" zPosition="2" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-	    <widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
-	        <convert type="PliExtraInfo">ResolutionString</convert>
-	    </widget>		
-		<widget source="session.CurrentService" render="Label" position="224,107" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1">
-			<convert type="ServicePosition">Position</convert>
-		</widget>
-		<ePixmap position="349,109" size="600,22" pixmap="EGAdriatic/mpslider.png" zPosition="3" alphatest="blend"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="374,113" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3">
-			<convert type="ServicePosition">Gauge</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="966,107" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1">
-			<convert type="ServicePosition">Remaining</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="975,57" size="120,25" font="Regular;22" halign="left"  foregroundColor="#77d8e6" backgroundColor="transpBlack" transparent="1">
-			<convert type="ServicePosition">Length</convert>
-		</widget>
-	</screen>
-	<!-- (149) ####### MyTube Player MainScreen ####### (17-02) -->
-	<screen name="MyTubePlayerMainScreen" position="0,0" size="1280,720" title="MyTubePlayerMainScreen..." 	flags="wfNoBorder" backgroundColor="transpBlack">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="EGAdriatic/menu/fr_youtube.png"/>
-		<ePixmap position="750,146" zPosition="2" size="27,404" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="0,0" zPosition="1" size="492,69" pixmap="EGAdriatic/menu/tx_mytube.png"/>
-		<widget name="config" position="92,118" size="685,29" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls1120x28.png" transparent="1"/>
-		<widget source="feedlist" render="Listbox" position="64,146" size="712,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls705x110.png" transparent="1">
-			<convert type="TemplatedMultiContent">
-			{"templates":
-				{"default": (100,[
-						MultiContentEntryPixmapAlphaTest(pos = (10, 12), size = (100, 75), png = 4), # index 4 is the thumbnail
-						MultiContentEntryText(pos = (120, 10), size = (510, 25), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
-						MultiContentEntryText(pos = (120, 40), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
-						MultiContentEntryText(pos = (120, 70), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
-						MultiContentEntryText(pos = (400, 40), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
-						MultiContentEntryText(pos = (400, 70), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
-					]),
-				"state": (100,[
-						MultiContentEntryText(pos = (10, 10), size = (600, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (10, 40), size = (600, 50), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
-					])
-				},
-				"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 26),gFont("Regular", 20)],
-				"itemHeight": 80
-			}
-			</convert>
-		</widget>
-		<ePixmap position="838,638" size="60,40" alphatest="blend" zPosition="3" pixmap="EGAdriatic/buttons/button_green_off.png"/>
-		<widget name="ButtonBlue" position="838,638" size="60,40" alphatest="blend" zPosition="4" pixmap="EGAdriatic/buttons/button_blue.png"/>
-    <!-- service progress bar -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-	<!-- Widget Pig -->
-		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-		<widget name="key_red" position="4,620" zPosition="2" size="220,40" font="Regular;24" halign="center"  backgroundColor="black" transparent="1"/>
-		<widget name="key_green" position="201,620" zPosition="2" size="220,40" font="Regular;24" halign="center"  backgroundColor="black" transparent="1"/>
-		<widget name="key_yellow" position="400,620" zPosition="2" size="220,40" font="Regular;24" halign="center"  backgroundColor="#a18120" transparent="1"/>
-
-		<eLabel text="Virtual Keyboard" position="596,620" size="250,40" zPosition="2" font="Regular;22" halign="center"  backgroundColor="black" transparent="1"/>
-		<eLabel text=" " position="873,632" size="250,30" zPosition="2" font="Regular;24" halign="center"  backgroundColor="black" transparent="1"/>
-
-		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> 
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-    <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
-	</screen>
-	<!-- (150) ####### MyTubeSuggestionsListScreen ####### -->
-	<screen name="MyTubeSuggestionsListScreen" title="MyTube ListScreen" position="540,90" size="660,500" zPosition="2"  flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-2" size="660,500" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
-		<widget source="suggestionslist" render="Listbox" position="10,10" zPosition="6" size="640,290" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (440, 2), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
-					],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-				"itemHeight": 29
-				}
-			</convert>
-		</widget>
-	</screen>
-	<!-- (151) ####### MyTubeHistoryScreen ####### -->
-	<screen name="MyTubeHistoryScreen" title="MyTube History" position="540,90" size="660,500" zPosition="6" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-2" size="660,500" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
-		<widget source="historylist" render="Listbox" position="10,10" zPosition="7" size="640,377" scrollbarMode="showOnDemand"  transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-				"itemHeight": 29
-				}
-			</convert>
-		</widget>
-	</screen>
-	<!-- (152) ####### MyTubeVideoHelpScreen ####### -->
-	<screen name="MyTubeVideoHelpScreen" position="center,center" size="1160,560" title="MyTubePlayerHelpScreen..." >
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
-		<widget name="detailtext" position="20,20" size="1120,450" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top" backgroundColor="darkgrey"/>
-		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<widget name="key_red" position="455,502" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
-	</screen>
-	<!-- (153) ####### MyTubeVideoInfoScreen ####### -->
-	<screen name="MyTubeVideoInfoScreen" position="center,center" size="1160,560" title="MyTubePlayerMainScreen..." >
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
-		<widget name="title" position="20,20" size="1080,30" zPosition="5" valign="center" halign="left" font="Regular;26" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-1,-1" transparent="1" noWrap="1"/>
-		<widget name="author" position="20,70" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="duration" position="20,100" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="published" position="20,130" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="views" position="20,160" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="tags" position="20,190" size="300,90" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
-		<widget name="starsbg" position="70,305" size="100,20" pixmap="EGAdriatic/starsbar_empty.png"  zPosition="5" transparent="1" alphatest="on"/>
-		<widget name="stars" position="70,305" size="100,20" pixmap="EGAdriatic/starsbar_filled.png" zPosition="6" transparent="1"/>
-		<widget source="infolist" render="Listbox" 	position="360,70" size="740,135" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-			{"templates":
-				{"default": (135,[
-						MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (180, 135), png = 0), # index 0 is the thumbnail
-						MultiContentEntryPixmapAlphaTest(pos = (190, 0), size = (180, 135), png = 1), # index 0 is the thumbnail
-						MultiContentEntryPixmapAlphaTest(pos = (370, 0), size = (180, 135), png = 2), # index 0 is the thumbnail
-						MultiContentEntryPixmapAlphaTest(pos = (550, 0), size = (180, 135), png = 3), # index 0 is the thumbnail							
-					]),
-				"state": (135,[
-						MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
-					])
-				},
-				"fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 28)],
-				"itemHeight": 135
-			}
-			</convert>
-		</widget>
-		<widget name="detailtext" position="370,225" size="730,280" zPosition="10" font="Regular;22"  backgroundColor="darkgrey" transparent="1"/>
-		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-        	<widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
-		<widget name="thumbnail" position="0,0" size="100,135" alphatest="on"/> 
-	</screen>
-	<!-- (154) ####### MyTubeSettingsScreen ####### -->
-	<screen name="MyTubeSettingsScreen" position="center,center" size="1160,560" title="MyTubeSettingsScreen" >
-		<widget name="config" zPosition="2" position="20,20" size="1120,400" scrollbarMode="showOnDemand"  transparent="1"/>
-		<ePixmap position="220,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="690,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<widget name="key_red" position="220,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
-		<widget name="key_green" position="690,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
-	</screen>
-	<!-- (155) ####### MyTubeTasksScreen ####### -->
-	<screen name="MyTubeTasksScreen" position="center,center" size="1160,560" title="MyTubeTasksScreen" >
-		<widget source="tasklist" render="Listbox" position="20,20" size="1120,500" zPosition="7" scrollbarMode="showOnDemand"  transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (10, 3), size = (210, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
-						MultiContentEntryText(pos = (230, 3), size = (160, 24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
-						MultiContentEntryProgress(pos = (400, 3), size = (110, 24), percent = -3), # index 3 should be progress 
-						MultiContentEntryText(pos = (520, 3), size = (110, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
-					],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
-				"itemHeight": 30
-				}
-			</convert>
-		</widget>
-		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
-	</screen>	
+	</screen>		
 	<!--####### InputDeviceSelection (Dispositivos de Entrada) #######-->
 	<screen name="InputDeviceSelection" position="center,center" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRG"/>
@@ -4342,6 +4154,312 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>  		
 	</screen>	
     <!-- ########################### PANTALLAS PLUGINS ################################## -->
+	
+	<!-- ## YouTube ## -->
+	<!-- YouTube TV Setup Complementos -->	
+    <screen name="YoutubeTVSettings" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
+        <panel name="PantallaPieTV"/>
+        <panel name="Title"/>
+        <panel name="sRG"/>
+        <widget name="config" position="80,170" zPosition="3" size="690,60" scrollbarMode="showOnDemand"/>		
+        <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
+    </screen>	
+	<!-- YouTube TV  MENU PRINCIPAL -->
+    <screen name="YoutubeTVWindow" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
+        <panel name="PantallaPieTV"/>
+        <panel name="Title"/>
+        <panel name="Template-exit"/>
+        <panel name="sG"/>
+        <widget name="helpdesc" position="80,410" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,25"/>
+        <widget name="startdesc" position="80,440" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,25"/>
+        <widget name="infomation" position="80,470" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,50"/>		
+        <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
+		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
+    </screen>	
+	<screen name="YouTubeMain" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="0" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
+		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
+		<widget name="green" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>		
+		<widget source="key_red" render="Label" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget source="key_green" render="Label" position="205,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+    <!-- pig -->
+		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+
+	<!-- service progress bar -->
+		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+
+    <!-- digital clock -->
+		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<ePixmap pixmap="icons/key_menu1.png" position="645,640" size="74,36" alphatest="blend"/>
+		<ePixmap position="690,640" size="40,22" pixmap="icons/key_info.png" alphatest="blend"/>
+        <ePixmap position="80,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>		
+		<widget name="menu" position="480,640" size="74,36" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>		
+		<widget name="info" position="530,640" size="74,36" pixmap="icons/key_info.png" transparent="1" alphatest="blend"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget name="text" position="845,380" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget source="list" render="Listbox" position="85,160" size="713,370" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
+		    <convert type="TemplatedMultiContent">
+		    {"template": 
+		       [MultiContentEntryPixmapAlphaTest(pos=(0,2),size=(97,65), png=2), # Thumbnail
+		       MultiContentEntryText(pos=(110,25), size=(575,22),font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+		       MultiContentEntryText(pos=(215, 300), size=(200,22),font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+		       MultiContentEntryText(pos=(455,350), size=(200,22),font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+		    ],
+			"fonts": [gFont("Regular",20), gFont("Regular",16)],
+		    "itemHeight": 60}
+			</convert>
+		</widget>
+		<widget name="thumbnail" position="0,0" size="97,65"/> # Thumbnail size in list		
+	</screen>
+	<screen name="YouTubeSearch" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sRGY"/>
+        <panel name="sRGY"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>			
+		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="74,36" alphatest="blend"/>		
+		<widget name="config" position="80,150" size="700,25" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
+		<widget source="list" render="Listbox" position="80,180" size="718,385" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [MultiContentEntryText(pos=(15,5), size=(690,30), font=0, flags=RT_HALIGN_LEFT, text=0)],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 30}
+			</convert>
+		</widget>
+		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>	
+	</screen>
+	<screen name="YouTubeDownloadList" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sR"/>
+        <panel name="sR"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <ePixmap position="75,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>			
+		<widget source="list" render="Listbox" position="85,138" size="713,370" zPosition="3" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos=(0,0), size=(400,45), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
+					MultiContentEntryText(pos=(400,15), size=(100,33), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
+					MultiContentEntryProgress(pos=(520,10), size=(150,33), percent=-3), # Progress
+					MultiContentEntryText(pos=(690,15), size=(95,33), font=0, flags=RT_HALIGN_LEFT, text=4), # Percentage
+					],
+				"fonts": [gFont("Regular",22)],
+				"itemHeight": 50}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="YouTubeInfo" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenerica_sR"/>
+        <panel name="sR"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<widget name="pic" position="125,195" size="600,337" transparent="1" alphatest="blend" zPosition="3"/>
+		<widget name="description" position="845,435" size="380,180" zPosition="10" font="Regular;16" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="views" position="100,530" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="duration" position="100,570" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="likes" position="315,530" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="dislikes" position="315,570" size="200,25" font="Regular;16" zPosition="3"/>
+		<widget name="title" position="110,120" size="600,40" foregroundColor="#00fafa" zPosition="10" halign="center" font="Regular;16"/>
+		<widget name="published" position="110,160" size="600,35" foregroundColor="#00fafa" zPosition="10" halign="center" font="Regular;16"/>
+	</screen>
+	<!-- (148) ####### MYTUBE PLAYER ####### (15-02) -->
+	<screen name="MyTubePlayer" position="0,500" size="1280,720" title="MyTube Player" backgroundColor="transparent2" flags="wfNoBorder">
+		<ePixmap position="-3,-14" zPosition="-1" size="1280,219" pixmap="EGAdriatic/moviebar.png"/>
+	<!-- DateTime -->
+		<widget source="global.CurrentTime" render="Label" position="219,159" size="150,26" font="Regular;24" halign="left" backgroundColor="transpBlack"  transparent="1">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="995,103" size="140,34" zPosition="2" font="LCD;24" valign="top" halign="right"  backgroundColor="#333333" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1098,107" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="#77d8e6" backgroundColor="#333333" transparent="1">
+			<convert type="ClockToText">Format::%S</convert>
+		</widget>			
+		<widget source="session.CurrentService" render="Label" position="356,54" size="588,28" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#4ccbde" transparent="1" backgroundColor="background">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/ico_dolby_on.png" position="247,55" size="64,26" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/ico_rec_on.png" position="1112,57" size="44,26" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	    <widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
+	        <convert type="PliExtraInfo">ResolutionString</convert>
+	    </widget>		
+		<widget source="session.CurrentService" render="Label" position="224,107" size="100,26" font="Regular;22" halign="right"  backgroundColor="transpBlack" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<ePixmap position="349,109" size="600,22" pixmap="EGAdriatic/mpslider.png" zPosition="3" alphatest="blend"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="374,113" size="552,14" zPosition="2" pointer="EGAdriatic/pointer.png:13,3">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="966,107" size="100,26" font="Regular;22" halign="left"  backgroundColor="transpBlack" transparent="1">
+			<convert type="ServicePosition">Remaining</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="975,57" size="120,25" font="Regular;22" halign="left"  foregroundColor="#77d8e6" backgroundColor="transpBlack" transparent="1">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+	</screen>
+	<!-- (149) ####### MyTube Player MainScreen ####### (17-02) -->
+	<screen name="MyTubePlayerMainScreen" position="0,0" size="1280,720" title="MyTubePlayerMainScreen..." 	flags="wfNoBorder" backgroundColor="transpBlack">
+		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="EGAdriatic/menu/fr_youtube.png"/>
+		<ePixmap position="750,146" zPosition="2" size="27,404" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="0,0" zPosition="1" size="492,69" pixmap="EGAdriatic/menu/tx_mytube.png"/>
+		<widget name="config" position="92,118" size="685,29" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls1120x28.png" transparent="1"/>
+		<widget source="feedlist" render="Listbox" position="64,146" size="712,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls705x110.png" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (100,[
+						MultiContentEntryPixmapAlphaTest(pos = (10, 12), size = (100, 75), png = 4), # index 4 is the thumbnail
+						MultiContentEntryText(pos = (120, 10), size = (510, 25), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+						MultiContentEntryText(pos = (120, 40), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+						MultiContentEntryText(pos = (120, 70), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+						MultiContentEntryText(pos = (400, 40), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+						MultiContentEntryText(pos = (400, 70), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+					]),
+				"state": (100,[
+						MultiContentEntryText(pos = (10, 10), size = (600, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (10, 40), size = (600, 50), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+					])
+				},
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 26),gFont("Regular", 20)],
+				"itemHeight": 80
+			}
+			</convert>
+		</widget>
+		<ePixmap position="838,638" size="60,40" alphatest="blend" zPosition="3" pixmap="EGAdriatic/buttons/button_green_off.png"/>
+		<widget name="ButtonBlue" position="838,638" size="60,40" alphatest="blend" zPosition="4" pixmap="EGAdriatic/buttons/button_blue.png"/>
+    <!-- service progress bar -->
+		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+	<!-- Widget Pig -->
+		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget name="key_red" position="4,620" zPosition="2" size="220,40" font="Regular;24" halign="center"  backgroundColor="black" transparent="1"/>
+		<widget name="key_green" position="201,620" zPosition="2" size="220,40" font="Regular;24" halign="center"  backgroundColor="black" transparent="1"/>
+		<widget name="key_yellow" position="400,620" zPosition="2" size="220,40" font="Regular;24" halign="center"  backgroundColor="#a18120" transparent="1"/>
+
+		<eLabel text="Virtual Keyboard" position="596,620" size="250,40" zPosition="2" font="Regular;22" halign="center"  backgroundColor="black" transparent="1"/>
+		<eLabel text=" " position="873,632" size="250,30" zPosition="2" font="Regular;24" halign="center"  backgroundColor="black" transparent="1"/>
+
+		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> 
+		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+    <!-- digital clock -->
+		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget>
+	</screen>
+	<!-- (150) ####### MyTubeSuggestionsListScreen ####### -->
+	<screen name="MyTubeSuggestionsListScreen" title="MyTube ListScreen" position="540,90" size="660,500" zPosition="2"  flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-2" size="660,500" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
+		<widget source="suggestionslist" render="Listbox" position="10,10" zPosition="6" size="640,290" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+						MultiContentEntryText(pos = (440, 2), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
+					],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 29
+				}
+			</convert>
+		</widget>
+	</screen>
+	<!-- (151) ####### MyTubeHistoryScreen ####### -->
+	<screen name="MyTubeHistoryScreen" title="MyTube History" position="540,90" size="660,500" zPosition="6" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-2" size="660,500" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
+		<widget source="historylist" render="Listbox" position="10,10" zPosition="7" size="640,377" scrollbarMode="showOnDemand"  transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+					],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 29
+				}
+			</convert>
+		</widget>
+	</screen>
+	<!-- (152) ####### MyTubeVideoHelpScreen ####### -->
+	<screen name="MyTubeVideoHelpScreen" position="center,center" size="1160,560" title="MyTubePlayerHelpScreen..." >
+		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
+		<widget name="detailtext" position="20,20" size="1120,450" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top" backgroundColor="darkgrey"/>
+		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
+		<widget name="key_red" position="455,502" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
+	</screen>
+	<!-- (153) ####### MyTubeVideoInfoScreen ####### -->
+	<screen name="MyTubeVideoInfoScreen" position="center,center" size="1160,560" title="MyTubePlayerMainScreen..." >
+		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
+		<widget name="title" position="20,20" size="1080,30" zPosition="5" valign="center" halign="left" font="Regular;26" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-1,-1" transparent="1" noWrap="1"/>
+		<widget name="author" position="20,70" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
+		<widget name="duration" position="20,100" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
+		<widget name="published" position="20,130" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
+		<widget name="views" position="20,160" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
+		<widget name="tags" position="20,190" size="300,90" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
+		<widget name="starsbg" position="70,305" size="100,20" pixmap="EGAdriatic/starsbar_empty.png"  zPosition="5" transparent="1" alphatest="on"/>
+		<widget name="stars" position="70,305" size="100,20" pixmap="EGAdriatic/starsbar_filled.png" zPosition="6" transparent="1"/>
+		<widget source="infolist" render="Listbox" 	position="360,70" size="740,135" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+			{"templates":
+				{"default": (135,[
+						MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (180, 135), png = 0), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (190, 0), size = (180, 135), png = 1), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (370, 0), size = (180, 135), png = 2), # index 0 is the thumbnail
+						MultiContentEntryPixmapAlphaTest(pos = (550, 0), size = (180, 135), png = 3), # index 0 is the thumbnail							
+					]),
+				"state": (135,[
+						MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
+					])
+				},
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 28)],
+				"itemHeight": 135
+			}
+			</convert>
+		</widget>
+		<widget name="detailtext" position="370,225" size="730,280" zPosition="10" font="Regular;22"  backgroundColor="darkgrey" transparent="1"/>
+		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
+        	<widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
+		<widget name="thumbnail" position="0,0" size="100,135" alphatest="on"/> 
+	</screen>
+	<!-- (154) ####### MyTubeSettingsScreen ####### -->
+	<screen name="MyTubeSettingsScreen" position="center,center" size="1160,560" title="MyTubeSettingsScreen" >
+		<widget name="config" zPosition="2" position="20,20" size="1120,400" scrollbarMode="showOnDemand"  transparent="1"/>
+		<ePixmap position="220,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
+		<ePixmap position="690,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
+		<widget name="key_red" position="220,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
+		<widget name="key_green" position="690,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
+	</screen>
+	<!-- (155) ####### MyTubeTasksScreen ####### -->
+	<screen name="MyTubeTasksScreen" position="center,center" size="1160,560" title="MyTubeTasksScreen" >
+		<widget source="tasklist" render="Listbox" position="20,20" size="1120,500" zPosition="7" scrollbarMode="showOnDemand"  transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (10, 3), size = (210, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+						MultiContentEntryText(pos = (230, 3), size = (160, 24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+						MultiContentEntryProgress(pos = (400, 3), size = (110, 24), percent = -3), # index 3 should be progress 
+						MultiContentEntryText(pos = (520, 3), size = (110, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+					],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
+				"itemHeight": 30
+				}
+			</convert>
+		</widget>
+		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
+		<widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
+	</screen>	
+	
 	<!-- EPG Import Configuration -->
 	<screen name="EPGImportConfig" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
@@ -5070,28 +5188,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<screen name="ForecaPreviewCache" position="40,20" size="48,48" flags="wfNoBorder" backgroundColor="#000000">
 		<widget name="spinner" position="0,0" zPosition="4" size="48,48" alphatest="blend"/>
-	</screen>
-	<!-- YouTube TV Setup Complementos -->	
-    <screen name="YoutubeTVSettings" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
-        <panel name="PantallaPieTV"/>
-        <panel name="Title"/>
-        <panel name="sRG"/>
-        <widget name="config" position="80,170" zPosition="3" size="690,60" scrollbarMode="showOnDemand"/>		
-        <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
-    </screen>	
-	<!-- YouTube TV  MENU PRINCIPAL -->
-    <screen name="YoutubeTVWindow" position="0,0" size="1280,720"  zPosition="1" flags="wfNoBorder">
-        <panel name="PantallaPieTV"/>
-        <panel name="Title"/>
-        <panel name="Template-exit"/>
-        <panel name="sG"/>
-        <widget name="helpdesc" position="80,410" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,25"/>
-        <widget name="startdesc" position="80,440" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,25"/>
-        <widget name="infomation" position="80,470" font="Regular;20" foregroundColor="#4ccbde" transparent="1" zPosition="4" size="350,50"/>		
-        <ePixmap position="63,160" zPosition="2" size="712,537" pixmap="EGAdriatic/menu/bx_youtube.png" alphatest="blend"/>
-		<ePixmap position="57,625" zPosition="1" size="349,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend"/>		
-    </screen>	
+	</screen>	
 	<!-- WHEATHER PLUGIN Subpantallas configuracion busqueda codigo y ciudad tecla menu-->	
     <screen name="MSNWeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="Weather Plugin" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRGYB"/>
