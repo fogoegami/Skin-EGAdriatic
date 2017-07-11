@@ -3144,10 +3144,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-    <widget source="session.FrontendStatus" render="Label" position="969,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
+    <widget source="session.FrontendStatus" render="Label" position="990,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
         <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="969,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
+    <widget source="session.FrontendStatus" render="Label" position="990,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
         <convert type="FrontendInfo">AGC</convert>
     </widget>	
 	<widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1">
@@ -3392,10 +3392,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<convert type="FrontendInfo">AGC</convert>
 	</widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-    <widget source="session.FrontendStatus" render="Label" position="969,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
+    <widget source="session.FrontendStatus" render="Label" position="990,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
         <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="969,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
+    <widget source="session.FrontendStatus" render="Label" position="990,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#00fafa" transparent="1" backgroundColor="#333333">
         <convert type="FrontendInfo">AGC</convert>
     </widget>
     <!-- eLabel text="Ber :" zPosition="3" position="545,683" size="70,24" font="Regular;18" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1" 
