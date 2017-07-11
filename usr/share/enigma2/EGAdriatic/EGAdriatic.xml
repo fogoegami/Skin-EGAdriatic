@@ -3135,8 +3135,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#4ccbde" backgroundColor="background" zPosition="2">
 		<convert type="EGCpuUsage">$0</convert>
 	</widget>
-	<eLabel text="SNR" zPosition="2" position="778,561" foregroundColor="#00fafa" backgroundColor="black" size="21,10" font="xRegular;9"/>
-	<eLabel text="AGC" zPosition="2" position="778,571" foregroundColor="#00fafa" backgroundColor="black" size="22,10" font="xRegular;9"/>
+	<eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#00fafa" backgroundColor="black" size="21,8" font="xRegular;9"/>
+	<eLabel text="AGC" zPosition="2" position="776,571" foregroundColor="#00fafa" backgroundColor="black" size="22,8" font="xRegular;9"/>
     <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
 		<convert type="FrontendInfo">SNR</convert>
     </widget>
@@ -3383,8 +3383,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<convert type="EGCpuUsage">$0</convert>
 	</widget>
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-	<eLabel text="SNR" zPosition="2" position="778,561" foregroundColor="#00fafa" backgroundColor="black" size="21,10" font="xRegular;9"/>
-	<eLabel text="AGC" zPosition="2" position="778,571" foregroundColor="#00fafa" backgroundColor="black" size="22,10" font="xRegular;9"/>	
+	<eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#00fafa" backgroundColor="black" size="21,8" font="xRegular;9"/>
+	<eLabel text="AGC" zPosition="2" position="776,571" foregroundColor="#00fafa" backgroundColor="black" size="22,8" font="xRegular;9"/>	
     <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
 		<convert type="FrontendInfo">SNR</convert>
     </widget>
