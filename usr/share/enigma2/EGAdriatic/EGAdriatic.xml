@@ -3059,7 +3059,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <!-- Nombre del Canal - Service Name -->
-    <widget source="session.CurrentService" render="Label" position="352,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
+    <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
       <convert type="ServiceName">Name</convert>
     </widget>
 	<widget font="Regular;24" halign="left" position="317,592" render="DRRunningText" noWrap="1" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#77d8e6" backgroundColor="#333333" transparent="1" zPosition="2">
@@ -3316,7 +3316,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <!-- Nombre del Canal - Service Name -->
-    <widget source="session.CurrentService" render="Label" position="352,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
+    <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="background">
         <convert type="ServiceName">Name</convert>
     </widget>
 	<widget font="Regular;24" halign="left" position="317,592" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#77d8e6" backgroundColor="#333333" transparent="1" zPosition="2">
@@ -3629,7 +3629,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		text="sid" 
 		position="345,522" 
 		size="30,15"  
-		font="LCD;11" 
+		font="LCD;12" 
 		backgroundColor="#000000" 
 		foregroundColor="#a1d1ff" 
 		halign="center" 
@@ -3644,7 +3644,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="50,50" 
 		backgroundColor="#000000" 
 		foregroundColor="#00fafa" 
-		font="Regular;10" 
+		font="Regular;11" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
@@ -3656,7 +3656,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		text="pmt" 
 		position="345,533" 
 		size="30,15"  
-		font="LCD;11" 
+		font="LCD;12" 
 		halign="center" 
 		backgroundColor="#000000" 
 		foregroundColor="#a1d1ff" 
@@ -3670,7 +3670,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="50,50" 
 		backgroundColor="#000000" 
 		foregroundColor="#00fafa" 
-		font="Regular;10" 
+		font="Regular;11" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
@@ -3680,9 +3680,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<eLabel 
 		text="audio" 
-		position="857,523" 
+		position="857,521" 
 		size="40,50"  
-		font="LCD;10" 
+		font="LCD;12" 
 		halign="center" 
 		backgroundColor="#000000" 
 		foregroundColor="#a1d1ff" 
@@ -3696,7 +3696,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="50,50" 
 		backgroundColor="#000000" 
 		foregroundColor="#00fafa" 
-		font="Regular;10" 
+		font="Regular;11" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
@@ -3706,9 +3706,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<eLabel 
 		text="video" 
-		position="857,535" 
+		position="857,533" 
 		size="40,50"  
-		font="LCD;10" 
+		font="LCD;12" 
 		halign="center" 
 		backgroundColor="#000000" 
 		foregroundColor="#a1d1ff" 
@@ -3722,7 +3722,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="50,50" 
 		backgroundColor="#000000" 
 		foregroundColor="#00fafa" 
-		font="Regular;10" 
+		font="Regular;11" 
 		halign="left" 
 		valign="top" 
 		zPosition="5" 
