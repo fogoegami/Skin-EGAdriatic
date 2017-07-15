@@ -3923,7 +3923,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRexit"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>		
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
 		<widget name="lab1" position="360,110" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="TunerHeader" render="Label" position="80,130" size="585,40" font="Regular;17" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="nims" render="Label" position="80,150" size="585,175" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
@@ -3931,7 +3932,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="hdd" render="Label" position="80,336" size="690,102" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top"/>
 		<widget source="MountsHeader" render="Label" position="80,435" size="585,40" font="Regular;17" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
 		<widget source="mounts" render="Label" position="80,451" size="585,155" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
-		<ePixmap position="950,390" size="300,300" pixmap="menu/ico_hdd.png" alphatest="blend"/>
+		<ePixmap position="875,410" size="80,70" pixmap="icons/dev_cf.png" alphatest="blend"/>
+		<ePixmap position="1000,410" size="57,79" pixmap="icons/dev_hdd.png" alphatest="blend"/>
+		<ePixmap position="1105,410" size="54,80" pixmap="icons/dev_sd.png" alphatest="blend"/>		
 	</screen>		
 		
 	<!-- Info System Memory Info OK -->
