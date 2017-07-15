@@ -3924,13 +3924,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>		
-		<widget name="lab1" position="360,120" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget source="TunerHeader" render="Label" position="100,140" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget source="nims" render="Label" position="100,170" size="585,150" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
-		<widget source="HDDHeader" render="Label" position="100,270" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget source="hdd" render="Label" position="100,300" size="690,300" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top"/>
-		<widget source="MountsHeader" render="Label" position="100,375" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
-		<widget source="mounts" render="Label" position="100,405" size="585,450" font="Regular;20" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
+		<widget name="lab1" position="360,110" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="TunerHeader" render="Label" position="80,130" size="585,40" font="Regular;17" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="nims" render="Label" position="80,150" size="585,175" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
+		<widget source="HDDHeader" render="Label" position="80,320" size="585,40" font="Regular;17" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="hdd" render="Label" position="80,336" size="690,102" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top"/>
+		<widget source="MountsHeader" render="Label" position="80,435" size="585,40" font="Regular;17" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" zPosition="1"/>
+		<widget source="mounts" render="Label" position="80,451" size="585,155" font="Regular;15" halign="left" backgroundColor="black" transparent="1" valign="top" zPosition="1"/>
 		<ePixmap position="950,390" size="300,300" pixmap="menu/ico_hdd.png" alphatest="blend"/>
 	</screen>		
 		
@@ -4495,8 +4495,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>		
 		<widget name="config" position="80,138" size="690,420" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="status" position="845,380" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="statusbar" position="845,430" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="status" position="845,385" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="statusbar" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="74,36" alphatest="blend"/>
         <ePixmap pixmap="menu/logo_egami_menu.png" position="945,485" size="180,180" zPosition="2" alphatest="blend"/>		
 	</screen>
