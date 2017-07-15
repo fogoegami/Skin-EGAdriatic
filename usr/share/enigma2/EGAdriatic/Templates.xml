@@ -35,12 +35,10 @@
 	<!-- ####### TEMPLATES ####### -->	
 	<!-- MENU SORT-->
 	<screen name="menu_sort">
-	    <widget name="green" position="176,672" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;19" halign="left"/>
-	    <widget name="yellow" position="460,672" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-	    <widget name="blue" position="662,672" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
-	    <ePixmap pixmap="buttons/green.png" position="175,667" size="140,40" alphatest="blend"/>
-	    <ePixmap pixmap="buttons/yellow.png" position="415,667" size="140,40" alphatest="blend"/>
-	    <ePixmap pixmap="buttons/blue.png" position="660,667" size="140,40" alphatest="blend"/>
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+	    <widget name="green" position="240,600" size="170,80" backgroundColor="black" halign="center" valign="center" zPosition="1" transparent="1" font="Regular;20"/>
+	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+	    <widget name="blue" position="650,630" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
 	</screen>
 
 	<!-- ####### SCROLLBAR BASE TEMPLATE ####### -->
@@ -172,11 +170,11 @@
     </screen>
 	<screen name="PantallaGenericaGYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
-		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
-		<widget position="205,625" size="250,36" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-    </screen>	
+		<ePixmap position="47,630" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarGYB.png" alphatest="blend" transparent="1"/>
+	    <widget name="green" position="240,600" size="170,80" backgroundColor="black" halign="center" valign="center" zPosition="1" transparent="1" font="Regular;20"/>
+	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+	    <widget name="blue" position="650,630" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
+	</screen>		
 	<screen name="PantallaGenericaRB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRB.png" alphatest="blend" transparent="1"/>		
@@ -187,13 +185,13 @@
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarRY.png" alphatest="blend" transparent="1"/>		
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+	    <widget name="yellow" position="500,630" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     </screen>
 	<screen name="PantallaGenericaYB">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="EGAdriatic/menu/colorbarYB.png" alphatest="blend" transparent="1"/>		
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
-		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+	    <widget name="blue" position="650,630" size="220,28" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     </screen>
 	<!-- PANTALLAS DON ESTEN LOS DOS CODIGOS WIDGET NAME + SOURCE -->	
 	<screen name="snR">		
