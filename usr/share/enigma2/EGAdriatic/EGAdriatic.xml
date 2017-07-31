@@ -752,7 +752,7 @@
         </widget>
 		
 	<!-- channels lists -->
-		<widget name="list" position="78,161" size="1130,400" scrollbarMode="showOnDemand"  selectionPixmap="EGAdriatic/icons/ls1120x28.png" transparent="1"/>
+		<widget name="list" position="75,161" size="1125,400" scrollbarMode="showOnDemand"  selectionPixmap="EGAdriatic/icons/ls1120x28.png" transparent="1"/>
 		<widget name="bouquetlist" position="78,161" size="1130,400" foregroundColorSelected="#00fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 	<!-- events -->
