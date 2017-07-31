@@ -595,7 +595,7 @@
 		<widget name="timeline_text" position="90,227" size="1280,35" backgroundColor="black" foregroundColor="#4ccbde" transparent="1" zPosition="0"/>
 		<widget name="bouquetlist" position="90,260" size="1100,365" foregroundColorSelected="#00fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="90,260" size="1100,365" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
-		<widget name="timeline_now" position="0,220" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
+		<widget name="timeline_now" position="0,221" zPosition="3" size="25,593" pixmap="epg/timeline-now-pig.png" alphatest="blend"/>
 		<widget name="timeline0" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline1" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<widget name="timeline2" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
