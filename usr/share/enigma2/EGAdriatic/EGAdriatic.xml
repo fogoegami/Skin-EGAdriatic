@@ -703,7 +703,7 @@
 		<widget source="global.CurrentTime" render="Label" position="1148,8" size="100,28" font="Regular;22" foregroundColor="#00baff" backgroundColor="black" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
 		</widget>
-		<widget name="list" position="15,40" size="765,120" foregroundColor="#4ccbde" scrollbarMode="showOnDemand" font="Regular;20" backgroundColor="black"/>
+		<widget name="list" position="15,40" size="762,120" foregroundColor="#4ccbde" scrollbarMode="showOnDemand" font="Regular;20" backgroundColor="black"/>
 		<widget source="Service" render="Picon" position="30,0" size="70,42" zPosition="2" alphatest="blend">
 		     <convert type="ServiceName">Reference</convert>
 		</widget>
