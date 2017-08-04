@@ -158,7 +158,13 @@
 		<panel name="ScrollBarTemplate"/>
 		<ePixmap position="0,0" zPosition="1" size="670,83" pixmap="EGAdriatic/menu/tx_listchannel.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="82,125" zPosition="5" size="716,438" pixmap="EGAdriatic/menu/filtro.png" alphatest="blend" transparent="1"/>
+	<!-- Pig -->			
         <widget source="session.VideoPicture" render="Pig" position=" 838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<eLabel position="838,414" size="382,20" backgroundColor="#20101010" zPosition="3"/>
+	<!-- Nombre del Canal - Service Name -->		
+		<widget source="session.CurrentService" render="Label" position="838,409" size="382,25" zPosition="4" foregroundColor="#00fafa" font="Regular;19" valign="center" halign="center" transparent="1">
+		    <convert type="ServiceName">Name</convert>
+		</widget>		
         <ePixmap pixmap="icons/key_menu1.png" position="8,680" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
         <ePixmap pixmap="icons/key_info.png" position="53,680" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	<!-- Servicio Orbital -->
@@ -424,9 +430,9 @@
         <widget name="number" position="270,100" size="450,30" transparent="1"/>		
 	<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="255,565" size="150,136" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="260,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
-		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="650,608" size="170,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="670,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="715,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend"/>
@@ -450,9 +456,9 @@
         <widget name="number" position="270,100" size="450,30" transparent="1"/>
 	<!-- buttons text widgets -->
 		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="255,565" size="150,136" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="260,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
-		<widget position="650,555" size="170,156" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="650,608" size="170,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="670,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="715,675" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend"/>
@@ -513,8 +519,8 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>			
 	<!--panel name="FullscreenTitlePanel" /-->
-		<ePixmap pixmap="buttons/key_8_epg.png" position="230,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="page" position="275,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_8_epg.png" position="210,70" size="35,15" alphatest="blend" zPosition="2"/>
+		<widget name="page" position="255,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_9_epg.png" position="445,70" size="35,15" alphatest="blend" zPosition="2"/>
 		<widget name="primetime" position="490,70" size="250,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_prev_next.png" position="730,70" size="35,15" alphatest="blend" zPosition="2"/>
@@ -577,8 +583,8 @@
 		     <convert type="EventName">ExtendedDescription</convert>
 		</widget>	
 	<!--panel name="FullscreenTitlePanel" /-->
-		<ePixmap pixmap="buttons/key_8_epg.png" position="230,70" size="35,15" alphatest="blend" zPosition="2"/>
-		<widget name="page" position="275,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
+		<ePixmap pixmap="buttons/key_8_epg.png" position="210,70" size="35,15" alphatest="blend" zPosition="2"/>
+		<widget name="page" position="255,70" size="200,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_9_epg.png" position="445,70" size="35,15" alphatest="blend" zPosition="2"/>
 		<widget name="primetime" position="490,70" size="250,25" font="xRegular;15" foregroundColor="#00baff" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_prev_next.png" position="730,70" size="35,15" alphatest="blend" zPosition="2"/>
@@ -676,9 +682,9 @@
 	</screen>
 	    <!-- QuickEPG -->
 		<screen name="QuickEPG" position="0,e-200" size="1280,200" title="InfoBar" transparent="0" flags="wfNoBorder">
-		<ePixmap pixmap="icons/key_help.png" position="1210,160" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="1120,160" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="icons/key_info.png" position="1165,160" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="icons/key_help.png" position="1215,160" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="8,160" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="icons/key_info.png" position="53,160" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 	    <eLabel position="0,0" size="1280,1" backgroundColor="#00fafa" zPosition="0"/>
         <eLabel position="0,40" size="1280,1" backgroundColor="#00fafa" zPosition="1"/>		
 		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="795,45" size="450,110" zPosition="2" font="Regular;20" halign="center" foregroundColor="#00baff" backgroundColor="black" transparent="1">
@@ -718,7 +724,7 @@
 		<ePixmap pixmap="buttons/yellow.png" position="640,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_yellow" position="625,160" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
 		<ePixmap pixmap="buttons/blue.png" position="890,183" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="855,160" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<widget name="key_blue" position="845,160" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
     </screen>	
 	    <!-- TimeDateInput Pantalla "Text" desde GraphicalEPG -->
 	<screen name="TimeDateInput" position="0,0" size="1280,720" flags="wfNoBorder" title="TimeDateInput">
@@ -771,10 +777,10 @@
 		<widget source="global.CurrentTime" render="Label" position="500,40" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
-		<widget source="key_red" render="Label" position="60,628" size="150,85" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_green" render="Label" position="265,625" size="130,85" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
-		<widget source="key_yellow" render="Label" position="470,625" size="120,85" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_blue" render="Label" position="630,620" size="200,85" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget source="key_red" render="Label" position="60,645" size="150,50" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_green" render="Label" position="265,640" size="130,50" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
+		<widget source="key_yellow" render="Label" position="470,640" size="120,50" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_blue" render="Label" position="630,635" size="200,50" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
 		<widget name="key_red" position="0,660" size="0,0" backgroundColor="transpBlack" zPosition="1" transparent="1" halign="center" valign="center"/>
 		<widget name="key_green" position="200,660" size="0,0" backgroundColor="transpBlack" zPosition="1" transparent="1" halign="center" valign="center"/>		
 		<widget name="key_yellow" position="400,660" size="0,0" backgroundColor="#a18120" zPosition="1" transparent="1" halign="center" valign="center"/>
@@ -1198,7 +1204,7 @@
         <panel name="Title"/>
         <panel name="PIG"/>
 		<panel name="sRGYB"/>
-		<widget source="list" render="Listbox" position="80,137" size="690,420" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="80,137" size="718,420" zPosition="1" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
@@ -3958,9 +3964,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="lab1" position="360,140" size="585,40" font="Regular;24" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="AboutScrollLabel" position="80,180" size="690,450" font="Regular;22" backgroundColor="black" transparent="1"/>
 		<widget source="IFtext" render="Label" position="80,470" size="120,25" font="Regular;22" halign="left" foregroundColor="#4ccbde" backgroundColor="black" transparent="1"/>
-		<widget source="IF" render="Label" position="170,470" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
+		<widget source="IF" render="Label" position="245,470" size="400,25" font="Regular;22" halign="left" transparent="1" backgroundColor="black" zPosition="10"/>
 		<widget source="Statustext" render="Label" position="80,520" size="120,25" font="Regular;22" halign="left" backgroundColor="black" transparent="1"/>
-		<widget name="statuspic" position="165,520" size="30,25" pixmaps="EGAdriatic/buttons/key_green.png,EGAdriatic/buttons/button_green_off1.png" alphatest="on" transparent="1"/>
+		<widget name="statuspic" position="240,520" size="30,25" pixmaps="EGAdriatic/buttons/key_green.png,EGAdriatic/buttons/button_green_off1.png" alphatest="on" transparent="1"/>
 		<ePixmap position="925,414" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	<!-- (059) ####### CANAL SERVICE INFO - INFORMATIONS ####### (15-02) -->
