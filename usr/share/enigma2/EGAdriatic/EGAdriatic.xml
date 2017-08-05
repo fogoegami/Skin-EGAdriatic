@@ -429,13 +429,13 @@
         <widget name="lab1" position="150,100" size="100,30" transparent="1"/>
         <widget name="number" position="270,100" size="450,30" transparent="1"/>		
 	<!-- buttons text widgets -->
-		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="260,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
-		<widget position="650,608" size="170,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="670,675" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="715,675" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend"/>
+		<widget position="70,613" size="120,50" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="265,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="475,608" size="120,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+		<widget position="630,608" size="200,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="670,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="715,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="760,680" size="40,22" alphatest="blend"/>
 		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#4ccbde" transparent="1" backgroundColor="#333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
@@ -455,13 +455,13 @@
 		<widget name="list" position="70,138" size="721,400" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="1"/>
         <widget name="number" position="270,100" size="450,30" transparent="1"/>
 	<!-- buttons text widgets -->
-		<widget position="5,625" size="250,36" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="260,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<widget position="405,625" size="250,36" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
-		<widget position="650,608" size="170,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="670,675" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_info.png" position="715,675" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_help.png" position="760,675" size="40,22" alphatest="blend"/>
+		<widget position="70,613" size="120,50" name="key_red" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="265,608" size="130,50" name="key_green" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<widget position="475,608" size="120,50" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#a18120" transparent="1" zPosition="2"/>
+		<widget position="630,608" size="200,50" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="670,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="715,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="760,680" size="40,22" alphatest="blend"/>
 		<widget source="Event" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="843,390" size="383,25" valign="center" halign="center" font="Regular;19" foregroundColor="#4ccbde" transparent="1" backgroundColor="#333333">
 			<convert type="EventName">Name</convert>
 		</widget>		
