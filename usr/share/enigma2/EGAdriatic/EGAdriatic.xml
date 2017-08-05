@@ -777,10 +777,10 @@
 		<widget source="global.CurrentTime" render="Label" position="500,40" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
-		<widget source="key_red" render="Label" position="60,645" size="150,50" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
+		<widget source="key_red" render="Label" position="70,645" size="120,50" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>
 		<widget source="key_green" render="Label" position="265,640" size="130,50" backgroundColor="transpBlack" zPosition="2" transparent="1" font="Regular;20" halign="center" valign="center"/>		
 		<widget source="key_yellow" render="Label" position="470,640" size="120,50" backgroundColor="#a18120" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>
-		<widget source="key_blue" render="Label" position="630,635" size="200,50" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
+		<widget source="key_blue" render="Label" position="630,640" size="200,50" backgroundColor="transpBlack" zPosition="1" transparent="1" font="Regular;20" halign="center" valign="center"/>	
 		<widget name="key_red" position="0,660" size="0,0" backgroundColor="transpBlack" zPosition="1" transparent="1" halign="center" valign="center"/>
 		<widget name="key_green" position="200,660" size="0,0" backgroundColor="transpBlack" zPosition="1" transparent="1" halign="center" valign="center"/>		
 		<widget name="key_yellow" position="400,660" size="0,0" backgroundColor="#a18120" zPosition="1" transparent="1" halign="center" valign="center"/>
@@ -989,7 +989,7 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="description" render="Label" position="842,426"  size="370,132" zPosition="10" font="Regular;22" halign="center" valign="center" foregroundColor="#4ccbde" transparent="1"/>
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#4ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
-		<widget name="statuspic" position="155,500" size="60,40" pixmaps="EGAdriatic/buttons/key_green.png,EGAdriatic/buttons/button_green_off1.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="statuspic" position="195,500" size="60,40" pixmaps="EGAdriatic/buttons/key_green.png,EGAdriatic/buttons/button_green_off1.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>	
 	<!-- Configuracion del Adaptador -->
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2305,7 +2305,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
 		<panel name="Title"/>
 		<panel name="PIG"/>
-		<ePixmap pixmap="icons/key_exit.png" position="8,680" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend" transparent="1" zPosition="2"/>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="2"/>		
 		<widget name="timerlist" position="70,145" size="705,425" itemHeight="70" rowSplit="40" setEventNameFont="Regular;20" setServiceNameFont="Regular;20" setFont="Regular;15" satPosLeft="400" transparent="1" enableWrapAround="1" zPosition="1"/>
@@ -3888,7 +3887,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="80,200" size="718,380" font="Regular;18" transparent="1">
 		    <convert type="StringList"/>
 		</widget>
-		<widget name="key" position="50,580" size="503,25" font="Regular;16" halign="center" transparent="1" valign="center" foregroundColor="#00fafa" backgroundColor="black"/>
+		<widget name="key" position="85,570" size="690,20" font="Regular;18" transparent="1" foregroundColor="#00fafa" backgroundColor="black"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 	</screen>
 	<!-- Informacion About OK -->
@@ -5797,7 +5796,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="description" position="845,435" size="380,160" halign="center" valign="center" font="Regular;24" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="80,190" size="718,390" selectionPixmap="EGAdriatic/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="choosen" position="420,130" size="325,50" foregroundColor="#00baff" transparent="1"/>
+		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#00baff" transparent="1"/>
 	</screen>
 	<!-- EGAMI Configuar Botones -->
 	<screen name="ButtonSetupSelect" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5808,7 +5807,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="description" position="865,435" size="320,500" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="#4ccbde" transparent="1"/>
 	    <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget name="list" position="80,190" size="718,390" selectionPixmap="EGAdriatic/icons/ls700x30.png" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="choosen" position="420,130" size="345,50" foregroundColor="#00baff" transparent="1"/>
+		<widget name="choosen" position="350,130" size="400,50" foregroundColor="#00baff" transparent="1"/>
 	</screen>
 	<!-- EGAMI Devices  -->
 	<screen name="EGDeviceManager" position="0,0" size="1280,720" flags="wfNoBorder">
