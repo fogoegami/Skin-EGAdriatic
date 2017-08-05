@@ -5336,7 +5336,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget alphatest="blend" render="MSNWeatherPixmap" position="963,8" size="42,42" source="session.MSNWeather" transparent="1" zPosition="5">
 			<convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/EGAdriatic/msn/,png</convert>
 		</widget>
-		<widget noWrap="1" backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="990,20" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
+		<widget noWrap="1" backgroundColor="background" font="Regular;16" foregroundColor="#4ccbde" render="Label" position="1000,20" size="110,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1">
 			<convert type="MSNWeather">weekday,day5</convert>
 		</widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="1130,13" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#a1d1ff">
