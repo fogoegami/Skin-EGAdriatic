@@ -837,7 +837,7 @@
         <panel name="ScrollBarTemplate"/>
 		<ePixmap position="860,414" zPosition="1" size="300,220" pixmap="EGAdriatic/menu/ico_flags.png" alphatest="blend" transparent="1"/>	
 	<!-- languages list -->
-		<widget source="languages" render="Listbox" position="77,135" size="710,400" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls680x50.png" transparent="1">
+		<widget source="languages" render="Listbox" position="77,135" size="721,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x50.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (150, 10), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
@@ -1470,7 +1470,7 @@
 		<widget name="videofps" position="20,255" size="570,20" backgroundColor="#14101010" transparent="1" zPosition="1" font="xRegular;14" valign="center" halign="left" foregroundColor="bluette"/>
 	</screen>	
 	<!-- (023) ####### BOUQUET SELECTOR ####### (23-10) -->
-	<screen name="BouquetSelector" position="0,0" size="1280,720" title="Bouquet Selection"  flags="wfNoBorder"  backgroundColor="transparent" >
+	<screen name="BouquetSelector" position="0,0" size="1280,720" title="Bouquet Selection"  flags="wfNoBorder"  backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
 		<ePixmap position="930,405" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="0,0" zPosition="-1" size="543,69" pixmap="EGAdriatic/menu/tx_bouquet.png"/>
@@ -2022,7 +2022,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="introduction" render="Label" position="865,20" size="380,160" zPosition="10" font="Regular;22" halign="center" valign="top" foregroundColor="#00fafa" backgroundColor="#333333" transparent="1"/>
 	</screen>
 	<!-- (083) ####### Video Finetune ####### -->
-	<screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="transpBlack" >
+	<screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="transpBlack">
 		<widget source="Canvas" render="Canvas" position="0,0" size="1280,720"/>	
 	</screen>	
 	<!-- (054) ####### CleanupWizardConfiguration ####### -->		
@@ -2158,7 +2158,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>
 	<!-- (062) ####### Channel selection - Radio ####### -->
-	<screen name="ChannelSelectionRadio" position="60,80" size="1160,410" title="Channel Selection" >
+	<screen name="ChannelSelectionRadio" position="60,80" size="1160,410" title="Channel Selection">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,410" alphatest="on"/>
 		<widget name="list" position="20,20" size="1120,308" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#666666" serviceNumberFont="Regular;20" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="EGAdriatic/pl.png"  transparent="1"/>
 		<ePixmap position="56,615" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="2"/>
@@ -2243,7 +2243,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (078) ####### Subtitle Display ####### -->
 	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent"/>    
 	<!-- (079) ####### TimerEdit ####### -->   
-	<screen name="TimerEdit" position="center,100" size="1160,560" title="Timer Edit" >
+	<screen name="TimerEdit" position="center,100" size="1160,560" title="Timer Edit">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
 		<widget name="description" position="20,20" size="1120,40" font="Regular;25" transparent="1"/>
 		<widget name="lbegin" position="605,102" size="103,30" font="Regular;25" foregroundColor="transpBlack"/>
@@ -3124,7 +3124,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-	<!--widget source="session.CurrentService" render="Label" position="1050,572" size="80,21" font="LCD;19" halign="left" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1" zPosition="2" >
+	<!--widget source="session.CurrentService" render="Label" position="1050,572" size="80,21" font="LCD;19" halign="left" foregroundColor="#a1d1ff" backgroundColor="#333333" transparent="1" zPosition="2">
 		<convert type="PliExtraInfo">TunerSystem</convert>
 	</widget-->	
 
@@ -4428,14 +4428,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>
 	<!-- (152) ####### MyTubeVideoHelpScreen ####### -->
-	<screen name="MyTubeVideoHelpScreen" position="center,center" size="1160,560" title="MyTubePlayerHelpScreen..." >
+	<screen name="MyTubeVideoHelpScreen" position="center,center" size="1160,560" title="MyTubePlayerHelpScreen...">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
 		<widget name="detailtext" position="20,20" size="1120,450" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top" backgroundColor="darkgrey"/>
 		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
 		<widget name="key_red" position="455,502" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (153) ####### MyTubeVideoInfoScreen ####### -->
-	<screen name="MyTubeVideoInfoScreen" position="center,center" size="1160,560" title="MyTubePlayerMainScreen..." >
+	<screen name="MyTubeVideoInfoScreen" position="center,center" size="1160,560" title="MyTubePlayerMainScreen...">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
 		<widget name="title" position="20,20" size="1080,30" zPosition="5" valign="center" halign="left" font="Regular;26" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-1,-1" transparent="1" noWrap="1"/>
 		<widget name="author" position="20,70" size="300,25" zPosition="10" font="Regular;22" transparent="1" halign="left" valign="top"/>
@@ -4469,7 +4469,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="thumbnail" position="0,0" size="100,135" alphatest="on"/> 
 	</screen>
 	<!-- (154) ####### MyTubeSettingsScreen ####### -->
-	<screen name="MyTubeSettingsScreen" position="center,center" size="1160,560" title="MyTubeSettingsScreen" >
+	<screen name="MyTubeSettingsScreen" position="center,center" size="1160,560" title="MyTubeSettingsScreen">
 		<widget name="config" zPosition="2" position="20,20" size="1120,400" scrollbarMode="showOnDemand"  transparent="1"/>
 		<ePixmap position="220,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
 		<ePixmap position="690,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
@@ -4477,7 +4477,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key_green" position="690,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (155) ####### MyTubeTasksScreen ####### -->
-	<screen name="MyTubeTasksScreen" position="center,center" size="1160,560" title="MyTubeTasksScreen" >
+	<screen name="MyTubeTasksScreen" position="center,center" size="1160,560" title="MyTubeTasksScreen">
 		<widget source="tasklist" render="Listbox" position="20,20" size="1120,500" zPosition="7" scrollbarMode="showOnDemand"  transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
