@@ -30,7 +30,7 @@
 	-->
 	
 	<output id="0">
-		<resolution xres="1280" yres="720" bpp="32" />
+		<resolution xres="1280" yres="720" bpp="32"/>
 	</output>
 	<!-- Colors (#AARRGGBB) -->
 	<colors>
@@ -38,24 +38,24 @@
 		<color name="foreground" value="#ffffff"/>
 		<color name="white" value="#ffffff"/>
 		<color name="grey" value="#9f9f9f"/>
-		<color name="grey2" value="#22646C78" />
+		<color name="grey2" value="#22646C78"/>
 		<color name="greyb" value="#7d7d7d"/>
 		<color name="darkgrey" value="#666666"/>
-		<color name="dark" value="#25102748" />	
+		<color name="dark" value="#25102748"/>	
 		<color name="black" value="#000000"/>
 		<color name="red" value="#ff0d0d"/>
 		<color name="green" value="#009a00"/>
-		<color name="hellgreen" value="#2256C856" />
+		<color name="hellgreen" value="#2256C856"/>
 		<color name="yellow" value="#bab329"/>
 		<color name="blue" value="#0035ff"/>
 		<color name="transparent" value="#ffffffff"/>
 		<color name="transparent2" value="#ff000000"/>
 		<color name="transpBlack" value="#14101010"/>
-		<color name="transpBlack2" value="#666666" />
+		<color name="transpBlack2" value="#666666"/>
 		<color name="transpWhite" value="#77ffffff"/>
 		<color name="transpGrey" value="#41444444"/>
 		<color name="transpyellow" value="#33bab329"/>
-		<color name="border1" value="#4872a0" />
+		<color name="border1" value="#4872a0"/>
 		<color name="hyellow" value="#fffebb"/>
         <color name="hblue" value="#63a4ff"/>		
 		<color name="bluette" value="#538eff"/>
@@ -64,20 +64,20 @@
 	<!-- Fonts -->
 	<fonts>
 	    <font filename="/usr/share/enigma2/EGAdriatic/fonts/Verdana_R.ttf" name="Regular" scale="95"/>
-        <font filename="/usr/share/enigma2/EGAdriatic/fonts/digital-Bold.ttf" name="LCD2" scale="100" />
-		<font filename="/usr/share/enigma2/EGAdriatic/fonts/digital-watch.ttf" name="LCD" scale="100" />
+        <font filename="/usr/share/enigma2/EGAdriatic/fonts/digital-Bold.ttf" name="LCD2" scale="100"/>
+		<font filename="/usr/share/enigma2/EGAdriatic/fonts/digital-watch.ttf" name="LCD" scale="100"/>
 		<font filename="/usr/share/enigma2/EGAdriatic/fonts/nmsbd2.ttf" name="oledRegular" scale="90"/>
-		<font filename="tuxtxt.ttf" name="Console" scale="100" />
+		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="ae_AlMateen.ttf" name="Replacement" scale="90" replacement="1"/>
 		<font filename="nmsbd.ttf" name="Display" scale="100"/>
 		<font filename="nmsbd.ttf" name="xRegular" scale="100"/>
 	</fonts>
 	<!-- Subtitle effects -->
 	<subtitles>
-		<sub name="Subtitle_TTX" font="Regular;36" shadowColor="#40101010" shadowOffset="3,3" />
-		<sub name="Subtitle_Regular" font="Regular;36" foregroundColor="#DCDCDC" shadowColor="#40101010" shadowOffset="3,3" />
-		<sub name="Subtitle_Bold" font="Replacement;36" foregroundColor="#DCDCDC" shadowColor="#40101010" shadowOffset="3,3" />
-		<sub name="Subtitle_Italic" font="Regular;36" foregroundColor="#DCAAAA" shadowColor="#40101010" shadowOffset="3,3" />
+		<sub name="Subtitle_TTX" font="Regular;36" shadowColor="#40101010" shadowOffset="3,3"/>
+		<sub name="Subtitle_Regular" font="Regular;36" foregroundColor="#DCDCDC" shadowColor="#40101010" shadowOffset="3,3"/>
+		<sub name="Subtitle_Bold" font="Replacement;36" foregroundColor="#DCDCDC" shadowColor="#40101010" shadowOffset="3,3"/>
+		<sub name="Subtitle_Italic" font="Regular;36" foregroundColor="#DCAAAA" shadowColor="#40101010" shadowOffset="3,3"/>
 	<!-- omitting foregroundColor attribute will enable auto-assignment of color -->
 	</subtitles>
 	<windowstyle type="skinned" id="0">
