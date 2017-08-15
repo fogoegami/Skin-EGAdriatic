@@ -5759,7 +5759,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="80,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x50-a.png" transparent="1">
 		    <convert type="TemplatedMultiContent">
 			      {"template": [
-			      MultiContentEntryText(pos = (125, 0), size = (650, 24), font=0, text = 0),
+			      MultiContentEntryText(pos = (125, 0), size = (650, 26), font=0, text = 0),
 			      MultiContentEntryText(pos = (125, 24), size = (650, 24), font=1, color = 0x6da6ff, text = 1),
 			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (100, 40), png = 2),
 			      ],
