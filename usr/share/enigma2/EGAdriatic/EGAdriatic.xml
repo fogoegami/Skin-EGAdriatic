@@ -5206,7 +5206,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>
-		<widget name="MainList" position="45,180" size="753,350" zPosition="3" backgroundColor="#000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="MainList" position="80,180" size="718,350" zPosition="3" backgroundColor="#000000" enableWrapAround="1" scrollbarMode="showOnDemand"/>
 		<widget source="Titel" render="Label" position="175,120" zPosition="3" size="978,60" font="Regular;22" valign="center" halign="left" transparent="1" foregroundColor="#4ccbde"/>
 		<widget source="Titel2" render="Label" position="250,120" zPosition="2" size="900,60" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="#6da6ff"/>
 		<widget source="key_red" render="Label" position="100,625" zPosition="2" size="102,40" font="Regular;22" valign="center" halign="left" transparent="1"/>
