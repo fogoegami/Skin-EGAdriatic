@@ -138,7 +138,7 @@
 	<!-- ChannelList Menu OK -->
 	<screen name="ChannelContextMenu" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaPieTV"/>
-	    <widget name="menu" position="80,138" size="718,465" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
+	    <widget name="menu" position="80,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" itemHeight="30" font="Regular;22" backgroundColor="black" transparent="1"/>
 	    <ePixmap pixmap="icons/key_menu1.png" position="60,640" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>		
 	</screen>
     <!-- ## Configurar Ruta picons lista Canales->Menu->use custom picons in service list active->ruta picon OK ->## -->
