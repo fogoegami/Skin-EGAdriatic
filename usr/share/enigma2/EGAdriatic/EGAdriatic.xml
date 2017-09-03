@@ -491,7 +491,7 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
 		<panel name="Logo_Egami"/>		
-        <widget name="config" position="80,145" zPosition="1" size="718,427" scrollbarMode="showOnDemand"/>	
+        <widget name="config" position="70,145" zPosition="1" size="724,427" scrollbarMode="showOnDemand"/>	
 	</screen>	
 	<!-- GRAPHICAL EPG -->
     <screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
