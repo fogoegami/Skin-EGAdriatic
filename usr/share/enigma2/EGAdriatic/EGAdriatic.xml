@@ -44,13 +44,13 @@
 	<!--widget source="menu_path_compressed" render="Label" position="80,5" size="540,40" font="Regular;15" transparent="1" foregroundColor="#0000fafa" backgroundColor="#00000000" zPosition="2"/-->
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
-			 {"template": [ 
-			 MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-			 MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
-			 ],
-			 "fonts": [gFont("Regular",28)],
-			 "itemHeight": 38
-			 }
+			    {"template": [ 
+			    MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+			    MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
+			    ],
+			    "fonts": [gFont("Regular",28)],
+			    "itemHeight": 38
+			    }
 			</convert>
 		</widget>
 		<widget source="menu" render="Listbox" zPosition="2" position="835,445" size="390,30" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
@@ -105,10 +105,10 @@
         <panel name="Logo_Egami"/>		
 	</screen>	
     <!-- restart icons -->
-        <screen name="QuitMainloopScreen" position="fill" backgroundColor="#00637a" flags="wfNoBorder">
+    <screen name="QuitMainloopScreen" position="fill" backgroundColor="#00637a" flags="wfNoBorder">
         <ePixmap pixmap="EGAdriatic/prev.png" position="0,0" size="1280,720" alphatest="blend"/>
         <widget name="text" position="280,600" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
-        </screen>		
+    </screen>		
 	<!-- (003) ####### VirtualKeyBoard ####### -->
 	<screen name="VirtualKeyBoard" position="700,330" size="560,350" zPosition="99" title="Virtual KeyBoard">
 		<ePixmap pixmap="EGAdriatic/vkey_text.png" position="9,35" zPosition="-4" size="542,52" alphatest="on"/>
@@ -117,11 +117,11 @@
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" transparent="1"/>
     </screen>
 	<!-- (004 Volume Digital -->
-        <screen name="Volume" position="1100,130" zPosition="1" size="120,120" title="Volume"  backgroundColor="transparent" flags="wfNoBorder">
-			<widget name="Volume" pixmap="EGAdriatic/skin_default/icons/volumeoff.png" position="0,0" zPosition="1" size="120,120" transparent="1"/>
-			<ePixmap pixmap="EGAdriatic/skin_default/icons/volumeoff.png" position="0,0" size="120,120" alphatest="blend" zPosition="2" transparent="1"/>
-            <widget render="VolumeText" source="global.CurrentTime" font="LCD;46" position="10,35" size="100,50" backgroundColor="#0031b3cb" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
-        </screen>		
+    <screen name="Volume" position="1100,130" zPosition="1" size="120,120" title="Volume"  backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="Volume" pixmap="EGAdriatic/skin_default/icons/volumeoff.png" position="0,0" zPosition="1" size="120,120" transparent="1"/>
+		<ePixmap pixmap="EGAdriatic/skin_default/icons/volumeoff.png" position="0,0" size="120,120" alphatest="blend" zPosition="2" transparent="1"/>
+        <widget render="VolumeText" source="global.CurrentTime" font="LCD;46" position="10,35" size="100,50" backgroundColor="#0031b3cb" halign="center" valign="center" foregroundColor="black" transparent="1" zPosition="4"/>
+    </screen>		
 	<!-- (004) ####### Volume ####### -->
 	<!--screen name="Volume" position="1199,136" zPosition="1" size="26,368" title="Volume"  flags="wfNoBorder">
 		<ePixmap pixmap="EGAdriatic/volume.png" position="0,0" size="26,368" alphatest="blend" transparent="1"/>
@@ -203,114 +203,114 @@
 			<convert type="EventName">Name</convert>
 		</widget>
     <!--widget source="ServiceEvent" render="SingleEpgList" position="840,500" size="387,200" font="Regular;16" halign="left" transparent="1" foregroundColor="#0000baff" backgroundColor="background" zPosition="2" noWrap="1" valign="top"/-->
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,500" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=1000,
-			oneshot=2000,step=1,
-			steptime=12,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event1,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,514" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=3000,
-			oneshot=2000,step=1,
-			steptime=14,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event2,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,528" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=5000,
-			oneshot=2000,step=1,
-			steptime=20,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event3,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,542" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=7000,
-			oneshot=2000,step=1,
-			steptime=22,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event4,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,556" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=9000,
-			oneshot=2000,step=1,
-			steptime=24,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event5,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,570" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=11000,
-			oneshot=2000,step=1,
-			steptime=26,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event6,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,584" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=13000,
-			oneshot=2000,step=1,
-			steptime=28,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event7,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,598" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,	
-			startpoint=0,
-			startdelay=15000,
-			oneshot=2000,step=1,
-			steptime=30,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event8,onlyStart</convert>
-    		</widget>
-    		<widget source="ServiceEvent" render="DRRunningText" position="840,612" size="387,200" font="Regular;16" 
-    			options="movetype=running,
-			repeat=3,				
-			startpoint=0,
-			startdelay=17000,
-			oneshot=2000,step=1,
-			steptime=32,
-			always=0,
-			noWrap" 
-			foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
-    			<convert type="EGAdriaticNextEvents">Event9,onlyStart</convert>
-    		</widget>			
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,500" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,				
+		startpoint=0,
+		startdelay=1000,
+		oneshot=2000,step=1,
+		steptime=12,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event1,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,514" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,				
+		startpoint=0,
+		startdelay=3000,
+		oneshot=2000,step=1,
+		steptime=14,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event2,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,528" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,				
+		startpoint=0,
+		startdelay=5000,
+		oneshot=2000,step=1,
+		steptime=20,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event3,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,542" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,				
+		startpoint=0,
+		startdelay=7000,
+		oneshot=2000,step=1,
+		steptime=22,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event4,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,556" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,				
+		startpoint=0,
+		startdelay=9000,
+		oneshot=2000,step=1,
+		steptime=24,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event5,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,570" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,			
+		startpoint=0,
+		startdelay=11000,
+		oneshot=2000,step=1,
+		steptime=26,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event6,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,584" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,			
+		startpoint=0,
+		startdelay=13000,
+		oneshot=2000,step=1,
+		steptime=28,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event7,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,598" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,	
+		startpoint=0,
+		startdelay=15000,
+		oneshot=2000,step=1,
+		steptime=30,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event8,onlyStart</convert>
+    	</widget>
+    	<widget source="ServiceEvent" render="DRRunningText" position="840,612" size="387,200" font="Regular;16" 
+    	options="movetype=running,
+		repeat=3,			
+		startpoint=0,
+		startdelay=17000,
+		oneshot=2000,step=1,
+		steptime=32,
+		always=0,
+		noWrap" 
+		foregroundColor="#0000baff" backgroundColor="background" transparent="1" zPosition="2">
+    	<convert type="EGAdriaticNextEvents">Event9,onlyStart</convert>
+    	</widget>			
 	<!-- epg descripcion -->
 		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="833,78" size="393,127" zPosition="2" font="Regular;18" halign="center" valign="center" foregroundColor="grey" backgroundColor="background" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
@@ -499,7 +499,7 @@
 		<ePixmap pixmap="icons/clock.png" position="1185,25" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1020,5" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
+            </widget>
 		<widget source="global.CurrentTime" render="Label" position="645,18" size="350,25" halign="right" font="LCD;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Date</convert>
 		</widget>
@@ -625,8 +625,8 @@
 	</screen>
 	<!-- GraphicalInfoBarEPG -->
 	<screen name="GraphicalInfoBarEPG" position="0,500" size="1280,240" flags="wfNoBorder">
-	   <eLabel position="0,0" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>	
-       <eLabel position="0,2" size="1280,30" backgroundColor="black" zPosition="0"/>	
+	    <eLabel position="0,0" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>	
+        <eLabel position="0,2" size="1280,30" backgroundColor="black" zPosition="0"/>	
 		<ePixmap pixmap="icons/clock.png" position="1150,10" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1160,5" size="100,28" font="Regular;20" foregroundColor="#0000baff" backgroundColor="black" halign="right" transparent="1" zPosition="1">
 		    <convert type="ClockToText">Format %H:%M:%S</convert>
@@ -693,7 +693,7 @@
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 		<widget source="Service" render="Label" position="110,2" size="595,40" font="Regular;32" valign="center" noWrap="1" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
-	            <convert type="ServiceName">Name</convert>
+	        <convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="Event" render="Label" position="750,7" size="100,28" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="black" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
@@ -713,7 +713,7 @@
 		</widget>
 		<widget name="list" position="15,40" size="762,120" foregroundColor="#004ccbde" scrollbarMode="showOnDemand" font="Regular;20" backgroundColor="black"/>
 		<widget source="Service" render="Picon" position="30,0" size="70,42" zPosition="2" alphatest="blend">
-		     <convert type="ServiceName">Reference</convert>
+		    <convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget name="number" position="20,116" size="100,25" zPosition="1" foregroundColor="#004ccbde" transparent="1"/>		
 		<widget name="lab1" position="20,30" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>		
@@ -842,11 +842,11 @@
 		<widget source="languages" render="Listbox" position="77,135" size="721,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x50.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (150, 10), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-					    MultiContentEntryPixmapAlphaTest(pos = (30, 5), size = (60, 40), png = 2), # index 2 is the pixmap
-					],
-				 "fonts": [gFont("Regular", 25)],
-				 "itemHeight": 50
+				MultiContentEntryText(pos = (150, 10), size = (670, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmapAlphaTest(pos = (30, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("Regular", 25)],
+				"itemHeight": 50
 				}
 			</convert>
 		</widget>
@@ -861,20 +861,20 @@
 		<ePixmap position="249,630" zPosition="2" size="400,40" pixmap="EGAdriatic/menu/logo_egami_menu.png" alphatest="blend" transparent="1"/>
 		<widget source="menu" render="Listbox" position="67,137" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls700x38.png" backgroundPixmap="EGAdriatic/icons/butselection.png" transparent="1">
 			<convert type="TemplatedMultiContent">
-			 {"template": [ 
-			 MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 1),
-			 MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
-			 ],
-			 "fonts": [gFont("Regular",28)],
-			 "itemHeight": 38
-			 }
+			    {"template": [ 
+			    MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 1),
+			    MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
+			    ],
+			    "fonts": [gFont("Regular",28)],
+			    "itemHeight": 38
+			    }
 			</convert>	
 		</widget>
 		<widget source="menu" render="Listbox" 	position="870,370" size="348,340" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="#004ccbde" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 0), size = (320, 320), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 0 is the MenuText,
-					],
+				MultiContentEntryText(pos = (10, 0), size = (320, 320), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 0 is the MenuText,
+				],
 				"fonts": [gFont("Regular", 24)],
 				"itemHeight": 320
 				}
@@ -889,24 +889,24 @@
 		<ePixmap position="57,625" zPosition="1" size="750,36" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	    <!--ePixmap position="930,417" zPosition="2" size="770,425" pixmap="EGAdriatic/menu/ico_estension.png" alphatest="blend" transparent="1" /-->
 		<widget source="list" render="Listbox" position="69,137" size="728,405" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x43.png" transparent="1">
-		<convert type="TemplatedMultiContent">
-			{"templates":
-			{"default": (52,[
-			MultiContentEntryText(pos = (25, 1), size = (555, 23), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-			MultiContentEntryText(pos = (25, 25), size = (555, 23), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-			MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 5), # index 5 is the status pixmap
-			MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 6 is the div pixmap
-			]),
-			"category": (40,[
-			MultiContentEntryText(pos = (25, 0), size = (640, 22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-			MultiContentEntryText(pos = (25, 20), size = (640, 18), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
-			MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 3 is the div pixmap
-			])
-			},
-			"fonts": [gFont("Regular", 20),gFont("Regular", 18),gFont("Regular", 16)],
-			"itemHeight": 52
-			}
-		</convert>
+		    <convert type="TemplatedMultiContent">
+			    {"templates":
+			    {"default": (52,[
+			    MultiContentEntryText(pos = (25, 1), size = (555, 23), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+			    MultiContentEntryText(pos = (25, 25), size = (555, 23), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 5), # index 5 is the status pixmap
+			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 6 is the div pixmap
+			    ]),
+			    "category": (40,[
+			    MultiContentEntryText(pos = (25, 0), size = (640, 22), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+			    MultiContentEntryText(pos = (25, 20), size = (640, 18), font=2, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 3 is the div pixmap
+			    ])
+			    },
+			    "fonts": [gFont("Regular", 20),gFont("Regular", 18),gFont("Regular", 16)],
+			    "itemHeight": 52
+			    }
+		    </convert>
 		</widget>
 	<!-- Widget Pig -->
 		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
@@ -925,8 +925,8 @@
 		<widget source="key_blue" render="Label" position="607,625" size="250,40" zPosition="3" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget> 
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget> 
 	</screen>
 
 	<!-- (019) ####### Buscar redes inhalambricas ->OK-titulo seleccionar red inhalambrica ####### -->	
@@ -939,13 +939,13 @@
 		<widget source="list" render="Listbox" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (0, 0), size = (550, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
-						MultiContentEntryText(pos = (0, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
-						MultiContentEntryText(pos = (175, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
-						MultiContentEntryText(pos = (350, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
-						MultiContentEntryText(pos = (350, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
-						MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (550, 2), png = 6), # index 6 is the div pixmap
-					],
+				MultiContentEntryText(pos = (0, 0), size = (550, 30), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
+				MultiContentEntryText(pos = (0, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
+				MultiContentEntryText(pos = (175, 30), size = (175, 20), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 0 is the encryption
+				MultiContentEntryText(pos = (350, 0), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 0 is the signal
+				MultiContentEntryText(pos = (350, 30), size = (200, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 0 is the maxrate
+				MultiContentEntryPixmapAlphaTest(pos = (0, 52), size = (550, 2), png = 6), # index 6 is the div pixmap
+				],
 				"fonts": [gFont("Regular", 28),gFont("Regular", 18)],
 				"itemHeight": 54
 				}
@@ -1111,7 +1111,7 @@
         <panel name="sR"/>		
 		<widget name="menulist" position="70,155" size="715,400" itemHeight="45" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls705x38.png" backgroundColor="black" transparent="1" zPosition="2"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
-		 <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
 	<!-- (125) ####### (Administrador de Montajes) ####### -->
 	<screen name="AutoMountManager" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1123,12 +1123,12 @@
 		<widget source="config" render="Listbox" position="60,150" size="715,420" scrollbarMode="showOnDemand" transparent="1">
 		    <convert type="TemplatedMultiContent">
 			    {"template": [
-				    MultiContentEntryText(pos = (60, 5), size = (660, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-				    MultiContentEntryText(pos = (70, 35), size = (650, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-				    MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the pixmap
-				   ],
-				   "fonts": [gFont("Regular", 22),gFont("Regular", 17)],
-				   "itemHeight": 60
+				MultiContentEntryText(pos = (60, 5), size = (660, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+				MultiContentEntryText(pos = (70, 35), size = (650, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+				MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the pixmap
+				],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
+				"itemHeight": 60
 			    }
 		    </convert>
 		</widget>
@@ -1161,8 +1161,8 @@
 		<widget source="legend2" render="Label" position="175,122" zPosition="1" size="400,60" foregroundColor="#004ccbde" font="Regular;20" halign="center" valign="center"  transparent="1"/>
 		<widget source="legend3" render="Label" position="630,110" zPosition="1" size="120,60" foregroundColor="#004ccbde" font="Regular;20" halign="center" valign="center"  transparent="1"/>
 		<widget source="config" render="Listbox" position="80,170" size="715,425" scrollbarMode="showOnDemand" transparent="1">
-		<convert type="TemplatedMultiContent">
-			{"template": [
+		    <convert type="TemplatedMultiContent">
+			    {"template": [
 				MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
 				MultiContentEntryText(pos = (180, 5), size = (200, 28), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
 				MultiContentEntryText(pos = (380, 8), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
@@ -1172,8 +1172,8 @@
 				],
 				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
 				"itemHeight": 60
-			}
-			</convert>
+			    }
+		    </convert>
 		</widget>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
@@ -1186,15 +1186,15 @@
         <panel name="PIG"/>
 		<panel name="sRY"/>
 		<widget source="config" render="Listbox" position="80,160" size="715,350" scrollbarMode="showOnDemand" transparent="1">
-		<convert type="TemplatedMultiContent">
-			{"template": [
-			MultiContentEntryText(pos = (80, 7), size = (650, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-			MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the status pixmap
-			],
-			"fonts": [gFont("Regular", 40)],
-			"itemHeight": 60
-			}
-		</convert>
+		    <convert type="TemplatedMultiContent">
+			    {"template": [
+			    MultiContentEntryText(pos = (80, 7), size = (650, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+			    MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the status pixmap
+			    ],
+			    "fonts": [gFont("Regular", 40)],
+			    "itemHeight": 60
+			    }
+		    </convert>
 		</widget>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
@@ -1467,21 +1467,21 @@
 		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" itemHeight="30" selectionPixmap="icons/ls700x26.png" position="70,280" size="695,375" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
-					{"default": (25, [ 
-						MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-						MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-						MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (350, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-					], True, "showNever"),
-					"notselected": (25, [ 
-						MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
-						MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
-						MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
-						MultiContentEntryText(pos = (350, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
-						MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
-					], False, "showNever")
-					},
+				{"default": (25, [ 
+				MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+				MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
+				MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+				MultiContentEntryText(pos = (350, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+				MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				], True, "showNever"),
+				"notselected": (25, [ 
+				MultiContentEntryText(pos = (10, 0),   size = (50, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
+				MultiContentEntryText(pos = (90, 0),  size = (70, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # number,
+				MultiContentEntryText(pos = (190, 0), size = (160, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 3), # description,
+				MultiContentEntryText(pos = (350, 0), size = (160, 25), font = 0, flags = RT_HALIGN_LEFT,  text = 4), # language,
+				MultiContentEntryText(pos = (570, 0), size = (100, 25),  font = 1, flags = RT_HALIGN_RIGHT, text = 5), # selection,
+				], False, "showNever")
+				},
 				"fonts": [gFont("Regular", 20), gFont("Regular", 20)],
 				"itemHeight": 25
 				}
@@ -1516,8 +1516,8 @@
 		</widget>
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>	
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>	
 	</screen>
 
 	<!-- (026) ####### Choice Box Boton azul Menu Extensiones####### (12-02) -->
@@ -1589,7 +1589,7 @@
 		</widget>
 	    <widget font="Regular;20" halign="left" position="863,340" size="275,32" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00000000" transparent="1" zPosition="2">
 		    <convert type="EventName">Name</convert>
-	    </widget>			
+	        </widget>			
 		<widget source="session.Event_Now" render="Label" position="1125,340" foregroundColor="#00a1d1ff" size="70,30" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -1679,11 +1679,11 @@
 		<widget source="languages" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-						MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
-					],
-				 "fonts": [gFont("Regular", 20)],
-				 "itemHeight": 50
+				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 50
 				}
 			</convert>
 		</widget>
@@ -1722,11 +1722,11 @@
 		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="EGAdriatic/icons/ls620x90.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 5), size = (860, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-						MultiContentEntryText(pos = (50, 37), size = (820, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
-					],
-				 "fonts": [gFont("Regular", 22), gFont("Regular", 18)],
-				 "itemHeight": 90
+				MultiContentEntryText(pos = (10, 5), size = (860, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (50, 37), size = (820, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				],
+				"fonts": [gFont("Regular", 22), gFont("Regular", 18)],
+				"itemHeight": 90
 				}
 			</convert>
 		</widget>
@@ -1779,7 +1779,7 @@
 		<widget name="config" position="80,138" size="690,400" transparent="1"/>
 		<widget name="introduction" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
         <widget name="header" position="80,580" size="0,0" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>				 
-		 <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>	
 	<!-- (069) ####### Servicio escaneo canales barra progreso ####### -->
 	<screen name="ServiceScan" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1958,11 +1958,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- ####### MessageBox ####### -->	
 	<screen name="MessageBox" position="0,0" size="1280,720" flags="wfNoBorder">
-		 <panel name= "MessageBoxTemplate"/>
+		<panel name= "MessageBoxTemplate"/>
 	</screen>
 	<!-- ####### MessageBoxSimple ####### -->		
 	<screen name="MessageBoxSimple" position="0,0" size="1280,720" flags="wfNoBorder">
-		 <panel name= "MessageBoxTemplate"/>
+		<panel name= "MessageBoxTemplate"/>
 	</screen>
 	<!-- (046) ####### Movie Context Menu ####### (12-02) -->
 	<screen name="MovieContextMenu" position="center,center" size="600,340"  title="Movielist menu">
@@ -2110,8 +2110,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="green" position="244,612" zPosition="2" size="170,45" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
 	</screen>
 	<!-- (060) ####### PLUGINS DOWNLOAD ####### -->
 	<screen name="PluginDownloadBrowser" position="center,center" size="800,460" title="Downloadable plugins">
@@ -2438,8 +2438,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_green" render="Label" position="205,625" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
 	</screen>
 	<!-- (095)  ####### DVD Burn- DVD Toolbox ####### -->
 	<screen name="DVDToolbox" position="center,center"  size="1130,520" title="DVD media toolbox">
@@ -2471,14 +2471,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="titles" render="Listbox" scrollbarMode="showOnDemand" position="20,86" size="1090,260" zPosition="3" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 0), size = (360, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
-					MultiContentEntryText(pos = (0, 20), size = (360, 17), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 description,
-					MultiContentEntryText(pos = (366, 6), size = (152, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 3), # index 3 channel,
-					MultiContentEntryText(pos = (366, 20), size = (102, 17), font = 1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 begin time,
-					MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # index 5 duration,
-					],
-					"fonts": [gFont("Regular", 20), gFont("Regular", 14)],
-					"itemHeight": 37
+				MultiContentEntryText(pos = (0, 0), size = (360, 20), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 Title,
+				MultiContentEntryText(pos = (0, 20), size = (360, 17), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 description,
+				MultiContentEntryText(pos = (366, 6), size = (152, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 3), # index 3 channel,
+				MultiContentEntryText(pos = (366, 20), size = (102, 17), font = 1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 begin time,
+				MultiContentEntryText(pos = (470, 20), size = (48, 20), font = 1, flags = RT_HALIGN_RIGHT, text = 5), # index 5 duration,
+				],
+				"fonts": [gFont("Regular", 20), gFont("Regular", 14)],
+				"itemHeight": 37
 				}
 			</convert>
 		</widget>
@@ -2539,11 +2539,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" render="Listbox">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
-						MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
-					],
-				 "fonts": [gFont("Regular", 20)],
-				 "itemHeight": 25
+				MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
+				MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
+				],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 25
 				}
 			</convert>
 		</widget>
@@ -2567,11 +2567,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" render="Listbox">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
-						MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
-					],
-				 "fonts": [gFont("Regular", 20)],
-				 "itemHeight": 25
+				MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
+				MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
+				],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 25
 				}
 			</convert>
 		</widget>
@@ -2619,9 +2619,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="menu" render="Listbox" position="20,20" size="670,240" zPosition="3" scrollbarMode="showOnDemand" transparent="1" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0),
-					MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, text = 1)],
-					"fonts": [gFont("Regular", 20)],
-					"itemHeight": 35
+				MultiContentEntryText(pos = (360, 7), size = (215, 30), flags = RT_HALIGN_LEFT, text = 1)],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 35
 				}
 			</convert>
 		</widget>
@@ -2664,15 +2664,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_green" render="Label" position="370,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="list" render="Listbox" position="20,50" size="640,350" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (50, 0), size = (250, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (50, 27), size = (680, 23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-							MultiContentEntryPixmapAlphaTest(pos = (0, 1), size = (48, 48), png = 2), # index 2 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # index 3 is the div pixmap
-						],
-					"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
-					"itemHeight": 50
-					}
+				{"template": [
+				MultiContentEntryText(pos = (50, 0), size = (250, 26), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (50, 27), size = (680, 23), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+				MultiContentEntryPixmapAlphaTest(pos = (0, 1), size = (48, 48), png = 2), # index 2 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (0, 48), size = (550, 2), png = 3), # index 3 is the div pixmap
+				],
+				"fonts": [gFont("Regular", 24),gFont("Regular", 22)],
+				"itemHeight": 50
+				}
 			</convert>
 		</widget>
 		<widget source="status" render="Label" position="65,408" zPosition="10" size="550,44" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
@@ -2731,18 +2731,18 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_red" render="Label" position="70,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="key_green" render="Label" position="390,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="list" render="Listbox" position="20,20" size="670,365" scrollbarMode="showOnDemand" transparent="1">
-				<convert type="TemplatedMultiContent">
-					{"template": [
-							MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-							MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-							MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
-							MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
-						],
-					"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
-					"itemHeight": 52
-					}
-				</convert>
-			</widget>
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+				],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
+		</widget>
 	</screen>
 	<!-- (117) ####### IpkgInstaller ####### -->
 	<screen name="IpkgInstaller" position="center,center" size="600,520" title="Install extensions">
@@ -2907,7 +2907,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="footnote" position="80,600" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="left" transparent="1" valign="top"/>
-		 <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,180" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>				
 	</screen>		
 	<!--####### InputDeviceSelection (Dispositivos de Entrada) #######-->
@@ -2918,16 +2918,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <panel name="PIG"/>
 	    <panel name="sRG"/>				
 		<widget source="list" render="Listbox" position="69,137" size="715,427" zPosition="2" scrollbarMode="showOnDemand" transparent="1" backgroundColor="#00030303">
-		<convert type="TemplatedMultiContent">
+		    <convert type="TemplatedMultiContent">
 		<!-- device, description, devicepng, divpng -->
-			{"template": [
-			MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
-			MultiContentEntryText(pos = (85, 6), size = (980, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
-			],
-			"fonts": [gFont("Regular", 26),gFont("Regular", 20)],
-			"itemHeight": 70
-			}	
-		</convert>
+			    {"template": [
+			    MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 2), # index 3 is the interface pixmap
+			    MultiContentEntryText(pos = (85, 6), size = (980, 54), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text = 1), # index 1 is the interfacename
+			    ],
+			    "fonts": [gFont("Regular", 26),gFont("Regular", 20)],
+			    "itemHeight": 70
+			    }	
+		    </convert>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" zPosition="2" halign="center" valign="center" font="Regular;24" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -3066,97 +3066,97 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_green" render="Label" position="215,625" size="220,35" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
 	</screen>
     <!-- INFOBAR OSD -->
     <screen name="InfoBar" flags="wfNoBorder" position="0,-5" size="1280,720" title="InfoBar" backgroundColor="transparent">
-    <ePixmap position="-1,510" zPosition="1" size="1292,253" pixmap="EGAdriatic/infobar_light.png" transparent="1"/>
+        <ePixmap position="-1,510" zPosition="1" size="1292,253" pixmap="EGAdriatic/infobar_light.png" transparent="1"/>
 
-	<widget name="key_red" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	    <widget name="key_red" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
-	<widget name="key_green" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	    <widget name="key_green" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
-	<widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
-	<widget name="key_blue" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
+	    <widget name="key_blue" position="0,0" size="0,0" zPosition="1"  transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 	<!--  Streaming -->	
-	<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="1017,561" size="18,18" zPosition="2" alphatest="on">
-		<convert type="ClientsStreaming"/>
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="1017,561" size="18,18" zPosition="2" alphatest="on">
+		    <convert type="ClientsStreaming"/>
+		    <convert type="ConditionalShowHide">Blink</convert>
+	    </widget>
     <!-- Orologio Digitale - Digital Clock -->
-    <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>	
-    <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
-    </widget>
+        <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
+            <convert type="ClockToText">Default</convert>
+        </widget>	
+		<widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1">
+            <convert type="ClockToText">Format::%S</convert>
+        </widget>
     <!-- Data - Date -->
-    <widget source="global.CurrentTime" render="Label" position="1100,672" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="background" foregroundColor="#00a1d1ff" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
+        <widget source="global.CurrentTime" render="Label" position="1100,672" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="background" foregroundColor="#00a1d1ff" transparent="1">
+            <convert type="ClockToText">Format:%d.%m.%Y</convert>
+        </widget>
     <!-- Nombre del Canal - Service Name -->
-    <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-	<widget font="Regular;24" halign="left" position="317,592" render="DRRunningText" noWrap="1" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1" zPosition="2">
-		<convert type="EventName">Name</convert>
-	</widget>	
+        <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+		<widget font="Regular;24" halign="left" position="317,592" render="DRRunningText" noWrap="1" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>	
     <!-- Evento Corrente - Event Now -->
-    <widget source="session.Event_Now" render="Label" position="232,592" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="945,593" size="101,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">NoSeconds</convert>
-    </widget>
+        <widget source="session.Event_Now" render="Label" position="232,592" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="945,593" size="101,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">NoSeconds</convert>
+        </widget>
     <!-- Prossimo Evento - Event Next -->
-    <widget source="session.Event_Next" render="Label" position="232,640" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-	<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
-		<convert type="EventName">Name</convert>
-	</widget>	
-    <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">NoSeconds</convert>
-    </widget>
+        <widget source="session.Event_Next" render="Label" position="232,640" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
+		<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,steptime=15,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>	
+        <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">NoSeconds</convert>
+        </widget>
     <!-- Tempo Trascorso - Progress Bar -->
-    <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-	<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="80,557" size="50,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
-		<convert type="ServiceInfo">HasHBBTV</convert>
-		<convert type="ConditionalShowHide"/>
-	</widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="4K"  position="160,557" size="25,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
-        <convert type="ServiceInfo">Is4K</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>	
+        <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>
+		<widget source="session.CurrentService" render="FixedLabel" text="HBBTV" position="80,557" size="50,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
+		    <convert type="ServiceInfo">HasHBBTV</convert>
+		    <convert type="ConditionalShowHide"/>
+	    </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="4K"  position="160,557" size="25,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
+            <convert type="ServiceInfo">Is4K</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>	
     <!-- Posizione Picon - Picon Position -->
-    <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="blend">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
+        <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="blend">
+            <convert type="ServiceName">Reference</convert>
+        </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">0,0</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">1,1</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-      <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">2,2</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+              <convert type="FrontendInfo">TYPE</convert>
+              <convert type="ValueRange">0,0</convert>
+              <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+              <convert type="FrontendInfo">TYPE</convert>
+              <convert type="ValueRange">1,1</convert>
+              <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+              <convert type="FrontendInfo">TYPE</convert>
+              <convert type="ValueRange">2,2</convert>
+              <convert type="ConditionalShowHide"/>
+        </widget>
 	<!--widget source="session.CurrentService" render="Label" position="1050,572" size="80,21" font="LCD;19" halign="left" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
 		<convert type="PliExtraInfo">TunerSystem</convert>
 	</widget-->	
@@ -3164,78 +3164,78 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
 		<widget source="session.FrontendInfo" render="Label" position="1100,572" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" transparent="1">
 		    <convert type="FrontendInfo">STRING</convert>
-		</widget>		
+	    </widget>		
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
-    <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+        <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18"  transparent="1" backgroundColor="transpBlack" -->
-    <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
-	<widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
-		<convert type="EGCpuUsage">$0</convert>
-	</widget>
-	<eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
-	<eLabel text="AGC" zPosition="2" position="777,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
-    <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
-		<convert type="FrontendInfo">SNR</convert>
-    </widget>
-	<widget source="session.FrontendStatus" render="Progress" position="822,573" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
-		<convert type="FrontendInfo">AGC</convert>
-	</widget>	
+        <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
+		<widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
+		    <convert type="EGCpuUsage">$0</convert>
+	    </widget>
+	    <eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
+	    <eLabel text="AGC" zPosition="2" position="777,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
+        <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
+		    <convert type="FrontendInfo">SNR</convert>
+        </widget>
+		<widget source="session.FrontendStatus" render="Progress" position="822,573" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
+		    <convert type="FrontendInfo">AGC</convert>
+	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-    <widget source="session.FrontendStatus" render="Label" position="980,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
-        <convert type="FrontendInfo">SNR</convert>
-    </widget>
-    <widget source="session.FrontendStatus" render="Label" position="980,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
-        <convert type="FrontendInfo">AGC</convert>
-    </widget>	
-	<widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-	    <convert type="PliExtraInfo">ResolutionString</convert>
-	</widget>	
+        <widget source="session.FrontendStatus" render="Label" position="980,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+            <convert type="FrontendInfo">SNR</convert>
+        </widget>
+        <widget source="session.FrontendStatus" render="Label" position="980,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+            <convert type="FrontendInfo">AGC</convert>
+        </widget>	
+		<widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+	        <convert type="PliExtraInfo">ResolutionString</convert>
+	    </widget>	
     <!-- Selezione Dolby System -->
-    <ePixmap position="412,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/dolby_of.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/dolby_on.png" position="412,554" zPosition="4" size="77,30" alphatest="on">
-      <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
+        <ePixmap position="412,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/dolby_of.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/dolby_on.png" position="412,554" zPosition="4" size="77,30" alphatest="on">
+            <convert type="ServiceInfo">IsMultichannel</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Selezione WideScreen Format -->
-    <ePixmap position="491,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/icon_format_off.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/wide_on.png" position="491,554" zPosition="4" size="77,30" alphatest="on">
-        <convert type="ServiceInfo">IsWidescreen</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
+        <ePixmap position="491,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/icon_format_off.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/wide_on.png" position="491,554" zPosition="4" size="77,30" alphatest="on">
+            <convert type="ServiceInfo">IsWidescreen</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Selezione HD-SD - Selection -->
-    <ePixmap position="569,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/hd_off.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/hd_on.png" position="569,554" size="49,28" zPosition="4" alphatest="on">
-        <convert type="ServiceInfo">VideoWidth</convert>
-        <convert type="ValueRange">721,1980</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
+        <ePixmap position="569,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/hd_off.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/hd_on.png" position="569,554" size="49,28" zPosition="4" alphatest="on">
+            <convert type="ServiceInfo">VideoWidth</convert>
+            <convert type="ValueRange">721,1980</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Icona Video text - Video Text Icon -->
-    <ePixmap position="674,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/ico_txt_off.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/ico_txt_on.png" position="674,554" zPosition="4" size="49,28" alphatest="on">
-    </widget> 
+        <ePixmap position="674,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/ico_txt_off.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/ico_txt_on.png" position="674,554" zPosition="4" size="49,28" alphatest="on">
+        </widget> 
     <!-- Icona Crypt - Crypt Icon -->
-    <ePixmap position="621,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/crypt_of.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/crypt_on.png" position="621,554" zPosition="4" size="49,28" alphatest="on">
-        <convert type="ServiceInfo">IsCrypted</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
+        <ePixmap position="621,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/crypt_of.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/crypt_on.png" position="621,554" zPosition="4" size="49,28" alphatest="on">
+            <convert type="ServiceInfo">IsCrypted</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Icone Registrazione - Icons Recorder -->
-    <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-        <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
+        <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
     <!-- Icone Sottotitoli - Subtitle Icons-->
-	<widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/icon_sub.png" position="726,555" zPosition="4" size="49,28" alphatest="on">
-		<convert type="ServiceInfo">SubservicesAvailable</convert>
-		<convert type="ConditionalShowHide"/>
-    </widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/icon_sub.png" position="726,555" zPosition="4" size="49,28" alphatest="on">
+		    <convert type="ServiceInfo">SubservicesAvailable</convert>
+		    <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Icone Registrazione - Icons Recorder -->
-    <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-        <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
+        <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
 	
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="265,679" 
@@ -3247,10 +3247,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">OrbitalPosition</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">OrbitalPosition</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="325,679" 
@@ -3262,10 +3262,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderFrequency</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderFrequency</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="381,679" 
@@ -3277,10 +3277,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderPolarization</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderPolarization</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="403,679" 
@@ -3292,10 +3292,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderSymbolRate</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderSymbolRate</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="460,679" 
@@ -3307,10 +3307,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderFEC</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderFEC</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="496,679" 
@@ -3322,183 +3322,183 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderModulation</convert>
-	 </widget>
-	<widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
- 		<convert type="PliExtraInfo">CryptoSpecial</convert>
- 	</widget>
-	<widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
-		<convert type="CryptoInfo">VerboseInfo</convert>
-	</widget>	  
-    <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
+ 	    <convert type="PliExtraInfo">TransponderModulation</convert>
+	    </widget>
+	    <widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+ 		    <convert type="PliExtraInfo">CryptoSpecial</convert>
+ 	    </widget>
+	    <widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+		    <convert type="CryptoInfo">VerboseInfo</convert>
+	    </widget>	  
+        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
     </screen>
 	
 
 	<!-- PANEL EVENTOS SEGUNDA BARRA INFOBAR-->  
   	<screen name="SecondInfobarPanelEvents">
-    <ePixmap position="-1,510" zPosition="1" size="1292,253" pixmap="EGAdriatic/infobar_light.png" transparent="1"/>
+        <ePixmap position="-1,510" zPosition="1" size="1292,253" pixmap="EGAdriatic/infobar_light.png" transparent="1"/>
     <!-- Orologio Digitale - Digital Clock -->
-    <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
+        <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
+            <convert type="ClockToText">Default</convert>
+        </widget>
 	<!--  Streaming -->	
-	<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="1017,561" size="18,18" zPosition="2" alphatest="on">
-		<convert type="ClientsStreaming"/>
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
-    <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
-    </widget>
+	    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="1017,561" size="18,18" zPosition="2" alphatest="on">
+		    <convert type="ClientsStreaming"/>
+		    <convert type="ConditionalShowHide">Blink</convert>
+	    </widget>
+        <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1">
+            <convert type="ClockToText">Format::%S</convert>
+        </widget>
     <!-- Data - Date -->
-    <widget source="global.CurrentTime" render="Label" position="1100,672" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="background" foregroundColor="#00a1d1ff" transparent="1">
-        <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
+        <widget source="global.CurrentTime" render="Label" position="1100,672" size="124,26" zPosition="2" font="LCD;22" halign="left" backgroundColor="background" foregroundColor="#00a1d1ff" transparent="1">
+            <convert type="ClockToText">Format:%d.%m.%Y</convert>
+        </widget>
     <!-- Nombre del Canal - Service Name -->
-    <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-        <convert type="ServiceName">Name</convert>
-    </widget>
-	<widget font="Regular;24" halign="left" position="317,592" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1" zPosition="2">
-		<convert type="EventName">Name</convert>
-	</widget>	
+        <widget source="session.CurrentService" render="Label" position="350,521" size="563,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+	    <widget font="Regular;24" halign="left" position="317,592" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="620,29" source="session.Event_Now" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>	
     <!-- Evento Corrente - Event Now -->
-    <widget source="session.Event_Now" render="Label" position="232,592" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
-        <convert type="EventTime">StartTime</convert>
-        <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="945,593" size="101,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
-        <convert type="EventTime">Remaining</convert>
-        <convert type="RemainingToText">NoSeconds</convert>
-    </widget>
+        <widget source="session.Event_Now" render="Label" position="232,592" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="945,593" size="101,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#0077d8e6" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">NoSeconds</convert>
+        </widget>
     <!-- Prossimo Evento - Event Next -->
-    <widget source="session.Event_Next" render="Label" position="232,640" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-        <convert type="EventTime">StartTime</convert>
-        <convert type="ClockToText">Default</convert>
-    </widget>
-	<widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
-		<convert type="EventName">Name</convert>
-	</widget>	
-    <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">NoSeconds</convert>
-    </widget>
+        <widget source="session.Event_Next" render="Label" position="232,640" size="82,28" zPosition="2" halign="left" font="Regular;24" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
+	    <widget font="Regular;24" halign="left" noWrap="1" position="317,640" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="625,29" source="session.Event_Next" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1" zPosition="2">
+		    <convert type="EventName">Name</convert>
+	    </widget>	
+        <widget source="session.Event_Next" render="Label" position="957,640" size="89,28" zPosition="2" halign="right" font="Regular;22" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">NoSeconds</convert>
+        </widget>
     <!-- Tempo Trascorso - Progress Bar -->
-    <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
-        <convert type="EventTime">Progress</convert>
-    </widget>
+        <widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="231,626" size="815,9" zPosition="7" transparent="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>
     <!-- ePixmap position="235,613" zPosition="2" size="885,6" pixmap="EGAdriatic/po_bar.png" alphatest="on" -->
     <!-- Posizione Picon - Picon Position -->
-    <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="blend">
-        <convert type="ServiceName">Reference</convert>
-    </widget>
+        <widget source="session.CurrentService" render="Picon" position="75,589" size="130,80" zPosition="10" transparent="1" alphatest="blend">
+            <convert type="ServiceName">Reference</convert>
+        </widget>
 	
     <!-- TIPO TUNER SELECCIONADO -->
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-        <convert type="FrontendInfo">TYPE</convert>
-        <convert type="ValueRange">0,0</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-        <convert type="FrontendInfo">TYPE</convert>
-        <convert type="ValueRange">1,1</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-        <convert type="FrontendInfo">TYPE</convert>
-        <convert type="ValueRange">2,2</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>	
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-S2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+            <convert type="FrontendInfo">TYPE</convert>
+            <convert type="ValueRange">0,0</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-T/T2" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+            <convert type="FrontendInfo">TYPE</convert>
+            <convert type="ValueRange">1,1</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.FrontendInfo" render="FixedLabel" text="DVB-C" position="1100,550" zPosition="3" size="81,24" font="LCD;17" halign="center" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+            <convert type="FrontendInfo">TYPE</convert>
+            <convert type="ValueRange">2,2</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>	
 
     <!-- TUNERS DISPONIBLES + DISPOSICION -->
-		<widget source="session.FrontendInfo" render="Label" position="1100,572" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" transparent="1">
+	    <widget source="session.FrontendInfo" render="Label" position="1100,572" size="80,21" font="LCD;19" halign="center" noWrap="1" zPosition="2" transparent="1">
 		    <convert type="FrontendInfo">STRING</convert>
-		</widget>
+	    </widget>
     <!-- Sezione Numero di cannale - Numero di cannale Section -->
-    <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
+        <widget source="session.CurrentService" render="ChannelNumber" position="279,555" size="69,26" font="Regular; 24" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2"/>
     <!-- Sezione SNR - SNR Section -->
     <!-- eLabel text="Snr :" zPosition="1" position="220,684" size="60,20" halign="left" font="Regular;18"  transparent="1" backgroundColor="transpBlack" -->
-    <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
-	<widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
-		<convert type="EGCpuUsage">$0</convert>
-	</widget>
+        <eLabel text="CPU" zPosition="2" position="740,556" foregroundColor="#0000fafa" backgroundColor="black" size="30,10" font="xRegular;10"/>	
+	    <widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
+		    <convert type="EGCpuUsage">$0</convert>
+	    </widget>
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-	<eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
-	<eLabel text="AGC" zPosition="2" position="777,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>	
-    <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
-		<convert type="FrontendInfo">SNR</convert>
-    </widget>
-	<widget source="session.FrontendStatus" render="Progress" position="822,573" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
-		<convert type="FrontendInfo">AGC</convert>
-	</widget>	
+	    <eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
+	    <eLabel text="AGC" zPosition="2" position="777,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>	
+        <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
+		    <convert type="FrontendInfo">SNR</convert>
+        </widget>
+	    <widget source="session.FrontendStatus" render="Progress" position="822,573" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
+		    <convert type="FrontendInfo">AGC</convert>
+	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-    <widget source="session.FrontendStatus" render="Label" position="980,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
-        <convert type="FrontendInfo">SNR</convert>
-    </widget>
-    <widget source="session.FrontendStatus" render="Label" position="980,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
-        <convert type="FrontendInfo">AGC</convert>
-    </widget>
+        <widget source="session.FrontendStatus" render="Label" position="980,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+            <convert type="FrontendInfo">SNR</convert>
+        </widget>
+        <widget source="session.FrontendStatus" render="Label" position="980,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+            <convert type="FrontendInfo">AGC</convert>
+        </widget>
     <!-- eLabel text="Ber :" zPosition="3" position="545,683" size="70,24" font="Regular;18" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1" 
 		<widget source="session.FrontendStatus" render="Label" 	position="600,683" zPosition="3" size="70,24" font="Regular;19" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1">
 			<convert type="FrontendInfo">BER</convert> 
 		</widget> 	
 	-->
     <!-- Nome Provider - Provider Name -->
-    <widget source="session.CurrentService" render="Label" position="69,557" size="159,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
-      <convert type="ServiceName">Provider</convert>
-    </widget>
+        <widget source="session.CurrentService" render="Label" position="69,557" size="159,22" zPosition="2" font="LCD;18" backgroundColor="background" halign="center" foregroundColor="#00a1d1ff" transparent="1">
+            <convert type="ServiceName">Provider</convert>
+        </widget>
     <!-- Risoluzione Video - Video Resolution -->
-	<widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
-	    <convert type="PliExtraInfo">ResolutionString</convert>
-	</widget>	
+	    <widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
+	        <convert type="PliExtraInfo">ResolutionString</convert>
+	    </widget>	
     <!-- FrameRate Video 
-	        <widget source="session.CurrentService" render="Label" zPosition="4" position="1165,681" size="60,20" halign="left" font="Regular;20" foregroundColor="#808080" transparent="1" backgroundColor="transpBlack">
+			<widget source="session.CurrentService" render="Label" zPosition="4" position="1165,681" size="60,20" halign="left" font="Regular;20" foregroundColor="#808080" transparent="1" backgroundColor="transpBlack">
             		<convert type="ServiceInfo">Framerate</convert>	
             	</widget>
         -->
     <!-- Selezione Dolby System -->
-    <ePixmap position="412,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/dolby_of.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/dolby_on.png" position="412,554" zPosition="4" size="77,30" alphatest="on">
-        <convert type="ServiceInfo">IsMultichannel</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
+        <ePixmap position="412,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/dolby_of.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/dolby_on.png" position="412,554" zPosition="4" size="77,30" alphatest="on">
+            <convert type="ServiceInfo">IsMultichannel</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Selezione WideScreen Format -->
-    <ePixmap position="491,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/icon_format_off.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/wide_on.png" position="491,554" zPosition="4" size="77,30" alphatest="on">
-        <convert type="ServiceInfo">IsWidescreen</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
+        <ePixmap position="491,554" zPosition="2" size="77,30" pixmap="EGAdriatic/icons/icon_format_off.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/wide_on.png" position="491,554" zPosition="4" size="77,30" alphatest="on">
+            <convert type="ServiceInfo">IsWidescreen</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Selezione HD-SD - Selection -->
-    <ePixmap position="569,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/hd_off.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/hd_on.png" position="569,554" size="49,28" zPosition="4" alphatest="on">
-        <convert type="ServiceInfo">VideoWidth</convert>
-        <convert type="ValueRange">721,1980</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
+        <ePixmap position="569,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/hd_off.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/hd_on.png" position="569,554" size="49,28" zPosition="4" alphatest="on">
+            <convert type="ServiceInfo">VideoWidth</convert>
+            <convert type="ValueRange">721,1980</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
     <!-- Icona Video text - Video Text Icon -->
-    <ePixmap position="674,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/ico_txt_off.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/ico_txt_on.png" position="674,554" zPosition="4" size="49,28" alphatest="on">
-    </widget> 
+        <ePixmap position="674,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/ico_txt_off.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/ico_txt_on.png" position="674,554" zPosition="4" size="49,28" alphatest="on">
+        </widget> 
     <!-- Icona Crypt - Crypt Icon -->
-    <ePixmap position="621,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/crypt_of.png" alphatest="on"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/crypt_on.png" position="621,554" zPosition="4" size="49,28" alphatest="on">
-        <convert type="ServiceInfo">IsCrypted</convert>
-        <convert type="ConditionalShowHide"/>
-    </widget>
-    <!-- Icone Registrazione - Icons Recorder -->
-    <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-        <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
-    <!-- Icone Sottotitoli - Subtitle Icons-->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/icon_sub.png" position="726,555" zPosition="4" size="49,28" alphatest="on">
-			<convert type="ServiceInfo">SubservicesAvailable</convert>
-			<convert type="ConditionalShowHide"/>
+        <ePixmap position="621,554" zPosition="2" size="49,28" pixmap="EGAdriatic/icons/crypt_of.png" alphatest="on"/>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/crypt_on.png" position="621,554" zPosition="4" size="49,28" alphatest="on">
+            <convert type="ServiceInfo">IsCrypted</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
     <!-- Icone Registrazione - Icons Recorder -->
-    <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
-        <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
+        <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>
+    <!-- Icone Sottotitoli - Subtitle Icons-->
+	    <widget source="session.CurrentService" render="Pixmap" pixmap="EGAdriatic/icons/icon_sub.png" position="726,555" zPosition="4" size="49,28" alphatest="on">
+		    <convert type="ServiceInfo">SubservicesAvailable</convert>
+		    <convert type="ConditionalShowHide"/>
+        </widget>
+    <!-- Icone Registrazione - Icons Recorder -->
+        <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="372,557" zPosition="3" size="22,22" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
 	
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="265,679" 
@@ -3510,10 +3510,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">OrbitalPosition</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">OrbitalPosition</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="325,679" 
@@ -3525,10 +3525,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderFrequency</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderFrequency</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="381,679" 
@@ -3540,10 +3540,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderPolarization</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderPolarization</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="403,679" 
@@ -3555,10 +3555,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderSymbolRate</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderSymbolRate</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="460,679" 
@@ -3570,10 +3570,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderFEC</convert>
-	  </widget>
+ 	    <convert type="PliExtraInfo">TransponderFEC</convert>
+	    </widget>
 
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="496,679" 
@@ -3585,17 +3585,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="PliExtraInfo">TransponderModulation</convert>
-	 </widget>
-		<widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
- 			<convert type="PliExtraInfo">CryptoSpecial</convert>
- 		</widget>
-		<widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
+ 	    <convert type="PliExtraInfo">TransponderModulation</convert>
+	    </widget>
+	    <widget source="session.CurrentService" render="Label" position="480,679" size="250,24" font="Regular;15" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#11404040" transparent="1" zPosition="5">
+ 		    <convert type="PliExtraInfo">CryptoSpecial</convert>
+ 	    </widget>
+	    <widget source="session.CurrentService" render="Label" position="750,671" size="400,60" font="Regular;14" valign="top" halign="left" foregroundColor="#004ccbde" backgroundColor="#11404040" transparent="1" zPosition="5">
 		    <convert type="CryptoInfo">VerboseInfo</convert>
-	</widget>	  
-    <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>	
-  	  <widget source="session.Event_Now" render="Label" position="65,60" size="70,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
-		  <convert type="EventName">NameNow</convert>
+	    </widget>	  
+        <ePixmap position="372,557" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>	
+  	    <widget source="session.Event_Now" render="Label" position="65,60" size="70,24" font="Regular;22" halign="left" noWrap="1" foregroundColor="#00a1d1ff" backgroundColor="background" transparent="1" zPosition="1">
+		    <convert type="EventName">NameNow</convert>
 		</widget>
 		<widget font="Regular;22" halign="left" valign="center" noWrap="1" position="140,60" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" size="465,24" source="session.Event_Now" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
@@ -3603,7 +3603,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.Event_Now" render="Label" position="95,100" size="70,35" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="1" halign="right" noWrap="1" valign="top">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">
-		  </convert>
+		</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="170,100" size="80,45" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="1" noWrap="1" valign="top">
 		    <convert type="EventTime">EndTime</convert>
@@ -3614,7 +3614,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="RemainingToText">NoSeconds</convert>
 		</widget>
 		<widget source="session.Event_Now" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="105,140" size="500,300" zPosition="2" font="Regular;20" halign="left" foregroundColor="#004ccbde" backgroundColor="background" transparent="1">
-		  <convert type="EventName">ExtendedDescription</convert>
+		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
 	<!-- Event Next -->
 		<widget source="session.Event_Next" render="Label" position="645,60" size="102,24" font="Regular;22" halign="left" foregroundColor="#004ccbde" backgroundColor="background" noWrap="1" transparent="1" zPosition="1">
@@ -3663,7 +3663,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		
-	<eLabel 
+	    <eLabel 
 		text="sid" 
 		position="345,522" 
 		size="30,15"  
@@ -3673,9 +3673,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		halign="center" 
 		transparent="1" 
 		zPosition="3"
-	/>
+	    />
 	
-	<widget 
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="370,524" 
@@ -3687,10 +3687,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="ServiceInfo">Sid</convert>
-	  </widget>
+ 	    <convert type="ServiceInfo">Sid</convert>
+	    </widget>
 
-	<eLabel 
+	    <eLabel 
 		text="pmt" 
 		position="345,533" 
 		size="30,15"  
@@ -3700,8 +3700,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		foregroundColor="#00a1d1ff" 
 		transparent="1" 
 		zPosition="3"
-	/>
-	  <widget 
+	    />
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="370,535" 
@@ -3713,10 +3713,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="ServiceInfo">PmtPid</convert>
-	  </widget>
+ 	    <convert type="ServiceInfo">PmtPid</convert>
+	    </widget>
 
-	<eLabel 
+	    <eLabel 
 		text="audio" 
 		position="857,521" 
 		size="40,50"  
@@ -3726,8 +3726,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		foregroundColor="#00a1d1ff" 
 		transparent="1" 
 		zPosition="3"
-	/>
-	<widget 
+	    />
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="892,523" 
@@ -3739,10 +3739,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="ServiceInfo">AudioPid</convert>
-	  </widget>
+ 	    <convert type="ServiceInfo">AudioPid</convert>
+	    </widget>
 
-	<eLabel 
+	    <eLabel 
 		text="video" 
 		position="857,533" 
 		size="40,50"  
@@ -3752,8 +3752,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		foregroundColor="#00a1d1ff" 
 		transparent="1" 
 		zPosition="3"
-	/>
-	<widget 
+	    />
+	    <widget 
 		source="session.CurrentService" 
 		render="Label" 
 		position="892,535" 
@@ -3765,8 +3765,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		valign="top" 
 		zPosition="5" 
 		transparent="1">   
- 	      <convert type="ServiceInfo">VideoPid</convert>
-	  </widget>
+ 	    <convert type="ServiceInfo">VideoPid</convert>
+	    </widget>
 		
 	</screen>
 
@@ -3798,11 +3798,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="66,137" size="730,440" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (20, 5), size = (32, 32), png = 0),
-					MultiContentEntryText(pos = (60, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 40
+				MultiContentEntryPixmapAlphaTest(pos = (20, 5), size = (32, 32), png = 0),
+				MultiContentEntryText(pos = (60, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				],
+				"fonts": [gFont("Regular", 22)],
+				"itemHeight": 40
 				}
 			</convert>
 		</widget>
@@ -3818,11 +3818,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="66,135" size="690,450" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="black" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-					MultiContentEntryPixmapAlphaTest(pos = (640, 0), size = (40, 40), png = 1),
-					],
-					"fonts": [gFont("Regular", 20)],
-					"itemHeight": 30
+				MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaTest(pos = (640, 0), size = (40, 40), png = 1),
+				],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 30
 				}
 			</convert>
 		</widget>
@@ -3838,13 +3838,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="EGAdriatic/menu/ico_crossepg.png" alphatest="on"/>
 		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#00333333" transparent="1">
 			<convert type="TemplatedMultiContent">
-			{"template": [
-					MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-					MultiContentEntryPixmapAlphaTest(pos = (640, 0), size = (40, 40), png = 1),
-					],
-					"fonts": [gFont("Regular", 20)],
-					"itemHeight": 30
-			}
+			    {"template": [
+			    MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				MultiContentEntryPixmapAlphaTest(pos = (640, 0), size = (40, 40), png = 1),
+				],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 30
+			    }
 			</convert>
 		</widget>
 		<widget position="600,625" size="250,36" name="key_blue" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
@@ -3898,7 +3898,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
 			<convert type="ServiceName">Name</convert>
@@ -4059,16 +4059,16 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   		<widget source="menu" render="Listbox" position="80,140" size="718,440" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls705x110.png" backgroundColor="black" transparent="1" zPosition="-1">
   		    <convert type="TemplatedMultiContent">
                 {"template": [
-						MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
-						MultiContentEntryText(pos = (100, 0), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff),
-						MultiContentEntryText(pos = (335, 3), size = (60, 21), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x006da6ff),						
-						MultiContentEntryText(pos = (100, 20), size = (560, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
-						MultiContentEntryText(pos = (405, 2), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x006da6ff),
-						MultiContentEntryText(pos = (100, 40), size = (593, 67), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
-						MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(83, 50), png=6, flags = BT_SCALE)
-					],
-				 "fonts": [gFont("Regular", 22), gFont("Regular", 14), gFont("xRegular", 18), gFont("Regular", 15)],
-				 "itemHeight": 110
+				MultiContentEntryText(pos = (80, 0), size = (10, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+				MultiContentEntryText(pos = (100, 0), size = (280, 21), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x0000baff),
+				MultiContentEntryText(pos = (335, 3), size = (60, 21), font = 1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP, text = 7, color = 0x006da6ff),						
+				MultiContentEntryText(pos = (100, 20), size = (560, 22), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x006da6ff, color_sel = 0x006da6ff),
+				MultiContentEntryText(pos = (405, 2), size = (280, 17), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00ffffff, color_sel = 0x006da6ff),
+				MultiContentEntryText(pos = (100, 40), size = (593, 67), font = 3, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = 0x00a1d1ff, color_sel = 0x00ffffff),
+				MultiContentEntryPixmapAlphaBlend(pos=(0, 25), size=(83, 50), png=6, flags = BT_SCALE)
+				],
+				"fonts": [gFont("Regular", 22), gFont("Regular", 14), gFont("xRegular", 18), gFont("Regular", 15)],
+				"itemHeight": 110
 				}
   		    </convert>
   		</widget>
@@ -4256,7 +4256,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_red" render="Label" position="5,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_green" render="Label" position="205,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     <!-- pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
 	<!-- service progress bar -->
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
@@ -4274,14 +4274,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="text" position="845,380" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget source="list" render="Listbox" position="85,160" size="713,370" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
 		    <convert type="TemplatedMultiContent">
-		    {"template": 
-		       [MultiContentEntryPixmapAlphaTest(pos=(0,2),size=(97,65), png=2), # Thumbnail
-		       MultiContentEntryText(pos=(110,25), size=(575,22),font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
-		       MultiContentEntryText(pos=(215, 300), size=(200,22),font=1, flags=RT_HALIGN_LEFT, text=4), # Views
-		       MultiContentEntryText(pos=(455,350), size=(200,22),font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
-		    ],
-			"fonts": [gFont("Regular",20), gFont("Regular",16)],
-		    "itemHeight": 60}
+		        {"template": 
+		        [MultiContentEntryPixmapAlphaTest(pos=(0,2),size=(97,65), png=2), # Thumbnail
+		        MultiContentEntryText(pos=(110,25), size=(575,22),font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+		        MultiContentEntryText(pos=(215, 300), size=(200,22),font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+		        MultiContentEntryText(pos=(455,350), size=(200,22),font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+		        ],
+			    "fonts": [gFont("Regular",20), gFont("Regular",16)],
+		        "itemHeight": 60}
 			</convert>
 		</widget>
 		<widget name="thumbnail" position="0,0" size="97,65"/> # Thumbnail size in list		
@@ -4313,11 +4313,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="85,138" size="713,370" zPosition="3" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=(0,0), size=(400,45), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
-					MultiContentEntryText(pos=(400,15), size=(100,33), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
-					MultiContentEntryProgress(pos=(520,10), size=(150,33), percent=-3), # Progress
-					MultiContentEntryText(pos=(690,15), size=(95,33), font=0, flags=RT_HALIGN_LEFT, text=4), # Percentage
-					],
+				MultiContentEntryText(pos=(0,0), size=(400,45), font=0, flags=RT_HALIGN_LEFT, text=1), # Title
+				MultiContentEntryText(pos=(400,15), size=(100,33), font=0, flags=RT_HALIGN_RIGHT, text=2), # State
+				MultiContentEntryProgress(pos=(520,10), size=(150,33), percent=-3), # Progress
+				MultiContentEntryText(pos=(690,15), size=(95,33), font=0, flags=RT_HALIGN_LEFT, text=4), # Percentage
+				],
 				"fonts": [gFont("Regular",22)],
 				"itemHeight": 50}
 			</convert>
@@ -4406,23 +4406,23 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="92,118" size="685,29" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls1120x28.png" transparent="1"/>
 		<widget source="feedlist" render="Listbox" position="64,146" size="712,400" zPosition="1" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls705x110.png" transparent="1">
 			<convert type="TemplatedMultiContent">
-			{"templates":
+			    {"templates":
 				{"default": (100,[
-						MultiContentEntryPixmapAlphaTest(pos = (10, 12), size = (100, 75), png = 4), # index 4 is the thumbnail
-						MultiContentEntryText(pos = (120, 10), size = (510, 25), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
-						MultiContentEntryText(pos = (120, 40), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
-						MultiContentEntryText(pos = (120, 70), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
-						MultiContentEntryText(pos = (400, 40), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
-						MultiContentEntryText(pos = (400, 70), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
-					]),
+				MultiContentEntryPixmapAlphaTest(pos = (10, 12), size = (100, 75), png = 4), # index 4 is the thumbnail
+				MultiContentEntryText(pos = (120, 10), size = (510, 25), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 1 is the Title
+				MultiContentEntryText(pos = (120, 40), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 5), # index 5 is the Published Date
+				MultiContentEntryText(pos = (120, 70), size = (300, 20), font=1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 6), # index 6 is the Views Count
+				MultiContentEntryText(pos = (400, 40), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 7), # index 7 is the duration
+				MultiContentEntryText(pos = (400, 70), size = (200, 20), font=1, flags = RT_HALIGN_RIGHT | RT_VALIGN_TOP| RT_WRAP, text = 8), # index 8 is the ratingcount
+				]),
 				"state": (100,[
-						MultiContentEntryText(pos = (10, 10), size = (600, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (10, 40), size = (600, 50), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
-					])
+				MultiContentEntryText(pos = (10, 10), size = (600, 28), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (10, 40), size = (600, 50), font=3, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP| RT_WRAP, text = 1), # index 2 is the description
+				])
 				},
 				"fonts": [gFont("Regular", 22),gFont("Regular", 18),gFont("Regular", 26),gFont("Regular", 20)],
 				"itemHeight": 80
-			}
+			    }
 			</convert>
 		</widget>
 		<ePixmap position="838,638" size="60,40" alphatest="blend" zPosition="3" pixmap="EGAdriatic/buttons/button_green_off.png"/>
@@ -4447,8 +4447,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
     <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-                <convert type="ClockToText">Format:%H:%M :%S</convert>
-                </widget>
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
 	</screen>
 	<!-- (150) ####### MyTubeSuggestionsListScreen ####### -->
 	<screen name="MyTubeSuggestionsListScreen" title="MyTube ListScreen" position="540,90" size="660,500" zPosition="2"  flags="wfNoBorder">
@@ -4456,9 +4456,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="suggestionslist" render="Listbox" position="10,10" zPosition="6" size="640,290" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryText(pos = (440, 2), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
-					],
+				MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (440, 2), size = (180, 24), font=1, flags = RT_HALIGN_RIGHT, text = 1), # index 1 are the rtesults
+				],
 				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
 				"itemHeight": 29
 				}
@@ -4471,8 +4471,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="historylist" render="Listbox" position="10,10" zPosition="7" size="640,377" scrollbarMode="showOnDemand"  transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-					],
+				MultiContentEntryText(pos = (10, 2), size = (420, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				],
 				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
 				"itemHeight": 29
 				}
@@ -4499,25 +4499,25 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="stars" position="70,305" size="100,20" pixmap="EGAdriatic/starsbar_filled.png" zPosition="6" transparent="1"/>
 		<widget source="infolist" render="Listbox" 	position="360,70" size="740,135" zPosition="6" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
-			{"templates":
+			    {"templates":
 				{"default": (135,[
-						MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (180, 135), png = 0), # index 0 is the thumbnail
-						MultiContentEntryPixmapAlphaTest(pos = (190, 0), size = (180, 135), png = 1), # index 0 is the thumbnail
-						MultiContentEntryPixmapAlphaTest(pos = (370, 0), size = (180, 135), png = 2), # index 0 is the thumbnail
-						MultiContentEntryPixmapAlphaTest(pos = (550, 0), size = (180, 135), png = 3), # index 0 is the thumbnail							
-					]),
+				MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (180, 135), png = 0), # index 0 is the thumbnail
+				MultiContentEntryPixmapAlphaTest(pos = (190, 0), size = (180, 135), png = 1), # index 0 is the thumbnail
+				MultiContentEntryPixmapAlphaTest(pos = (370, 0), size = (180, 135), png = 2), # index 0 is the thumbnail
+				MultiContentEntryPixmapAlphaTest(pos = (550, 0), size = (180, 135), png = 3), # index 0 is the thumbnail							
+				]),
 				"state": (135,[
-						MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
-					])
+				MultiContentEntryText(pos = (0, 35), size = (740, 65), font=2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER| RT_WRAP, text = 0), # index 0 is the name
+				])
 				},
 				"fonts": [gFont("Regular", 20),gFont("Regular", 14),gFont("Regular", 28)],
 				"itemHeight": 135
-			}
+			    }
 			</convert>
 		</widget>
 		<widget name="detailtext" position="370,225" size="730,280" zPosition="10" font="Regular;22"  backgroundColor="darkgrey" transparent="1"/>
 		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-        	<widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
+        <widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center"  backgroundColor="black" transparent="1"/>
 		<widget name="thumbnail" position="0,0" size="100,135" alphatest="on"/> 
 	</screen>
 	<!-- (154) ####### MyTubeSettingsScreen ####### -->
@@ -4533,11 +4533,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="tasklist" render="Listbox" position="20,20" size="1120,500" zPosition="7" scrollbarMode="showOnDemand"  transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 3), size = (210, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
-						MultiContentEntryText(pos = (230, 3), size = (160, 24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
-						MultiContentEntryProgress(pos = (400, 3), size = (110, 24), percent = -3), # index 3 should be progress 
-						MultiContentEntryText(pos = (520, 3), size = (110, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
-					],
+				MultiContentEntryText(pos = (10, 3), size = (210, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+				MultiContentEntryText(pos = (230, 3), size = (160, 24), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+				MultiContentEntryProgress(pos = (400, 3), size = (110, 24), percent = -3), # index 3 should be progress 
+				MultiContentEntryText(pos = (520, 3), size = (110, 24), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+				],
 				"fonts": [gFont("Regular", 22),gFont("Regular", 18)],
 				"itemHeight": 30
 				}
@@ -4589,12 +4589,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="80,138" size="715,330" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (80, 5), size = (420, 23), font = 0, flags = RT_HALIGN_LEFT, text = 0),
-						MultiContentEntryText(pos = (120, 25), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
-						MultiContentEntryText(pos = (170, 47), size = (400, 17), font = 2, flags = RT_HALIGN_LEFT, text = 2),
-					],
-				 "fonts": [gFont("Regular", 21), gFont("Regular", 19), gFont("Regular", 16)],
-				 "itemHeight": 65
+				MultiContentEntryText(pos = (80, 5), size = (420, 23), font = 0, flags = RT_HALIGN_LEFT, text = 0),
+				MultiContentEntryText(pos = (120, 25), size = (380, 20), font = 1, flags = RT_HALIGN_LEFT, text = 1),
+				MultiContentEntryText(pos = (170, 47), size = (400, 17), font = 2, flags = RT_HALIGN_LEFT, text = 2),
+				],
+				"fonts": [gFont("Regular", 21), gFont("Regular", 19), gFont("Regular", 16)],
+				"itemHeight": 65
 				}
 			</convert>
 		</widget>
@@ -4680,13 +4680,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="timerlist" render="Listbox" position="80,140" size="690,400" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1">
 		    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos=( 10,5),size=(595,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=( 10,32),size=(595,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=( 10,57),size=(310,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
-					MultiContentEntryText(pos=(330,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
-					],
-					"fonts": [gFont("Regular",22),gFont("Regular",20)],
-					"itemHeight": 85
+				MultiContentEntryText(pos=( 10,5),size=(595,26),text = 3,font = 0,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+				MultiContentEntryText(pos=( 10,32),size=(595,24),text = 0,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+				MultiContentEntryText(pos=( 10,57),size=(310,24),text = 4,font = 1,flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+				MultiContentEntryText(pos=(330,57),size=(240,24),text = 2,font = 1,flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER),
+				],
+				"fonts": [gFont("Regular",22),gFont("Regular",20)],
+				"itemHeight": 85
 				}
 		    </convert>
 		</widget>
@@ -4797,25 +4797,25 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		
 	<!-- File Name -->
 		<widget source="Service" render="Label" position="660,150" size="100,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
-		  <convert type="MovieInfo">FileSize</convert>
+		    <convert type="MovieInfo">FileSize</convert>
 		</widget>
 		<widget source="Service" render="Label" position="660,175" size="290,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
-		  <convert type="ServiceTime">StartTime</convert>
-		  <convert type="ClockToText">ShortDate</convert>
+		    <convert type="ServiceTime">StartTime</convert>
+		    <convert type="ClockToText">ShortDate</convert>
 		</widget>
 		<widget source="Service" render="Label" position="660,200" size="80,25" font="Regular;20" valign="center" foregroundColor="green" backgroundColor="#00203e69" transparent="1" zPosition="4">
-		  <convert type="ServiceTime">Duration</convert>
-		  <convert type="ClockToText">AsLength</convert>
+		    <convert type="ServiceTime">Duration</convert>
+		    <convert type="ClockToText">AsLength</convert>
 		</widget>				
 		
 	<!-- Time Remaining -->
 		<widget source="session.CurrentService" render="Label" position="660,225" size="100,40" font="Regular;20" halign="center" zPosition="4" foregroundColor="#0000fafa" backgroundColor="black" transparent="1">
-		  <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 		
 	<!-- Time -->
 		<widget source="session.CurrentService" render="Label" position="660,250" size="90,22" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="4">
-		  <convert type="ServicePosition">Position,ShowHours</convert>
+		    <convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>			
 		
 	<!-- Record Name -->
@@ -4844,7 +4844,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="list" zPosition="1" position="60,146" size="738,399" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="135,560" zPosition="4" size="40,30" pixmap="EGAdriatic/icons/key_info2.png" transparent="1" alphatest="blend"/>
 		<widget name="freeDiskSpace" position="180,565" halign="center" valign="center" zPosition="4" size="200,25" font="Regular;22" foregroundColor="#004ccbde" transparent="1"/>
-       <widget name="TrashcanSize" position="400,515" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" valign="center" halign="left" zPosition="2" transparent="1"/>				
+        <widget name="TrashcanSize" position="400,515" size="300,120" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" valign="center" halign="left" zPosition="2" transparent="1"/>				
 		<widget name="DescriptionBorder" position="10,400" size="503,0" zPosition="3" transparent="1"/>
         <widget name="chosenletter" position="845,345" size="380,185" font="Regular;50" halign="center" valign="center" transparent="1" zPosition="4"/>
         <widget name="movie_sort" position="100,125" size="35,20" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png,skin_default/icons/rep.png"	zPosition="10" transparent="1" alphatest="on"/>
@@ -5098,7 +5098,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
             <convert type="ClockToText">Format::%S</convert>
         </widget>		
 		<widget source="session.CurrentService" render="Label" position="361,565" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00353535">
-		<convert type="ServiceName">Name</convert>
+		    <convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,569" size="74,26" zPosition="2" alphatest="blend">
@@ -5410,7 +5410,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="740,13" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#00a1d1ff">
 		<convert type="MSNWeather">temperature_high,day3</convert>
-			</widget>
+	    </widget>
 		<widget noWrap="1" backgroundColor="background" font="Regular;16" render="Label" position="740,30" size="40,26" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="#004ccbde">
 			<convert type="MSNWeather">temperature_low,day3</convert>
 		</widget>
@@ -5600,10 +5600,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="EGAdriatic/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (50, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
-					],
-					"fonts": [gFont("Regular", 22)],
-					"itemHeight": 38
+				MultiContentEntryText(pos = (50, 5), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				],
+				"fonts": [gFont("Regular", 22)],
+				"itemHeight": 38
 				}
 			</convert>
 		</widget>
@@ -5620,12 +5620,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="80,138" size="715,410" selectionPixmap="EGAdriatic/icons/ls700x38.png" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaBlend(pos = (15, 5), size = (32, 32), png = 0),
-					MultiContentEntryText(pos = (50, 5), size = (200, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
-					MultiContentEntryText(pos = (270, 5), size = (225, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
-					],
-					"fonts": [gFont("Regular", 20)],
-					"itemHeight": 38
+				MultiContentEntryPixmapAlphaBlend(pos = (15, 5), size = (32, 32), png = 0),
+				MultiContentEntryText(pos = (50, 5), size = (200, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				MultiContentEntryText(pos = (270, 5), size = (225, 28), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_TOP, text = 2),
+				],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 38
 				}
 			</convert>
 		</widget>
@@ -5850,14 +5850,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="860,414" zPosition="2" size="370,204" pixmap="EGAdriatic/menu/ico_plugins.png" alphatest="blend" transparent="1"/>		
 		<widget source="list" render="Listbox" position="80,138" size="718,450" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x50-a.png" transparent="1">
 		    <convert type="TemplatedMultiContent">
-			      {"template": [
-			      MultiContentEntryText(pos = (125, 0), size = (650, 26), font=0, text = 0),
-			      MultiContentEntryText(pos = (125, 24), size = (650, 24), font=1, color = 0x6da6ff, text = 1),
-			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (100, 40), png = 2),
-			      ],
-			      "fonts": [gFont("Regular", 24),gFont("Regular", 20)],
-			      "itemHeight": 50
-			      }
+			    {"template": [
+			    MultiContentEntryText(pos = (125, 0), size = (650, 26), font=0, text = 0),
+			    MultiContentEntryText(pos = (125, 24), size = (650, 24), font=1, color = 0x6da6ff, text = 1),
+			    MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (100, 40), png = 2),
+			    ],
+			    "fonts": [gFont("Regular", 24),gFont("Regular", 20)],
+			    "itemHeight": 50
+			    }
 		    </convert>
 		</widget>
 	</screen>
@@ -5961,11 +5961,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="menu" render="Listbox" position="70,138" size="728,440" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x50-a1.png" transparent="1">
 		    <convert type="TemplatedMultiContent" transparent="1">
 				{"template": [
-					MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (50, 50), png = 2), # index 4 is the status pixmap
-					MultiContentEntryText(pos = (65, 6), size = (700, 44), font=0, color=0xdddddd, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
-					],
-					"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
-					"itemHeight": 55
+				MultiContentEntryPixmapAlphaBlend(pos = (5, 0), size = (50, 50), png = 2), # index 4 is the status pixmap
+				MultiContentEntryText(pos = (65, 6), size = (700, 44), font=0, color=0xdddddd, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 55
 				}
 		    </convert>
 		</widget>
@@ -6048,12 +6048,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" position="60,145" size="738,420" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls725x52.png" transparent="1">
 		    <convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryText(pos = (0, 2), size = (600, 30), font=0, flags = RT_HALIGN_RIGHT, text = 0),
-					MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (350, 60), png = 1),
-					MultiContentEntryText(pos = (0, 27), size = (700, 30), font=1, flags = RT_VALIGN_TOP | RT_HALIGN_RIGHT, text = 3),
-					],
-					"fonts": [gFont("Regular", 19),gFont("Regular", 17)],
-					"itemHeight": 60
+				MultiContentEntryText(pos = (0, 2), size = (600, 30), font=0, flags = RT_HALIGN_RIGHT, text = 0),
+				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (350, 60), png = 1),
+				MultiContentEntryText(pos = (0, 27), size = (700, 30), font=1, flags = RT_VALIGN_TOP | RT_HALIGN_RIGHT, text = 3),
+				],
+				"fonts": [gFont("Regular", 19),gFont("Regular", 17)],
+				"itemHeight": 60
 				}
 		    </convert>
 		</widget>
@@ -6104,8 +6104,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!--  EGAMI EmuManager FHD -->
 	<screen name="EGEmuManagerStarting" position="center,150" size="700,260" title="EGAMI StartCam">
-	        <widget name="text" position="10,10" size="680,100" halign="center" valign="center" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="transparent" transparent="1" zPosition="1"/>
-	        <widget name="starting" position="center,110" size="128,128" zPosition="1" pixmaps="/usr/share/enigma2/oDreamy-FHD/egami/sc1.png,/usr/share/enigma2/oDreamy-FHD/egami/sc2.png,/usr/share/enigma2/oDreamy-FHD/egami/sc3.png,/usr/share/enigma2/oDreamy-FHD/egami/sc4.png,/usr/share/enigma2/oDreamy-FHD/egami/sc5.png,/usr/share/enigma2/oDreamy-FHD/egami/sc6.png,/usr/share/enigma2/oDreamy-FHD/egami/sc7.png,/usr/share/enigma2/oDreamy-FHD/egami/sc8.png,/usr/share/enigma2/oDreamy-FHD/egami/sc9.png,/usr/share/enigma2/oDreamy-FHD/egami/sc10.png,/usr/share/enigma2/oDreamy-FHD/egami/sc11.png" alphatest="blend"/>
+	    <widget name="text" position="10,10" size="680,100" halign="center" valign="center" font="Regular;22" foregroundColor="#004ccbde" backgroundColor="transparent" transparent="1" zPosition="1"/>
+	    <widget name="starting" position="center,110" size="128,128" zPosition="1" pixmaps="/usr/share/enigma2/oDreamy-FHD/egami/sc1.png,/usr/share/enigma2/oDreamy-FHD/egami/sc2.png,/usr/share/enigma2/oDreamy-FHD/egami/sc3.png,/usr/share/enigma2/oDreamy-FHD/egami/sc4.png,/usr/share/enigma2/oDreamy-FHD/egami/sc5.png,/usr/share/enigma2/oDreamy-FHD/egami/sc6.png,/usr/share/enigma2/oDreamy-FHD/egami/sc7.png,/usr/share/enigma2/oDreamy-FHD/egami/sc8.png,/usr/share/enigma2/oDreamy-FHD/egami/sc9.png,/usr/share/enigma2/oDreamy-FHD/egami/sc10.png,/usr/share/enigma2/oDreamy-FHD/egami/sc11.png" alphatest="blend"/>
 	</screen>
 	<!--  EGAMI Animation OKK -->
 	<screen name="EGConnectionAnimation" position="390,100" size="484,220" title="EGAMI">
@@ -6190,14 +6190,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget source="list" render="Listbox" position="80,138" size="718,400" scrollbarMode="showOnDemand" transparent="1">
 		    <convert type="TemplatedMultiContent">
-			      {"template": [
-			      MultiContentEntryText(pos = (70, 0), size = (650, 24), font=0, text = 0),
-			      MultiContentEntryText(pos = (70, 24), size = (650, 24), font=1, text = 3),
-			      MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (40, 40), png = 1),
-			      ],
-			      "fonts": [gFont("Regular", 23),gFont("Regular", 17)],
-			      "itemHeight": 50
-			      }
+			    {"template": [
+			    MultiContentEntryText(pos = (70, 0), size = (650, 24), font=0, text = 0),
+			    MultiContentEntryText(pos = (70, 24), size = (650, 24), font=1, text = 3),
+			    MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (40, 40), png = 1),
+			    ],
+			    "fonts": [gFont("Regular", 23),gFont("Regular", 17)],
+			    "itemHeight": 50
+			    }
 		    </convert>
 		</widget>
         <panel name="Logo_Egami"/>		

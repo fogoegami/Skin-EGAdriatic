@@ -87,20 +87,20 @@
 		<color name="WindowTitleForeground" color="#00ffffff"/>
 		<color name="WindowTitleBackground" color="black"/>
 	<!-- Main screen border png's -->
-		<borderset name="bsWindow">
-			<pixmap pos="bpTopLeft" 	filename="EGAdriatic/bs_tl.png"/>
-			<pixmap pos="bpTop" 		filename="EGAdriatic/bs_t.png"/>
-			<pixmap pos="bpTopRight" 	filename="EGAdriatic/bs_tr.png"/>
-			<pixmap pos="bpLeft" 		filename="EGAdriatic/bs_l.png"/>
-			<pixmap pos="bpRight" 		filename="EGAdriatic/bs_r.png"/>
-			<pixmap pos="bpBottomLeft" 	filename="EGAdriatic/bs_bl.png"/>
-			<pixmap pos="bpBottom" 		filename="EGAdriatic/bs_b.png"/>
-			<pixmap pos="bpBottomRight"	filename="EGAdriatic/bs_br.png"/>
-		</borderset>
-		<borderset name="bsListboxEntry">
-			<pixmap pos="bpTop" 		filename="EGAdriatic/def-bar.png"/>
-			<pixmap pos="bpBottom" 		filename="EGAdriatic/def-bar.png"/>
-		</borderset>
+	<borderset name="bsWindow">
+	    <pixmap pos="bpTopLeft" filename="EGAdriatic/bs_tl.png"/>
+		<pixmap pos="bpTop" filename="EGAdriatic/bs_t.png"/>
+		<pixmap pos="bpTopRight" filename="EGAdriatic/bs_tr.png"/>
+		<pixmap pos="bpLeft" filename="EGAdriatic/bs_l.png"/>
+		<pixmap pos="bpRight" filename="EGAdriatic/bs_r.png"/>
+		<pixmap pos="bpBottomLeft" filename="EGAdriatic/bs_bl.png"/>
+		<pixmap pos="bpBottom" filename="EGAdriatic/bs_b.png"/>
+		<pixmap pos="bpBottomRight" filename="EGAdriatic/bs_br.png"/>
+	</borderset>
+	<borderset name="bsListboxEntry">
+		<pixmap pos="bpTop" filename="EGAdriatic/def-bar.png"/>
+		<pixmap pos="bpBottom" filename="EGAdriatic/def-bar.png"/>
+	</borderset>
 	</windowstyle>
 	<include filename="/usr/share/enigma2/EGAdriatic/EGAdriatic.xml"/>
 	<include filename="/usr/share/enigma2/EGAdriatic/Templates.xml"/>	
