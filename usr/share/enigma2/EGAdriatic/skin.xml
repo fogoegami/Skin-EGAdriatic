@@ -98,10 +98,150 @@
 		<pixmap pos="bpBottomRight" filename="EGAdriatic/bs_br.png"/>
 	</borderset>
 	<borderset name="bsListboxEntry">
-		<pixmap pos="bpTop" filename="EGAdriatic/def-bar.png"/>
-		<pixmap pos="bpBottom" filename="EGAdriatic/def-bar.png"/>
+	<pixmap pos="bpTop" filename="EGAdriatic/def-bar.png"/>
+	<pixmap pos="bpBottom" filename="EGAdriatic/def-bar.png"/>
 	</borderset>
 	</windowstyle>
 	<include filename="/usr/share/enigma2/EGAdriatic/EGAdriatic.xml"/>
-	<include filename="/usr/share/enigma2/EGAdriatic/Templates.xml"/>	
+	<include filename="/usr/share/enigma2/EGAdriatic/Templates.xml"/>
+	
+	<!-- KodiLite EMBEBIDO -->	
+    <screen name="xbmc4A" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenericaRGYB"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>	
+        <widget source="label1" render="Label" position="550,40" zPosition="3" foregroundColor="#004ccbde" size="260,30" font="Regular;25" halign="center" backgroundColor="#000000" transparent="1"/>
+        <widget source="label20" render="Label" position="100,465" size="300,25" zPosition="3" font="Regular;22" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
+        <widget source="label2" render="Label" position="200,465" size="300,25" zPosition="3" font="Regular;22" backgroundColor="#000000" transparent="1"/>
+		<widget source="label30" render="Label" position="100,495" size="300,25" zPosition="3" font="Regular;22" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
+        <widget source="label3" render="Label" position="200,495" size="300,25" zPosition="3" font="Regular;22" backgroundColor="#000000" transparent="1"/>
+		<widget source="label4" render="Label" position="100,540" size="695,50" zPosition="3" font="Regular;14" valign="center" foregroundColor="#004ccbde" backgroundColor="#000000" transparent="1"/>
+		<widget name="pixmap1" position="835,390" size="385,240" valign="center" halign="center" zPosition="1" backgroundColor="transparent" alphatest="on"/>
+        <!--ePixmap position="100,650" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" /-->
+        <widget name="menu" position="100,140" itemHeight="40" size="698,320" zPosition="2" scrollbarMode="showOnDemand"/>
+        <widget name="info" position="100,520" zPosition="4" size="600,25" foregroundColor="yellow" font="Regular;22" transparent="1" halign="left" valign="center"/>
+		<widget name="bild" position="600,385" size="580,395" zPosition="2"/>
+        <widget name="pixmap" position="100,395" size="400,230" zPosition="3" backgroundColor="transparent" alphatest="on"/>  
+    </screen>
+	<screen name="KodiMenusScreenB" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<widget name="title" zPosition="1" position="450,15" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+	<!-- Fecha y Reloj Digital -->		
+		<widget source="global.CurrentTime" render="Label" position="870,47" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+        </widget>			
+        <widget name="pixmap" position="850,130" size="400,230" zPosition="3" alphatest="on"/>
+        <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
+	    <ePixmap position="850,140" size="400,230" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
+        <widget name="bild" position="480,175"  size="100,100" transparent="1" zPosition="2"/>		
+        <widget name="menu" position="60,145" size="588,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="200,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="blend"/>		
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="445,650" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>		
+		<ePixmap position="1225,675" size="40,22" pixmap="icons/key_info.png" alphatest="blend"/>    
+    </screen>		
+    <screen name="KodiMenusScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+		<widget name="title" zPosition="1" position="450,15" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>	
+		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>	
+	<!-- Fecha y Reloj Digital -->		
+		<widget source="global.CurrentTime" render="Label" position="870,47" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+        </widget>
+        <widget name="menu" position="60,145" size="588,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+        <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>
+        <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
+	    <ePixmap position="850,140" size="400,230" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
+        <widget name="bild" position="480,175"  size="100,100" transparent="1" zPosition="2"/>                     
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="200,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="blend"/>		
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="450,650" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>						
+    </screen>
+
+    <screen name="playscreen" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
+	<!-- Fecha y Reloj Digital -->		
+		<widget source="global.CurrentTime" render="Label" position="870,47" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+        </widget>
+	    <ePixmap position="850,140" size="300,260" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
+        <widget name="list" position="60,145" size="590,350" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+        <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="215,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="blend"/>		
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="455,650" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/yellow.png" position="685,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="695,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="925,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>		
+    </screen>
+	<screen name="Playvid" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
+        <widget name="list" position="260,510" size="100,30" itemHeight="40" zPosition="2"/>
+        <widget name="info" position="450,15" zPosition="4" size="500,200" font="Regular;18" foregroundColor="#004ccbde" transparent="1" halign="center" valign="center"/>
+		<widget name="title" zPosition="3" position="270,512" size="70,25" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="/usr/share/enigma2/EGAdriatic/moviebar.png"/>	
+		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
+			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		</widget>
+    <!-- Orologio Digitale - Digital Clock -->
+        <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#0011181a" transparent="1">
+            <convert type="ClockToText">Default</convert>
+        </widget>	
+        <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#0011181a" transparent="1">
+            <convert type="ClockToText">Format::%S</convert>
+        </widget>		
+		<widget source="session.CurrentService" render="Label" position="361,565" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00353535">
+		    <convert type="ServiceName">Name</convert>
+		</widget>
+		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,569" size="74,26" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<ePixmap pixmap="icons/icon_norec_light.png" position="120,565" zPosition="0" size="22,22" alphatest="blend"/>
+		<widget source="session.RecordState" render="Pixmap" pixmap="icons/icon_rec_light.png" position="120,565" size="22,22" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap pixmap="icons/hd_off.png" position="615,595" size="50,26" zPosition="1" alphatest="blend"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd_on.png" position="615,595" size="50,26" zPosition="2" alphatest="blend">		
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">721,1980</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+    <!-- Resolucion -->		
+	    <widget source="session.CurrentService" render="Label" zPosition="4" position="1095,668" size="93,22" halign="left" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
+	        <convert type="PliExtraInfo">ResolutionString</convert>
+	    </widget>		
+		<widget source="session.CurrentService" render="PositionGauge" position="377,628" size="552,14" zPosition="2" pointer="/usr/share/enigma2/EGAdriatic/pointer.png:13,3">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="938,621" foregroundColor="#0000fafa" size="100,26" font="Regular;22" halign="right" backgroundColor="#001b1b1d" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="229,621" foregroundColor="#0000fafa" size="100,26" font="Regular;22" halign="left" backgroundColor="#001b1d1d" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="950,575" foregroundColor="#0000baff" size="120,24" font="Regular;20" halign="center" backgroundColor="#00353537" transparent="1">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
+		<widget position="405,625" size="0,0" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>	
+    </screen>	
 </skin>
