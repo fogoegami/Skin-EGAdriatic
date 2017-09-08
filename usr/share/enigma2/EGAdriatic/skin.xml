@@ -111,7 +111,7 @@
         <panel name="PIG"/>
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>	
-        <widget source="label1" render="Label" position="550,40" zPosition="3" foregroundColor="#004ccbde" size="260,30" font="Regular;25" halign="center" backgroundColor="#000000" transparent="1"/>
+        <widget source="label1" render="Label" position="450,42" zPosition="3" foregroundColor="#004ccbde" size="260,30" font="Regular;25" halign="center" backgroundColor="#000000" transparent="1"/>
         <widget source="label20" render="Label" position="100,465" size="300,25" zPosition="3" font="Regular;22" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
         <widget source="label2" render="Label" position="200,465" size="300,25" zPosition="3" font="Regular;22" backgroundColor="#000000" transparent="1"/>
 		<widget source="label30" render="Label" position="100,495" size="300,25" zPosition="3" font="Regular;22" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
@@ -124,6 +124,41 @@
 		<widget name="bild" position="600,385" size="580,395" zPosition="2"/>
         <widget name="pixmap" position="100,395" size="400,230" zPosition="3" backgroundColor="transparent" alphatest="on"/>  
     </screen>
+	<!-- Config Boton Amarillo -->	
+    <screen name="Kodiconfig" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenericaRG"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Logo_Egami"/>
+        <widget name="title" zPosition="1" position="240,40" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+        <widget name="config" position="80,138" size="690,420" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<widget name="status" position="845,385" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+		<widget name="statusbar" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>	
+    </screen>
+	<!-- ShowPage -->	
+	<screen name="KodiMenusScreenA" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<widget name="title" zPosition="1" position="450,15" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+	<!-- Fecha y Reloj Digital -->		
+		<widget source="global.CurrentTime" render="Label" position="870,47" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+        </widget>
+        <widget name="list" position="60,145" size="588,360" itemHeight="40" zPosition="-1" scrollbarMode="showOnDemand"/>		
+        <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>
+        <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
+	    <ePixmap position="850,140" size="400,230" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>	
+        <widget name="menu" position="60,145" size="588,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="215,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="blend"/>		
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="495,650" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>   
+    </screen>	
 	<screen name="KodiMenusScreenB" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
 		<widget name="title" zPosition="1" position="450,15" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
@@ -133,8 +168,9 @@
         </widget>
 		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
-        </widget>			
-        <widget name="pixmap" position="850,130" size="400,230" zPosition="3" alphatest="on"/>
+        </widget>
+        <widget name="list" position="60,145" size="588,360" itemHeight="40" zPosition="-1" scrollbarMode="showOnDemand"/>		
+        <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
 	    <ePixmap position="850,140" size="400,230" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="bild" position="480,175"  size="100,100" transparent="1" zPosition="2"/>		
@@ -169,7 +205,7 @@
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_green" position="450,650" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>						
     </screen>
-
+	<!-- Opcion Reproductor y otras opciones -->
     <screen name="playscreen" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
 	<!-- Fecha y Reloj Digital -->		
@@ -193,6 +229,7 @@
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_blue" position="925,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>		
     </screen>
+	<!-- REPRODUCTOR -->	
 	<screen name="Playvid" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
         <widget name="list" position="260,510" size="100,30" itemHeight="40" zPosition="2"/>
         <widget name="info" position="450,15" zPosition="4" size="500,200" font="Regular;18" foregroundColor="#004ccbde" transparent="1" halign="center" valign="center"/>
@@ -243,5 +280,14 @@
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 		<widget position="405,625" size="0,0" name="key_yellow" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>	
-    </screen>	
+    </screen>
+	<!-- Info desde Play -->	
+	<screen name="XBMCAddonsinfoScreen" position="900,7" backgroundColor="transpBlack" size="365,247" flags="wfNoBorder">
+		<eLabel text="Information Codec Video-Audio" position="10,15" size="350,25" halign="center" valign="top" foregroundColor="yellow" font="Regular;21" transparent="1"/>	
+	    <eLabel position="2,2" size="361,1" backgroundColor="#0000fafa" zPosition="2"/>
+	    <eLabel position="2,2" size="1,242" backgroundColor="#0000fafa" zPosition="2"/>
+	    <eLabel position="363,2" size="1,243" backgroundColor="#0000fafa" zPosition="2"/>
+	    <eLabel position="2,244" size="361,1" backgroundColor="#0000fafa" zPosition="2"/>		
+        <widget name="text" position="10,35" size="350,300" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333"/>	
+	</screen>	
 </skin>
