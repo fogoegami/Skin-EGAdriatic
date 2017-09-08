@@ -235,8 +235,8 @@
         <widget name="info" position="450,15" zPosition="4" size="500,200" font="Regular;18" foregroundColor="#004ccbde" transparent="1" halign="center" valign="center"/>
 		<widget name="title" zPosition="3" position="270,512" size="70,25" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="/usr/share/enigma2/EGAdriatic/moviebar.png"/>	
-		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
+			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#0011181a" transparent="1">
