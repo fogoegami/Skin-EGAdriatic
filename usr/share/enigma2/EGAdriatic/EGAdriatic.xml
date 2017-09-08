@@ -987,7 +987,7 @@
 	    <panel name="sR"/>		
 		<widget source="IFtext" render="Label" position="69,135" size="140,24" zPosition="10" font="Regular;24" transparent="1"/>
 		<widget source="IF" render="Label" position="186,135" size="400,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" transparent="1"/>
-		<widget name="menulist" position="70,200" size="710,375" 	scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x26.png" transparent="1"/>
+		<widget name="menulist" position="70,200" size="710,375" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x26.png" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="description" render="Label" position="842,426" size="370,132" zPosition="10" font="Regular;22" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
@@ -2848,17 +2848,17 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (134) ####### CAidSelect ####### -->
 	<screen name="CAidSelect" position="center,center" size="710,240" title="select CAId's">
-		<widget name="list" position="20,20" size="670,310" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="20,20" size="670,310" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="20,455" size="503,30" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<ePixmap position="70,180" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
 		<ePixmap position="390,180" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<widget source="key_red" 	render="Label" position="70,180" zPosition="2"	size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
-		<widget source="key_green" 	render="Label" position="390,180" zPosition="2"	size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<widget source="key_red" render="Label" position="70,180" zPosition="2"	size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<widget source="key_green" render="Label" position="390,180" zPosition="2"	size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 	</screen>
 	 <!-- (135) ####### myProviderSelection ####### -->
 	<screen name="myProviderSelection" position="center,center" size="1160,560" title="Select provider to add...">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
-		<widget name="list" position="20,20" size="1120,420" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="20,20" size="1120,420" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="20,455" size="503,30" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<ePixmap position="32,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
 		<ePixmap position="314,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
@@ -2872,7 +2872,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (136) ####### myChannelSelection ####### -->
 	<screen name="myChannelSelection" position="center,center" size="1160,560" title="Select service to add...">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on"/>
-		<widget name="list" position="20,20" size="1120,420" 	zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="list" position="20,20" size="1120,420" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="20,455" size="503,30" font="Regular;20" halign="center" valign="center" transparent="1"/>
 		<ePixmap position="32,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
 		<ePixmap position="314,500" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
@@ -4353,8 +4353,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- (148) ####### MYTUBE PLAYER ####### (15-02) -->
 	<screen name="MyTubePlayer" position="0,0" size="1280,720" title="MyTube Player" flags="wfNoBorder">
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>	
-		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		<widget source="global.CurrentTime" render="Label" position="1055,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
+			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#0011181a" transparent="1">
@@ -5088,8 +5088,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="state" position="10,2" size="0,0" font="xRegular;17" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="0"/>
 		<widget name="eventname" position="370,70" size="0,0" font="xRegular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="2"/>
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>	
-		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
+			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#0011181a" transparent="1">
@@ -5139,8 +5139,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
     <!-- ####### EMC PLAYER y DVD PLAYER Reproductor ####### -->	
 	<screen name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
 		<ePixmap position="0,500" zPosition="-1" size="1280,218" pixmap="EGAdriatic/moviebar.png"/>
-		<widget source="global.CurrentTime" render="Label" position="1070,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
-			<convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		<widget source="global.CurrentTime" render="Label" position="1050,570" size="130,24" zPosition="2" font="LCD;24" valign="top" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#00232525" transparent="1">
+			<convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#0011181a" transparent="1">
