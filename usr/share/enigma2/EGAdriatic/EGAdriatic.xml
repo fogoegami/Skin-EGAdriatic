@@ -4218,7 +4218,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="backgroundable" render="Pixmap" pixmap="menu/colorbarB.png" position="640,632" size="140,40" alphatest="blend">
 		    <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="645,605" size="135,52" font="Regular;23" halign="left" backgroundColor="black" zPosition="1" transparent="1">
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="650,605" size="135,52" font="Regular;23" halign="left" backgroundColor="black" zPosition="1" transparent="1">
 		    <convert type="ConditionalShowHide"/>
 		</widget>  		
 	</screen>	
