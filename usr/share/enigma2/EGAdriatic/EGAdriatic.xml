@@ -2007,7 +2007,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="key8" position="202,80" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="key9" position="402,82" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="help1" position="30,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key0" position="200,104" size="205,30" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
+		<widget name="key0" position="198,103" size="209,30" font="Console;17" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
 		<widget name="help2" position="432,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>		
 	</screen>
 	<!-- (051) ####### CrashlogAutoSubmitConfiguration ####### -->
