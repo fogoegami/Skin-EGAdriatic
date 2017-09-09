@@ -289,5 +289,29 @@
 	    <eLabel position="363,2" size="1,243" backgroundColor="#0000fafa" zPosition="2"/>
 	    <eLabel position="2,244" size="361,1" backgroundColor="#0000fafa" zPosition="2"/>		
         <widget name="text" position="10,35" size="350,300" valign="center" halign="center" font="Regular;19" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333"/>	
-	</screen>	
+	</screen>
+	<!-- FAVORITOS -->	
+    <screen name="Favorites" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<widget name="title" zPosition="1" position="450,15" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>		
+	<!-- Fecha y Reloj Digital -->		
+		<widget source="global.CurrentTime" render="Label" position="870,47" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+        </widget>
+        <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>		
+	    <ePixmap position="850,140" size="300,260" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
+        <widget name="menu" position="60,145" size="590,350" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+        <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="215,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="blend"/>		
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="455,650" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/yellow.png" position="685,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="695,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>		
+    </screen>	
 </skin>
