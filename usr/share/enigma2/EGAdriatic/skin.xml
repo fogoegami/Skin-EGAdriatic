@@ -120,7 +120,7 @@
         <widget name="info" position="100,580" zPosition="4" size="600,25" foregroundColor="yellow" font="Regular;22" transparent="1" halign="left" valign="center"/>		
 		<widget name="pixmap1" position="835,390" size="385,240" valign="center" halign="center" zPosition="1" backgroundColor="transparent" alphatest="on"/>
         <!--ePixmap position="100,650" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" /-->
-        <widget name="menu" position="100,140" itemHeight="40" size="698,320" zPosition="2" scrollbarMode="showOnDemand"/>
+        <widget name="menu" position="100,140" itemHeight="40" size="697,320" zPosition="2" scrollbarMode="showOnDemand"/>
 		<widget name="bild" position="600,385" size="580,395" zPosition="2"/>
         <widget name="pixmap" position="100,395" size="400,230" zPosition="3" backgroundColor="transparent" alphatest="on"/>  
     </screen>
@@ -151,8 +151,8 @@
         <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
 	    <ePixmap position="850,140" size="400,230" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>	
-        <widget name="menu" position="60,145" size="588,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+        <widget name="menu" position="60,145" size="590,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="215,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
         <ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="blend"/>		
@@ -174,8 +174,8 @@
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
 	    <ePixmap position="850,140" size="400,230" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="bild" position="480,175"  size="100,100" transparent="1" zPosition="2"/>		
-        <widget name="menu" position="60,145" size="588,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+        <widget name="menu" position="60,145" size="590,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="200,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
         <ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="blend"/>		
@@ -193,8 +193,8 @@
 		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
-        <widget name="menu" position="60,145" size="588,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+        <widget name="menu" position="60,145" size="590,360" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
         <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
 	    <ePixmap position="850,140" size="400,230" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
@@ -217,7 +217,7 @@
         </widget>
 	    <ePixmap position="850,140" size="300,260" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="list" position="60,145" size="590,350" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="215,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
@@ -303,7 +303,7 @@
         <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>		
 	    <ePixmap position="850,140" size="300,260" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="menu" position="60,145" size="590,350" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>
         <!--ePixmap position="300,660" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" alphatest="on"/-->				
     </screen>	
@@ -321,7 +321,7 @@
         <widget name="pixmap" position="850,140" size="400,230" zPosition="3" alphatest="on"/>		
 	    <ePixmap position="850,140" size="300,260" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="menu" position="60,145" size="590,350" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="215,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
@@ -377,7 +377,7 @@
         </widget>
 	    <ePixmap position="850,140" size="300,260" zPosition="3" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="list" position="60,145" size="590,350" itemHeight="40" zPosition="2" scrollbarMode="showOnDemand"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
         <widget name="info" position="730,310" zPosition="4" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="215,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
