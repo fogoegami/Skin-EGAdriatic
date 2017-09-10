@@ -4878,9 +4878,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
         <widget name="title" position="20,20" size="1080,30" zPosition="5" valign="center" halign="left" font="Regular;26" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1" noWrap="1"/>		
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_mplayer.png"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
 		<ePixmap position="1205,158" zPosition="2" size="27,348" pixmap="EGAdriatic/icons/barra348.png" alphatest="blend" transparent="1"/>		
-		<widget name="filelist" position="68,160" size="580,345" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="filelist" position="68,160" size="582,345" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="playlist" position="660,160" size="550,250" zPosition="1" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="currenttext" position="465,120" size="0,0"/>
 		<widget name="titletext" position="465,120" size="0,0"/>
@@ -4901,8 +4901,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
  	<screen name="EMCSelection" position="fill" flags="wfNoBorder"> 
 		<panel name="EMC"/>
         <widget name="Cover" position="665,150" size="595,365" zPosition="1" alphatest="on"/>		
-		<widget name="list" position="60,145" size="588,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
-		<ePixmap position="630,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
+		<widget name="list" position="60,145" size="590,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
+		<ePixmap position="632,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- PVRState -->
     <screen name="PVRState" position="290,521" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
