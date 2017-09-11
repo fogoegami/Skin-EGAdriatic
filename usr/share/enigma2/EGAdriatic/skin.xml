@@ -112,12 +112,12 @@
         <panel name="Title"/>
 		<panel name="ScrollBarTemplate"/>	
         <widget source="label1" render="Label" position="450,42" zPosition="3" foregroundColor="#004ccbde" size="260,30" font="Regular;25" halign="center" backgroundColor="#000000" transparent="1"/>
-        <widget source="label20" render="Label" position="100,465" size="300,25" zPosition="3" font="Regular;22" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
-        <widget source="label2" render="Label" position="200,465" size="300,25" zPosition="3" font="Regular;22" backgroundColor="#000000" transparent="1"/>
-		<widget source="label30" render="Label" position="100,495" size="300,25" zPosition="3" font="Regular;22" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
-        <widget source="label3" render="Label" position="200,495" size="300,25" zPosition="3" font="Regular;22" backgroundColor="#000000" transparent="1"/>
-		<widget source="label4" render="Label" position="100,520" size="695,50" zPosition="3" font="Regular;14" valign="center" foregroundColor="#004ccbde" backgroundColor="#000000" transparent="1"/>
-        <widget name="info" position="100,580" zPosition="4" size="600,25" foregroundColor="yellow" font="Regular;22" transparent="1" halign="left" valign="center"/>		
+        <widget source="label20" render="Label" position="100,457" size="300,25" zPosition="3" font="Regular;19" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
+        <widget source="label2" render="Label" position="200,457" size="300,25" zPosition="3" font="Regular;19" backgroundColor="#000000" transparent="1"/>
+		<widget source="label30" render="Label" position="100,485" size="300,25" zPosition="3" font="Regular;19" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
+        <widget source="label3" render="Label" position="200,485" size="300,25" zPosition="3" font="Regular;19" backgroundColor="#000000" transparent="1"/>
+		<widget source="label4" render="Label" position="100,485" size="680,125" zPosition="3" font="Regular;18" valign="center" foregroundColor="#0000fafa" backgroundColor="#000000" transparent="1"/>
+        <widget name="info" position="100,115" zPosition="4" size="600,25" foregroundColor="yellow" font="Regular;22" transparent="1" halign="left" valign="center"/>		
 		<widget name="pixmap1" position="835,390" size="385,240" valign="center" halign="center" zPosition="1" backgroundColor="transparent" alphatest="on"/>
         <!--ePixmap position="100,650" zPosition="1" size="50,50" pixmap="~/images/Exit2.png" /-->
         <widget name="menu" position="100,140" itemHeight="40" size="697,320" zPosition="2" scrollbarMode="showOnDemand"/>
