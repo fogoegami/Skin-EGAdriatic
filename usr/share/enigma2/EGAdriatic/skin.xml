@@ -207,7 +207,7 @@
     <screen name="xbmc4A" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>	
         <widget source="label1" render="Label" position="495,15" zPosition="1" foregroundColor="#004ccbde" size="300,30" font="Regular;25" halign="center" valign="center" backgroundColor="#000000" transparent="1"/>
-        <widget name="info" position="290,85" size="390,30" zPosition="1" font="Regular;15" foregroundColor="yellow" transparent="1" halign="center" valign="center"/>
+        <widget name="info" position="400,85" size="500,30" zPosition="1" font="Regular;15" foregroundColor="yellow" transparent="1" halign="center" valign="center"/>
         <widget name="menu" position="60,143" size="590,238" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand"/>		
         <widget source="label20" render="Label" position="660,120" size="300,25" zPosition="2" font="Regular;16" foregroundColor="#7bd7f7" backgroundColor="#000000" transparent="1"/>
         <widget source="label2" render="Label" position="730,120" size="300,25" zPosition="2" font="Regular;16" backgroundColor="#000000" transparent="1"/>
