@@ -107,6 +107,7 @@
 	
 	<!-- KodiLite EMBEBIDO -->
     <screen name="XbmcPluginScreen2" position="0,57" size="1280,720" backgroundColor="black" title="KodiLite Xbmc">
+		<ePixmap pixmap="EGAdriatic/menu/tx_addons.png" position="455,0" size="250,40" alphatest="blend" zPosition="1"/>	
 		<widget source="global.CurrentTime" render="Label" position="880,5" size="160,25" zPosition="1" font="LCD;22" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#2d2c2c" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
@@ -137,18 +138,18 @@
 		<widget name="pixmap9" position="760,350" size="220,220" zPosition="1"  alphatest="blend"/>
 		<widget source="label10" render="Label" position="1000,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
 		<widget name="pixmap10" position="1000,350" size="220,220" zPosition="1"  alphatest="blend"/>
-		<widget source="label11" render="Label" position="40,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget source="label11" render="Label" position="40,875" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
 		<widget name="pixmap11" position="1000,650" size="220,220" zPosition="1"  alphatest="blend"/>
-		<widget source="label12" render="Label" position="280,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget source="label12" render="Label" position="280,875" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
 		<widget name="pixmap12" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
-		<widget source="label13" render="Label" position="520,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget source="label13" render="Label" position="520,875" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
 		<widget name="pixmap13" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
-		<widget source="label14" render="Label" position="760,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget source="label14" render="Label" position="760,875" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
 		<widget name="pixmap14" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
-		<widget source="label15" render="Label" position="1000,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget source="label15" render="Label" position="1000,875" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
 		<widget name="pixmap15" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
-		<widget source="label16" render="Label" position="40,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap16" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>				
+		<widget source="label16" render="Label" position="40,1175" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap16" position="40,950" size="220,20" zPosition="1"  alphatest="blend"/>				
     </screen>
 
     <screen name="StartPlugin_mainmenu2" position="0,0" size="1280,720" title="KodiLite" >
