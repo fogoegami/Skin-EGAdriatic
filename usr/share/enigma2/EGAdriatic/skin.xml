@@ -106,7 +106,7 @@
 	<include filename="/usr/share/enigma2/EGAdriatic/Templates.xml"/>
 	
 	<!-- KodiLite EMBEBIDO -->
-    <screen name="XbmcPluginScreen2" position="25,72" size="1220,720" backgroundColor="black" title="KodiLite Xbmc">
+    <screen name="XbmcPluginScreen2" position="0,57" size="1280,720" backgroundColor="black" title="KodiLite Xbmc">
 		<widget source="global.CurrentTime" render="Label" position="880,5" size="160,25" zPosition="1" font="LCD;22" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#2d2c2c" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
@@ -117,38 +117,38 @@
 		<widget name="info" position="150,665" zPosition="4" size="900,50" font="Regular;18" foregroundColor="#7bd7f7" backgroundColor="#40000000" transparent="1" halign="left" valign="center"/>
 		<widget name="bild" position="480,650"  size="100,100" transparent="1" zPosition="5"/>
 		<widget name="frame" position="60,45" size="240,290" pixmap="EGAdriatic/menu/pic_kodilite.png" zPosition="2" alphatest="blend"/>   
-		<widget source="label1" render="Label" position="40,275" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap1" position="40,50" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label2" render="Label" position="280,275" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap2" position="280,50" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label3" render="Label" position="520,275" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap3" position="520,50" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label4" render="Label" position="760,275" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap4" position="760,50" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label5" render="Label" position="1000,275" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap5" position="1000,50" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label6" render="Label" position="40,575" size="220,60" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap6" position="40,350" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label7" render="Label" position="280,575" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap7" position="280,350" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label8" render="Label" position="520,575" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap8" position="520,350" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label9" render="Label" position="760,575" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap9" position="760,350" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label10" render="Label" position="1000,575" size="220,80" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap10" position="1000,350" size="220,220" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label11" render="Label" position="40,575" size="0,0" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap11" position="1000,650" size="0,0" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label12" render="Label" position="280,575" size="0,0" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap12" position="1000,650" size="0,0" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label13" render="Label" position="520,575" size="0,0" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap13" position="1000,650" size="0,0" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label14" render="Label" position="760,575" size="0,0" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap14" position="1000,650" size="0,0" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label15" render="Label" position="1000,575" size="0,0" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap15" position="1000,650" size="0,0" zPosition="1" transparent="1" alphatest="on"/>
-		<widget source="label16" render="Label" position="40,575" size="0,0" font="Regular;16" halign="center" zPosition="4" transparent="1" foregroundColor="#0000baff"/>
-		<widget name="pixmap16" position="1000,650" size="0,0" zPosition="1" transparent="1" alphatest="on"/>				
+		<widget source="label1" render="Label" position="40,275" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap1" position="40,50" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label2" render="Label" position="280,275" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap2" position="280,50" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label3" render="Label" position="520,275" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap3" position="520,50" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label4" render="Label" position="760,275" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap4" position="760,50" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label5" render="Label" position="1000,275" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap5" position="1000,50" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label6" render="Label" position="40,575" size="220,60" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap6" position="40,350" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label7" render="Label" position="280,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap7" position="280,350" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label8" render="Label" position="520,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap8" position="520,350" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label9" render="Label" position="760,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap9" position="760,350" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label10" render="Label" position="1000,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap10" position="1000,350" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label11" render="Label" position="40,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap11" position="1000,650" size="220,220" zPosition="1"  alphatest="blend"/>
+		<widget source="label12" render="Label" position="280,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap12" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
+		<widget source="label13" render="Label" position="520,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap13" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
+		<widget source="label14" render="Label" position="760,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap14" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
+		<widget source="label15" render="Label" position="1000,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap15" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>
+		<widget source="label16" render="Label" position="40,575" size="220,80" font="Regular;16" halign="center" zPosition="1" transparent="1" foregroundColor="#0000baff"/>
+		<widget name="pixmap16" position="1000,650" size="220,20" zPosition="1"  alphatest="blend"/>				
     </screen>
 
     <screen name="StartPlugin_mainmenu2" position="0,0" size="1280,720" title="KodiLite" >
@@ -258,9 +258,9 @@
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
         <widget name="list" position="60,145" size="588,360" itemHeight="40" zPosition="-1" scrollbarMode="showOnDemand"/>		
-        <widget name="pixmap" position="850,140" size="400,230" zPosition="1" alphatest="on"/>
+        <widget name="pixmap" position="853,140" size="400,230" zPosition="1" alphatest="on"/>
         <widget name="info" position="730,310" zPosition="1" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
-	    <ePixmap position="850,140" size="400,230" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>	
+	    <ePixmap position="853,140" size="400,230" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>	
         <widget name="menu" position="60,145" size="590,360" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="632,111" zPosition="1" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
@@ -280,9 +280,9 @@
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
         <!--widget name="list" position="60,145" size="588,360" itemHeight="40" zPosition="-1" scrollbarMode="showOnDemand"/-->		
-        <widget name="pixmap" position="850,140" size="400,230" zPosition="1" alphatest="on"/>
+        <widget name="pixmap" position="853,140" size="400,230" zPosition="1" alphatest="on"/>
         <widget name="info" position="730,310" zPosition="1" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
-	    <ePixmap position="850,140" size="400,230" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>
+	    <ePixmap position="853,140" size="400,230" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="bild" position="480,175"  size="100,100" transparent="1" zPosition="1"/>		
         <widget name="menu" position="60,145" size="590,360" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="632,111" zPosition="1" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
@@ -305,9 +305,9 @@
         </widget>
         <widget name="menu" position="60,145" size="590,360" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="632,111" zPosition="1" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
-        <widget name="pixmap" position="850,140" size="400,230" zPosition="1" alphatest="on"/>
+        <widget name="pixmap" position="853,140" size="400,230" zPosition="1" alphatest="on"/>
         <widget name="info" position="730,310" zPosition="1" size="500,250" font="Regular;18" foregroundColor="yellow" transparent="1" halign="left" valign="center"/>		
-	    <ePixmap position="850,140" size="400,230" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>
+	    <ePixmap position="853,140" size="400,230" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="bild" position="480,175"  size="100,100" transparent="1" zPosition="1"/>                     
 		<ePixmap pixmap="/usr/share/enigma2/EGAdriatic/buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="200,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
@@ -410,7 +410,7 @@
 		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="1" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
-        <widget name="pixmap" position="850,140" size="400,230" zPosition="1" alphatest="on"/>		
+        <widget name="pixmap" position="853,140" size="400,230" zPosition="1" alphatest="on"/>		
 	    <ePixmap position="850,140" size="300,260" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="menu" position="60,145" size="590,353" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="632,111" zPosition="1" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
@@ -428,7 +428,7 @@
 		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="1" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
             <convert type="ClockToText">Format:%a %d/%m/%y</convert>
         </widget>
-        <widget name="pixmap" position="850,140" size="400,230" zPosition="1" alphatest="on"/>		
+        <widget name="pixmap" position="853,140" size="400,230" zPosition="1" alphatest="on"/>		
 	    <ePixmap position="850,140" size="300,260" zPosition="1" pixmap="~/images/default.png" alphatest="on"/>
         <widget name="menu" position="60,145" size="590,350" itemHeight="40" zPosition="1" scrollbarMode="showOnDemand"/>
 		<ePixmap position="632,111" zPosition="1" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>		
