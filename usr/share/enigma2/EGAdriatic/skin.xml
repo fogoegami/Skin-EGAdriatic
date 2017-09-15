@@ -107,7 +107,9 @@
 	
 	<!-- KodiLite EMBEBIDO -->
     <screen name="XbmcPluginScreen2" position="0,57" size="1280,720" backgroundColor="black" title="KodiLite Xbmc">
-		<ePixmap pixmap="EGAdriatic/menu/tx_addons.png" position="455,0" size="250,40" alphatest="blend" zPosition="1"/>	
+		<ePixmap pixmap="EGAdriatic/menu/tx_addons.png" position="455,0" size="250,40" alphatest="blend" zPosition="1"/>
+	    <eLabel position="0,638" size="1280,1" backgroundColor="#0000fafa" zPosition="2"/>
+        <eLabel position="0,640" size="1280,30" backgroundColor="#00333333" zPosition="2"/>		
 		<widget source="global.CurrentTime" render="Label" position="880,5" size="160,25" zPosition="1" font="LCD;22" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#2d2c2c" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
