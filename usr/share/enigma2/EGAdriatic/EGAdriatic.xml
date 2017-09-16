@@ -1875,7 +1875,7 @@
 	</screen>
 	<!-- (065) ####### Satfinder ####### (15-02) -->
 	<screen name="Satfinder" position="0,0" size="1280,720" title="Satfinder">
-		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="PantallaGenericaRexit"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
         <panel name="PIG"/>	
