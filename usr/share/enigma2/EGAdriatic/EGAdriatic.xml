@@ -110,7 +110,7 @@
         <widget name="text" position="280,600" size="720,75" foregroundColor="#00ffffff" zPosition="2" transparent="1" font="Regular;30" halign="center"/>
     </screen>		
 	<!-- (003) ####### VirtualKeyBoard ####### -->
-	<screen name="VirtualKeyBoard" position="700,330" size="560,350" zPosition="99" title="Virtual KeyBoard">
+	<screen name="VirtualKeyBoard" position="650,335" size="560,350" zPosition="99" title="Virtual KeyBoard">
 		<ePixmap pixmap="EGAdriatic/vkey_text.png" position="9,35" zPosition="-4" size="542,52" alphatest="on"/>
 		<widget name="header" position="10,4" size="500,26" font="Regular;20" transparent="1" noWrap="1"/>
 		<widget name="text" position="12,30" size="536,46" font="Regular;38" transparent="1" noWrap="1" halign="right"/>
