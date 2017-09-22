@@ -72,8 +72,8 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>		
 		<widget name="config" position="56,155" size="739,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
@@ -1015,8 +1015,8 @@
 		<widget source="DNS2" render="Label" position="615,560" size="230,25" font="Regular;20" valign="center" halign="left" backgroundColor="black" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,400" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="introduction2" render="Label" position="845,450" size="600,27" font="Regular;20" halign="left" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>		
 	</screen>	
@@ -1086,8 +1086,8 @@
 		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
 		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
 		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>	
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>		
 	</screen>	
@@ -1145,8 +1145,8 @@
 		<widget name="config" position="60,150" size="715,420" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
@@ -1293,8 +1293,8 @@
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="config" position="80,150" size="718,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<panel name="Logo_Egami"/>  
@@ -1996,19 +1996,19 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="680,580" title="Help" size="604,124" zPosition="10" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-1" size="604,124" pixmap="EGAdriatic/604_124.png"/>
-		<widget name="key1" position="2,2" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key2" position="202,2" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key3" position="402,2" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key4" position="2,42" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key5" position="202,42" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key6" position="402,42" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key7" position="2,82" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key8" position="202,80" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key9" position="402,82" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="help1" position="30,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="key0" position="198,103" size="209,30" font="Console;17" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>
-		<widget name="help2" position="432,103" size="130,30" font="Console;18" halign="center" valign="center" backgroundColor="darkgrey" transparent="1"/>		
+		<ePixmap position="0,0" zPosition="-1" size="603,123" pixmap="EGAdriatic/603_123.png"/>
+		<widget name="key1" position="0,0" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key2" position="200,2" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key3" position="402,2" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key4" position="0,32" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key5" position="200,32" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key6" position="402,32" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key7" position="2,62" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key8" position="197,62" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key9" position="402,62" size="200,40" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="help1" position="20,95" size="130,30" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="key0" position="190,95" size="209,30" font="Console;17" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
+		<widget name="help2" position="440,95" size="130,30" font="Console;20" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>		
 	</screen>
 	<!-- (051) ####### CrashlogAutoSubmitConfiguration ####### -->
 	<screen name="CrashlogAutoSubmitConfiguration" position="center,center" size="1130,520" title="CrashlogAutoSubmit settings...">
@@ -2019,8 +2019,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="670,460" size="250,40" pixmap="EGAdriatic/buttons/yellow25.png" alphatest="on" zPosition="1"/>
 		<widget source="key_red" render="Label" position="209,461" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1"/>
 		<widget source="key_green" render="Label" position="669,461" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
@@ -2035,8 +2035,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="description" position="845,435" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
         <widget name="footnote" position="80,500" size="503,25" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="left" transparent="1" valign="top"/>				
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget name="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>		
 	</screen>
@@ -2319,8 +2319,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="config" position="60,155" size="710,427" scrollbarMode="showOnDemand" itemHeight="35" transparent="1"/>
 		<widget name="locationfreespace" position="300,105" size="250,50" font="Regular;22" foregroundColor="#0000fafa" halign="center" valign="center" zPosition="2" transparent="1"/>
 		<widget name="locationdescription" position="560,120" size="250,40" font="Regular;22" foregroundColor="#0000fafa" halign="center" valign="center" zPosition="2" transparent="1"/>		
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
@@ -2792,8 +2792,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="introduction" render="Label" position="380,360" size="400,100" zPosition="10" foregroundColor="#004ccbde" font="Regular;24" halign="center" transparent="1"/>
 		<ePixmap pixmap="EGAdriatic/buttons/red25.png" position="455,500" size="250,40" alphatest="on" zPosition="1"/>
 		<widget source="key_red" render="Label" position="455,500" size="250,40" zPosition="2" font="Regular;24" halign="center" valign="center" transparent="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>	
@@ -2902,8 +2902,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>
 		<widget name="config" position="60,145" size="715,418" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget name="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="footnote" position="80,600" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="left" transparent="1" valign="top"/>
@@ -4301,7 +4301,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 				"itemHeight": 30}
 			</convert>
 		</widget>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>	
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>	
 	</screen>
 	<screen name="YouTubeDownloadList" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sR"/>
@@ -4441,8 +4441,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<eLabel text=" " position="873,632" size="250,30" zPosition="2" font="Regular;24" halign="center" backgroundColor="black" transparent="1"/>
 
 		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> 
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
     <!-- digital clock -->
@@ -4736,8 +4736,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 		<widget name="config" position="80,140" size="690,400" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>		
 	</screen>
@@ -4762,11 +4762,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="arrowdown" pixmap="EGAdriatic/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
 		<widget name="arrowup" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>
 		<widget name="arrowdown2" pixmap="EGAdriatic/arrowdown.png" position="-100,-100" zPosition="11" size="0,0" alphatest="blend"/>		
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
-        <widget name="languagetext" position="95,630" size="150,30" transparent="1" font="Regular;20"/>		
-		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,677" zPosition="2" size="40,22" transparent="1" alphatest="on">
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
+        <widget name="languagetext" position="95,630" size="150,30" transparent="1" font="Regular;20"/>
 	</screen>	
 	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
 	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -5073,13 +5073,13 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PIG"/>
         <panel name="Title"/>		
 		<widget name="config" position="55,150" font="Regular;16" size="742,420" scrollbarMode="showAlways" transparent="1"/>
-		<widget name="HelpWindow" position="80,580" size="0,0" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="585,680" zPosition="2" size="0,0" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget name="Path" position="80,580" size="0,0" transparent="1" zPosition="1"/>
 		<eLabel text="Exit" position="110,632" size="190,24" zPosition="1" font="Regular;20" backgroundColor="black" halign="left" transparent="1" valign="center"/>
 		<eLabel text="Save" position="295,632" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top"/>
-		<widget name="VKeyIcon" position="640,677" zPosition="2" size="0,0" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>	
 	</screen>	
 	<!-- ####### MoviePlayer Standard Reproductor ####### -->
 	<screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent2" flags="wfNoBorder">
@@ -6077,7 +6077,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="PIG"/>
 		<widget name="config" position="80,140" size="690,375" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="HelpWindow" position="680,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget name="HelpWindow" position="628,580" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
         <panel name="Logo_Egami"/>		
 	</screen>
 	<!--  EGAMI EmuManager OKK -->
