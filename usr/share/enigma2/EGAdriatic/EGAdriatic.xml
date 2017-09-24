@@ -688,19 +688,19 @@
 		<ePixmap pixmap="icons/key_menu1.png" position="8,160" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="icons/key_info.png" position="53,160" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 	    <eLabel position="0,0" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>
-        <eLabel position="0,1" size="1280,39" backgroundColor="#001b5962" zPosition="0"/>			
+        <eLabel position="0,1" size="1280,39" backgroundColor="#0003424a" zPosition="0"/>			
         <eLabel position="0,40" size="1280,1" backgroundColor="#0000fafa" zPosition="0"/>		
 		<widget source="Event" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=5000,wrap=1,always=0,repeat=2,oneshot=1" position="795,45" size="450,115" zPosition="2" font="Regular;20" halign="center" foregroundColor="#0000baff" backgroundColor="black" transparent="1">
 		    <convert type="EventName">ExtendedDescription</convert>
 		</widget>		
-		<widget source="Service" render="Label" position="110,2" size="595,40" zPosition="1" font="Regular;30" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#001b5962" transparent="1">
+		<widget source="Service" render="Label" position="110,2" size="595,40" zPosition="1" font="Regular;30" valign="center" noWrap="1" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
 	        <convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="Event" render="Label" position="750,7" size="100,28" zPosition="1" font="Regular;20" halign="left" foregroundColor="#0000fafa" backgroundColor="#001b5962" transparent="1">
+		<widget source="Event" render="Label" position="750,7" size="100,28" zPosition="1" font="Regular;20" halign="left" foregroundColor="#0000fafa" backgroundColor="#0003424a" transparent="1">
 		    <convert type="EventTime">StartTime</convert>
 		    <convert type="ClockToText">Format:%H:%M </convert>
 		</widget>
-		<widget source="Event" render="Label" position="1020,7" size="80,28" zPosition="1" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#001b5962" transparent="1">
+		<widget source="Event" render="Label" position="1020,7" size="80,28" zPosition="1" font="Regular;20" halign="right" foregroundColor="#00a1d1ff" backgroundColor="#0003424a" transparent="1">
 		    <convert type="EventTime">EndTime</convert>
 		    <convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -794,10 +794,10 @@
 		<ePixmap pixmap="icons/key_text.png" position="1055,670" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 	</screen>	
 	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
-	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#001b5962" zPosition="5" flags="wfNoBorder">
-		<widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#001b5962" size="200,25" font="Regular;20"/>
+	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#0003424a" zPosition="5" flags="wfNoBorder">
+		<widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/>
 		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
-		<widget name="list" position="0,3" size="210,50" backgroundColor="#001b5962" scrollbarMode="showOnDemand" borderWidth="1"/>
+		<widget name="list" position="0,3" size="210,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" borderWidth="1"/>
         <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="EGAdriatic/icons/barra20-55.png" alphatest="blend"/>		
 	</screen>
 	
@@ -1274,17 +1274,17 @@
 		<widget name="labstop" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="time" position="80,185" size="200,50" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labtime" position="290,200" size="430,30" font="Regular;20" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labtime" position="290,200" size="430,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="username" position="80,240" size="230,30" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labuser" position="290,240" size="430,30" font="Regular;20" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labuser" position="290,240" size="430,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="password" position="80,280" size="230,30" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labpass" position="290,280" size="430,30" font="Regular;20" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labpass" position="290,280" size="430,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="alias" position="80,320" size="150,30" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labalias" position="290,320" size="430,30" font="Regular;20" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labalias" position="290,320" size="430,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="sinactive" position="80,360" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
 		<widget name="sactive" position="80,360" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
 		<widget name="system" position="115,360" size="100,30" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labsys" position="290,360" size="430,30" font="Regular;20" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labsys" position="290,360" size="430,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 	</screen>		
 		
 	<!-- NetWork Inadyn Setup OK -->
@@ -1325,15 +1325,15 @@
 		<widget name="labstop" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="username" position="80,200" size="150,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labuser" position="250,200" size="410,30" font="Regular;22" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labuser" position="250,200" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="iface" position="80,240" size="150,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labiface" position="250,240" size="410,30" font="Regular;20" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labiface" position="250,240" size="410,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="port" position="80,280" size="150,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labport" position="250,280" size="410,30" font="Regular;22" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labport" position="250,280" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="serialno" position="80,320" size="150,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labserialno" position="250,320" size="410,30" font="Regular;22" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labserialno" position="250,320" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="sharedir" position="80,347" size="150,60" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labsharedir" position="250,360" size="410,40" font="Regular;22" valign="top" backgroundColor="#001b5962"/>
+		<widget name="labsharedir" position="250,360" size="410,40" font="Regular;22" valign="top" backgroundColor="#0003424a"/>
 		<widget name="inotify" position="80,460" size="200,50" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="inotifyinactive" position="320,481" zPosition="1" pixmap="icons/lock_off.png" size="32,32" alphatest="blend"/>
 		<widget name="inotifyactive" position="320,481" zPosition="2" pixmap="icons/lock_on.png" size="32,32" alphatest="blend"/>
@@ -1417,15 +1417,15 @@
 		<widget name="labstop" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="red" zPosition="1"/>
 		<widget name="labrun" position="550,140" size="130,24" font="Regular;22" halign="center" backgroundColor="green" zPosition="2"/>
 		<widget name="username" position="80,185" size="160,50" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labuser" position="250,200" size="410,30" font="Regular;22" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labuser" position="250,200" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="iface" position="80,240" size="160,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labiface" position="250,240" size="410,30" font="Regular;20" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labiface" position="250,240" size="410,30" font="Regular;20" valign="center" backgroundColor="#0003424a"/>
 		<widget name="port" position="80,280" size="160,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labport" position="250,280" size="410,30" font="Regular;22" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labport" position="250,280" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="telnetport" position="80,320" size="160,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labtelnetport" position="250,320" size="410,30" font="Regular;22" valign="center" backgroundColor="#001b5962"/>
+		<widget name="labtelnetport" position="250,320" size="410,30" font="Regular;22" valign="center" backgroundColor="#0003424a"/>
 		<widget name="sharedir" position="80,350" size="160,60" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-		<widget name="labsharedir" position="250,360" size="410,40" font="Regular;22" valign="top" backgroundColor="#001b5962"/>
+		<widget name="labsharedir" position="250,360" size="410,40" font="Regular;22" valign="top" backgroundColor="#0003424a"/>
 		<widget name="web" position="80,430" size="250,30" font="Regular;22" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="webinactive" position="340,431" size="32,32" zPosition="1" pixmap="icons/lock_off.png" alphatest="blend"/>
 		<widget name="webactive" position="340,431" size="32,32" zPosition="2" pixmap="icons/lock_on.png" alphatest="blend"/>
@@ -1697,7 +1697,7 @@
 	</screen>
 	
     <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish #######-->
-	<screen name="Dish" position="855,120" size="350,180" backgroundColor="#001b5962" flags="wfNoBorder">
+	<screen name="Dish" position="855,120" size="350,180" backgroundColor="#0003424a" flags="wfNoBorder">
 		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,25" size="146,146" alphatest="blend"/>
 		<widget name="turnTime" position="170,20" size="120,22" zPosition="1" font="Regular;20" halign="right" borderWidth="1" borderColor="#0000fafa" transparent="1"/>
 		<widget name="From" position="165,80" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="#0000fafa" transparent="1"/>
@@ -1978,9 +1978,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="text" position="68,154" size="730,27" font="Regular;23" foregroundColor="#004ccbde" transparent="1"/> 
 		<widget name="targetfreespace" position="68,580" size="715,27" font="Regular;23" foregroundColor="#004ccbde" transparent="1"/>
-		<widget name="target" position="68,188" size="730,27" valign="center" font="Regular;24" backgroundColor="#001b5962"/>
+		<widget name="target" position="68,188" size="730,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
 		<widget name="filelist" position="68,218" zPosition="1" size="730,208" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x26.png" selectionDisabled="1" transparent="1"/>
-		<widget name="textbook" position="68,425" size="730,27" valign="center" font="Regular;24" backgroundColor="#001b5962"/>
+		<widget name="textbook" position="68,425" size="730,27" valign="center" font="Regular;24" backgroundColor="#0003424a"/>
 		<widget name="booklist" position="68,453" zPosition="2" size="730,100" scrollbarMode="showOnDemand" transparent="1"/>
 		<ePixmap position="8,640" size="40,22" pixmap="icons/key_menu1.png" transparent="1" alphatest="blend"/>		
 		<widget name="red" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
@@ -2534,7 +2534,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="freeDiskSpace" position="295,425" size="540,20" font="Regular;19" valign="center" halign="center"/>
 	</screen>
 	<!-- (099) ####### Cut List Editor ####### -->
-	<screen name="CutListEditor" position="0,0" size="1280,720" backgroundColor="#001b5962" flags="wfNoBorder">
+	<screen name="CutListEditor" position="0,0" size="1280,720" backgroundColor="#0003424a" flags="wfNoBorder">
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black"/>
 		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" render="Listbox">
@@ -2550,11 +2550,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="#df0b1300"/>
 		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>
-        <widget name="SeekState" position="450,555" backgroundColor="#001b5962" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>		
-		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="#001b5962" transparent="1">
+        <widget name="SeekState" position="450,555" backgroundColor="#0003424a" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>		
+		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="#0003424a" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="#001b5962" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="#0003424a" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#00808888" pointer="EGAdriatic/position_arrow.png:3,5" foregroundColor="black"/>
@@ -2562,7 +2562,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 	<!-- (100) ####### TitleCutter ####### -->
-	<screen name="TitleCutter" position="0,0" size="1280,720" backgroundColor="#001b5962" flags="wfNoBorder">
+	<screen name="TitleCutter" position="0,0" size="1280,720" backgroundColor="#0003424a" flags="wfNoBorder">
 		<eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey"/>
 		<eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black"/>
 		<widget source="cutlist" position="90,135" zPosition="3" size="280,400" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" render="Listbox">
@@ -2578,11 +2578,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="#df0b1300"/>
 		<widget name="Video" position="479,124" zPosition="-10" size="696,377"/>
-        <widget name="SeekState" position="450,555" backgroundColor="#001b5962" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>		
-		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="#001b5962" transparent="1">
+        <widget name="SeekState" position="450,555" backgroundColor="#0003424a" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>		
+		<widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="#0003424a" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="#001b5962" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="#0003424a" transparent="1">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="#00808888" pointer="EGAdriatic/position_arrow.png:3,5" foregroundColor="black"/>
@@ -2695,7 +2695,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="UpdatePlugin" position="center,center" size="700,200" title="Software update">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="700,200" alphatest="on"/>
 		<widget name="activityslider" position="0,0" size="700,5"/>
-		<widget name="slider" foregroundColor="#001b5962" position="0,180" size="700,30"/>
+		<widget name="slider" foregroundColor="#0003424a" position="0,180" size="700,30"/>
 		<widget source="package" render="Label" position="10,30" size="680,20" font="Regular;18" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
 		<widget source="status" render="Label" position="10,100" size="680,100" font="Regular;20" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
 	</screen>
@@ -5994,7 +5994,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PIG"/>
 		<widget name="activityslider" borderWidth="2" foregroundColor="#004ccbde" position="80,165" size="562,32" backgroundColor="black"/>
 		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
-		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#001b5962" size="562,32" zPosition="1"/>
+		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
 		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
 		<widget source="status" render="Label" position="80,265" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
         <panel name="Logo_Egami"/>		
