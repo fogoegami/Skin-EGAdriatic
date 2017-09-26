@@ -1583,7 +1583,7 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>
 		<widget source="global.CurrentTime" render="Label" position="820,35" size="200,40" valign="top" halign="center" font="LCD;38" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
-		    <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+		    <convert type="ClockToText">Format:%d/%m/%y</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="808,305" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center" transparent="1">
 		    <convert type="ServiceName">Name</convert>
