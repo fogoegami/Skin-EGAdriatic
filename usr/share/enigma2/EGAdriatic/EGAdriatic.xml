@@ -747,8 +747,7 @@
 		<widget name="cancel" position="60,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarR.png" alphatest="blend"/>
 		<widget name="ok" position="260,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
 		<widget name="config" scrollbarMode="showOnDemand" position="80,138" font="Regular;22" size="600,500" transparent="1"/>  		
-	</screen>
-	
+	</screen>	
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
 	<screen name="EPGSelectionMulti" position="0,0"	size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>				
@@ -800,12 +799,15 @@
 	</screen>	
 	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
 	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#0003424a" zPosition="5" flags="wfNoBorder">
+	    <eLabel position="0,0" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,54" size="355,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="354,0" size="1,55" backgroundColor="#0000fafa" zPosition="1"/>	
 		<widget name="windowtitle" position="230,15" foregroundColor="#00bab329" backgroundColor="#0003424a" size="200,25" font="Regular;20"/>
 		<widget name="text" position="0,0" size="0,0" font="Regular;22"/>
 		<widget name="list" position="0,3" size="210,50" backgroundColor="#0003424a" scrollbarMode="showOnDemand" borderWidth="1"/>
         <ePixmap position="195,0" zPosition="3" size="20,55" pixmap="EGAdriatic/icons/barra20-55.png" alphatest="blend"/>		
-	</screen>
-	
+	</screen>	
 	<!-- (040) ####### MENU HELP ####### (12-02) -->
 	<screen name="HelpMenu" position="0,0" size="1280,720" title="Help Menu" flags="wfNoBorder">
 	<!-- background -->
@@ -856,8 +858,7 @@
 				}
 			</convert>
 		</widget>
-	</screen>
-	
+	</screen>	
 	<!-- (009) ####### SOFTWARE MANAGER - GESTIONE SOFTWARE ####### (12-02) -->
 	<screen name="UpdatePluginMenu" position="center,center" size="1280,720" title="Softwaremanager..." flags="wfNoBorder">
 	    <panel name="PIG"/>
@@ -1718,8 +1719,7 @@
 		<widget source="session.FrontendStatus" render="Progress" position="170,165" size="130,8" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#0000fafa">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>		
-	</screen>	
-
+	</screen>
 	<!-- (042) ####### TUNER SELECTION CHOOSE TUNER####### (12-02) -->
 	<screen name="NimSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sRGYB"/>	
