@@ -796,6 +796,15 @@
 		<ePixmap pixmap="icons/key_info.png" position="965,670" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="icons/key_help.png" position="1010,670" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
 		<ePixmap pixmap="icons/key_text.png" position="1055,670" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
+	</screen>
+	<!-- (023) ####### BOUQUET SELECTOR Seleccion de grupo ver grupos desde GraphicalEPG ####### (23-10) -->
+	<screen name="BouquetSelector" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<ePixmap position="930,405" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
+		<widget name="menu" position="77,137" size="720,430" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1"/>
 	</screen>	
 	<!-- ####### Editar ELIMINAR temporizador en EPG ####### -->	
 	<screen name="RecordTimerQuestion" position="center,center" size="355,55" backgroundColor="#0003424a" zPosition="5" flags="wfNoBorder">
@@ -1502,31 +1511,7 @@
 		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="550,320" backgroundColor="transpBlack" title="Subtitle settings">
 		<widget name="config" position="10,5" size="570,250" font="xRegular;16" foregroundColor="#004ccbde" zPosition="1" transparent="1"/>
 		<widget name="videofps" position="10,255" size="570,20" backgroundColor="transpBlack" transparent="1" zPosition="1" font="xRegular;14" valign="center" halign="left" foregroundColor="bluette"/>
-	</screen>	
-	<!-- (023) ####### BOUQUET SELECTOR ####### (23-10) -->
-	<screen name="BouquetSelector" position="0,0" size="1280,720" title="Bouquet Selection"  flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
-		<ePixmap position="930,405" zPosition="1" size="200,200" pixmap="EGAdriatic/menu/ico_sat.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="0,0" zPosition="-1" size="543,69" pixmap="EGAdriatic/menu/tx_bouquet.png"/>
-		<widget name="menu" position="77,133" size="720,400" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1"/>
-		<ePixmap position="773,115" zPosition="2" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="249,630" zPosition="2" size="400,40" pixmap="EGAdriatic/menu/logo_egami_menu.png" alphatest="blend" transparent="1"/>
-	<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-	<!-- Nombre del Canal - Service Name -->
-		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
-			<convert type="ServiceName">Name</convert>
-		</widget>
-	<!-- Barra Progresso -->
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-    <!-- digital clock -->
-		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>	
 	</screen>
-
 	<!-- (026) ####### Choice Box Boton azul Menu Extensiones####### (12-02) -->
 	<screen name="ChoiceBox" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>
