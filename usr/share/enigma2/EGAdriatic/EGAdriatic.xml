@@ -1700,9 +1700,12 @@
 		<widget name="arrowup" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on"/>
 		<widget name="arrowup2" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on"/>
 	</screen>
-	
     <!-- ####### Datos Movimiento Motor Satelite->Satelite Dish #######-->
 	<screen name="Dish" position="855,120" size="350,180" backgroundColor="#0003424a" flags="wfNoBorder">
+	    <eLabel position="0,0" size="350,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,0" size="1,180" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,179" size="350,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="349,0" size="1,180" backgroundColor="#0000fafa" zPosition="1"/>	
 		<widget name="Dishpixmap" pixmap="icons/dish.png" position="0,25" size="146,146" alphatest="blend"/>
 		<widget name="turnTime" position="170,20" size="120,22" zPosition="1" font="Regular;20" halign="right" borderWidth="1" borderColor="#0000fafa" transparent="1"/>
 		<widget name="From" position="165,80" size="55,20" zPosition="1" font="Regular;17" halign="right" borderWidth="1" borderColor="#0000fafa" transparent="1"/>
