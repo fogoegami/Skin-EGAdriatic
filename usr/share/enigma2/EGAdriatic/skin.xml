@@ -146,10 +146,10 @@
 	</screen>
 	<!-- Menu Horizontal iconos -->		
 	<screen name="Iconmain" position="0,575" size="1280,265" title="Mainmenu">
-        <eLabel position="6,36" size="210,69" backgroundColor="#0003424a" zPosition="1"/>	
-	    <eLabel position="5,35" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
+        <eLabel position="6,36" size="205,69" backgroundColor="#0003424a" zPosition="1"/>	
+	    <eLabel position="5,35" size="205,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="5,35" size="1,70" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="5,104" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="5,104" size="205,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="210,35" size="1,70" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- label2 -->
         <eLabel position="216,36" size="210,69" backgroundColor="#0003424a" zPosition="1"/>	
@@ -183,8 +183,8 @@
 	    <eLabel position="1265,35" size="1,70" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- contenido -->	
 		<widget name="title" position="405,0" size="500,50" zPosition="3" halign="center" valign="top" foregroundColor="#0000baff" backgroundColor="black" font="Regular;28" transparent="1"/> 
-		<widget source="label1" render="Label" position="55,35" size="210,70" font="Regular;20" halign="left" valign="center" zPosition="2" transparent="1"/>			
-		<widget source="label1s" render="Label" position="55,35" size="210,70" font="Regular;20" halign="left" valign="top" zPosition="2" foregroundColor="#0000fafa" transparent="1"/>
+		<widget source="label1" render="Label" position="50,35" size="210,70" font="Regular;20" halign="left" valign="center" zPosition="2" transparent="1"/>			
+		<widget source="label1s" render="Label" position="50,35" size="210,70" font="Regular;20" halign="left" valign="top" zPosition="2" foregroundColor="#0000fafa" transparent="1"/>
 		<!--widget name="pixmap1" position="55,35" size="320,70" zPosition="1" alphatest="on"/-->
 		<widget source="label2" render="Label" position="215,35" size="210,70" font="Regular;16" halign="center" valign="center" zPosition="2" transparent="1"/>
 		<widget source="label2s" render="Label" position="215,35" size="210,70" font="Regular;16" halign="center" valign="top" zPosition="2" foregroundColor="#0000fafa" transparent="1"/>
