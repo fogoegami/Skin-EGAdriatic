@@ -127,10 +127,10 @@
 	    <eLabel position="771,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1023,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- label5 -->
-	    <eLabel position="1028,25" size="232,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1028,25" size="237,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1028,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1028,104" size="232,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1260,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1028,104" size="237,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1265,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- contenido -->	
 		<widget name="title" position="390,0" size="500,50" zPosition="3" halign="center" valign="top" foregroundColor="#0000baff" backgroundColor="black" font="Regular;24" transparent="1"/> 
 	    <widget source="label1" render="Label" position="25,22" size="210,80" font="Regular;18" halign="center" valign="center" zPosition="2" transparent="1"/>
@@ -177,11 +177,11 @@
 	    <eLabel position="860,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1070,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- label6 -->
-        <eLabel position="1076,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
-	    <eLabel position="1075,20" size="190,1" backgroundColor="#0000fafa" zPosition="1"/>
+        <eLabel position="1076,21" size="195,94" backgroundColor="#0003424a" zPosition="1"/>	
+	    <eLabel position="1075,20" size="195,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1075,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1075,114" size="190,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1265,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1075,114" size="195,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1270,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- contenido -->	
 		<widget name="title" position="395,0" size="500,50" zPosition="3" halign="center" valign="top" foregroundColor="#0000baff" backgroundColor="black" font="Regular;17" transparent="1"/>
 		<widget name="pointer" position="505,3" size="26,16" zPosition="3" backgroundColor="black" transparent="1" alphatest="blend"/>			
