@@ -98,17 +98,17 @@
 		<pixmap pos="bpBottomRight" filename="EGAdriatic/bs_br.png"/>
 	</borderset>
 	<borderset name="bsListboxEntry">
-	<pixmap pos="bpTop" filename="EGAdriatic/def-bar.png"/>
-	<pixmap pos="bpBottom" filename="EGAdriatic/def-bar.png"/>
+	    <pixmap pos="bpTop" filename="EGAdriatic/def-bar.png"/>
+	    <pixmap pos="bpBottom" filename="EGAdriatic/def-bar.png"/>
 	</borderset>
 	</windowstyle>
-	<include filename="/usr/share/enigma2/EGAdriatic/EGAdriatic.xml"/>
-	<include filename="/usr/share/enigma2/EGAdriatic/Templates.xml"/>
+	    <include filename="/usr/share/enigma2/EGAdriatic/EGAdriatic.xml"/>
+	    <include filename="/usr/share/enigma2/EGAdriatic/Templates.xml"/>
 	<!-- Menu Horizontal -->	
 	<screen name="Animmain" position="0,575" size="1280,265" title="Mainmenu">	
-	    <eLabel position="5,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="5,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="5,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="252,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- label2 -->
 	    <eLabel position="257,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
@@ -127,10 +127,10 @@
 	    <eLabel position="771,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1023,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- label5 -->
-	    <eLabel position="1028,25" size="237,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1028,25" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1028,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1028,104" size="237,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1265,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1028,104" size="252,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1279,25" size="1,80" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- contenido -->	
 		<widget name="title" position="390,0" size="500,50" zPosition="3" halign="center" valign="top" foregroundColor="#0000baff" backgroundColor="black" font="Regular;24" transparent="1"/> 
 	    <widget source="label1" render="Label" position="25,22" size="210,80" font="Regular;18" halign="center" valign="center" zPosition="2" transparent="1"/>
@@ -143,14 +143,14 @@
 		<widget name="green" position="208,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="yellow" position="408,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="blue" position="608,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<ePixmap position="1125,107" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>		
+		<ePixmap position="1135,107" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>		
 	</screen>
 	<!-- Menu Horizontal iconos -->		
 	<screen name="Iconmain" position="0,565" size="1280,280" title="Mainmenu">	
-        <eLabel position="6,21" size="205,94" backgroundColor="#0003424a" zPosition="1"/>	
-	    <eLabel position="5,20" size="205,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="5,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="5,114" size="205,1" backgroundColor="#0000fafa" zPosition="1"/>
+        <eLabel position="0,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
+	    <eLabel position="0,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="0,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="210,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- label2 -->
         <eLabel position="216,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
@@ -177,11 +177,11 @@
 	    <eLabel position="860,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1070,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- label6 -->
-        <eLabel position="1076,21" size="195,94" backgroundColor="#0003424a" zPosition="1"/>	
-	    <eLabel position="1075,20" size="195,1" backgroundColor="#0000fafa" zPosition="1"/>
+        <eLabel position="1076,21" size="210,94" backgroundColor="#0003424a" zPosition="1"/>	
+	    <eLabel position="1075,20" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="1075,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1075,114" size="195,1" backgroundColor="#0000fafa" zPosition="1"/>
-	    <eLabel position="1270,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1075,114" size="210,1" backgroundColor="#0000fafa" zPosition="1"/>
+	    <eLabel position="1279,20" size="1,95" backgroundColor="#0000fafa" zPosition="1"/>
 	<!-- contenido -->	
 		<widget name="title" position="395,0" size="500,50" zPosition="3" halign="center" valign="top" foregroundColor="#0000baff" backgroundColor="black" font="Regular;17" transparent="1"/>
 		<widget name="pointer" position="505,3" size="26,16" zPosition="3" backgroundColor="black" transparent="1" alphatest="blend"/>			
@@ -208,6 +208,6 @@
 		<widget name="green" position="260,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="yellow" position="460,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<widget name="blue" position="660,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<ePixmap position="1145,117" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda_arriba_abajo.png" alphatest="blend" transparent="1"/>			
+		<ePixmap position="1155,117" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda_arriba_abajo.png" alphatest="blend" transparent="1"/>			
 	</screen>	
 </skin>
