@@ -758,7 +758,7 @@
 	<!-- (035) ####### EPG SELECTION MULTI ####### (12-02) -->
 	<screen name="EPGSelectionMulti" position="0,0"	size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>				
-		<ePixmap position="57,655" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="57,660" zPosition="1" size="750,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 	<!-- background -->
 		<ePixmap pixmap="EGAdriatic/menu/fr_main_help.png" position="0,0" zPosition="-1" size="1280,720" alphatest="on" transparent="1"/> 
 		
@@ -777,10 +777,10 @@
 		<widget name="lab1" position="78,150" size="1130,400" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
 	<!-- events -->
 		<widget name="more_button" pixmap="EGAdriatic/pointer1.png" position="530,142" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button" pixmap="EGAdriatic/pointer1.png" position="785,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button" pixmap="EGAdriatic/pointer1.png" position="800,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="now_button" pixmap="EGAdriatic/pointer1.png" position="1050,142" zPosition="3" size="26,16" alphatest="on"/>		
 		<widget name="now_button_sel" pixmap="EGAdriatic/pointer.png" position="530,142" zPosition="3" size="26,16" alphatest="on"/>
-		<widget name="next_button_sel" pixmap="EGAdriatic/pointer.png" position="785,142" zPosition="3" size="26,16" alphatest="on"/>
+		<widget name="next_button_sel" pixmap="EGAdriatic/pointer.png" position="800,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="more_button_sel" pixmap="EGAdriatic/pointer.png" position="1050,142" zPosition="3" size="26,16" alphatest="on"/>
 		<widget name="now_text" position="366,135" zPosition="4" size="250,28" text="NOW" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
 		<widget name="next_text" position="618,135" zPosition="4" size="250,28" text="NEXT" font="Regular;24" halign="center" foregroundColor="#0077d8e6" transparent="1"/>
