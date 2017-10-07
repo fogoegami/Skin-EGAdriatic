@@ -1003,7 +1003,7 @@
         <ePixmap position="925,434" size="256,256" pixmap="menu/ico_wlan.png" alphatest="blend"/>
 	</screen>
 	
-	<!-- (015) ####### CONFIGURACION DE RED->OK ####### ( -->
+	<!-- (015) ####### MENU CONFIGURACION DE RED DISTINTOS MENUS DE RED  ####### -->
 	<screen name="AdapterSetupConfiguration" position="0,0" size="1280,720" flags="wfNoBorder">	
 		<panel name="PantallaGenerica_sR"/>
 		<panel name="ScrollBarTemplate"/>		
@@ -1018,17 +1018,17 @@
 		<widget source="Statustext" render="Label" position="70,500" foregroundColor="#004ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
 		<widget name="statuspic" position="195,500" size="60,40" pixmaps="EGAdriatic/buttons/key_green.png,EGAdriatic/buttons/button_green_off1.png" zPosition="10" transparent="1" alphatest="on"/>
 	</screen>	
-	<!-- Configuracion del Adaptador -->
+	<!-- Configuracion del Adaptador->OK WLAN O LAN RED LOCAL -->
 	<screen name="AdapterSetup" position="0,0" size="1280,720" flags="wfNoBorder">
 	    <panel name="Title"/>
 		<panel name="PIG"/>
         <panel name="PantallaGenerica_sRGB"/>		
         <panel name="sRGB"/>
 		<panel name="ScrollBarTemplate"/>	
-		<widget source="Adaptertext" render="Label" position="80,140" size="270,25" font="Regular;22" zPosition="2" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
-		<widget source="Adapter" render="Label" position="150,142" size="400,25" font="Regular;20" zPosition="2" backgroundColor="black" transparent="1"/>
-		<widget name="config" position="75,190" size="690,200" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1"/>
-		<widget source="introduction" render="Label" position="280,395" size="300,30" font="Regular;24" halign="center" foregroundColor="#0000fafa" backgroundColor="black"/>
+		<widget source="Adaptertext" render="Label" position="320,115" size="270,25" font="Regular;22" zPosition="2" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget source="Adapter" render="Label" position="385,117" size="400,25" font="Regular;20" zPosition="2" backgroundColor="black" transparent="1"/>
+		<widget name="config" position="75,150" size="700,250" backgroundColor="black" transparent="1"/>
+		<widget source="introduction" render="Label" position="280,410" size="300,30" font="Regular;22" halign="center" foregroundColor="#0000fafa" backgroundColor="black"/>
 		<widget source="IPtext" render="Label" position="80,445" size="150,24" font="Regular;20" halign="left" zPosition="1" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget source="IP" render="Label" position="360,445" size="200,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1"/>
 		<widget source="Gatewaytext" render="Label" position="80,485" size="250,24" font="Regular;20" halign="left" zPosition="1" foregroundColor="#0000fafa" backgroundColor="black" transparent="1"/>
@@ -1126,7 +1126,35 @@
 		<widget name="config" position="80,140" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" backgroundColor="black" transparent="1"/>
 		<widget source="introduction" render="Label" position="845,435" size="380,160" halign="center" valign="center" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" transparent="1" zPosition="2"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>	
-	</screen>	
+	</screen>
+	
+	<!-- (015) ####### MENU CON WIFI WLAN CONECTADA DATOS DE RED ####### -->
+	<screen name="WlanStatus" position="0,0" size="1280,720" flags="wfNoBorder">	
+		<panel name="PantallaGenerica_sR"/>
+		<panel name="ScrollBarTemplate"/>		
+		<panel name="PIG"/>
+	    <panel name="Title"/>
+	    <panel name="sR"/>
+        <panel name="Logo_Egami"/>		
+		<widget source="IFtext" render="Label" position="80,130" size="140,24" zPosition="10" font="Regular;24" foregroundColor="#004ccbde" transparent="1"/>
+		<widget source="IF" render="Label" position="390,130" size="400,24" zPosition="10" font="Regular;24" transparent="1"/>
+		<widget source="LabelBSSID" render="Label" position="80,180" size="300,37" valign="left" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
+		<widget source="LabelESSID" render="Label" position="80,225" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
+		<widget source="LabelQuality" render="Label" position="80,275" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
+		<widget source="LabelSignal" render="Label" position="80,335" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
+		<widget source="LabelBitrate" render="Label" position="80,395" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
+		<widget source="LabelEnc" render="Label" position="80,455" size="300,37" valign="center" foregroundColor="#004ccbde" font="Regular;20" transparent="1"/>
+		<widget source="BSSID" render="Label" position="390,175" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<widget source="ESSID" render="Label" position="390,225" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<widget source="quality" render="Label" position="390,275" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<widget source="signal" render="Label" position="390,335" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<widget source="bitrate" render="Label" position="390,395" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<widget source="enc" render="Label" position="390,455" size="495,37" valign="center" font="Regular;20" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+		<widget source="Statustext" render="Label" position="80,530" foregroundColor="#004ccbde" size="150,40" zPosition="10" font="Regular;24" transparent="1"/>
+		<widget name="statuspic" position="385,530" size="60,40" pixmaps="EGAdriatic/buttons/key_green.png,EGAdriatic/buttons/button_green_off1.png" zPosition="10" transparent="1" alphatest="on"/>
+	</screen>
+	
 	<!--  Configuracion de Montajes OK -->
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenerica_sR"/>	
