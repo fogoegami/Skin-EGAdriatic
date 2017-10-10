@@ -3112,11 +3112,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="key_yellow" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
 
 	    <widget name="key_blue" position="0,0" size="0,0" zPosition="1" transparent="1" valign="center" noWrap="1" backgroundColor="black"/>
-	<!--  Streaming -->	
-		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="1017,561" size="18,18" zPosition="2" alphatest="on">
-		    <convert type="ClientsStreaming"/>
-		    <convert type="ConditionalShowHide">Blink</convert>
-	    </widget>
     <!-- Orologio Digitale - Digital Clock -->
         <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
             <convert type="ClockToText">Default</convert>
@@ -3205,8 +3200,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.CurrentService" render="Label" position="705,562" size="90,22" halign="center" valign="center" font="Regular;16" transparent="1" foregroundColor="#004ccbde" backgroundColor="background" zPosition="2">
 		    <convert type="EGCpuUsage">$0</convert>
 	    </widget>
-	    <eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
-	    <eLabel text="AGC" zPosition="2" position="777,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
+	<!--  Streaming -->	
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="778,559" size="18,18" zPosition="2" alphatest="on">
+		    <convert type="ClientsStreaming"/>
+		    <convert type="ConditionalShowHide">Blink</convert>
+	    </widget>		
         <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
 		    <convert type="FrontendInfo">SNR</convert>
         </widget>
@@ -3214,12 +3212,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="FrontendInfo">AGC</convert>
 	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-        <widget source="session.FrontendStatus" render="Label" position="980,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="975,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
-        <widget source="session.FrontendStatus" render="Label" position="980,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="975,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">AGC</convert>
-        </widget>	
+        </widget>
+	    <eLabel text="SNR" zPosition="2" position="1015,560" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
+	    <eLabel text="AGC" zPosition="2" position="1015,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>		
 		<widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>	
@@ -3373,11 +3373,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="global.CurrentTime" render="Label" position="1071,611" size="84,48" zPosition="2" font="LCD;34" valign="top" halign="right" foregroundColor="#00dcdcdc" backgroundColor="#00333333" transparent="1">
             <convert type="ClockToText">Default</convert>
         </widget>
-	<!--  Streaming -->	
-	    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="1017,561" size="18,18" zPosition="2" alphatest="on">
-		    <convert type="ClientsStreaming"/>
-		    <convert type="ConditionalShowHide">Blink</convert>
-	    </widget>
         <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1">
             <convert type="ClockToText">Format::%S</convert>
         </widget>
@@ -3453,21 +3448,27 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		    <convert type="EGCpuUsage">$0</convert>
 	    </widget>
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-	    <eLabel text="SNR" zPosition="2" position="777,561" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
-	    <eLabel text="AGC" zPosition="2" position="777,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>	
+	<!--  Streaming -->	
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/tuner.png" position="778,559" size="18,18" zPosition="2" alphatest="on">
+		    <convert type="ClientsStreaming"/>
+		    <convert type="ConditionalShowHide">Blink</convert>
+	    </widget>		
         <widget source="session.FrontendStatus" render="Progress" position="822,565" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
 		    <convert type="FrontendInfo">SNR</convert>
         </widget>
-	    <widget source="session.FrontendStatus" render="Progress" position="822,573" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
+		<widget source="session.FrontendStatus" render="Progress" position="822,573" size="130,5" zPosition="2" pixmap="EGAdriatic/bar_snr.png" transparent="1">
 		    <convert type="FrontendInfo">AGC</convert>
 	    </widget>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
-        <widget source="session.FrontendStatus" render="Label" position="980,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="975,557" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
-        <widget source="session.FrontendStatus" render="Label" position="980,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
+        <widget source="session.FrontendStatus" render="Label" position="975,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
+	    <eLabel text="SNR" zPosition="2" position="1015,560" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
+	    <eLabel text="AGC" zPosition="2" position="1015,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>	
+    <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
     <!-- eLabel text="Ber :" zPosition="3" position="545,683" size="70,24" font="Regular;18" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1" 
 		<widget source="session.FrontendStatus" render="Label" position="600,683" zPosition="3" size="70,24" font="Regular;19" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1">
 			<convert type="FrontendInfo">BER</convert> 
