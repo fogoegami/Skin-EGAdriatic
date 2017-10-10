@@ -3218,8 +3218,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.FrontendStatus" render="Label" position="975,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
-	    <eLabel text="SNR" zPosition="2" position="1015,560" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
-	    <eLabel text="AGC" zPosition="2" position="1015,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>		
+	    <eLabel text="SNR" zPosition="2" position="1015,560" foregroundColor="#0000fafa" backgroundColor="black" size="26,10" font="Regular;10"/>
+	    <eLabel text="AGC" zPosition="2" position="1015,570" foregroundColor="#0000fafa" backgroundColor="black" size="26,10" font="Regular;10"/>		
 		<widget source="session.CurrentService" render="Label" zPosition="4" position="95,676" size="93,22" halign="right" font="LCD;19" foregroundColor="#00a1d1ff" backgroundColor="#00333333" transparent="1">
 	        <convert type="PliExtraInfo">ResolutionString</convert>
 	    </widget>	
@@ -3466,8 +3466,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="session.FrontendStatus" render="Label" position="975,568" zPosition="3" size="55,12" halign="left" font="Regular;13" foregroundColor="#0000fafa" transparent="1" backgroundColor="#00333333">
             <convert type="FrontendInfo">AGC</convert>
         </widget>
-	    <eLabel text="SNR" zPosition="2" position="1015,560" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>
-	    <eLabel text="AGC" zPosition="2" position="1015,570" foregroundColor="#0000fafa" backgroundColor="black" size="21,10" font="Regular;10"/>	
+	    <eLabel text="SNR" zPosition="2" position="1015,560" foregroundColor="#0000fafa" backgroundColor="black" size="26,10" font="Regular;10"/>
+	    <eLabel text="AGC" zPosition="2" position="1015,570" foregroundColor="#0000fafa" backgroundColor="black" size="26,10" font="Regular;10"/>	
     <!-- ePixmap position="273,693" zPosition="2" size="200,6" pixmap="EGAdriatic/bar_snr_osd.png" alphatest="on" -->
     <!-- eLabel text="Ber :" zPosition="3" position="545,683" size="70,24" font="Regular;18" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1" 
 		<widget source="session.FrontendStatus" render="Label" position="600,683" zPosition="3" size="70,24" font="Regular;19" foregroundColor="#c0c0c0" backgroundColor="transpBlack" transparent="1">
