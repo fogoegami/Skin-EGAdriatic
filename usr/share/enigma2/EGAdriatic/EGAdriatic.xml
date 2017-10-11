@@ -1847,9 +1847,11 @@
 		<panel name="PantallaGenericaRexit"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="PIG"/>
-        <panel name="Title"/>		
-        <ePixmap pixmap="icons/key_ok.png" position="235,635" size="40,22" alphatest="blend"/>		
-		<eLabel text="Scan" position="290,635" size="250,36" foregroundColor="#00ffffff" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+        <panel name="Title"/>
+        <ePixmap position="240,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarG.png" alphatest="blend"/>
+		<eLabel text="Save" position="270,631" size="250,36" foregroundColor="#00ffffff" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;22" halign="left"/>		
+        <ePixmap pixmap="icons/key_ok.png" position="445,634" size="40,22" alphatest="blend"/>		
+		<eLabel text="Scan" position="490,632" size="250,36" foregroundColor="#00ffffff" backgroundColor="#000c0d0e" zPosition="1" transparent="1" font="Regular;22" halign="left"/>		
         <!--eLabel text="OK" position="360,632" size="190,24" zPosition="1" font="Regular;19" backgroundColor="black" halign="left" transparent="1" valign="center"/-->				
 		<widget name="config" position="80,138" size="690,400" scrollbarMode="showOnDemand" itemHeight="25" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
