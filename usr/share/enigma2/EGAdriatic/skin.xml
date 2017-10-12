@@ -138,11 +138,11 @@
 	    <widget source="label3" render="Label" position="535,22" size="210,91" font="Regular;18" halign="center" valign="top" foregroundColor="#0000fafa" zPosition="2" transparent="1"/>
 	    <widget source="label4" render="Label" position="795,22" size="210,80" font="Regular;17" halign="center" valign="center" zPosition="2" transparent="1"/> 
 	    <widget source="label5" render="Label" position="1040,22" size="210,80" font="Regular;18" halign="center" valign="center" zPosition="2" transparent="1"/>
-		<ePixmap position="5,90" zPosition="1" size="600,45" pixmap="EGAdriatic/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>		
-		<widget name="red" position="8,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<widget name="green" position="208,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<widget name="yellow" position="408,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<widget name="blue" position="608,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
+		<ePixmap position="95,90" zPosition="1" size="600,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<widget name="red" position="98,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
+		<widget name="green" position="298,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
+		<widget name="yellow" position="498,105" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>
+		<widget name="blue" position="698,105" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<ePixmap position="1135,107" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda.png" alphatest="blend" transparent="1"/>		
 	</screen>
 	<!-- Menu Horizontal iconos -->		
@@ -203,11 +203,11 @@
 		<widget source="label6" render="Label" position="1065,20" size="210,95" font="Regular;20" halign="center" valign="center" zPosition="2" transparent="1"/> 
 		<widget source="label6s" render="Label" position="1065,20" size="210,95" font="Regular;20" halign="center" valign="top" zPosition="2" foregroundColor="#0000fafa" transparent="1"/> 
 		<!--widget name="pixmap6" position="1065,35" size="320,70" zPosition="1" alphatest="on"/-->		
-		<ePixmap position="57,103" zPosition="1" size="600,45" pixmap="EGAdriatic/menu/colorbarRGY.png" alphatest="blend" transparent="1"/>		
-		<widget name="red" position="60,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<widget name="green" position="260,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<widget name="yellow" position="460,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
-		<widget name="blue" position="660,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
+		<ePixmap position="50,103" zPosition="1" size="600,45" pixmap="EGAdriatic/menu/colorbarRG.png" alphatest="blend" transparent="1"/>		
+		<widget name="red" position="55,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
+		<widget name="green" position="255,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
+		<widget name="yellow" position="455,118" zPosition="2" size="0,0" font="Regular;16" transparent="1"/>
+		<widget name="blue" position="655,118" zPosition="2" size="140,20" font="Regular;16" transparent="1"/>
 		<ePixmap position="1155,117" zPosition="1" size="45,25" pixmap="icons/cursores_derecha_izquierda_arriba_abajo.png" alphatest="blend" transparent="1"/>			
 	</screen>	
 </skin>
