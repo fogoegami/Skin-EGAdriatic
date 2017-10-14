@@ -2156,56 +2156,45 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="RadioInfoBar" position="0,504" size="1280,216" title="InfoBar" flags="wfNoBorder" zPosition="-1">
 		<ePixmap position="4,-30" zPosition="-10" size="1280,720" pixmap="EGAdriatic/radiobar.png" transparent="1"/>
 		<ePixmap position="298,128" zPosition="2" size="919,6" pixmap="EGAdriatic/po_bar1.png" alphatest="on"/>
-	<!-- ePixmap position="90,96" zPosition="2" size="130,80" pixmap="EGAdriatic/picon_default.png" alphatest="on" -->
-		<ePixmap position="237,99" zPosition="1" size="43,59" pixmap="EGAdriatic/bar_radio.png" alphatest="on"/>
+		<ePixmap position="140,85" zPosition="1" size="43,59" pixmap="EGAdriatic/nota_musica.png" alphatest="blend"/>
+        <widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/icons/icon_rec_light.png" position="260,47" zPosition="3" size="22,22" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+        <ePixmap position="260,47" zPosition="2" size="22,22" pixmap="EGAdriatic/icons/icon_norec_light.png" alphatest="on"/>		
 		
-		<ePixmap pixmap="EGAdriatic/ico_rec_off.png" position="227,20" size="44,26" zPosition="1" alphatest="blend"/>
-		<widget source="session.RecordState" render="Pixmap" pixmap="EGAdriatic/ico_rec_on.png" position="227,20" size="44,26" zPosition="2" alphatest="blend">
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		
-		<widget source="session.CurrentService" render="Label" position="415,7" size="730,34" font="Regular;24" halign="center" valign="top" noWrap="1" backgroundColor="#004ccbde" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="415,50" size="730,34" font="Regular;20" halign="center" valign="top" noWrap="1" foregroundColor="#0000fafa" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="272,13" size="230,24" font="Regular;20" valign="top" halign="center" noWrap="1" backgroundColor="darkgrey" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="272,50" size="230,24" font="Regular;20" valign="top" halign="center" noWrap="1" foregroundColor="#0000fafa" transparent="1">
 			<convert type="ServiceName">Provider</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="308,53" size="70,30" font="Regular;26" halign="right" backgroundColor="black" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="380,53" size="15,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1"/>
 		<widget source="session.Event_Now" render="Label" position="397,53" size="70,30" font="Regular;26" halign="left" backgroundColor="black" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="(" position="469,53" size="10,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1"/>
 		<widget source="session.Event_Now" render="Label" position="481,53" size="100,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<eLabel text=")" position="583,53" size="10,30" font="Regular;26" halign="center" backgroundColor="black" transparent="1"/>
 		<widget source="session.Event_Now" render="Label" position="595,53" size="595,30" font="Regular;26" halign="left" backgroundColor="black" transparent="1">
 			<convert type="EventName">Name</convert>
-		</widget>
-        	<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/p_bar1.png" position="298,128" size="919,6" zPosition="7" transparent="1">
-			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="307,93" size="70,30" font="Regular;26" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="379,93" size="15,30" font="Regular;26" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1"/>
 		<widget source="session.Event_Next" render="Label" position="396,93" size="70,30" font="Regular;26" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="(" position="468,93" size="10,30" font="Regular;26" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1"/>
 		<widget source="session.Event_Next" render="Label" position="480,93" size="100,30" font="Regular;26" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
-		<eLabel text=")" position="582,93" size="10,30" font="Regular;26" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1"/>
 		<widget source="session.Event_Next" render="Label" position="594,93" size="595,30" font="Regular;26" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -2219,17 +2208,14 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	</screen>
 	<!-- (062) ####### Channel selection - Radio ####### -->
 	<screen name="ChannelSelectionRadio" position="60,80" size="1160,410" title="Channel Selection">
+		<ePixmap position="1122,10" zPosition="3" size="27,400" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>	
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,410" alphatest="on"/>
-		<widget name="list" position="20,20" size="1120,308" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNumberFont="Regular;20" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="EGAdriatic/pl.png" transparent="1"/>
-		<ePixmap position="56,615" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="2"/>
-		<ePixmap position="32,350" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="314,350" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="596,350" size="250,40" pixmap="EGAdriatic/buttons/yellow25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="878,350" size="250,40" pixmap="EGAdriatic/buttons/blue25.png" alphatest="on" zPosition="1"/>
-		<widget name="key_red" position="32,350" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="key_green" position="313,351" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="key_yellow" position="596,352" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="key_blue" position="878,351" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
+		<widget name="list" position="20,20" size="1120,325" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNumberFont="Regular;20" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="EGAdriatic/pl.png" transparent="1"/>
+		<ePixmap position="95,365" zPosition="2" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend"/>
+		<widget name="key_red" position="45,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
+		<widget name="key_green" position="245,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
+		<widget name="key_yellow" position="445,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
+		<widget name="key_blue" position="645,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 	</screen>
 	<!-- (063) ####### Rds Info Display ####### -->
 	<screen name="RdsInfoDisplay" position="0,0" title="Info Display" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
