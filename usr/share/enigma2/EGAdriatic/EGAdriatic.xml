@@ -322,7 +322,8 @@
     </screen>
 	
 	<!-- ####### Channel selection Sencillo #######  -->	
-	<screen name="SlimChannelSelection" position="20,80" size="565,600" backgroundColor="#14101010">
+	<screen name="SlimChannelSelection" position="20,80" size="565,600">
+		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="565,600" alphatest="on"/>	
 		<panel name="BotonRedAncho"/>
 		<panel name="BotonGreenAncho"/>
 		<panel name="BotonYellowAncho"/>
@@ -433,7 +434,8 @@
 		<ePixmap pixmap="icons/key_info.png" position="670,674" size="40,22" alphatest="blend"/>		
     </screen>
 	<!-- Info desde InfobarEPG->Multiple -->	
-	<screen name="InfoBarEventView" position="900,7" backgroundColor="transpBlack" size="365,247" flags="wfNoBorder">
+	<screen name="InfoBarEventView" position="900,7" size="365,247" flags="wfNoBorder">
+		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="365,247" alphatest="on"/>		
 	    <eLabel position="2,2" size="361,1" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="2,2" size="1,242" backgroundColor="#0000fafa" zPosition="0"/>
 	    <eLabel position="363,2" size="1,243" backgroundColor="#0000fafa" zPosition="0"/>
@@ -1579,7 +1581,8 @@
 		<widget name="key_left" position="80,480" size="560,20" transparent="1"/>
 	</screen>
 	<!--  Menu Rapido Subtitulos con subtitulos activado Subtitulos ok-> boton rojo-->
-		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="550,320" backgroundColor="transpBlack" title="Subtitle settings">
+		<screen name="QuickSubtitlesConfigMenu" position="30,75" size="550,320" title="Subtitle settings">
+		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="600,320" alphatest="on"/>		
 		<widget name="config" position="10,5" size="570,250" font="xRegular;16" foregroundColor="#004ccbde" zPosition="1" transparent="1"/>
 		<widget name="videofps" position="10,255" size="570,20" backgroundColor="transpBlack" transparent="1" zPosition="1" font="xRegular;14" valign="center" halign="left" foregroundColor="bluette"/>
 	</screen>
