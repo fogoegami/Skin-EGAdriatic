@@ -324,10 +324,10 @@
 	
 	<!-- ####### Channel selection Sencillo #######  -->	
 	<screen name="SlimChannelSelection" position="20,80" size="565,600" backgroundColor="#14101010">
-		<panel name="BotoRedAncho"/>
-		<panel name="BotoGreenAncho"/>
-		<panel name="BotoYellowAncho"/>
-		<panel name="BotoBlueAncho"/>	
+		<panel name="BotonRedAncho"/>
+		<panel name="BotonGreenAncho"/>
+		<panel name="BotonYellowAncho"/>
+		<panel name="BotonBlueAncho"/>	
 		<widget name="list" position="0,0" size="550,420" scrollbarMode="showOnDemand" serviceItemHeight="28"
 			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
 			picServiceEventProgressbar="EGAdriatic/pl.png" selectionPixmap="EGAdriatic/icons/ls685x28.png" transparent="1" 
@@ -2247,10 +2247,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1160,410" alphatest="on"/>
 		<widget name="list" position="20,20" size="1120,325" zPosition="3" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#00666666" serviceNumberFont="Regular;20" serviceNameFont="Regular;24" serviceInfoFont="Regular;24" colorServiceDescription="grey" picServiceEventProgressbar="EGAdriatic/pl.png" transparent="1"/>
 		<ePixmap position="95,365" zPosition="2" size="750,45" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend"/>
-		<widget name="key_red" position="45,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="key_green" position="245,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="key_yellow" position="445,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="key_blue" position="645,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
+		<widget name="key_red" position="45,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
+		<widget name="key_green" position="245,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
+		<widget name="key_yellow" position="445,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
+		<widget name="key_blue" position="645,370" zPosition="2" size="250,40" font="Regular;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1"/>
 	</screen>
 	<!-- (063) ####### Rds Info Display ####### -->
 	<screen name="RdsInfoDisplay" position="0,0" title="Info Display" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
@@ -3701,8 +3701,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
 	    <panel name="SecondInfobarPanelEvents"/>
 	    <panel name="msnPanel"/>		
-	    <eLabel position="53,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
-	    <eLabel position="639,50" size="585,580" backgroundColor="#14101010" zPosition="0"/>
+	    <!--eLabel position="53,50" size="585,580" backgroundColor="#00000000" zPosition="0"/-->
+        <ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="53,50" size="585,580" alphatest="on"/>		
+	    <!--eLabel position="639,50" size="585,580" backgroundColor="#14101010" zPosition="0"/-->
+        <ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="639,50" size="585,580" alphatest="on"/>		
 	    <eLabel position="55,97" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="55,97" size="1,410" backgroundColor="#0000fafa" zPosition="1"/>
 	    <eLabel position="55,506" size="581,1" backgroundColor="#0000fafa" zPosition="1"/>
