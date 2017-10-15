@@ -320,7 +320,42 @@
 		<widget source="global.CurrentTime" render="Label" position="686,57" size="121,34" zPosition="2" font="LCD;32" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00131313" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget>	
-    </screen>	
+    </screen>
+	
+	<!-- ####### Channel selection Sencillo #######  -->	
+	<screen name="SlimChannelSelection" position="20,80" size="565,600" backgroundColor="#14101010">
+		<panel name="BotoRedAncho"/>
+		<panel name="BotoGreenAncho"/>
+		<panel name="BotoYellowAncho"/>
+		<panel name="BotoBlueAncho"/>	
+		<widget name="list" position="0,0" size="550,420" scrollbarMode="showOnDemand" serviceItemHeight="28"
+			serviceNumberFont="Regular;22" serviceNameFont="Regular;26" serviceInfoFont="Regular;20" colorServiceDescription="#004ccbde"
+			picServiceEventProgressbar="EGAdriatic/pl.png" selectionPixmap="EGAdriatic/icons/ls685x28.png" transparent="1" 
+			foregroundColorEventSelected="#a1d1ff"/>
+		<ePixmap position="532,0" zPosition="3" size="27,435" pixmap="EGAdriatic/icons/barra435.png" alphatest="blend" transparent="1"/>
+	    <eLabel position="5,420" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
+	    <eLabel position="5,421" size="1,19" backgroundColor="#0000fafa" zPosition="0"/>		
+	    <eLabel position="5,440" size="526,1" backgroundColor="#0000fafa" zPosition="0"/>
+	    <eLabel position="530,421" size="1,19" backgroundColor="#0000fafa" zPosition="0"/>		
+		<widget source="ServiceEvent" render="Label" position="5,419" zPosition="2" size="60,25" font="Regular;21" backgroundColor="black" halign="right" noWrap="1" valign="top" foregroundColor="#004ccbde" transparent="1">
+			<convert type="EventTime">StartTime</convert>
+			<convert type="ClockToText"></convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="70,419" zPosition="2" size="73,25" font="Regular;21" backgroundColor="black" noWrap="1" valign="top" foregroundColor="#004ccbde" transparent="1">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:- %H:%M</convert>
+		</widget>
+		<widget source="Event" render="Label" position="320,413" size="200,35" font="Regular;21" foregroundColor="#004ccbde" backgroundColor="background" halign="right" valign="center" transparent="1" zPosition="1">
+		    <convert type="EventTime">Remaining</convert>
+		    <convert type="RemainingToText">NoSeconds</convert>
+		</widget>		
+		<widget source="ServiceEvent" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="5,445" size="545,88" font="Regular;19" backgroundColor="black" foregroundColor="#00a1d1ff" valign="top" zPosition="2" transparent="1">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
+		<ePixmap pixmap="icons/key_epg_single.png" position="425,535" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="470,535" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="515,535" size="40,22" alphatest="blend"/>		
+	</screen>	
 	
 	<!-- (033) ####### EVENT VIEW boton info desde MoviePlayer->EMC + epg search boton info ####### -->
 	<screen name="EventViewSimple" position="0,0"	size="1280,720" flags="wfNoBorder">

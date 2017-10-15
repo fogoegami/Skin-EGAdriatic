@@ -318,7 +318,24 @@
 	<screen name="PantallaGenerica_sY">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
 		<ePixmap position="460,635" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarY.png" alphatest="blend" transparent="1"/>
-    </screen>	
+    </screen>
+	<!-- ####### BOTONES ANCHOS ARRIBA Y ABAJO COLOR ####### -->	
+	<screen name="BotoRedAncho">
+		<ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_red" position="0,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
+	</screen>
+	<screen name="BotoGreenAncho">
+		<ePixmap pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_green" position="140,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
+	</screen>
+	<screen name="BotoYellowAncho">
+		<ePixmap pixmap="buttons/yellow.png" position="280,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_yellow" position="280,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
+	</screen>
+	<screen name="BotoBlueAncho">
+		<ePixmap pixmap="buttons/blue.png" position="420,e-40" size="140,40" alphatest="on"/>
+		<widget name="key_blue" position="420,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1"/>
+	</screen>	
 	<!--  ####### Template PantallaPieTV #######  -->
 	<screen name="PantallaPieTV" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="Title"/>
