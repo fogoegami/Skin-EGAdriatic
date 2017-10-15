@@ -41,7 +41,6 @@
 		<panel name="Logo_Egami"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	<!-- menu list -->
-	<!--widget source="menu_path_compressed" render="Label" position="80,5" size="540,40" font="Regular;15" transparent="1" foregroundColor="#0000fafa" backgroundColor="#00000000" zPosition="2"/-->
 		<widget source="menu" render="Listbox" position="69,145" zPosition="2" size="728,418" backgroundPixmap="EGAdriatic/icons/butselection.png" selectionPixmap="EGAdriatic/icons/ls705x38.png" transparent="1" scrollbarMode="showAlways">
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
@@ -4768,7 +4767,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="sRG"/>		
         <panel name="PIG"/>
-		<widget name="config" position="80,138" size="715,415" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
+		<widget name="config" position="60,140" size="737,425" font="Regular;18" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="help" render="Label" position="845,435" size="380,160" transparent="1" font="Regular;20" valign="bottom" halign="center" foregroundColor="#004ccbde" backgroundColor="black"/>
 	</screen>	
@@ -4780,7 +4779,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="sRGYB"/>		
         <panel name="PIG"/>
-		<widget name="config" position="80,140" size="715,425" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
+		<widget name="config" position="60,140" size="737,425" font="Regular;18" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
 		<widget source="help" render="Label" position="865,435" size="320,500" font="Regular;18" halign="center" transparent="1" foregroundColor="#004ccbde" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 	</screen>
