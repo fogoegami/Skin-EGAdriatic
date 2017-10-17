@@ -915,11 +915,11 @@
 	</screen>	
 	<!-- ####### SOFTWARE MANAGER #######  -->
 	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
-        <panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+        <panel name="PantallaGenericaRexit"/>	
 	    <panel name="PIG"/>
 		<panel name="Title"/>
         <panel name="ScrollBarTemplate"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="80,638" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_menu1.png" position="8,638" size="40,22" alphatest="blend"/>		
 		<ePixmap pixmap="buttons/key_info1.png" position="990,410" size="74,36" zPosition="1" alphatest="blend"/>
 		<widget source="menu" render="Listbox" position="65,155" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls700x50-a1.png" backgroundPixmap="EGAdriatic/icons/butselection.png" transparent="1">
 			<convert type="TemplatedMultiContent">
