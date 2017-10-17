@@ -913,36 +913,37 @@
 			</convert>
 		</widget>
 	</screen>	
-	<!-- (009) ####### SOFTWARE MANAGER - GESTIONE SOFTWARE ####### (12-02) -->
-	<screen name="UpdatePluginMenu" position="center,center" size="1280,720" title="Softwaremanager..." flags="wfNoBorder">
+	<!-- ####### SOFTWARE MANAGER #######  -->
+	<screen name="UpdatePluginMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
 	    <panel name="PIG"/>
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
-		<ePixmap position="0,0" zPosition="-1" size="576,69" pixmap="EGAdriatic/menu/tx_estension.png"/>
-		<ePixmap position="769,134" zPosition="2" size="27,400" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
-		<ePixmap position="249,630" zPosition="2" size="400,40" pixmap="EGAdriatic/menu/logo_egami_menu.png" alphatest="blend" transparent="1"/>
-		<widget source="menu" render="Listbox" position="67,137" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls700x38.png" backgroundPixmap="EGAdriatic/icons/butselection.png" transparent="1">
+		<panel name="Title"/>
+        <panel name="ScrollBarTemplate"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="80,638" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="buttons/key_info1.png" position="990,410" size="74,36" zPosition="1" alphatest="blend"/>
+		<widget source="menu" render="Listbox" position="65,155" size="720,440" zPosition="3" scrollbarMode="showNever" selectionPixmap="EGAdriatic/icons/ls700x50-a1.png" backgroundPixmap="EGAdriatic/icons/butselection.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 			    {"template": [ 
-			    MultiContentEntryText(pos = (51, 2), size = (600, 38), flags = RT_HALIGN_LEFT, text = 1),
+			    MultiContentEntryText(pos = (51, 2), size = (650, 38), flags = RT_HALIGN_LEFT, text = 1),
 			    MultiContentEntryPixmapAlphaBlend(pos=(1,1),size=(29,29),png=5,)
 			    ],
 			    "fonts": [gFont("Regular",28)],
-			    "itemHeight": 38
+			    "itemHeight": 55
 			    }
 			</convert>	
 		</widget>
-		<widget source="menu" render="Listbox" position="870,370" size="348,340" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="#004ccbde" transparent="1">
+		<widget source="menu" render="Listbox" zPosition="2" position="835,450" size="390,300" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10, 0), size = (320, 320), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 0 is the MenuText,
+				MultiContentEntryText(pos = (0,0), size = (400,300),flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2, color = 0x0000fafa),	# index 0 is the MenuText,
 				],
-				"fonts": [gFont("Regular", 24)],
-				"itemHeight": 320
+				"fonts": [gFont("Regular",18)],
+				"itemHeight": 300
 				}
 			</convert>
 		</widget>	
 	</screen>
-	<!-- (010) ####### PLUGIN MANAGER - GESTIONE ESTENSIONI (12-02) ####### -->
+	<!-- (010) ####### PLUGIN MANAGER - Gestionar Extensiones ####### -->
 	<screen name="PluginManager" position="center,center" size="1280,720" title="Extensions management" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
 		<ePixmap position="0,0" zPosition="1" size="576,69" pixmap="EGAdriatic/menu/tx_estension.png"/>
@@ -954,7 +955,7 @@
 			    {"templates":
 			    {"default": (52,[
 			    MultiContentEntryText(pos = (25, 1), size = (555, 23), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-			    MultiContentEntryText(pos = (25, 25), size = (555, 23), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+			    MultiContentEntryText(pos = (25, 20), size = (555, 23), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
 			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 5), # index 5 is the status pixmap
 			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 6), # index 6 is the div pixmap
 			    ]),
@@ -964,7 +965,7 @@
 			    MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (0, 0), png = 3), # index 3 is the div pixmap
 			    ])
 			    },
-			    "fonts": [gFont("Regular", 20),gFont("Regular", 18),gFont("Regular", 16)],
+			    "fonts": [gFont("Regular", 20),gFont("Regular", 16),gFont("Regular", 14)],
 			    "itemHeight": 52
 			    }
 		    </convert>
@@ -989,7 +990,98 @@
             <convert type="ClockToText">Format:%H:%M :%S</convert>
         </widget> 
 	</screen>
-
+	<!-- ####### SOFTWARE MANAGER->Actualizar Software ####### -->
+	<screen name="UpdatePlugin" position="0,0" size="1280,720" title="Software update" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>	
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="activityslider" borderWidth="2" foregroundColor="#004ccbde" position="80,165" size="562,32" backgroundColor="black"/>
+		<eLabel position="79,259" size="564,34" backgroundColor="#004ccbde"/>
+		<widget name="slider" position="80,260" borderWidth="2" foregroundColor="#0003424a" size="562,32" zPosition="1"/>
+		<widget source="package" render="Label" position="80,215" size="530,24" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget source="status" render="Label" position="80,265" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_off" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+	    <widget name="tl_red" position="80,365" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_yellow" position="80,415" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="tl_green" position="80,465" size="530,100" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>
+		<widget name="feedStatusMSG" position="80,515" size="530,100" font="Regular;20" halign="center" valign="center" backgroundColor="#00101010" transparent="1"/>		
+	</screen>
+	<!-- ####### SOFTWARE MANAGER->Software Restore ####### -->
+	<screen name="ImageWizard" position="0,0" size="1280,720" flags="wfNoBorder">
+	    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_help.png"/>
+		<panel name="Title"/>
+		<widget name="text" position="350,110" foregroundColor="#004ccbde" size="340,400" font="Regular;24"/>
+		<widget source="list" render="Listbox" position="350,450" size="440,180" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="StringList"/>
+		</widget>		
+		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="EGAdriatic/buttons/key_red.png" position="90,354" zPosition="0" size="35,25" transparent="1" alphatest="blend"/>
+		<widget name="languagetext" position="130,355" size="150,30" font="Regular;20"/>
+		<widget name="wizard" pixmap="EGAdriatic/wizard.png" position="90,140" zPosition="10" size="140,188" alphatest="blend"/>
+		<widget name="rc" pixmaps="rc.png,rcold.png" position="950,110" zPosition="10" size="154,500" alphatest="blend" transparent="1"/>
+		<widget name="arrowdown" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowup" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>
+		<widget name="arrowup2" pixmap="arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend"/>	
+		<widget name="HelpWindow" position="682,599" size="1,1" transparent="1" zPosition="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="icons/key_text.png" position="640,680" zPosition="2" size="40,22" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>		
+	</screen>
+	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Advanded restore ####### -->
+	<screen name="RestoreMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRGY"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRGY"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x26.png" transparent="1"/>
+	</screen>
+	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Seleccion archivos del backup (Select backukp files) ####### -->
+	<screen name="BackupSelection" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRGY"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRGY"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="checkList" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x26.png" transparent="1"/>		
+	</screen>
+	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Administrar paquetes ####### -->
+	<screen name="PacketManager" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
+        <panel name="Logo_Egami"/>		
+		<widget source="list" render="Listbox" position="75,140" size="720,425" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
+				],
+				"fonts": [gFont("Regular", 20),gFont("Regular", 14)],
+				"itemHeight": 52
+				}
+			</convert>
+		</widget>
+	</screen>
+	<!-- ####### SOFTWARE MANAGER->Opciones Avandas->Seleccion fuente de Actualizacion ####### -->
+	<screen name="IPKGMenu" position="0,0" size="1280,720" flags="wfNoBorder">
+        <panel name="PantallaGenerica_sRG"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
+        <panel name="Logo_Egami"/>		
+		<widget name="filelist" position="75,140" size="720,425" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls700x26.png" transparent="1"/>
+	</screen>	
 	<!-- (019) ####### Buscar redes inhalambricas ->OK-titulo seleccionar red inhalambrica ####### -->	
 	<screen name="WlanScan" position="0,0" size="1280,720" flags="wfNoBorder">
         <panel name="PantallaGenerica_sRG"/>	
@@ -1720,23 +1812,6 @@
 		<widget name="arrowdown" pixmap="EGAdriatic/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 		<widget name="arrowup" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
 		<widget name="arrowup2" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-	</screen>
-	<!-- (031) ####### Restore backups Wizard SM ####### -->
-	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on"/>
-		<widget name="text" position="453,110" size="340,330" font="Regular;22" transparent="1"/>
-		<widget source="list" render="Listbox" position="323,410" size="490,180" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
-		<ePixmap pixmap="EGAdriatic/buttons/button_red.png" position="240,320" zPosition="0" size="15,16" transparent="1" alphatest="on"/>
-		<widget name="languagetext" position="270,320" size="95,30" font="Regular;18"/>
-		<widget name="wizard" pixmap="EGAdriatic/wizard.png" position="220,120" zPosition="10" size="140,188" alphatest="on"/>
-		<widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="810,120" zPosition="10" size="154,500" alphatest="on"/>
-		<widget name="arrowdown" pixmap="EGAdriatic/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on"/>
-		<widget name="arrowdown2" pixmap="EGAdriatic/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on"/>
-		<widget name="arrowup" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on"/>
-		<widget name="arrowup2" pixmap="EGAdriatic/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on"/>
 	</screen>
 	<!-- (032) ####### LanguageWizard ####### -->
 	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Select Language" flags="wfNoBorder">
@@ -2747,29 +2822,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="detailtext" position="10,90" size="270,330" zPosition="10" font="Regular;21" transparent="1" halign="left" valign="top"/>
 		<widget name="screenshot" position="290,90" size="300,330" alphatest="on"/>
 	</screen>
-	<!-- (112) ####### UpdatePlugin ####### -->
-	<screen name="UpdatePlugin" position="center,center" size="700,200" title="Software update">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="700,200" alphatest="on"/>
-		<widget name="activityslider" position="0,0" size="700,5"/>
-		<widget name="slider" foregroundColor="#0003424a" position="0,180" size="700,30"/>
-		<widget source="package" render="Label" position="10,30" size="680,20" font="Regular;18" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
-		<widget source="status" render="Label" position="10,100" size="680,100" font="Regular;20" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
-	</screen>
 	<!-- (113) ####### IPKG ####### -->
 	<screen name="Ipkg" position="center,center" size="650,200" title="Installing Software...">
 		<widget name="activityslider" position="5,0" size="550,5" pixmap="EGAdriatic/progress_small.png"/>
 		<widget name="package" position="60,30" size="550,20" font="Regular;18"/>
 		<widget name="status" position="60,60" size="550,45" font="Regular;18"/>
 		<widget name="slider" position="60,100" size="530,15" pixmap="EGAdriatic/progress_big.png" borderWidth="2" borderColor="#00cccccc"/>
-	</screen>
-	<!-- (114) ####### IPKGMenu #######  -->
-	<screen name="IPKGMenu" position="center,center" size="710,520" title="Select upgrade source to edit.">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="710,520" alphatest="on"/>
-		<ePixmap position="70,460" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="390,460" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<widget source="key_red" render="Label" position="70,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="390,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="filelist" position="20,20" size="670,320" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<!-- (115) ####### IPKGSource ####### -->
 	<screen name="IPKGSource" position="center,center" size="710,240" title="Edit upgrade source url.">
@@ -2779,27 +2837,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_red" render="Label" position="70,180" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
 		<widget source="key_green" render="Label" position="390,180" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>	
 		<widget name="text" position="20,20" size="670,25" font="Regular;22" backgroundColor="background" foregroundColor="#00cccccc"/>
-	</screen>
-	<!-- (116) ####### PacketManager ####### -->
-	<screen name="PacketManager" position="center,center" size="710,520" title="Packet manager">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="710,520" alphatest="on"/>
-		<ePixmap position="70,460" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="390,460" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<widget source="key_red" render="Label" position="70,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="390,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="list" render="Listbox" position="20,20" size="670,365" scrollbarMode="showOnDemand" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-				MultiContentEntryText(pos = (5, 26), size = (440, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-				MultiContentEntryPixmapAlphaTest(pos = (445, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
-				MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (510, 2), png = 5), # index 4 is the div pixmap
-				],
-				"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
-				"itemHeight": 52
-				}
-			</convert>
-		</widget>
 	</screen>
 	<!-- (117) ####### IpkgInstaller ####### -->
 	<screen name="IpkgInstaller" position="center,center" size="600,520" title="Install extensions">
@@ -2816,28 +2853,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="800,340" alphatest="on"/>
 		<widget name="config" position="20,20" size="760,250" transparent="1" scrollbarMode="showOnDemand"/>
 	</screen>
-	<!-- (119) ####### BackupSelection ####### -->
-	<screen name="BackupSelection" position="center,center" size="950,520" title="Select files/folders to backup">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="950,520" alphatest="on"/>
-		<ePixmap position="50,460" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="350,460" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="650,460" size="250,40" pixmap="EGAdriatic/buttons/yellow25.png" alphatest="on" zPosition="1"/>
-		<widget source="key_red" render="Label" position="50,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="350,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="650,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="checkList" position="20,20" size="910,250" transparent="1" scrollbarMode="showOnDemand"/>
-	</screen>
-	<!-- (120) ####### RestoreMenu ####### -->
-	<screen name="RestoreMenu" position="center,center" size="950,520" title="Restore backups">
-		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="950,520" alphatest="on"/>
-		<ePixmap position="50,460" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="350,460" size="250,40" pixmap="EGAdriatic/buttons/green25.png" alphatest="on" zPosition="1"/>
-		<ePixmap position="650,460" size="250,40" pixmap="EGAdriatic/buttons/yellow25.png" alphatest="on" zPosition="1"/>
-		<widget source="key_red" render="Label" position="50,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_green" render="Label" position="350,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget source="key_yellow" render="Label" position="650,460" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1"/>
-		<widget name="filelist" position="20,20" size="910,230" scrollbarMode="showOnDemand" transparent="1"/>
-	</screen>"
   	<!-- (121) ####### RestoreScreen ####### -->
 	<screen name="RestoreScreen" position="center,center" size="800,340" title="Restore running...">
 		<widget name="config" position="20,20" size="760,250" transparent="1" scrollbarMode="showOnDemand"/>
