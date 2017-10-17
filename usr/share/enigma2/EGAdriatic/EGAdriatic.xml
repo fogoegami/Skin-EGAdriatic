@@ -943,8 +943,18 @@
 			</convert>
 		</widget>	
 	</screen>
+	<!-- ####### SOFTWARE MANAGER->TECLA MENU #######  -->
+	<screen name="SoftwareManagerSetup" position="0,0" size="1280,720" flags="wfNoBorder">	
+        <panel name="PantallaGenerica_sRG"/>
+        <panel name="Title"/>		
+        <panel name="PIG"/>
+        <panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>
+        <panel name="Logo_Egami"/>
+		<widget name="config" position="80,140" size="705,425" transparent="1" scrollbarMode="showOnDemand"/>		
+	</screen>	
 	<!-- (010) ####### PLUGIN MANAGER - Gestionar Extensiones ####### -->
-	<screen name="PluginManager" position="center,center" size="1280,720" title="Extensions management" flags="wfNoBorder">
+	<screen name="PluginManager" position="0,0" size="1280,720" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_channels.png"/>
 		<ePixmap position="0,0" zPosition="1" size="576,69" pixmap="EGAdriatic/menu/tx_estension.png"/>
 		<ePixmap position="775,116" zPosition="2" size="27,420" pixmap="EGAdriatic/icons/barra420.png" alphatest="blend" transparent="1"/>
