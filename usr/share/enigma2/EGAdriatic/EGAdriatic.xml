@@ -1068,7 +1068,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="sRG"/>
         <panel name="Logo_Egami"/>		
-		<widget source="list" render="Listbox" position="75,140" size="720,425" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="75,140" size="723,415" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 				MultiContentEntryText(pos = (5, 1), size = (440, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
