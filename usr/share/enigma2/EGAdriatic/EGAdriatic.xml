@@ -1739,7 +1739,8 @@
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="0,0" size="1280,720">
 		<panel name="Title"/>
-		<widget name="text" position="110,100" size="670,610" font="Console;14" transparent="1"/>
+		<ePixmap position="763,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>		
+		<widget name="text" position="110,125" size="670,445" font="Regular;12" transparent="0"/>
 		<ePixmap pixmap="icons/clock.png" position="1185,60" zPosition="1" size="20,20" alphatest="blend"/>
 		<widget source="global.CurrentTime" render="Label" position="1020,35" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
             <convert type="ClockToText">Format:%H:%M :%S</convert>
