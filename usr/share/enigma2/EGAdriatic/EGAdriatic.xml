@@ -1738,43 +1738,9 @@
 	</screen>
 	<!-- (027) ####### Console ver log backup full instalacion plugins etc  ####### -->
 	<screen name="Console" position="0,0" size="1280,720">
-		<panel name="Title"/>
-		<ePixmap position="763,110" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra470.png" alphatest="blend" transparent="1"/>		
-		<widget name="text" position="110,125" size="670,445" font="Regular;12" transparent="0"/>
-		<ePixmap pixmap="icons/clock.png" position="1185,60" zPosition="1" size="20,20" alphatest="blend"/>
-		<widget source="global.CurrentTime" render="Label" position="1020,35" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00040404" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
-		<widget source="global.CurrentTime" render="Label" position="820,35" size="200,40" valign="top" halign="center" font="LCD;38" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="1">
-		    <convert type="ClockToText">Format:%d/%m/%y</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="808,305" size="382,25" zPosition="4" foregroundColor="#0000fafa" font="Regular;19" valign="center" halign="center" transparent="1">
-		    <convert type="ServiceName">Name</convert>
-		</widget>		
-	<!-- Evento Corrente - Event Now -->
-		<widget source="session.Event_Now" render="Label" position="800,340" size="70,30" zPosition="2" halign="left"  font="Regular;20" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	    <widget font="Regular;20" halign="left" position="863,340" size="275,32" render="DRRunningText" noWrap="1" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" source="session.Event_Now" foregroundColor="#0000baff" backgroundColor="#00000000" transparent="1" zPosition="2">
-		    <convert type="EventName">Name</convert>
-	        </widget>			
-		<widget source="session.Event_Now" render="Label" position="1125,340" foregroundColor="#00a1d1ff" size="70,30" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Default</convert>
-		</widget>
-        <eLabel size="395,1" position="800,362" backgroundColor="darkgrey" zPosition="3"/>		
-		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="395,2" position="800,362" zPosition="5" backgroundColor="darkgrey" transparent="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>		
-		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="EGAdriatic/menu/fr_main_help.png"/>
-		<widget source="session.VideoPicture" render="Pig" position=" 808,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
-        <eLabel position="808,310" size="382,20" backgroundColor="#20101010" zPosition="3"/>		
-	    <eLabel position="807,110" size="2,220" backgroundColor="#0000fafa" zPosition="3"/>
-		<eLabel position="1191,108" size="2,222" backgroundColor="#0000fafa" zPosition="3"/>
-		<eLabel position="807,330" size="386,2" backgroundColor="#0000fafa" zPosition="3"/>
-		<eLabel position="807,108" size="384,2" backgroundColor="#0000fafa" zPosition="3"/>
-        <ePixmap pixmap="menu/logo_egami_menu.png" position="945,390" size="180,180" zPosition="2" alphatest="blend"/>		
+        <panel name="PantallaPieTV"/>
+        <panel name="Title"/>	
+		<widget name="text" position="110,125" size="688,445" font="Regular;12" transparent="0"/>
 	</screen>
 	<!--  EGAMI Execute -->
 	<screen name="EGExecute" position="0,0" size="1280,720" flags="wfNoBorder">
