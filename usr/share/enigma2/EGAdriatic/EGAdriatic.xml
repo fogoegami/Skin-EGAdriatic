@@ -517,7 +517,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>		
         <panel name="PIG"/>
-        <widget name="config" position="80,145" zPosition="5" size="695,427" scrollbarMode="showOnDemand"/>
+        <widget name="config" position="80,145" zPosition="5" size="695,427" font="Regular;19" scrollbarMode="showOnDemand"/>
         <ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="help" render="Label" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
