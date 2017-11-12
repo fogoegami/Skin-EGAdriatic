@@ -3886,7 +3886,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 	<!-- Order List -->
 	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Order Download List" backgroundColor="transparent" flags="wfNoBorder">
- 		<panel name="PantallaGenericaRGY"/>
+ 		<panel name="PantallaGenericaRGYB"/>
         <panel name="PIG"/>
 		<panel name="ScrollBarTemplate"/>		
         <ePixmap position="220,0" zPosition="-1" size="421,69" pixmap="EGAdriatic/menu/tx_crossepg.png"/>		
