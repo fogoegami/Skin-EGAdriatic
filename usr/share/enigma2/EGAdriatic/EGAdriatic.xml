@@ -5161,8 +5161,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#0011181a" transparent="1">
             <convert type="ClockToText">Format::%S</convert>
         </widget>		
-		<widget source="session.CurrentService" render="Label" position="361,565" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00353535">
-		    <convert type="ServiceName">Name</convert>
+		<widget source="session.CurrentService" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" position="361,570" size="588,32" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,569" size="74,26" zPosition="2" alphatest="blend">
@@ -5212,8 +5212,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <widget source="global.CurrentTime" render="Label" position="1125,617" size="62,45" zPosition="2" font="LCD;28" valign="top" halign="right" foregroundColor="#004ccbde" backgroundColor="#0011181a" transparent="1">
             <convert type="ClockToText">Format::%S</convert>
         </widget>		
-		<widget source="session.CurrentService" render="Label" position="361,565" size="588,32" zPosition="2" font="Regular;24" halign="center" noWrap="1" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00353535">
-		<convert type="ServiceName">Name</convert>
+		<widget source="session.CurrentService" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=2000,wrap=0,always=0,repeat=2,oneshot=1" position="361,570" size="588,32" zPosition="2" halign="center" font="Regular;20" foregroundColor="#004ccbde" transparent="1" backgroundColor="#00333333">
+			<convert type="ServiceName">Name</convert>
 		</widget>
 		<ePixmap pixmap="icons/dolby_off.png" position="245,569" zPosition="0" size="74,26" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolby_on.png" position="245,569" size="74,26" zPosition="2" alphatest="blend">
