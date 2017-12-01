@@ -3983,7 +3983,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="list" render="Listbox" scrollbarMode="showOnDemand" position="80,200" size="718,380" font="Regular;18" transparent="1">
 		    <convert type="StringList"/>
 		</widget>
-		<widget name="key" position="85,570" size="690,20" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black"/>
+		<widget name="key" position="82,570" size="690,20" font="Regular;18" transparent="1" foregroundColor="#0000fafa" backgroundColor="black"/>
 		<ePixmap position="930,414" size="200,200" zPosition="2" pixmap="menu/ico_timer.png" alphatest="blend"/>		
 	</screen>
 	<!-- Informacion About OK -->
@@ -6420,7 +6420,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="label1" position="80,140" size="515,30" zPosition="1" halign="center" font="Regular;25" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<widget name="label2" position="80,180" size="515,290" zPosition="1" halign="center" font="Regular;20" backgroundColor="black" transparent="1"/>
 		<widget name="config" position="80,260" size="515,250" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="info-multi" position="80,590" size="515,250" transparent="1"/>
+		<widget name="info-multi" position="80,400" size="515,250" font="Regular;20" transparent="1"/>
 		<ePixmap pixmap="menu/ico_personalbackup.png" position="850,410" size="370,204" alphatest="blend"/>
 	</screen>
 	
