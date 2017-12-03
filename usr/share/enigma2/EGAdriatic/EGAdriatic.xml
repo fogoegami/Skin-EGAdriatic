@@ -526,7 +526,8 @@
         <panel name="Title"/>		
         <panel name="PIG"/>
         <widget name="config" position="80,145" zPosition="5" size="695,427" font="Regular;19" scrollbarMode="showOnDemand"/>
-        <ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_info.png" position="690,680" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_help.png" position="735,680" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
 		<widget source="help" render="Label" position="845,415" size="380,160" font="Regular;18" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 	</screen>
@@ -4773,7 +4774,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>
         <panel name="sRG"/>		
         <panel name="PIG"/>
-		<widget name="config" position="60,140" size="737,425" font="Regular;18" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
+		<widget name="config" position="60,140" size="737,420" font="Regular;18" itemHeight="28" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="black"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 		<widget source="help" render="Label" position="845,435" size="380,160" transparent="1" font="Regular;20" valign="bottom" halign="center" foregroundColor="#004ccbde" backgroundColor="black"/>
 	</screen>	
