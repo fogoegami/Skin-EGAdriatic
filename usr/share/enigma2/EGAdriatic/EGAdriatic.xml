@@ -1212,19 +1212,19 @@
 		<panel name="ScrollBarTemplate"/>		
 		<widget name="AdapterInfo_OK" position="290,172" size="38,31" zPosition="2" pixmap="buttons/key_green.png" alphatest="blend"/>
 		<widget name="Adaptertext" position="80,170" size="610,25" zPosition="1" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="Adapter" position="340,170" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00538eff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="Adapter" position="340,170" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00ffffff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="NetworkInfo_Check" position="290,222" size="38,31" zPosition="2" pixmaps="buttons/key_green.png,buttons/key_red.png" alphatest="blend"/>
 		<widget name="Networktext" position="80,220" size="610,25" zPosition="1" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="Network" position="340,220" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00538eff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="Network" position="340,220" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00ffffff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="DhcpInfo_Check" position="290,272" size="38,31" zPosition="2" pixmaps="buttons/key_green.png,buttons/key_red.png" alphatest="blend"/>
 		<widget name="Dhcptext" position="80,270" size="610,25" zPosition="1" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="Dhcp" position="340,270" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00538eff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="Dhcp" position="340,270" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00ffffff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="IPInfo_Check" position="290,322" size="38,31" zPosition="2" pixmaps="buttons/key_green.png,buttons/key_red.png" alphatest="blend"/>
 		<widget name="IPtext" position="80,320" size="610,25" zPosition="1" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="IP" position="340,320" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00538eff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="IP" position="340,320" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00ffffff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="DNSInfo_Check" position="290,372" size="38,31" zPosition="2" pixmaps="buttons/key_green.png,buttons/key_red.png" alphatest="blend"/>
 		<widget name="DNStext" position="80,370" size="610,25" zPosition="1" font="Regular;22" backgroundColor="black" transparent="1"/>
-		<widget name="DNS" position="340,370" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00538eff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
+		<widget name="DNS" position="340,370" size="610,25" zPosition="1" font="Regular;22" foregroundColors="#00ffffff,#27d7361d,#0000fafa" backgroundColor="black" transparent="1"/>
 		<widget name="AdapterInfo" position="580,170" size="318,50" zPosition="1"/>
 		<widget name="AdapterInfo_Text" position="580,170" size="318,50" zPosition="2" font="Regular;22" transparent="1" foregroundColors="#0073c6ff,#00ffffff,#00009a00" backgroundColor="black"/>
 		<widget name="NetworkInfo" position="580,220" size="318,50" zPosition="1"/>
@@ -1246,7 +1246,7 @@
 	    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="EGAdriatic/menu/fr_main_help.png"/>
 		<panel name="Title"/>
 		<widget name="text" position="350,110" foregroundColor="#004ccbde" size="340,400" font="Regular;24"/>
-		<widget source="list" render="Listbox" position="350,450" size="440,180" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="list" render="Listbox" position="350,470" size="440,180" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList"/>
 		</widget>		
 		<widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand"/>
