@@ -393,7 +393,7 @@
         <widget name="channel" position="205,122" size="380,28" font="Regular;28" halign="center" valign="center" zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>		
 		<widget name="datetime" position="839,351" size="380,28" font="Regular;24" halign="left"  zPosition="3" backgroundColor="#00333333" transparent="1"/>
 		<widget name="duration" position="1110,351" size="215,28" font="Regular;24" halign="left"  zPosition="3" foregroundColor="#004ccbde" backgroundColor="#00333333" transparent="1"/>
-		<ePixmap pixmap="icons/key_exit.png" position="760,675" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_exit.png" position="760,674" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="715,674" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_info.png" position="670,674" size="40,22" alphatest="blend"/>
     </screen>
