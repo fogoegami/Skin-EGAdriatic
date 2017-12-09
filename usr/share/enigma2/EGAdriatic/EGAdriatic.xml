@@ -1848,14 +1848,13 @@
 		<panel name="PantallaGenerica_sRGYB"/>	
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-        <panel name="PIG"/>
         <panel name="sRGB"/>
         <widget name="key_yellow" position="405,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>		
 		<widget source="nimlist" render="Listbox" position="80,138" size="715,400" selectionPixmap="EGAdriatic/icons/ls620x90.png" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10, 5), size = (860, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (50, 37), size = (820, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (10,5), size = (860,50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (50,37), size = (820,50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 				],
 				"fonts": [gFont("Regular", 22), gFont("Regular", 18)],
 				"itemHeight": 90
@@ -2329,7 +2328,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="PantallaPieTV"/>		
 		<ePixmap position="57,625" zPosition="1" size="151,38" pixmap="EGAdriatic/menu/colorbarRGYB.png" alphatest="blend" transparent="1"/>
 		<widget name="SkinList" position="87,147" size="677,388" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x28.png" transparent="1"/>
-		<widget name="Preview" position="836,112" size="387,218" alphatest="on" zPosition="5"/>	
+		<widget name="Preview" position="836,112" size="387,221" alphatest="on" zPosition="5"/>	
 		<widget source="key_red" render="Label" position="9,625" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1"/>
 		<ePixmap pixmap="icons/key_info.png" position="8,640" size="40,22" alphatest="blend"/>		
         <ePixmap pixmap="icons/key_info2.png" position="370,450" size="74,36" zPosition="2" alphatest="blend"/>		
