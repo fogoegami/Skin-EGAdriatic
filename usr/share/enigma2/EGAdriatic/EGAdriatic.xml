@@ -78,7 +78,18 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>		
-	</screen>				
+	</screen>
+	<!-- ####### SETUP ServiceApp ####### -->
+	<screen name="ServiceAppSettings" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRG"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="sRG"/>		
+		<widget name="config" position="56,155" size="739,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
+	</screen>	
 	<!--  Harddisk selection -->
 	<screen name="HarddiskSelection" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
@@ -2122,10 +2133,12 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Logo_Egami"/>		
 	</screen> 
 	<!-- (049) ####### NumberZap ####### (15-02) -->
-	<screen name="NumberZap" position="center,center" size="185,120" title="Channel" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NumberZap" position="center,center" size="300,120" title="Channel" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="8,16" zPosition="0" size="180,95" pixmap="EGAdriatic/channel.png"/>
-		<widget name="channel" position="27,47" size="130,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="black"/>
-		<widget name="number" position="57,72" size="80,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="black"/>
+		<widget name="channel" position="27,47" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="black"/>
+		<widget name="number" position="57,72" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="black"/>
+		<widget name="servicename" position="0,10" size="200,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff" borderColor="white" borderWidth="2"/>
+		<widget name="servicenumber" position="200,10" size="100,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff" borderColor="white" borderWidth="2"/>		
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
@@ -6350,6 +6363,15 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	    <widget name="Preview" position="165,240" size="512,275" alphatest="blend" transparent="1" zPosition="3"/>
 		<panel name="Logo_Egami"/>  
  	</screen>
+	<!--Kernel Modules Setup -->
+	<screen name="EGKernelModules" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaRGY"/>
+        <panel name="PIG"/>
+        <panel name="Title"/>
+		<panel name="ScrollBarTemplate"/>		
+		<widget name="config" position="56,155" size="739,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
+	</screen>
 	<!-- ClearMemorySetup -->	
 	<screen name="SetupMenu" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>	
