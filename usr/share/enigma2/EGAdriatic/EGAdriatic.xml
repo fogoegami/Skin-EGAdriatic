@@ -63,7 +63,7 @@
 			</convert>
 		</widget>		
 	</screen>		
-	<!-- (070) ####### SETUP ( AutoResolution-Personalizzare-Fuso Orario-Tastiera-Display ####### (12-02) -->
+	<!--  ####### SETUP GENERALIZADO #######  -->
 	<screen name="Setup" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
@@ -78,9 +78,9 @@
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>		
         <widget name="description" position="845,430" size="380,185" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" transparent="1"/>
 		<widget name="footnote" position="880,610" size="300,50" zPosition="1" font="Regular;20" foregroundColor="#00bab329" backgroundColor="black" halign="center" transparent="1" valign="top"/>		
-	</screen>
+	</screen>	
 	<!-- ####### SETUP ServiceApp ####### -->
-	<screen name="ServiceAppSettings" position="0,0" size="1280,720" flags="wfNoBorder">
+	<screen name="ServiceAppSettings" position="0,0" size="1280,720" title="ServiceApp Settings" flags="wfNoBorder">
 		<panel name="PantallaGenericaRG"/>
         <panel name="PIG"/>
         <panel name="Title"/>
@@ -602,9 +602,9 @@
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<ePixmap pixmap="icons/key_help.png" position="0,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="45,669" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="1150,669" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="1195,669" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="1240,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="1148,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="1193,669" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="1238,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="170,625" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
@@ -672,9 +672,9 @@
 		<widget name="timeline5" pixmap="epg/timeline.png" position="0,388" size="0,0" zPosition="-1"/>
 		<ePixmap pixmap="icons/key_help.png" position="0,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="icons/key_text.png" position="45,669" size="40,22" alphatest="blend"/>	
-		<ePixmap pixmap="icons/key_menu1.png" position="1150,669" size="40,22" alphatest="blend"/>
-		<ePixmap pixmap="icons/key_epg_single.png" position="1195,669" size="40,22" alphatest="blend"/>		
-		<ePixmap pixmap="icons/key_info.png" position="1240,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="1148,669" size="40,22" alphatest="blend"/>
+		<ePixmap pixmap="icons/key_epg_single.png" position="1193,669" size="40,22" alphatest="blend"/>		
+		<ePixmap pixmap="icons/key_info.png" position="1238,669" size="40,22" alphatest="blend"/>
 		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
 		<widget name="key_red" position="170,625" size="150,85" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22"/>
 		<ePixmap pixmap="buttons/green.png" position="420,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
@@ -2133,12 +2133,11 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Logo_Egami"/>		
 	</screen> 
 	<!-- (049) ####### NumberZap ####### (15-02) -->
-	<screen name="NumberZap" position="center,center" size="300,120" title="Channel" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="8,16" zPosition="0" size="180,95" pixmap="EGAdriatic/channel.png"/>
-		<widget name="channel" position="27,47" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="black"/>
-		<widget name="number" position="57,72" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="black"/>
-		<widget name="servicename" position="0,10" size="200,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff" borderColor="white" borderWidth="2"/>
-		<widget name="servicenumber" position="200,10" size="100,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff" borderColor="white" borderWidth="2"/>		
+	<screen name="NumberZap" position="center,center" size="300,40" title="Channel" flags="wfNoBorder" backgroundColor="#0003424a">
+		<widget name="channel" position="27,47" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="Black"/>
+		<widget name="number" position="57,72" size="0,0" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="Black"/>
+		<widget name="servicename" position="0,10" size="200,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff"/>
+		<widget name="servicenumber" position="200,10" size="100,28" zPosition="1" halign="center" valign="center" font="Regular;24" transparent="0" foregroundColor="#00a1d1ff"/>		
 	</screen>
 	<!-- (050) ######## Numerical Text Input Help Dialog ####### -->
 	<screen name="NumericalTextInputHelpDialog" position="682,599" title="Help" size="550,108" zPosition="10" flags="wfNoBorder">
@@ -6368,7 +6367,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGY"/>
         <panel name="PIG"/>
         <panel name="Title"/>
-		<panel name="ScrollBarTemplate"/>		
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Logo_Egami"/>		
 		<widget name="config" position="56,155" size="739,425" font="Regular;18" scrollbarMode="showAlways" transparent="1"/>
 		<ePixmap pixmap="buttons/key_info1.png" position="990,395" size="74,36" zPosition="2" alphatest="blend"/>
 	</screen>
