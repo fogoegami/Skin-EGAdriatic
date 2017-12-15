@@ -29,7 +29,7 @@
 	-->
 <skin>
 	<!-- ####### HideVBILine embebido ####### -->
-    <screen name="HideVBILine" position="0,0" size="0,0" flags="wfNoBorder">
+    <screen name="HideVBILine" position="0,0" size="1280,2" backgroundColor="#00000000" flags="wfNoBorder">	
 	</screen>	
 	<!-- ####### MENU Y SUBMENUS PRINCIPALES ####### -->
 	<screen name="Menu" position="0,0" size="1280,720" flags="wfNoBorder">
