@@ -4637,6 +4637,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="statusbar" position="845,405" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
         <ePixmap pixmap="menu/logo_egami_menu.png" position="945,485" size="180,180" zPosition="2" alphatest="blend"/>		
+	</screen>
+
 	<!-- EPG Import Sources -->
 	<screen name="EPGImportSources" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
@@ -5764,7 +5766,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <panel name="PIG"/>
 		<widget name="config" position="60,145" zPosition="1" size="725,427" scrollbarMode="showOnDemand"/>
-	</screen>
 	</screen>
 	<!-- ********** Plugin OSCamUpdater Actualizar Version OSCam ********** -->
 	<screen name="OscamUpdaterView" position="0,0" size="1280,720" flags="wfNoBorder">
