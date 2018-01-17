@@ -4637,8 +4637,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget name="statusbar" position="845,405" size="380,160" zPosition="10" font="Regular;20" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
 		<ePixmap pixmap="icons/key_menu1.png" position="8,640" size="40,22" alphatest="blend"/>
         <ePixmap pixmap="menu/logo_egami_menu.png" position="945,485" size="180,180" zPosition="2" alphatest="blend"/>		
-	</screen>
-
 	<!-- EPG Import Sources -->
 	<screen name="EPGImportSources" position="0,0" size="1280,720" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
@@ -5766,6 +5764,21 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <panel name="Title"/>		
         <panel name="PIG"/>
 		<widget name="config" position="60,145" zPosition="1" size="725,427" scrollbarMode="showOnDemand"/>
+	</screen>
+	</screen>
+	<!-- ********** Plugin OSCamUpdater Actualizar Version OSCam ********** -->
+	<screen name="OscamUpdaterView" position="0,0" size="1280,720" flags="wfNoBorder">
+		<panel name="PantallaGenericaSinBarraColor2Pantallas"/>
+		<panel name="ScrollBarTemplate"/>
+        <panel name="Title"/>
+        <panel name="PIG"/>
+		<ePixmap pixmap="buttons/key_info1.png" position="990,387" size="74,36" zPosition="2" alphatest="blend"/>		
+        <widget source="oscamInfo" render="Label" font="Regular;20" position="185,115" size="500,66" halign="center" valign="center" foregroundColor="#0000baff" transparent="1"/>
+        <widget name="oscamList" position="80,193" size="718,365" transparent="1" scrollbarMode="showOnDemand"/>
+        <widget source="changeLogDate" render="Label" position="845,610" size="360,20" foregroundColor="yellow" font="Regular;16" halign="center" valign="center" transparent="1"/>
+        <widget source="changeLogText" render="DRRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=10000,steptime=90,wrap=1,always=0,repeat=2,oneshot=1" position="843,410" size="380,210" font="Regular;15" halign="center" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+        <widget source="key_yellow" render="Label" font="Regular; 20" halign="left" position="75,625" size="250,33" transparent="1"/>
+		<ePixmap position="57,625" zPosition="1" size="140,35" pixmap="EGAdriatic/menu/colorbarY.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- ********** OScam Info ********** -->
 	<screen name="OscamInfoMenu" position="0,0" size="1280,720" flags="wfNoBorder">
