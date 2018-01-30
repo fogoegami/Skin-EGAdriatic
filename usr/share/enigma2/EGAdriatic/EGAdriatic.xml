@@ -171,7 +171,7 @@
 		<ePixmap position="0,0" zPosition="1" size="670,83" pixmap="EGAdriatic/menu/tx_listchannel.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="82,125" zPosition="5" size="716,438" pixmap="EGAdriatic/menu/filtro.png" alphatest="blend" transparent="1"/>
 	<!-- Pig -->			
-        <widget source="session.VideoPicture" render="Pig" position=" 838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+        <widget source="session.VideoPicture" render="Pig" position="838,216" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 		<eLabel position="838,414" size="382,20" backgroundColor="#20101010" zPosition="3"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.Event_Now" render="Label" position="835,415" size="70,30" zPosition="4" halign="left" font="Regular;18" foregroundColor="#0000fafa" backgroundColor="background" transparent="1">
@@ -425,7 +425,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>	
     <!-- pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
 	<!-- service progress bar -->
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
@@ -662,7 +662,7 @@
 		<eLabel position="1188,98" size="2,126" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="995,222" size="193,2" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="995,98" size="193,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<widget source="session.VideoPicture" render="Pig" position=" 996,102" size="191,122" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position="984,110" size="205,112" zPosition="3" backgroundColor="#df0b1300"/>
 		<widget name="timeline_text" position="90,227" size="1280,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
 		<widget name="bouquetlist" position="90,260" size="1100,365" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="90,260" size="1100,365" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
@@ -1004,7 +1004,7 @@
 		    </convert>
 		</widget>
 	<!-- Widget Pig -->
-		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
 			<convert type="ServiceName">Name</convert>
@@ -2246,7 +2246,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="860,414" zPosition="2" size="370,204"  pixmap="EGAdriatic/menu/ico_plugins.png" alphatest="blend" transparent="1"/>
 		<widget name="list" position="73,137" size="725,400" scrollbarMode="showOnDemand" selectionPixmap="EGAdriatic/icons/ls680x50.png" transparent="1"/>
 	<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
 			<convert type="ServiceName">Name</convert>
@@ -2497,7 +2497,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="BackupSetup" position="center,center" size="1130,560" title="Backup and Restore">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1130,560" alphatest="on"/>
 		<widget name="config" position="20,20" size="1090,475" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="canceltext" position=" 30,525"	size="250,30" font="Regular;24" halign="center" valign="center"/>
+		<widget name="canceltext" position="30,525"	size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="oktext" position="300,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="restoretext" position="570,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="backuptext" position="840,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
@@ -2765,9 +2765,9 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="Pic_Setup" position="center,center" size="710,340" title="Settings">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="710,340" alphatest="on"/>
 		<widget name="config" position="20,20" size="670,450" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
-		<ePixmap pixmap="EGAdriatic/buttons/red25.png" position=" 70,280" size="250,40" zPosition="1" alphatest="blend"/>
+		<ePixmap pixmap="EGAdriatic/buttons/red25.png" position="70,280" size="250,40" zPosition="1" alphatest="blend"/>
 		<ePixmap pixmap="EGAdriatic/buttons/green25.png" position="390,280" size="250,40" zPosition="1" alphatest="blend"/>
-		<widget source="key_red" render="Label" position=" 70,282" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" backgroundColor="#000c0d0e"/>
+		<widget source="key_red" render="Label" position="70,282" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" backgroundColor="#000c0d0e"/>
 		<widget source="key_green" render="Label" position="390,282" size="250,40" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" backgroundColor="#000c0d0e"/>
 	</screen>
 	<!-- (107) ####### Input Box ####### -->
@@ -3126,7 +3126,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="280,230" zPosition="0" size="350,320" pixmap="EGAdriatic/menu/rc_wb_desc.png" alphatest="blend" transparent="1"/>
 		<ePixmap position="0,0" zPosition="-1" size="555,69" pixmap="EGAdriatic/menu/tx_web.png"/>
 	<!-- Widget Pig -->
-		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
 			<convert type="ServiceName">Name</convert>
@@ -3976,7 +3976,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PantallaGenericaRGYB"/>
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
-		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- Nombre del Canal - Service Name -->
 		<widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#004ccbde" backgroundColor="background">
 			<convert type="ServiceName">Name</convert>
@@ -4334,7 +4334,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_red" render="Label" position="45,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
 		<widget source="key_green" render="Label" position="245,625" size="250,36" font="Regular;20" halign="center" valign="center" backgroundColor="#000c0d0e" transparent="1" zPosition="2"/>
     <!-- pig -->
-		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 
 	<!-- service progress bar -->
 		<widget source="session.Event_Now" render="Progress" pixmap="EGAdriatic/tv_b_bar.png" size="340,2" position="837,338" zPosition="5" backgroundColor="darkgrey" transparent="1">
@@ -4510,7 +4510,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	<!-- Widget Pig -->
-		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 		<widget name="key_red" position="4,620" zPosition="2" size="220,40" font="Regular;24" halign="center" backgroundColor="black" transparent="1"/>
 		<widget name="key_green" position="201,620" zPosition="2" size="220,40" font="Regular;24" halign="center" backgroundColor="black" transparent="1"/>
 		<widget name="key_yellow" position="400,620" zPosition="2" size="220,40" font="Regular;24" halign="center" backgroundColor="#000c0d0e" transparent="1"/>
@@ -4595,7 +4595,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 		<widget name="detailtext" position="370,225" size="730,280" zPosition="10" font="Regular;22" backgroundColor="darkgrey" transparent="1"/>
 		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-        <widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+        <widget name="key_red" position="455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<widget name="thumbnail" position="0,0" size="100,135" alphatest="on"/> 
 	</screen>
 	<!-- (154) ####### MyTubeSettingsScreen ####### -->
@@ -4622,7 +4622,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			</convert>
 		</widget>
 		<ePixmap position="455,500" size="250,40" pixmap="EGAdriatic/buttons/red25.png" alphatest="on" zPosition="1"/>
-		<widget name="key_red" position=" 455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+		<widget name="key_red" position="455,500" zPosition="2" size="250,40" font="Regular;22" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 	</screen>	
 	
 	<!-- EPG Import Configuration -->
