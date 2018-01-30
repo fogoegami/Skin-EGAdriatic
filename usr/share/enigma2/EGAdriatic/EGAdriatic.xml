@@ -384,7 +384,7 @@
 		<panel name="ScrollBarTemplate"/>
         <panel name="Title"/>
     <!-- pig -->
-		 <widget source="session.VideoPicture" render="Pig" position="838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+		 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
 	<!-- decorative elements -->
 		<ePixmap position="839,408" zPosition="3" size="400,189" pixmap="EGAdriatic/tvp.png" alphatest="blend" transparent="1"/>
 	<!-- service progress bar -->
@@ -2497,7 +2497,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="BackupSetup" position="center,center" size="1130,560" title="Backup and Restore">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1130,560" alphatest="on"/>
 		<widget name="config" position="20,20" size="1090,475" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="canceltext" position=" 30,525"	size="250,30" font="Regular;24" halign="center" valign="center"/>
+		<widget name="canceltext" position=" 30,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="oktext" position="300,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="restoretext" position="570,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="backuptext" position="840,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
