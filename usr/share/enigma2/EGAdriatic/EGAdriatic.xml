@@ -662,7 +662,7 @@
 		<eLabel position="1188,98" size="2,126" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="995,222" size="193,2" backgroundColor="#004ccbde" zPosition="3"/>
 		<eLabel position="995,98" size="193,2" backgroundColor="#004ccbde" zPosition="3"/>
-		<widget source="session.VideoPicture" render="Pig" position=" 984,110" size="205,112" zPosition="3" backgroundColor="#df0b1300"/>
+		<widget source="session.VideoPicture" render="Pig" position="984,110" size="205,112" zPosition="3" backgroundColor="#df0b1300"/>
 		<widget name="timeline_text" position="90,227" size="1280,35" backgroundColor="black" foregroundColor="#004ccbde" transparent="1" zPosition="0"/>
 		<widget name="bouquetlist" position="90,260" size="1100,365" foregroundColorSelected="#0000fafa" scrollbarMode="showNever" zPosition="2" transparent="0"/>
 		<widget name="list" position="90,260" size="1100,365" backgroundColor="black" RecordForegroundColorSelected="yellow" scrollbarMode="showNever" zPosition="1" transparent="1"/>
@@ -2497,7 +2497,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="BackupSetup" position="center,center" size="1130,560" title="Backup and Restore">
 		<ePixmap pixmap="EGAdriatic/menu/backbox.png" zPosition="-1" position="0,0" size="1130,560" alphatest="on"/>
 		<widget name="config" position="20,20" size="1090,475" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="canceltext" position="30,525"	size="250,30" font="Regular;24" halign="center" valign="center"/>
+		<widget name="canceltext" position="30,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="oktext" position="300,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="restoretext" position="570,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
 		<widget name="backuptext" position="840,525" size="250,30" font="Regular;24" halign="center" valign="center"/>
