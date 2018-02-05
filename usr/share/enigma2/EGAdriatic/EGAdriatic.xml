@@ -4846,71 +4846,6 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
         <widget name="languagetext" position="95,630" size="150,30" transparent="1" font="Regular;20"/>
 	</screen>	
-	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
-	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
-		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
-		<widget source="Title" render="Label" zPosition="1" position="510,15" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
-	<!-- Fecha y Reloj Digital -->		
-		<widget source="global.CurrentTime" render="Label" position="870,47" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
-            <convert type="ClockToText">Format:%H:%M :%S</convert>
-        </widget>
-		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
-            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
-        </widget>			
-	<!-- WIDGETS SOURCE EMC -->	
-		<widget name="runtimeAT" position="50,150" size="550,350" zPosition="3" transparent="1"/>
-		<widget name="genreAT" position="660,150" size="550,250" zPosition="3" transparent="1"/>
-		<widget name="artistAT" position="465,120" size="0,0"/>
-		<widget name="artistATtxt" position="465,120" size="0,0"/>
-		<widget name="albumAT" position="465,120" size="0,0"/>
-		<widget name="CoverBg" position="660,400" size="0,0" pixmap="no_coverArt.png" transparent="1" alphatest="blend"/>
-		<widget name="size" position="784,400" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="date" position="864,400" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="albumATtxt" position="784,425" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="wait" position="864,425" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="name" position="784,450" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="runtimeATtxt" position="864,450" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="genreATtxt" position="784,475" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
-		<widget name="Video" position="864,475" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>	
-		
-	<!-- File Name -->
-		<widget source="Service" render="Label" position="660,150" size="100,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
-		    <convert type="MovieInfo">FileSize</convert>
-		</widget>
-		<widget source="Service" render="Label" position="660,175" size="290,25" font="Regular;20" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
-		    <convert type="ServiceTime">StartTime</convert>
-		    <convert type="ClockToText">ShortDate</convert>
-		</widget>
-		<widget source="Service" render="Label" position="660,200" size="80,25" font="Regular;20" valign="center" foregroundColor="green" backgroundColor="#00203e69" transparent="1" zPosition="4">
-		    <convert type="ServiceTime">Duration</convert>
-		    <convert type="ClockToText">AsLength</convert>
-		</widget>				
-		
-	<!-- Time Remaining -->
-		<widget source="session.CurrentService" render="Label" position="660,225" size="100,40" font="Regular;20" halign="center" zPosition="4" foregroundColor="#0000fafa" backgroundColor="black" transparent="1">
-		    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
-		</widget>
-		
-	<!-- Time -->
-		<widget source="session.CurrentService" render="Label" position="660,250" size="90,22" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="4">
-		    <convert type="ServicePosition">Position,ShowHours</convert>
-		</widget>			
-		
-	<!-- Record Name -->
-        <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
-            <convert type="EventName">ExtendedDescription</convert>
-        </widget>		
-		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_red" position="200,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<ePixmap pixmap="buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_green" position="430,640" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<ePixmap pixmap="buttons/yellow.png" position="685,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_yellow" position="685,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
-		<widget name="key_blue" position="955,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
-		<ePixmap pixmap="icons/key_menu1.png" position="1180,675" size="40,22" alphatest="blend"/>			
-		<ePixmap position="1225,675" size="40,22" pixmap="icons/key_info.png" alphatest="blend"/>
-	</screen>
 	<!-- (048) ####### Movie Selection Lista de Peliculas (MoviePlayer Standard)  ####### -->	
 	<screen name="MovieSelection" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="PantallaGenericaRGYB"/>
@@ -4975,12 +4910,78 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap pixmap="icons/key_menu1.png" position="20,676" size="40,22" alphatest="blend" transparent="1" zPosition="1"/>
         <widget name="PositionGauge" position="377,628" size="0,0" pointer="EGAdriatic/pointer.png:13,3" seek_pointer="EGAdriatic/pointer.png:13,3" zPosition="3" transparent="1"/>		
 	</screen>
+	<!-- Template para Plugin EMC LISTA DE PELICULAS -->
+	<screen name="EMC" title="Movie Selection" position="0,0" size="1280,720" flags="wfNoBorder">
+		<ePixmap pixmap="menu/fr_mplayer.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<widget source="Title" render="Label" zPosition="1" position="510,15" size="390,30" font="Regular;26" foregroundColor="#004ccbde" backgroundColor="black" transparent="1"/>
+	<!-- Fecha y Reloj Digital -->		
+		<widget source="global.CurrentTime" render="Label" position="870,47" size="160,40" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%H:%M :%S</convert>
+        </widget>
+		<widget source="global.CurrentTime" render="Label" position="30,50" size="560,35" zPosition="2" font="LCD;35" valign="top" halign="center" foregroundColor="#004ccbde" backgroundColor="#00030303" transparent="1">
+            <convert type="ClockToText">Format:%a %d/%m/%y</convert>
+        </widget>			
+	<!-- WIDGETS SOURCE EMC -->	
+		<widget name="runtimeAT" position="50,150" size="550,350" zPosition="3" transparent="1"/>
+		<widget name="genreAT" position="660,150" size="550,250" zPosition="3" transparent="1"/>
+		<widget name="artistAT" position="465,120" size="0,0"/>
+		<widget name="artistATtxt" position="465,120" size="0,0"/>
+		<widget name="albumAT" position="465,120" size="0,0"/>
+		<widget name="CoverBg" position="660,400" size="0,0" pixmap="no_coverArt.png" transparent="1" alphatest="blend"/>
+		<widget name="size" position="784,400" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="date" position="864,400" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="albumATtxt" position="784,425" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="wait" position="864,425" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="name" position="784,450" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="runtimeATtxt" position="864,450" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="genreATtxt" position="784,475" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>
+		<widget name="Video" position="864,475" size="0,0" foregroundColor="#004ccbde" font="Regular;20" valign="top" transparent="1"/>	
+		
+	<!-- File Name -->
+		<widget source="Service" render="Label" position="1125,150" size="100,25" font="Regular;20" valign="center" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
+		    <convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1120,510" size="290,25" font="Regular;19" foregroundColor="#004ccbde" backgroundColor="black" transparent="1" zPosition="4">
+		    <convert type="ServiceTime">StartTime</convert>
+		    <convert type="ClockToText">ShortDate</convert>
+		</widget>
+		<widget source="Service" render="Label" position="1125,200" size="80,25" font="Regular;20" valign="center" foregroundColor="green" backgroundColor="#00203e69" transparent="1" zPosition="4">
+		    <convert type="ServiceTime">Duration</convert>
+		    <convert type="ClockToText">AsLength</convert>
+		</widget>				
+		
+	<!-- Time Remaining -->
+		<widget source="session.CurrentService" render="Label" position="1125,225" size="100,40" font="Regular;20" halign="center" zPosition="4" foregroundColor="#0000fafa" backgroundColor="black" transparent="1">
+		    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		
+	<!-- Time -->
+		<widget source="session.CurrentService" render="Label" position="1135,250" size="90,22" font="Regular;20" foregroundColor="#0000fafa" backgroundColor="black" transparent="1" zPosition="4">
+		    <convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>			
+		
+	<!-- Record Name -->
+        <widget source="Service" render="DRRunningText" options="movetype=running,startpoint=0,startdelay=1000,wrap=0,always=0,repeat=2,oneshot=1" position="430,85" size="435,25" font="Regular;20" foregroundColor="yellow" transparent="1" halign="center" valign="top">
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>		
+		<ePixmap pixmap="buttons/red.png" position="170,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_red" position="200,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="buttons/green.png" position="440,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_green" position="430,640" size="200,50" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="buttons/yellow.png" position="685,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_yellow" position="685,665" size="240,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="buttons/blue.png" position="935,690" size="140,3" alphatest="blend" transparent="1" zPosition="1"/>
+		<widget name="key_blue" position="955,665" size="440,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;22" halign="left"/>
+		<ePixmap pixmap="icons/key_menu1.png" position="1180,675" size="40,22" alphatest="blend"/>			
+		<ePixmap position="1225,675" size="40,22" pixmap="icons/key_info.png" alphatest="blend"/>
+	</screen>	
 	<!-- PLugin EMC Pantalla Lista de Peliculas--> 
- 	<screen name="EMCSelection" position="fill" flags="wfNoBorder"> 
+ 	<screen name="EMCSelectionOwn" position="fill" flags="wfNoBorder"> 
 		<panel name="EMC"/>
-        <widget name="Cover" position="665,150" size="595,365" zPosition="1" alphatest="on"/>		
-		<widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;30" CoolSelectFont="Regular;28" CoolDateFont="Regular;30" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/>
-		<ePixmap position="632,111" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra400.png" alphatest="blend" transparent="1"/>
+        <widget name="Cover" position="700,150" size="595,365" zPosition="1" alphatest="on"/>		
+		<!--widget name="list" position="50,145" size="598,350" itemHeight="25" CoolFont="Regular;20" CoolSelectFont="Regular;18" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="990" CoolFolderSize="990" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="160" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1600" CoolBarPos="890" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="#00FFFFFF" UnwatchedColor="#0000fafa" WatchingColor="#00FFFFFF" FinishedColor="red" RecordingColor="#009F1313" BackColorSel="#000a4b32" foregroundColorSelected="#004ccbde" backgroundColor="black" scrollbarMode="showOnDemand" transparent="1" zPosition="1"/-->
+		<widget CoolDirInfoWidth="110" CoolCSPos="680" CoolBarHPos="9" CoolBarPos="530" CoolBarSizeSa="85,16" CoolDateColor="1" CoolDateFont="Regular;14" CoolDateHPos="5" CoolDatePos="630" CoolDateWidth="160" CoolFolderSize="620" CoolFont="Regular;16" CoolHighlightColor="1" CoolIconPos="5" CoolIconSize="35,26" CoolMovieHPos="4" CoolMoviePiconPos="100" CoolMoviePiconSize="520" CoolMoviePos="40" CoolMovieSize="470" CoolPiconHPos="2" CoolPiconHeight="20" CoolPiconPos="13" CoolProgressPos="280" CoolSelNumTxtWidth="10" CoolSelectFont="Regular;12" CoolTitleColor="1" DefaultColor="foreground" position="50,145" size="813,355" itemHeight="30" enableWrapAround="1" name="list" scrollbarMode="showOnDemand"/>
+		<ePixmap position="845,140" zPosition="3" size="25,470" pixmap="EGAdriatic/icons/barra375.png" alphatest="blend" transparent="1"/>
 	</screen>	
 	<!-- PVRState -->
     <screen name="PVRState" position="290,521" zPosition="2" size="100,25" backgroundColor="black" flags="wfNoBorder" transparent="0">
