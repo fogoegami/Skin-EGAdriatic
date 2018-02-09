@@ -60,10 +60,7 @@
         <color name="hblue" value="#0063a4ff"/>		
 		<color name="bluette" value="#00538eff"/>
         <color name="MediumTurquoise" value="#0048d1cc"/>
-	</colors>
-	<parameters>
-		<parameter name="AllowUserDatesAndTimes" value="1,1"/>
-	</parameters>	
+	</colors>	
 	<!-- Fonts -->
 	<fonts>
 	    <font filename="/usr/share/enigma2/EGAdriatic/fonts/Verdana_R.ttf" name="Regular" scale="95"/>
